@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sheet-request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kind", "run_id", "prompt", "referenced_image_paths", "card_ref", "sha256"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "kind": {"const": "sheet"},
+    "run_id": {"type": "string", "pattern": "^[0-9]{8}-[0-9]{6}-[0-9a-f]{6}$"},
+    "prompt": {"type": "string", "minLength": 1},
+    "referenced_image_paths": {"type": "array", "maxItems": 1, "items": {"type": "string", "minLength": 1}},
+    "card_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["character_id", "variant_id", "sheet"],
+      "properties": {
+        "character_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"},
+        "variant_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "sheet": {"enum": ["head", "body"]}
+      }
+    },
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

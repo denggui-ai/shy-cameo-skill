@@ -1,0 +1,29 @@
+coshoot-workspace/
+private-delivery/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.part
+.DS_Store
+.superpowers/
+build/
+
+# Safety net: never commit photos by accident (real-person images live outside the repo)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.heic
+!evidence/p2-l3/sheets/*.png
+!skills/shy-cameo/references/photo-guide/*.png
+pytest-tmp/
+# Example sets likely contain the Owner face; keep local-only (Owner 2026-10-22)
+assets/*
+# Public showcases contain AI virtual models only; keep real-person examples local.
+!assets/showcase/
+assets/showcase/*
+!assets/showcase/virtual-*/
+!assets/showcase/repository-preview/
+!assets/showcase/virtual-*/*.jpg
+!assets/showcase/repository-preview/*.jpg

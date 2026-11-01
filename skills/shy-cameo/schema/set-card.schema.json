@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "set-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "set_id", "status", "shots"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "same_setting_confirmed": {"type": "boolean"},
+    "mood_ref": {"type": "string", "minLength": 1},
+    "pet": {"type": "object", "additionalProperties": false, "required": ["ref", "kind"],
+            "properties": {"ref": {"type": "string", "minLength": 1},
+                           "kind": {"type": "string", "minLength": 1, "maxLength": 10},
+                           "look": {"type": "string", "minLength": 1, "maxLength": 60}}},
+    "set_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "status": {"enum": ["unverified", "user_confirmed"]},
+    "shots": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "object"}}
+  }
+}

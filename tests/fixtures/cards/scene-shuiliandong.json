@@ -1,0 +1,19 @@
+{
+  "schema_version": "2",
+  "id": "shuiliandong",
+  "ip": "xiyou",
+  "title": "水帘洞初会",
+  "source_ref": "原著第一回",
+  "status": "user_confirmed",
+  "setting": "花果山瀑布水幕后的石洞口，湿润的青绿色天光从水帘透进来，石壁上挂着藤蔓",
+  "characters": [
+    {"character_id": "xiyou/wukong", "variant_id": "mhw", "position": "right", "action": "侧身递来一只鲜桃", "expression": "嘴角一侧挑起，好奇而桀骜", "character_presence": "hand"}
+  ],
+  "user": {"mode": "traveler", "position": "left", "action": "伸手去接桃，正脸看向镜头", "outfit": "浅色亚麻衬衫与卡其长裤"},
+  "props": "鲜桃",
+  "framing": "knee_up",
+  "play_mode": "classic_presence",
+  "style": "realistic",
+  "aspect": "3:4",
+  "revisions": [{"n": 1, "fields_changed": [], "status": "user_confirmed"}]
+}

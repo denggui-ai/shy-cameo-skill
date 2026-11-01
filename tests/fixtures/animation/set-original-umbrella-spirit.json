@@ -1,0 +1,185 @@
+{
+  "schema_version": "1",
+  "set_id": "original-umbrella-spirit-five-shot-prep",
+  "status": "unverified",
+  "shots": [
+    {
+      "schema_version": "2",
+      "id": "original-umbrella-spirit-1",
+      "ip": "original-umbrella-spirit",
+      "title": "一起等雨停",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "伞伞 · 陪我等一场雨停的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "茶楼入口内侧的干燥木凳旁，柱子、素色布袋和远处暖灯形成入口空间，无镜子或反光玻璃",
+      "lighting": "檐外阴天天光照清主角脸，屋内灯笼提供少量暖色边缘光",
+      "characters": [
+        {
+          "character_id": "original-umbrella-spirit/umbrella-spirit",
+          "variant_id": "quiet-companion",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "只见伞伞的细长木柄手部与墨绿伞身边缘，伞面和头部完全在画外",
+          "action": "从右侧画外伸入，轻扶主角布袋滑落的肩带，手始终在锁骨以下"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐在木凳上，轻扶布袋下沿，抬眼看向镜头，有一点意外的笑，主角五官不被遮挡",
+        "outfit": "浅米色简洁上衣、深灰长裤与灰蓝薄外套，携素色小布袋；成人来访者，不扮任何角色，保持本人原发型与妆面"
+      },
+      "framing": "close_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-umbrella-spirit-2",
+      "ip": "original-umbrella-spirit",
+      "title": "长廊里多了一个影子",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "伞伞 · 陪我等一场雨停的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "茶楼木质长廊，暖灯、门格、深色木地板和临水外沿，地板哑光，水面不在伞面反射角度",
+      "lighting": "门外斜射天光把细长轮廓影子投向实墙，廊内回光照亮主角脸",
+      "characters": [
+        {
+          "character_id": "original-umbrella-spirit/umbrella-spirit",
+          "variant_id": "quiet-companion",
+          "position": "left",
+          "character_presence": "shadow",
+          "visible_parts": "实墙上伞伞细长伞身轮廓的等大影子，没有面部细节",
+          "action": "角色本体在画外，墙上影子轻抬手指向长廊尽头的座位"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在右侧，双手握着布袋肩带，侧身望向影子指向的方向，脸清楚受光",
+        "outfit": "浅米色简洁上衣、深灰长裤与灰蓝薄外套，携素色小布袋；成人来访者，不扮任何角色，保持本人原发型与妆面"
+      },
+      "framing": "knee_up",
+      "camera_angle": "low",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-umbrella-spirit-3",
+      "ip": "original-umbrella-spirit",
+      "title": "给你一朵花",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "伞伞 · 陪我等一场雨停的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "长廊相邻的小木桌旁，只留粗陶小瓶、木栏与雨后绿意，不出现其他角色",
+      "lighting": "廊外柔和天光照清花、手指和主角四分之三侧脸",
+      "characters": [
+        {
+          "character_id": "original-umbrella-spirit/umbrella-spirit",
+          "variant_id": "quiet-companion",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "从画外伸入的细长木柄手部，不出现伞面与角色头部",
+          "action": "捏住白色小花花茎下端递来，主角握住上端后松开，双方手指分离"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "略微弯腰，右手接住白色小花，左手托住布袋，目光看花，神情安静而惊喜",
+        "outfit": "浅米色简洁上衣、深灰长裤与灰蓝薄外套，携素色小布袋；成人来访者，不扮任何角色，保持本人原发型与妆面"
+      },
+      "framing": "mid_interactive",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "白色小花",
+          "spec": "单枝五瓣白花，细绿茎约二十厘米"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-umbrella-spirit-4",
+      "ip": "original-umbrella-spirit",
+      "title": "被发现的陪伴",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "伞伞 · 陪我等一场雨停的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "木廊实体杂物间门框外，白色小花已放进粗陶小瓶，厚毛巾由门后伸出的手展开",
+      "lighting": "走廊暖光照亮主角正脸，门内暗部不形成正面空白脸人形",
+      "characters": [
+        {
+          "character_id": "original-umbrella-spirit/umbrella-spirit",
+          "variant_id": "quiet-companion",
+          "position": "left",
+          "character_presence": "cover",
+          "visible_parts": "只露细长木柄手部和厚毛巾，伞面及完整头部全部藏住",
+          "action": "非人身体藏在实体门框后，自己举厚毛巾遮住整个头部，厚毛巾比伞面和两侧整体宽一圈，不透光、不被风吹开",
+          "cover_level": "full_head"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在右侧，身体靠门框外，回头看向镜头轻轻忍笑，双手自然放低，不遮脸",
+        "outfit": "浅米色简洁上衣、深灰长裤与灰蓝薄外套，携素色小布袋；成人来访者，不扮任何角色，保持本人原发型与妆面"
+      },
+      "framing": "waist_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "厚毛巾",
+          "spec": "深灰厚毛巾宽约一米二，不透光"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-umbrella-spirit-5",
+      "ip": "original-umbrella-spirit",
+      "title": "雨停以后",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "伞伞 · 陪我等一场雨停的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "入口木凳与通向外面的门廊，粗陶小瓶和白色小花放在桌边；厚毛巾折回门内，画面不含反射面",
+      "lighting": "雨后入口天光与室内暖灯照亮主角侧脸，远处门外略亮",
+      "characters": [
+        {
+          "character_id": "original-umbrella-spirit/umbrella-spirit",
+          "variant_id": "quiet-companion",
+          "position": "right",
+          "character_presence": "back",
+          "visible_parts": "伞伞不透明的墨绿伞身背面，头部仅见伞背侧，正面绝不露边",
+          "action": "严格背对镜头沿门廊慢慢离开，抬手扶一下出口木柱，不回头"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐回木凳，低头看粗陶小瓶里的白色小花，脸保留四分之三角度与完整五官",
+        "outfit": "浅米色简洁上衣、深灰长裤与灰蓝薄外套，携素色小布袋；成人来访者，不扮任何角色，保持本人原发型与妆面"
+      },
+      "framing": "waist_up",
+      "camera_angle": "high",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    }
+  ]
+}

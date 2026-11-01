@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "character-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "ip", "name", "rights_tier", "status", "variants"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "ip": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "rights_tier": {"enum": ["public_domain", "screen_original", "restricted"]},
+    "version_labels": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["gold", "temp_draft", "temp_confirmed"]},
+    "variants": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/variant"}}
+  },
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "sha256", "bytes"],
+      "properties": {
+        "url": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "bytes": {"type": "integer"}
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variant_id", "label", "identity_features", "costume", "lookalike_check"],
+      "properties": {
+        "variant_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "label": {"type": "string", "minLength": 1},
+        "identity_features": {"type": "string", "minLength": 1},
+        "costume": {"type": "string", "minLength": 1},
+        "props": {"type": "string"},
+        "exclusions": {"type": "string"},
+        "episodes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 2}},
+        "sheets": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {"head": {"$ref": "#/$defs/asset"}, "body": {"$ref": "#/$defs/asset"}}
+        },
+        "lookalike_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": {"enum": ["pending", "passed", "failed"]},
+            "date": {"type": "string"},
+            "reviewer": {"type": "string"}
+          }
+        }
+      }
+    }
+  }
+}

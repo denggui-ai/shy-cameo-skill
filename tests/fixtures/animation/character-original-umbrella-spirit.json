@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "umbrella-spirit",
+  "ip": "original-umbrella-spirit",
+  "name": "伞伞",
+  "rights_tier": "screen_original",
+  "status": "temp_draft",
+  "variants": [
+    {
+      "variant_id": "quiet-companion",
+      "label": "伞伞 · 陪我等一场雨停",
+      "identity_features": "伞伞的墨绿油纸伞身与细长木柄手臂轮廓；伞面朝前遮住脸，任何镜头或反射均不得展示脸部",
+      "costume": "墨绿不透明油纸伞身，保留非人角色轮廓，不变为举伞的人类；伞面作为脸的遮挡，不作为可见饰品",
+      "props": "厚毛巾",
+      "exclusions": "角色脸不入画；不混入真人演员，不改主角五官；不是已验证生成模板",
+      "lookalike_check": {
+        "status": "pending"
+      }
+    }
+  ]
+}

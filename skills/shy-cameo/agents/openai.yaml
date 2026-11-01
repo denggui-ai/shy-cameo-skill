@@ -1,0 +1,6 @@
+interface:
+  display_name: "入画 shy-cameo"
+  short_description: "上传自拍，走进故事；故事里的角色有点害羞"
+  default_prompt: "Use $shy-cameo to put me into a story scene, using my photos in coshoot-workspace/input/."
+policy:
+  allow_implicit_invocation: true

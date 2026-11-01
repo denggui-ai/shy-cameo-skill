@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "paper-crane",
+  "ip": "original-paper-crane",
+  "name": "纸鸢",
+  "rights_tier": "restricted",
+  "status": "temp_draft",
+  "variants": [
+    {
+      "variant_id": "familiar",
+      "label": "纸鸢 · 纸鹤屋顶之约",
+      "identity_features": "纸鸢的月白短打、背上的折纸大鹤与纸鹤忍者学徒轮廓；不限定时期，脸不入镜",
+      "costume": "当前草案采用月白短打；按用户确认的造型保持整组一致，不要求可读文字",
+      "props": "密实大卷轴",
+      "exclusions": "角色脸不入画；不混入真人演员，不改主角五官；不是已验证生成模板",
+      "lookalike_check": {
+        "status": "pending"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>入画 · 1.0.2-rc.1 使用说明</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#f7f5f0;color:#202d29;font:16px/1.85 system-ui,-apple-system,"PingFang SC",sans-serif}main{max-width:920px;margin:auto;padding:48px 28px}header{border-bottom:1px solid #9baba0;padding-bottom:28px;margin-bottom:28px}h1{font-size:40px;line-height:1.2;margin:0 0 16px}h2{font-size:24px;margin:38px 0 12px}h3{font-size:18px}p{margin:12px 0}a{color:#245d45;text-underline-offset:4px}a:focus-visible{outline:3px solid #825327;outline-offset:4px}nav{display:flex;gap:16px;flex-wrap:wrap}code,pre{font-family:ui-monospace,monospace;background:#e8eae4}pre{padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:8px}code{padding:1px 5px;overflow-wrap:anywhere}.note{border-left:4px solid #825327;background:#eee8d9;padding:16px 20px}.badge{font-size:13px;letter-spacing:.08em;color:#526357}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;vertical-align:top;border-bottom:1px solid #bac4bc}ul,ol{padding-left:24px}footer{border-top:1px solid #9baba0;margin-top:48px;padding-top:24px;font-size:14px}@media(max-width:600px){main{padding:28px 20px}h1{font-size:32px}td,th{padding:8px 4px}table{font-size:13px}}@media print{body{background:white;color:black}main{padding:0}nav{display:none}h2{break-after:avoid}pre,.note{break-inside:avoid}a{color:black}}
+</style>
+<main>
+<p class="note">公开测试版 <strong>1.0.2-rc.1</strong>：源码与插件包见 GitHub 项目 shy-cameo-skill。已有本地安装使用记录，新机器安装和完整升级回退尚未复验。功能范围已冻结，身形支持保留基础参考与明确局部要求，不提供已验证的精准身材或胸型控制。</p>
+<header><p class="badge">SHY-CAMEO · MAIN · OFFLINE-VALIDATED SOURCE</p><h1>入画</h1><p>主角是你，故事里的角色有点害羞。</p><p>用 1–2 张已获同意的成年人照片，准备五张 3:4 写真，按你想经历的故事安排。角色不露脸，主角清楚露脸。</p>
+<nav aria-label="说明导航"><a href="#status">验证范围</a><a href="#start">开始使用</a><a href="#cost">授权与费用</a><a href="#privacy">隐私</a><a href="#lifecycle">安装与回退</a><a href="#help">排障</a></nav></header>
+<section id="series"><h2>同角色，多系列持续创作</h2><p>可以一次选择剧组、练功、美食等多个系列，每套五张；也可以下次继续。全部仅指当前展示并选定的系列。已有照片与偏好沿用，结果按系列展示，重拍保留旧版。</p><p>公开测试能力；孙悟空多系列选择、续作与返回整理，以及电影阿拉贡和电视剧梅长苏的方案准备已完成限定范围无图评审。“全部”后新增候选不扩大当次范围；重拍结果未知时先核查，旧版保留。实际画质、精确妆造与多次稳定性仍未验证。未验收图片不标完成。项目进度保存在用户私有工作区，临时目录不保证长期留存。</p></section>
+<section id="status"><h2>先看验证范围</h2>
+<p>本版本面向愿意逐图检查、接受当前局限的公开测试使用者。故事写真已有被接受的真实套图；造型和道具指导有小范围验证及失败案例，不能推广为所有组合稳定。照片好看、像本人、角色辨识度和身体变化都要看实际结果。</p>
+<div class="note"><strong>身形支持按已确认范围收口。</strong> 有身体照片时参考可见部分；只有头像时也可补充自述，不要求全身三视图。明确局部要求可进入生成并检查是否落实。合成图库仅作可选沟通示例；不再扩建图库或独立精准控制模块。换装、侧身和背影的一致性仍有限，遮挡部位不能凭提示词判通过。</div>
+<table><thead><tr><th scope="col">内容</th><th scope="col">当前边界</th></tr></thead><tbody>
+<tr><td>可以拍什么</td><td>和孙悟空逛剧组、穿戏服上台、进入小说情节、与原创伙伴冒险、去旅行、和宠物过日常。直接说想法即可，实际效果按具体案例判断。</td></tr>
+<tr><td>Codex</td><td>原生生图，逐张编译、登记、检查与用户验收。本机已有安装和真实使用记录；本技能没有原生工具提交前的程序硬拦，自动调用审计可能为 unverified。</td></tr>
+<tr><td>Claude Code</td><td>现有 CLI adapter 经 codex exec 执行；进程和失败路径有确定性测试，兼容路径仍属实验性。</td></tr>
+<tr><td>成片质量</td><td>人脸、身体比例、服饰材质、手和道具物理关系可能偏离；不承诺精准身体控制或像素级局部修改。</td></tr>
+<tr><td>可选检测</td><td>OpenCV 4.x 不可用时改人工确认；不机器判断年龄，不保证无偏差。</td></tr>
+</tbody></table>
+<p>包内包含合成成年模特参考和示意图，不包含原始自拍、个人身形记录或私人研究日志。图库不代替用户身份参考，也不证明真实身体尺寸。外部服饰资料仅供写卡参考；只有实际请求列出的图片才会发送给服务。</p>
+<p>历史安装生命周期证据为 macOS arm64 / Codex CLI 0.161.0 的 v1.0.1 新装、发现、从 v1.0.0 升级及卸载。本次 1.0.2-rc.1 发布整理不把这些旧记录计作新版本复验；新机器、桌面点击、隐式触发及升级回退仍未验证。</p>
+<p>身份参考素材限本人或已获同意的成年人照片；不把这项素材范围套到虚构角色年龄。角色不露脸是害羞拍法，不代发帖，具体作品使用与商业用途按实际权利条件判断。</p></section>
+<section id="start"><h2>开始使用</h2><p>首次安装推荐按在线 <a href="https://github.com/denggui-ai/shy-cameo-skill/blob/v1.0.2-rc.1/release/INSTALL.md">安装指南</a>选择直接安装 skill 或本地插件，两种方式选择一种即可。本页保留完整离线插件流程；在线指南另含直接安装说明。</p><p>运行目录解包约 54 MiB，保留下载包、解包和安装缓存时建议预留 200 MiB。需要 Python 3.9+、支持原生图像生成的 Codex；CLI adapter 另需已登录的 Codex CLI 0.161.0+。本说明与运行时可离线读取；真正生图需要联网和你自己的账号额度。无需把 API key 写进卡片。</p>
+<ol><li>先核对 ZIP 校验和，再解包到新目录，保持原有版本不动；本版本不会替你全局安装。</li><li>在解包后插件根目录运行下面的零额度烟测，确认 CLI 和规则库可用。</li><li>在支持技能调用的宿主中明确使用 <code>$shy-cameo</code>；未被发现时不要声称已安装，先完成安装验证。</li><li>用仓库外私有工作区保存照片和卡片。照片最好正脸；只有一张时必须正脸。先确认照片主体、成年与本人／已获同意。</li><li>确认五张分镜、成年人照片同意后，明确要求拍摄即可，不要求授权口令。生成后逐张自检。</li></ol>
+<pre>python3 -B skills/shy-cameo/scripts/cli.py validate-library
+python3 -B skills/shy-cameo/scripts/cli.py scan-names --text "今天逛花园"</pre><p>预期：库验证 <code>ok: true</code>；扫描 <code>status: ok</code>。两个命令不生图，不消耗生图额度。首轮准备与人工确认耗时取决于素材，不承诺固定分钟数。</p>
+<p>直接说想和谁、去哪里、扮成什么样或经历什么，不需要选择内部分类。已有明确想法就准备方案；只有影响画面的缺项才简短补问。已确认照片和衣装沿用。只准备时不要求登录图像服务，缺素材列为生成前待办；技能保存草稿并做可用的本地结构检查，不伪造确认、不提交生成。</p><p>你会看到一句画面概括和五张分镜，可直接要求“第三张改成……”。“确认分镜，先不要生图”只保存确认；明确要求按方案生成才进入拍摄。生成后报告实际结果，失败不自动重试，成片待你验收。</p><h3>可以这样说</h3><pre>用 $shy-cameo 帮我准备济公题材的五张分镜。
+照片放在我的私有工作区，先不要生图。</pre><p>技能先理解想拍的画面、沿用已有选择并展示分镜；不会把“准备”当成拍摄授权。只想画角色海报或普通写真，应使用其他工具。</p></section>
+<section id="cost"><h2>明确要拍，就按已定范围执行</h2><p>一套固定五张，说“按这套拍”或“开始生成”即可；对刚才明确的拍摄提议回答“同意”也可，不重复要求数字。说“先看分镜、不生图”就只准备；开发、安装或讨论中的“继续”不当作拍摄请求。额外定妆表只在用户要求时生成；明确说“重拍第三张”即可开始该张一次新任务。Codex自身权限按宿主正常流程处理，本技能不新增安装审批。</p><p>生图前登记授权、卡片、照片与待提交状态；若用户要求先开发台账并本地提交，必须先完成。被拒、超时或没取得图片也按已提交次数记额度；第 1 张失败时其余四张取消、不提交。失败不自动重试，不改词绕过平台拒绝。不自动补拍；用户明确要求重拍时按该范围执行。</p><p>中途按 Ctrl-C 或关闭终端后，先查套图账本；进程终止处理与已提交次数分别核对，不能猜剩余额度或自动续跑。CLI 未返回明确原图路径时，不挑其他会话的最新图片冒充结果。</p><h3>完成是什么意思</h3><p>有文件只是候选。五张均交付，并由你逐张确认“像不像本人、角色对不对、有没有奇怪地方或角色露脸”，记录 <code>verdict: accepted</code> 后才算整套完成。</p></section>
+<section id="privacy"><h2>照片去哪里</h2><p>读取范围：你主动放入私有工作区的照片、确认的参考和技能自带规则。原始自拍、同意记录与私人日志放仓库外，不公开；生成成片仅在用户明确授权的范围内制作案例副本，生图授权不等于发布授权。生图参考会经你自己的 Codex 账号发送给 OpenAI；并非全程离线。本项目不收集你的照片、不提供托管服务、无项目级分析遥测；宿主与服务提供方的数据处理按其自身政策。</p><p>工作区会保留 input、cards、characters、outputs、审计日志、同意和额度记录；CLI 生图的原始文件可能先由宿主写入它自己的生成目录。若用户要求只留私有工作区，原图原字节转移后核对哈希，不保留工作区外副本。交付原图不重编码，C2PA 如有则保留；可选角标另存派生件。</p><p>项目没有自动到期删除。结束后先备份需要保留的原图与授权记录，再在文件管理器中删除自己指定的工作区和核实过的宿主副本；卸载技能不等于删除这些数据。不要分享 consent、自拍、完整提示词、日志、账号 token 或 API key。</p></section>
+<section id="lifecycle"><h2>校验、安装、升级与卸载</h2><p>历史已验证范围：macOS arm64、Codex CLI 0.161.0、全新隔离用户配置和独立 app-server。v1.0.1 新装、发现、从 v1.0.0 升级及卸载通过，安装副本的 CLI 与规则库检查通过；桌面点击、其他平台与模型自动触发不在安装验证结论内；五张实际成片的范围见上方验证状态。插件没有 MCP 或生命周期 hooks；原生安装管理器会登记当前用户配置并复制到缓存，不安装依赖。</p>
+<pre>shasum -a 256 -c shy-cameo-1.0.2-rc.1.zip.sha256</pre><p>预期 OK。摘要须从可信的发布记录取得，同处下载不能单独证明发布者身份。</p>
+<h3>安装本地包</h3><p>先保留旧包与摘要，确认没有同名安装。将解包后的 shy-cameo 目录放到自选 market-root 的 plugins/ 下；在 market-root 下新建 .agents/plugins/marketplace.json，内容如下。source.path 相对 market-root，不相对 .agents/plugins/。</p>
+<pre>{
+  &quot;name&quot;: &quot;shy-cameo-local&quot;,
+  &quot;plugins&quot;: [{
+    &quot;name&quot;: &quot;shy-cameo&quot;,
+    &quot;source&quot;: {&quot;source&quot;: &quot;local&quot;, &quot;path&quot;: &quot;./plugins/shy-cameo&quot;},
+    &quot;policy&quot;: {&quot;installation&quot;: &quot;AVAILABLE&quot;, &quot;authentication&quot;: &quot;ON_INSTALL&quot;},
+    &quot;category&quot;: &quot;Productivity&quot;
+  }]
+}</pre><p>将下面的 /absolute/path/to/market-root 换成实际目录。命令修改当前用户的插件登记与缓存，不需管理员权限。</p>
+<pre>codex --version
+codex plugin marketplace add /absolute/path/to/market-root --json
+codex plugin add shy-cameo@shy-cameo-local --json
+codex plugin list --marketplace shy-cameo-local --json</pre>
+<p>应返回1.0.2-rc.1的版本与 installedPath，列表应显示 installed: true、enabled: true。安装后新开会话，再确认技能“入画 shy-cameo”被发现。历史验证的发现接口返回名为 shy-cameo:shy-cameo 的启用技能，路径来自安装缓存；仅文件存在或插件列表有记录还不代表技能发现。若客户端没有技能列表，需用其发现接口核对，不声称桌面界面已验证。</p>
+<p>进入 installedPath，运行本页的 validate-library 等零额度检查。无需生图来确认安装。完整布局与边界也见包内 <a href="INSTALL.md">INSTALL.md</a>。</p>
+<h3>升级与卸载</h3><p>备份旧包及 marketplace 指向的旧源目录；将 plugins/shy-cameo 更新为校验过的新版，再执行相同 plugin add 命令。核对返回版本、新会话发现路径和零额度检查。v1.0.0→v1.0.1 隔离跨版本刷新曾实测；本版本升级、同版本覆盖、Git市场自动升级、任意历史数据迁移与回退未验证。旧四张卡仍需补充分镜并重新确认，账本不能直接当五张使用。保留独立私人工作区。</p>
+<pre>codex plugin remove shy-cameo@shy-cameo-local --json
+codex plugin list --marketplace shy-cameo-local --json</pre><p>卸载后应无 installed 记录，新会话不再发现此插件技能。v1.0.1 历史验证同时确认插件缓存删除、独立合成工作区文件保留。若 marketplace 只供此插件使用，可另执行：</p>
+<pre>codex plugin marketplace remove shy-cameo-local --json</pre><p>marketplace 源目录、照片、成片和工作区不是卸载技能的清理目标，是否删除由你另行决定。不要用全盘清理命令。上述命令以 CLI 0.161.0 实测为依据，其他版本先看 --help。</p>
+<p>依据 <a href="https://developers.openai.com/plugins/build/plugins#install-a-local-plugin-manually">OpenAI 本地插件说明</a>；外链只供补充查阅。本包为公开测试版1.0.2-rc.1，不代表已上架Codex公共插件目录。</p></section>
+<section id="help"><h2>遇到问题</h2><ul><li><code>blocked_consent</code>：先完成主体／成年／照片哈希授权；换过照片要重新确认。</li><li><code>blocked_quota</code>：未设置本次生成范围的内部次数上限，或这次次数已用完；不能偷偷续拍。</li><li><code>set_size_changed</code>：旧四张卡需要按本次故事补足五张并确认。</li><li><code>failed_no_image</code>：本次没取得明确原图路径，额度可能已扣；不要拿其他会话的图或自动重试。</li><li>构图检测不可用：人工核对主角脸、角色不露脸、道具和景别。</li><li>平台拒绝：原样转告，不能改写绕过。</li></ul><p>问题反馈使用项目 GitHub Issues；安全或隐私问题不要在公开 Issue 附带原始数据。诊断只提供版本、系统、退出码和脱敏错误摘要；删掉用户名／主目录、账号信息、照片、提示词、token 与 key。不要上传完整工作区。</p></section>
+<footer><p>版本：1.0.2-rc.1 · 状态：candidate（公开测试版）；安装生命周期为历史记录，非全模式稳定承诺 · 许可：MIT（软件许可不等于图片商用授权）</p><p>包内 PROVENANCE.json 提供逐文件摘要与未验证边界；原始自拍、开发评测、审查输出和私人卡不随包分发；合成图库仅用于沟通。</p></footer>
+</main></html>

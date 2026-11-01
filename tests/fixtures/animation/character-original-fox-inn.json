@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "id": "atan",
+  "ip": "original-fox-inn",
+  "name": "阿檀",
+  "rights_tier": "screen_original",
+  "status": "temp_draft",
+  "variants": [
+    {
+      "variant_id": "familiar",
+      "label": "阿檀 · 狐狸客栈掌柜的半日练习生",
+      "identity_features": "阿檀的橘红蓬松大尾巴、靛蓝粗布围裙与竹编斗笠；脸不进入镜头，具体细节为原创设定，可由用户调整",
+      "costume": "阿檀的靛蓝粗布围裙与竹编斗笠；原创角色，细节可由用户调整",
+      "props": "竹编练功挡板",
+      "exclusions": "角色脸不入画；不混入真人演员，不改主角五官；不是已验证生成模板",
+      "lookalike_check": {
+        "status": "pending"
+      }
+    }
+  ]
+}

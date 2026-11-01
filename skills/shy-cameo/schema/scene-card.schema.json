@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "scene-card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "ip",
+    "title",
+    "status",
+    "setting",
+    "characters",
+    "user",
+    "framing",
+    "play_mode",
+    "style",
+    "aspect"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "ip": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "gold",
+        "unverified",
+        "user_confirmed"
+      ]
+    },
+    "film_context": {
+      "type": "string"
+    },
+    "setting": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lighting": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/cast"
+      }
+    },
+    "user": {
+      "$ref": "#/$defs/user"
+    },
+    "props": {
+      "type": "string"
+    },
+    "prop_specs": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/prop_spec"
+      }
+    },
+    "framing": {
+      "enum": [
+        "close_up",
+        "waist_up",
+        "knee_up",
+        "mid_interactive",
+        "full_body",
+        "wide"
+      ]
+    },
+    "camera_angle": {
+      "enum": [
+        "high",
+        "low",
+        "side"
+      ]
+    },
+    "play_mode": {
+      "enum": [
+        "classic_presence",
+        "opera_costume",
+        "original_text",
+        "archetype",
+        "genre_scene",
+        "location_checkin",
+        "pet_daily"
+      ]
+    },
+    "style": {
+      "enum": [
+        "realistic",
+        "anime"
+      ]
+    },
+    "aspect": {
+      "enum": [
+        "3:4",
+        "2:3"
+      ]
+    },
+    "revisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/revision"
+      }
+    },
+    "visual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "environment"
+      ],
+      "properties": {
+        "subject": {
+          "enum": [
+            "photographic",
+            "animation_2d",
+            "animation_3d"
+          ]
+        },
+        "environment": {
+          "enum": [
+            "photographic",
+            "animation_2d",
+            "animation_3d"
+          ]
+        },
+        "characters": {
+          "enum": [
+            "photographic",
+            "animation_2d",
+            "animation_3d"
+          ]
+        }
+      }
+    },
+    "cinematography": {
+      "type": "string"
+    },
+    "pet": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "position": {
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ]
+    },
+    "cast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "character_id",
+        "variant_id",
+        "position",
+        "action",
+        "character_presence"
+      ],
+      "properties": {
+        "character_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"
+        },
+        "variant_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression": {
+          "type": "string"
+        },
+        "visible_parts": {
+          "type": "string"
+        },
+        "character_presence": {
+          "enum": [
+            "hand",
+            "shadow",
+            "back",
+            "cropped",
+            "peek",
+            "cover"
+          ]
+        },
+        "cover_level": {
+          "enum": [
+            "full_head",
+            "face"
+          ]
+        }
+      }
+    },
+    "user": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "position",
+        "action"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "traveler",
+            "in_story",
+            "fitting"
+          ]
+        },
+        "role": {
+          "type": "string"
+        },
+        "position": {
+          "$ref": "#/$defs/position"
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "presence": {
+          "enum": [
+            "face",
+            "back",
+            "hands"
+          ]
+        },
+        "outfit": {
+          "type": "string"
+        },
+        "costume": {
+          "type": "string"
+        },
+        "hairstyle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "makeup": {
+          "type": "string",
+          "minLength": 1
+        },
+        "costume_keys": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12
+          }
+        }
+      }
+    },
+    "prop_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "spec"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "spec": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "n",
+        "fields_changed",
+        "status"
+      ],
+      "properties": {
+        "n": {
+          "type": "integer"
+        },
+        "fields_changed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "enum": [
+            "unverified",
+            "user_confirmed"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sidecar",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "run_id", "request_sha256", "original_sha256", "c2pa_present", "consent", "audit", "verdict", "frame_check", "codex_cli_version", "created_at", "badge_path"],
+  "properties": {
+    "schema_version": {"const": "1"},
+    "self_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["likeness", "character", "no_face_mix", "at"],
+      "properties": {
+        "likeness": {"type": "boolean"},
+        "character": {"type": "boolean"},
+        "no_face_mix": {"type": "boolean"},
+        "goal_met": {"type": "boolean"},
+        "at": {"type": "string"}
+      }
+    },
+    "run_id": {"type": "string", "pattern": "^[0-9]{8}-[0-9]{6}-[0-9a-f]{6}$"},
+    "request_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "original_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "c2pa_present": {"type": "boolean"},
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject_confirmed", "adult_confirmed", "self_or_consented", "at"],
+      "properties": {
+        "subject_confirmed": {"type": "boolean"},
+        "adult_confirmed": {"type": "boolean"},
+        "self_or_consented": {"type": "boolean"},
+        "at": {"type": "string", "minLength": 1}
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reason"],
+      "properties": {
+        "status": {"enum": ["pass", "unverified", "tampered"]},
+        "reason": {"type": "string"},
+        "run_id": {"type": "string"},
+        "request_sha256": {"type": "string"}
+      }
+    },
+    "verdict": {"enum": ["pending", "accepted", "rejected"]},
+    "frame_check": {"type": ["object", "null"]},
+    "codex_cli_version": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "minLength": 1},
+    "badge_path": {"type": ["string", "null"]}
+  }
+}

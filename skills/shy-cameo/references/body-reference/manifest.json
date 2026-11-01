@@ -1,0 +1,174 @@
+{
+  "status": "user_accepted",
+  "items": [
+    {
+      "id": "B01-front",
+      "label": "沙漏形",
+      "view": "front",
+      "path": "images/B01-front.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "统一已确认模特及浅方领，肩髋接近、腰线收窄，全身自然完整；衣装符合本轮固定规则。",
+      "sha256": "de95e6d515f105a76acedbdca28c21cae78d25c94e5ee4c7cf82fa56ed8e97c2",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B01-side",
+      "label": "沙漏形",
+      "view": "side",
+      "path": "images/B01-side.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "单人完整侧面，浅方领保持，胸腰臀前后轮廓自然，体量与正面基本一致。",
+      "sha256": "1e8cd0ae28d3e70f7f4701ce4db900e5db442b645b2b56c16825462d4cb76148",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B01-back",
+      "label": "沙漏形",
+      "view": "back",
+      "path": "images/B01-back.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "完整背面，腰线收窄、肩髋均衡，衣装体量与正面基本一致。背面正常后领不用于判断前领口。",
+      "sha256": "4fd3680e19dc338e70d66b29cd942e2d3b4d70e2c6b21fdafa81b1e1c0e6cb19",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B02-front",
+      "label": "梨形",
+      "view": "front",
+      "path": "images/B02-front.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "浅方领与统一人物保持，髋宽于肩线、下半身较丰满，腰线清楚；轻微前后脚站姿，未明显扭腰。",
+      "sha256": "ffd082f486bbf7ebb1a55d9ac626e3cded036e6b07151c29c3a402e48d40c296",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B02-side",
+      "label": "梨形",
+      "view": "side",
+      "path": "images/B02-side.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "自然侧面，腰腹及臀腿轮廓清楚，衣装人物与梨形正面基本一致。",
+      "sha256": "5e70fba2bddd430daa87898b43350a2db1ab8c48d27d9cb07d4127e37f8e7944",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B02-back",
+      "label": "梨形",
+      "view": "back",
+      "path": "images/B02-back.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "背面髋宽于肩线、腰线可见，与梨形正面体量基本一致；后领正常、人物完整。",
+      "sha256": "026467b3b81f445afbff16e0e6c56ed88d184f9a9ecfe0b6782cc199a7c22d58",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B03-front",
+      "label": "倒三角形",
+      "view": "front",
+      "path": "images/B03-front.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "统一浅方领及模特；肩线宽于髋、下半身较窄，与B02相反关系可见，差异属自然程度。",
+      "sha256": "557c6a586d3d0057d8081852aaef416ec72f6c1146eafc3980368a8287c86024",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B03-side",
+      "label": "倒三角形",
+      "view": "side",
+      "path": "images/B03-side.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "完整侧面，人物衣装一致，下肢较细，姿态自然；肩髋横向关系仍由正背面判断。",
+      "sha256": "4669b4361c64f1b5e5195bdb1df86947f30000289672e68ae68fac8e435d9bda",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B03-back",
+      "label": "倒三角形",
+      "view": "back",
+      "path": "images/B03-back.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "髋部较上一版收窄，肩线宽于髋、下半身较细，基本保持正面倒三角方向；自然程度差异，非尺寸测量。",
+      "sha256": "59d6842423ac91a23ebead6972096a7a9a7f52642d955947cb37a41239f18a5b",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B04-front",
+      "label": "矩形",
+      "view": "front",
+      "path": "images/B04-front.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "腰侧收窄明显减弱、躯干较平直，与沙漏候选可区分；浅方领、人物与站姿保持。衣料自然垂落，衣下精确尺寸不可判断。",
+      "sha256": "6a2f8093dfb8330c5d43a7921d0962a92061f4baa8bc5a49cb97572d4823174f",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B04-side",
+      "label": "矩形",
+      "view": "side",
+      "path": "images/B04-side.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "侧面躯干较平直，未夸张挺胸扭腰，身份衣装及体量基本保持。",
+      "sha256": "084e0580c36f4762426a5b28977b49785140c8e3725a296db38163e2babbcfee",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B04-back",
+      "label": "矩形",
+      "view": "back",
+      "path": "images/B04-back.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "腰侧较平直，体量和衣装与正面基本保持，完整自然背面。",
+      "sha256": "85ebbb02984ad56a01576bed489195d88c6aae70ac217b32da4f87f953c1fb3d",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B05-front",
+      "label": "苹果形",
+      "view": "front",
+      "path": "images/B05-front.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "腰腹相对丰满、腰线柔和，腹部衣料轮廓明显，与梨形及矩形可区分；人物及浅方领保持。侧面仍需核对前后轮廓。",
+      "sha256": "f796f166e78ff6a6e8bc2fc4f3191277f8badf20b40c05a9af1ad968456f5087",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B05-side",
+      "label": "苹果形",
+      "view": "side",
+      "path": "images/B05-side.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "腹部自然丰满、腰腹前突可见，腿相对较细，与正面苹果形一致，浅方领及人物保持。",
+      "sha256": "859629bed6e8b6aa17c16d13a38c9c48079af04dc5089ffdf4d042e0fde481a8",
+      "accepted_on": "2026-10-31"
+    },
+    {
+      "id": "B05-back",
+      "label": "苹果形",
+      "view": "back",
+      "path": "images/B05-back.png",
+      "visual_review": "passed",
+      "user_verdict": "accepted",
+      "review": "腰背体量较丰满、腰线柔和，与正侧面体量基本一致；腹部前突由侧面判断，背面不推断。",
+      "sha256": "1d30583cd53375877db472ee08dae7cff0751ac0cc0bff477c3d508aa381fa3b",
+      "accepted_on": "2026-10-31"
+    }
+  ],
+  "reason": "Recovered generated B04-back; visual candidates complete, user acceptance pending",
+  "available_count": 15,
+  "planned_count": 15,
+  "accepted_count": 15
+}

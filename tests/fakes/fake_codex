@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+"""Test double for the codex CLI. Never contacts any service."""
+import json
+import os
+import re
+import struct
+import sys
+import time
+import zlib
+from pathlib import Path
+
+
+def png_with_c2pa():
+    def chunk(t, d):
+        return struct.pack(">I", len(d)) + t + d + struct.pack(">I", zlib.crc32(t + d) & 0xFFFFFFFF)
+    ihdr = struct.pack(">IIBBBBB", 4, 4, 8, 2, 0, 0, 0)
+    raw = b"".join(b"\x00" + b"\x80\x80\x80" * 4 for _ in range(4))
+    return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) + chunk(b"caBX", b"fake-c2pa")
+            + chunk(b"IDAT", zlib.compress(raw)) + chunk(b"IEND", b""))
+
+
+def main(argv):
+    if argv[:1] == ["--version"]:
+        print("codex-cli 0.161.0")
+        return 0
+    if argv[:2] == ["login", "status"]:
+        print("Logged in")
+        return 0
+    if "CODEX_HOME" not in os.environ:
+        print("fake_codex refuses to run without CODEX_HOME", file=sys.stderr)
+        return 3
+    assert argv[0] == "exec", argv
+    mode = os.environ.get("FAKE_CODEX_MODE", "ok")
+    last = Path(argv[argv.index("-o") + 1])
+    request_path = re.search(r"JSON file at (\S+?\.json)", argv[-1]).group(1)
+    if mode == "timeout":
+        time.sleep(30)
+        return 0
+    if mode.startswith("crash_after_"):
+        # Succeed N times, then exit non-zero without a message: an unknown result.
+        counter = Path(os.environ["CODEX_HOME"]) / "fake-calls"
+        calls = int(counter.read_text()) + 1 if counter.is_file() else 1
+        counter.parent.mkdir(parents=True, exist_ok=True)
+        counter.write_text(str(calls))
+        if calls > int(mode.rsplit("_", 1)[1]):
+            return 1
+    # Shapes mirror the S1 spike (codex-cli 0.161.0): stdout only shows the shell read;
+    # the image call (prompt inlined verbatim) lives in the session rollout.
+    cat_cmd = f"/bin/zsh -lc 'cat {request_path}'"
+    print(json.dumps({"type": "item.completed", "item": {"type": "command_execution", "command": cat_cmd}}))
+    request = json.loads(Path(request_path).read_text(encoding="utf-8"))
+    call = ("await tools.image_gen__imagegen({prompt:" + json.dumps(request["prompt"], ensure_ascii=False)
+            + ",referenced_image_paths:" + json.dumps(request["referenced_image_paths"], ensure_ascii=False) + "});")
+    rollout = Path(os.environ["CODEX_HOME"]) / "sessions" / "2026" / "10" / "11" / "rollout-fake.jsonl"
+    rollout.parent.mkdir(parents=True, exist_ok=True)
+    records = [
+        {"type": "response_item", "payload": {"type": "custom_tool_call", "name": "exec",
+                                              "input": f'const r = await tools.exec_command({{cmd:"cat {request_path}"}});'}},
+        {"type": "response_item", "payload": {"type": "custom_tool_call", "name": "exec", "input": call}},
+        {"type": "event_msg", "payload": {"type": "item_completed", "item": {
+            "type": "Extension", "kind": "image_gen.generation", "revisedPrompt": request["prompt"]}}},
+    ]
+    with open(rollout, "w", encoding="utf-8") as fh:
+        for record in (records[:1] if mode == "refuse" else records):
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+    if mode == "refuse":
+        last.write_text("REFUSED: fake policy refusal", encoding="utf-8")
+        return 0
+    img = Path(os.environ["CODEX_HOME"]) / "generated_images" / "fake-thread" / "exec-1.png"
+    img.parent.mkdir(parents=True, exist_ok=True)
+    img.write_bytes(png_with_c2pa())
+    last.write_text(str(img), encoding="utf-8")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

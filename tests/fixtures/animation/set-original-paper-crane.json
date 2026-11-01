@@ -1,0 +1,185 @@
+{
+  "schema_version": "1",
+  "set_id": "original-paper-crane-five-shot-prep",
+  "status": "unverified",
+  "shots": [
+    {
+      "schema_version": "2",
+      "id": "original-paper-crane-1",
+      "ip": "original-paper-crane",
+      "title": "先把袖口理好",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "纸鸢 · 纸鹤屋顶之约的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "纸鹤屋门旁的长凳，木门帘杆、伞架和小布包形成简洁前景，不要求可读招牌",
+      "lighting": "傍晚侧光照亮主角脸部，店内暖灯作为背景",
+      "characters": [
+        {
+          "character_id": "original-paper-crane/paper-crane",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "仅一只角色的手与纸鸢月白短打方向外衣袖口，手腕以上在画外",
+          "action": "从画面右侧伸来，轻轻帮主角理顺手腕布带，手停在胸口以下"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐在长凳上，低头看一眼布带后抬眼看向镜头，轻松微笑，脸和手互不遮挡",
+        "outfit": "米白色简洁外套、深色内搭与卡其长裤，手腕有素色布带；本人成人来访者，不扮纸鸢，不改变原发型妆面"
+      },
+      "framing": "close_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-paper-crane-2",
+      "ip": "original-paper-crane",
+      "title": "熟悉的屋顶街口",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "纸鸢 · 纸鹤屋顶之约的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "纸鹤屋外相邻街角，低矮屋檐、木质店面、布帘和远处村落轮廓，街上不加其他人物",
+      "lighting": "夕阳将角色等大影子投在木墙，路面回光照亮主角侧脸",
+      "characters": [
+        {
+          "character_id": "original-paper-crane/paper-crane",
+          "variant_id": "familiar",
+          "position": "left",
+          "character_presence": "shadow",
+          "visible_parts": "忍者外衣轮廓的等大影子，无面部细节，角色本体在画外",
+          "action": "在墙面形成抬手招呼的影子，保留本组确认的发型轮廓，不显示面部细节"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在右侧，提着小布包，侧身望向墙上招呼的影子，脸为完整受光的四分之三角度",
+        "outfit": "米白色简洁外套、深色内搭与卡其长裤，手腕有素色布带；本人成人来访者，不扮纸鸢，不改变原发型妆面"
+      },
+      "framing": "knee_up",
+      "camera_angle": "low",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-paper-crane-3",
+      "ip": "original-paper-crane",
+      "title": "这碗给你",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "纸鸢 · 纸鹤屋顶之约的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "纸鹤屋的木质吧台，背景只留布帘、暖灯与少量餐具；主角坐在吧台左侧",
+      "lighting": "吧台上方暖灯照亮脸与白瓷面碗，店外余光分离人物轮廓",
+      "characters": [
+        {
+          "character_id": "original-paper-crane/paper-crane",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "纸鸢的手和造型一致的袖口，角色头部在画外",
+          "action": "从右侧将木托上的白瓷面碗沿吧台推近，主角扶住木托后角色松手"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "身体微前倾，双手扶住木托两侧，低头看白瓷面碗，眉眼有被招待的惊喜",
+        "outfit": "米白色简洁外套、深色内搭与卡其长裤，手腕有素色布带；本人成人来访者，不扮纸鸢，不改变原发型妆面"
+      },
+      "framing": "mid_interactive",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "白瓷面碗",
+          "spec": "白瓷圆碗配木托，不依赖碗上图案"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-paper-crane-4",
+      "ip": "original-paper-crane",
+      "title": "纸鸢也会害羞",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "纸鸢 · 纸鹤屋顶之约的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "纸鹤屋实体侧门与木门框旁，吧台上的白瓷面碗留在原处，密实大卷轴从侧门内举出",
+      "lighting": "店内暖灯照亮主角脸，门框遮住角色身体",
+      "characters": [
+        {
+          "character_id": "original-paper-crane/paper-crane",
+          "variant_id": "familiar",
+          "position": "left",
+          "character_presence": "cover",
+          "visible_parts": "只露手部、同一造型的袖口和密实大卷轴；不露头发、头顶和两侧脸",
+          "action": "藏在实体门框后，自己把密实大卷轴举到头前，完整遮住头部；不以纸面透光露出五官",
+          "cover_level": "full_head"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在右侧，背靠门框，转头看向镜头忍笑，手在胸前做轻柔的安静手势，不挡脸",
+        "outfit": "米白色简洁外套、深色内搭与卡其长裤，手腕有素色布带；本人成人来访者，不扮纸鸢，不改变原发型妆面"
+      },
+      "framing": "waist_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "密实大卷轴",
+          "spec": "展开宽约九十厘米，厚米色卷面"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-paper-crane-5",
+      "ip": "original-paper-crane",
+      "title": "忙完再来一碗",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "纸鸢 · 纸鹤屋顶之约的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "纸鹤屋出口，空白瓷面碗回到吧台，密实大卷轴收回门内；远处街道保持清净",
+      "lighting": "店内暖光照主角面部，街外蓝色暮光形成层次",
+      "characters": [
+        {
+          "character_id": "original-paper-crane/paper-crane",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "back",
+          "visible_parts": "纸鸢月白短打背面和背上的折纸大鹤，头部仅背面，不显示可读文字",
+          "action": "严格背对镜头走出店门，一只手扶门帘后放开，不回头"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐在吧台旁，手边是空白瓷面碗，侧转四分之三脸望向门口，轻轻抬手告别",
+        "outfit": "米白色简洁外套、深色内搭与卡其长裤，手腕有素色布带；本人成人来访者，不扮纸鸢，不改变原发型妆面"
+      },
+      "framing": "waist_up",
+      "camera_angle": "high",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    }
+  ]
+}

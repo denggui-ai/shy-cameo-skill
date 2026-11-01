@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "note": "Deny list: these real names must never reach an image prompt. No name maps to a film or TV costume version.",
+  "entries": [
+    {"name": "六小龄童", "aliases": ["章金莱", "六小齡童", "章金萊"], "maps_to": null},
+    {"name": "马德华", "aliases": ["馬德華"], "maps_to": null},
+    {"name": "迟重瑞", "aliases": ["遲重瑞"], "maps_to": null},
+    {"name": "徐少华", "aliases": ["徐少華"], "maps_to": null},
+    {"name": "汪粤", "aliases": ["汪粵"], "maps_to": null},
+    {"name": "闫怀礼", "aliases": ["閆懷禮", "閻懷禮"], "maps_to": null},
+    {"name": "陈晓旭", "aliases": ["陳曉旭"], "maps_to": null},
+    {"name": "欧阳奋强", "aliases": ["歐陽奮強"], "maps_to": null},
+    {"name": "孙彦军", "aliases": ["孫彥軍"], "maps_to": null},
+    {"name": "陆树铭", "aliases": ["陸樹銘"], "maps_to": null},
+    {"name": "李靖飞", "aliases": ["李靖飛"], "maps_to": null},
+    {"name": "唐国强", "aliases": ["唐國強"], "maps_to": null},
+    {"name": "周星驰", "aliases": ["星爷", "Stephen Chow", "周星馳"], "maps_to": null}
+  ]
+}

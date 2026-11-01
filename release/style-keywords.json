@@ -1,0 +1,7 @@
+{
+  "note": "Modern-IP costume descriptions and film/TV version labels that must not enter the public export. Character names are NOT listed: naming a work is allowed (boundary principle 2). Original-novel features (e.g. 紧箍, 凤翅紫金冠) are not listed.",
+  "literals": ["圆耳", "黑白肩背", "黑白圆润肩背", "补丁短裤", "补丁裤腰", "黑白熊猫", "黑白分界手臂", "圆熊掌",
+               "红棕环纹尾巴", "虎纹手臂", "红底金纹袖口", "橙黑忍者装", "橙黑忍者衣装", "金色发梢", "黑色罩袍",
+               "非人罩袍", "冰蓝披风", "黄黑配色", "神龙卷轴", "乌龟大师桃枝"],
+  "patterns": ["(?<![0-9])(?:[0-9]{2}|[0-9]{4}) ?版风格"]
+}

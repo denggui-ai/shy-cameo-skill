@@ -1,0 +1,185 @@
+{
+  "schema_version": "1",
+  "set_id": "original-fox-inn-five-shot-prep",
+  "status": "unverified",
+  "shots": [
+    {
+      "schema_version": "2",
+      "id": "original-fox-inn-1",
+      "ip": "original-fox-inn",
+      "title": "开练之前",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "阿檀 · 狐狸客栈掌柜的半日练习生的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "练功场外间的木凳旁，衣架挂素色练习衣，低木桌上放布巾，远处门洞通向庭院",
+      "lighting": "门洞侧光照亮主角正脸，木墙提供柔和回光",
+      "characters": [
+        {
+          "character_id": "original-fox-inn/atan",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "一只橘红色狐狸毛爪，手腕以上在画外",
+          "action": "从右边画外伸入，轻扶主角肩上的衣领；不碰脸部"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐在木凳上，身体略向右，转头看向镜头，像刚被提醒衣领歪了一样轻笑",
+        "outfit": "米白色无标志棉麻练习上衣、深灰长裤，保留本人原发型和妆面；不穿狐狸头套，不改变成人五官"
+      },
+      "framing": "close_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-fox-inn-2",
+      "ip": "original-fox-inn",
+      "title": "跟着影子学一招",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "阿檀 · 狐狸客栈掌柜的半日练习生的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "练功庭院石墙前，可见木桩、竹筐、练功垫和低凳，留出一块接收影子的空墙",
+      "lighting": "上午斜光从庭院左侧照入，地面反光照清主角四分之三侧脸",
+      "characters": [
+        {
+          "character_id": "original-fox-inn/atan",
+          "variant_id": "familiar",
+          "position": "left",
+          "character_presence": "shadow",
+          "visible_parts": "墙上带蓬松大尾巴的狐狸角色动作轮廓影子，无五官；角色本体在画外",
+          "action": "在墙上形成一个抬臂练习动作的等大影子，手势与主角相呼应"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在画面右侧，膝盖微弯，模仿墙上的简洁抬臂动作，望向影子而不是镜头",
+        "outfit": "米白色无标志棉麻练习上衣、深灰长裤，保留本人原发型和妆面；不穿狐狸头套，不改变成人五官"
+      },
+      "framing": "knee_up",
+      "camera_angle": "low",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    },
+    {
+      "schema_version": "2",
+      "id": "original-fox-inn-3",
+      "ip": "original-fox-inn",
+      "title": "练完先吃面",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "阿檀 · 狐狸客栈掌柜的半日练习生的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "练功场相邻的休息廊桌边，只有木桌、竹蒸笼和庭院一角；不复刻任何已有作品画面",
+      "lighting": "廊外天光从侧面照亮双手和脸，桌面暖色回光",
+      "characters": [
+        {
+          "character_id": "original-fox-inn/atan",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "hand",
+          "visible_parts": "一只橘红色狐狸毛爪，角色头部完全在画外",
+          "action": "托住白瓷面碗底部递向主角，待主角双手托稳后松开，手不穿进碗内"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "身体稍前倾，双手从下方接住白瓷面碗，低头看碗沿，带一点惊喜；动作避开热汤",
+        "outfit": "米白色无标志棉麻练习上衣、深灰长裤，保留本人原发型和妆面；不穿狐狸头套，不改变成人五官"
+      },
+      "framing": "mid_interactive",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "白瓷面碗",
+          "spec": "白瓷圆碗配木托，面汤不过满"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-fox-inn-4",
+      "ip": "original-fox-inn",
+      "title": "谁躲在后面",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "阿檀 · 狐狸客栈掌柜的半日练习生的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "休息廊的粗木柱与实体侧墙交接处，竹编练功挡板靠近柱边；碗已经放回低桌",
+      "lighting": "廊外侧光照清主角正脸，柱后保持自然暗部但不形成黑脸替身",
+      "characters": [
+        {
+          "character_id": "original-fox-inn/atan",
+          "variant_id": "familiar",
+          "position": "left",
+          "character_presence": "cover",
+          "visible_parts": "仅露橘红色狐狸毛爪与竹编练功挡板；头部与双耳不露出",
+          "action": "身体藏在木柱及侧墙后，自己举竹编练功挡板遮住整个头部；挡板比宽头与双耳整体大一圈",
+          "cover_level": "full_head"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "right",
+        "action": "站在画面右侧，身体靠近木柱外边，回头看向镜头忍笑，手指自然垂在身前",
+        "outfit": "米白色无标志棉麻练习上衣、深灰长裤，保留本人原发型和妆面；不穿狐狸头套，不改变成人五官"
+      },
+      "framing": "waist_up",
+      "camera_angle": "side",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": [],
+      "prop_specs": [
+        {
+          "name": "竹编练功挡板",
+          "spec": "约一米宽圆板，竹色密实不透光"
+        }
+      ]
+    },
+    {
+      "schema_version": "2",
+      "id": "original-fox-inn-5",
+      "ip": "original-fox-inn",
+      "title": "下一次再练",
+      "source_ref": "original (no external source)",
+      "status": "unverified",
+      "film_context": "阿檀 · 狐狸客栈掌柜的半日练习生的真人主角与动画角色同场写真策划；新编日常互动，混合质感成片未验证",
+      "setting": "回到外间木凳附近，空白瓷面碗已放在木桌，门外通向练功场；竹编练功挡板放回柱边",
+      "lighting": "午前庭院光从出口照入，木墙回光照亮主角面部",
+      "characters": [
+        {
+          "character_id": "original-fox-inn/atan",
+          "variant_id": "familiar",
+          "position": "right",
+          "character_presence": "back",
+          "visible_parts": "竹编斗笠、橘红蓬松大尾巴与靛蓝围裙的背影轮廓，严格背对镜头，不露侧脸",
+          "action": "背对镜头走向练功场，伸手扶一下门边，不回头"
+        }
+      ],
+      "user": {
+        "mode": "traveler",
+        "position": "left",
+        "action": "坐在木凳上，用布巾擦拭手指，侧转四分之三脸望向门外的背影",
+        "outfit": "米白色无标志棉麻练习上衣、深灰长裤，保留本人原发型和妆面；不穿狐狸头套，不改变成人五官"
+      },
+      "framing": "waist_up",
+      "camera_angle": "high",
+      "play_mode": "classic_presence",
+      "style": "realistic",
+      "aspect": "3:4",
+      "revisions": []
+    }
+  ]
+}

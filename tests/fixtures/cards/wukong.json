@@ -1,0 +1,37 @@
+{
+  "schema_version": "1",
+  "id": "wukong",
+  "ip": "xiyou",
+  "name": "孙悟空",
+  "rights_tier": "public_domain",
+  "version_labels": [],
+  "status": "gold",
+  "variants": [
+    {
+      "variant_id": "mhw",
+      "label": "美猴王时期",
+      "identity_features": "猴与人之间的脸型，金黄色短毛包住头部与脸的外圈，粉肉色心形裸露面区带赭红晕边，琥珀棕色人眼比例的眼睛，额头光洁无任何头箍",
+      "costume": "鹅黄色短褂，腰系虎皮裙，赤足",
+      "props": "一只带叶的鲜桃",
+      "exclusions": "不是黑猩猩、不是真猴、不是猴头套或乳胶面具、不是卡通猴",
+      "sheets": {
+        "head": {"url": "https://example.invalid/wukong-mhw-head.png", "sha256": "1111111111111111111111111111111111111111111111111111111111111111", "bytes": 10},
+        "body": {"url": "https://example.invalid/wukong-mhw-body.png", "sha256": "2222222222222222222222222222222222222222222222222222222222222222", "bytes": 10}
+      },
+      "lookalike_check": {"status": "passed", "date": "2026-10-10", "reviewer": "fixture"}
+    },
+    {
+      "variant_id": "qujing",
+      "label": "取经时期",
+      "identity_features": "猴与人之间的脸型，金黄色短毛包住头部与脸的外圈，粉肉色心形裸露面区，额上窄细哑光旧金紧箍",
+      "costume": "红底金边锁子黄金甲，红色披风，凤翅紫金冠",
+      "props": "",
+      "exclusions": "不是真猴、不是乳胶面具",
+      "sheets": {
+        "head": {"url": "https://example.invalid/wukong-qujing-head.png", "sha256": "3333333333333333333333333333333333333333333333333333333333333333", "bytes": 10},
+        "body": {"url": "https://example.invalid/wukong-qujing-body.png", "sha256": "4444444444444444444444444444444444444444444444444444444444444444", "bytes": 10}
+      },
+      "lookalike_check": {"status": "passed", "date": "2026-10-10", "reviewer": "fixture"}
+    }
+  ]
+}
