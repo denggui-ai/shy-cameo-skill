@@ -1,0 +1,38 @@
+{
+  "set_id": "repository-preview",
+  "title": "入画 repository social preview",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "publication_basis": "Owner authorized the existing accepted virtual-model cases and repository presentation. The legacy face gate records creator publication permission for virtual faces, not real-person consent.",
+  "derivatives": "Deterministic layout of three previously accepted web images and typography. Cropped only for repository preview; full selected versions remain on case pages. No new AI generation.",
+  "source_images": [
+    {
+      "path": "assets/showcase/virtual-fox-inn/01.jpg",
+      "sha256": "4ec24fed78f7ebfeee1fd9afe0ed031cd83e06c1e64e84d3b8f277d72406084c"
+    },
+    {
+      "path": "assets/showcase/virtual-yuji-opera/01.jpg",
+      "sha256": "bb89bd13b203a00795d533fe991f4ebec54fce7c13fade3eacc71077bb4c990a"
+    },
+    {
+      "path": "assets/showcase/virtual-cat-daily/01.jpg",
+      "sha256": "76c89cb5093ddb4f413f27270351e3995929f7a5ae5818e55f6b433a235925fa"
+    }
+  ],
+  "images": [
+    {
+      "file": "preview.jpg",
+      "sha256": "4b40f1edcc5a1c05bb2ceabdb60014bf81fd17a7576e0ef7a00f8841488a68cc",
+      "width": 1280,
+      "height": 640
+    }
+  ]
+}

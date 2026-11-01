@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-paper-crane",
+  "title": "纸鸢的动画冒险",
+  "title_en": "An Animated Adventure with Zhiyuan",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "8bb3f16ac94c92b5e634b8f7bc2d961e33aea0b1a83d6abd61133c64b5cec949",
+      "source_sha256": "cb0f1c63b6081e89baa2c6831711c539fe0cf2f464180c0133568ea329c509cb",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "4b47d725438548b8a97ba8e56c0db10f70b774447ed02957d0bdaf868893acbf",
+      "source_sha256": "fa870fcae3c9ce41aafed0e86696f06deb138ab4f10489cf2a7549be4796a295",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "0334803c2240bc91690091e4fc8a28b470bafea1c14fe0d96380ae5df2917c3f",
+      "source_sha256": "469025ace75b990814db666c1cab40c16c5e6b3e541a6ad2c8a25ae3503fd56b",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "06fff8edcf975c041199685657a185f869e841b2f39ff4ee59f9185a81f215f3",
+      "source_sha256": "22033130b6f67da8647b63e46543c081ca8c327d862d2ef0ed98432db3b2b196",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "02439b675a5e80cb3b471d949f54e3eeed356508e38e5e6018b9ed6786a83151",
+      "source_sha256": "2096a459d33ea2e08b17e3a46eb28d63bcc8c15b84dc6ddb0bff927d23e03c7c",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "The accepted set uses a revised first shot. Animation changes facial proportions and is not evidence of precise real-person identity preservation.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

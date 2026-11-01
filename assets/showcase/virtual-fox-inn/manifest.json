@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-fox-inn",
+  "title": "狐狸客栈的傍晚",
+  "title_en": "An Evening at the Fox Inn",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "4ec24fed78f7ebfeee1fd9afe0ed031cd83e06c1e64e84d3b8f277d72406084c",
+      "source_sha256": "1c57395d615b24c8ed1b530feb614e9ecd0ff47f627b3f4e9bdf9c807767dc86",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "7ca80028e76b39a421071e4e01557cd1509f7b8b3a57e5065e5f9a4536daf3de",
+      "source_sha256": "b85f525efece4199a5d18a4dc19860479cf3406c71031464585ed321bdc9766f",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "caccefb6b793b4888f6041e4ac95b5d4137ae322bf8300421a243265681c9401",
+      "source_sha256": "4b5d1d805297b78e110fb6bbb63b174913c1b63c1becdb079749e8e8b50f7823",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "198a6809c467cd6802f32ce0e0089a44011e791804f0c138f83777ede9215960",
+      "source_sha256": "19d674c98fc1d6b6ee8de93fc8130d7892a39381730e3b1f01487130a3098ca0",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "77c81820b4d6008cbfbd20659b562125aa6ee7069660281116656365d227a376",
+      "source_sha256": "2ae295fa30b42f70eeb537b24c73aceb88052884f2f2c24621ec774760f05644",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "The revised set was accepted. Parts of the clothing have a painted texture; mixed media does not guarantee exact separation at every edge.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

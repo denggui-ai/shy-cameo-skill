@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-yuji-opera",
+  "title": "虞姬：从后台到舞台",
+  "title_en": "Yuji: Backstage to the Stage",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "bb89bd13b203a00795d533fe991f4ebec54fce7c13fade3eacc71077bb4c990a",
+      "source_sha256": "e4ec834b85dd4f036fd0814489ef643e7d2af7bcad94080c90ab7ff54385778e",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "4460fa5e301763f9e74a6d66c13bd1740fbcb19939f2b5b2c76a4cb301afc9d8",
+      "source_sha256": "c5e47a70b72cf396df7cc87ad0805dc9996537faca38681f940acaba8d06d2dd",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "adc2c8ba4d96e8a3c2e13a035e66ba1abede42d57a6adc60bf21c2a98f45f194",
+      "source_sha256": "eb536a4d3b8d88cab9a5bec9129a55e8a00c490a3a230809e551c2ece9ae6250",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "28f4dbfcf696babbbd7778d963d6dcd609df60a827010fa03f37157115b057a3",
+      "source_sha256": "c1754e22250177ef87d79b6a2a80ceb63fd7012938f24e1737608298a9f0988f",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "8b27feb5d443ff3fcb62205e88849e41f946cd0fe7c4f6f841a5bab33328bbf5",
+      "source_sha256": "3cb40fd5ea769654e598b25a9956444bb157d5934d65652f72e74bbe8d4cd6f8",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "revised_user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Accepted after revising the makeup interaction and the back view facing the audience. An opera-inspired creative set, without a claim of exact historical costume reconstruction.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

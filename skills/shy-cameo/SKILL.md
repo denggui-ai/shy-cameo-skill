@@ -30,7 +30,7 @@ metadata:
 
 ## Workflow
 
-先按 `references/routing-and-journey.md` 理解4类能力路由、用户旅程和摄影效果；写卡读 `references/scene-card.md`。用户的明确选择优先，不增加题材白名单或重复授权口令。
+先按 `references/routing-and-journey.md` 理解5类能力路由、用户旅程和摄影效果；写卡读 `references/scene-card.md`。用户的明确选择优先，不增加题材白名单或重复授权口令。
 
 1. **理解目标**：从用户原话理解想和谁、去哪里、扮成什么样或经历什么；这是一句开放邀请，不是四项必填表。已有明确需求直接回应，复用照片、衣装及偏好。由技能内部映射play_mode，不向用户展示内部分类；没有想法或问“能拍什么”时给菜单（见dialogue.md，第一句“角色不露脸”人设句保留），点菜单项与直接说等价。缺必填才问，问法见dialogue.md。复合需求保留；真正会改变画面的歧义，用生活化的结果对比问一句。
 2. **方案与卡片**：分别说明本人身份与衣装、本人/环境/陪同角色的视觉表现、空间语境和摄影方向。新方案用可选visual明确表达；旧style保留兼容。用分镜展示动作和差异，保存unverified套图。仅文字策划也须把关键道具的可执行关系写进对应镜头：谁使用或持有、手的动作与物件状态，以及必要的承托或作用范围；多人共同使用时交代双方位置和方向。只写影响当前活动的关键关系，普通背景物无需逐一说明。cover/wide/interaction/shy/ending只是账本槽位，不强制第四张遮脸或固定递物节拍。 成套比较每张的故事作用、身体动作、头向视线、表情和景别；运行套图建议检查并处理相关提示。用户有意指定相似姿态或连续机位时按其意图执行，不因建议机械改写。
@@ -72,7 +72,7 @@ metadata:
 | `references/series-creation.md` | 设计主题系列、对照已有系列、摄影方向与重复检查 |
 | `references/animation-themes.md` | 三套原创动画主题（阿檀、纸鸢、伞伞）的主题准备或生成请求；查看三组分镜、造型选项及已验证/未验证项目 |
 | `references/support-status.md` | 开场、选题、承诺画质或讨论尚未通过的角色实验前 |
-| `references/routing-and-journey.md` | 4类能力归类、首次/返回用户交互、视觉组合、电影感与完整旅程图 |
+| `references/routing-and-journey.md` | 5类能力归类、首次/返回用户交互、视觉组合、电影感与完整旅程图 |
 | `references/scene-card.md` | 选玩法、写分镜卡与套图卡 |
 | `references/body-reference/README.md` | 当前镜头缺少身形信息、用户需要选图，或制作固定身形对照时 |
 | `references/prop-direction.md` | 选物、道具色材搭配、动作支撑、跨镜状态或局部改物件 |

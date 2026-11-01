@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-wuxia",
+  "title": "栈道上的武侠交锋",
+  "title_en": "A Wuxia Encounter on the Cliff Path",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "767c74d0bc1eebe8814ab28fe19c844ecffde809f59ae825d16e26bef1dd2503",
+      "source_sha256": "18d101a4afc1f0df29fc01d32bf8303324fbc5c02fdfe3aa2c8730af1cdb867f",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "03b8301f924d49abc15f1b0e4e37086e91b0e9da22c4c3612fb3a9d356c98a44",
+      "source_sha256": "d6b7c549ffc2cfe60dcb673c388804e6f42116fc9362fe775ea83e47fb7082ae",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "926426c0d0f0287220044679bf3747d5906e53e3e316d30775263e42e9960b60",
+      "source_sha256": "8631deff568b0b7ed16be8f7517d8b07588062fa9e9cc73d5fb8c62ef6e9e3b6",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "1de1d2aceb620c3117528dc9a1f3e9163c000550c341974aff5a3f5c54bb08e2",
+      "source_sha256": "9925f69547a308d2fe659b28331c165178fa241145d723984580b4e9883b4303",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "c0f00d7b33a3a9a5d92d2e16f33bc32dcfe508163556c36975c6cdd2703d07b9",
+      "source_sha256": "4ad18f47c9c55f5130fdaccbe215d9b52ca25f9880b99f7af9cee2fb95759260",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "revised_user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Uses the accepted revision with an opponent and a clearer confrontation. Demonstrates narrative and shot variation, without a claim of martial-arts accuracy.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

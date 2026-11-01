@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-moon-film",
+  "title": "月球旅行记：进入默片片场",
+  "title_en": "A Trip to the Moon: Inside a Silent Film",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "8a3932a9c8f510d9b7c16c2a6d7255decf822419a73254a4b99049fb61599f84",
+      "source_sha256": "20cece125c1f1878f4dc1b86d2bc010aaa3d9892eac262523367540bf21d83df",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "c048547bc96643a872f72bc95adb17a0c9b92af290ed9276710d38fec9e12731",
+      "source_sha256": "3694840818ec16e3cd0ee504dd0d8894da4d0084ea6793b45c4993f53eb35b33",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "65720dc77c15a2bf1a4a4f75204f4d81cd060da433257f8796e894d807a7aec6",
+      "source_sha256": "4c7c9e9e33109af0307e9ea8ac2f33e32c5cb1d5a074a7142e50991e9fcc5bac",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "264a4c5556d2177d751f2820fc9f500836476ec809e0b27e8f5b9d4fa7414d16",
+      "source_sha256": "5549f90a32919a4a600083b68c0aca1317fa631f3bde256d6e428a07374ce80b",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "d44d890ea4f2631a4db2e239af31bb56301d3d660c92c1dc8240995fcf8b67ca",
+      "source_sha256": "80b18f51d448057ec69d328523633b715471b20fffc85c4bc7348eae770bca91",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "user_basically_accepted",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Uses the revised set accepted as substantially improved. The main repetition issue was addressed in this example, without establishing that all pose repetition is solved.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

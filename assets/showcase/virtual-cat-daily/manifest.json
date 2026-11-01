@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-cat-daily",
+  "title": "和猫的安静夜晚",
+  "title_en": "A Quiet Evening with a Cat",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "76c89cb5093ddb4f413f27270351e3995929f7a5ae5818e55f6b433a235925fa",
+      "source_sha256": "36e38849c32062ba2aaa7aee8fb2122930e056f59bbe0ef54a8f2d38ba82ab25",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "92dd6ebcda867bed5e17062df2919f1074ccfd14ee22520526fe5f5d793d73db",
+      "source_sha256": "cb6ed46312fa3edc32bb1367ce436610a9894dcd0ef791f1238e372a6b8d66a4",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "6e7adbd64b5aecf4a7d54e564dbc07e70983be165ebc14b1c4a2bd0ca1ac6757",
+      "source_sha256": "d4cf5db32b0a840074bc1e9c41195f52f298f4d3f7630aef812fc486fd9c945b",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "94c84193987b776c70ec6e70137d581ec3af77fff21e3406869442a3f40ecfd9",
+      "source_sha256": "b9c9c6112fdefbf4e6c8d1e2bf8c6de79d9a5684b178f41569112f091156dd7c",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "bf0df6a0808f3629aed2c49a2266c36a7aac511bc400f19281cdc6501f1a3919",
+      "source_sha256": "cccd6203d8ff3289548aca7f8dc991d8dae27af1dd43b0ea99dd483891ab0827",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-30",
+  "acceptance_scope": "overall_approved_with_prop_detail_issue",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "The third five-shot set received overall approval. The cat’s scale reflects an accepted compromise, and the book still has detail issues. This selection does not substitute later unapproved edits.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

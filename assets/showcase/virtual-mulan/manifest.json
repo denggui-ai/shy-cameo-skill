@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-mulan",
+  "title": "木兰：披甲与归来",
+  "title_en": "Mulan: Armor and Homecoming",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "78490896bff44895bf61bbf2d6e7ef6f4ce8136065cd5dcec4088571df00a940",
+      "source_sha256": "bbb48d504674d21233e54c230653e74be993f870eb14a26a616947f8d2895156",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "7ee42352e003faf6a8ae6efb167f8f38eb682aa6cde4eb48dcb3259352f8711f",
+      "source_sha256": "fb85e43c336d940ae6a022f1633e0beb7daeb90c33467b51a3c3490dfc6acae1",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "b57313f843909d99a81deb66e749e6f1d9f7d42db78e91686816e0815270f63a",
+      "source_sha256": "80a6942cbc884c704302c41ccae254df9e9fb0e36a7f2edb82a06d7f6b556959",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "ee94768a4617b0ac1b4fe112a73babb0045dfefca28ce95188a55834be5defc2",
+      "source_sha256": "fa5a50916a400d06884a4de82e6f8fbb54468e0f9ebede00f19ca5c05b16e663",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "d0cade481b94554f215ec99e53017d43c5db05787655599932de968f848998cf",
+      "source_sha256": "3a6bf2ff9cba1972b4f826c7126729241c2b21f30d799c3dd87862fe506553db",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "revised_user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Uses the accepted retakes of shots 2 and 5 to address repeated poses. The armor is an original interpretation rather than a replica of a screen adaptation.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

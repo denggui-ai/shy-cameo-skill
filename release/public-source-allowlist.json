@@ -632,5 +632,329 @@
   {
     "source": "skills/shy-cameo/references/body-reference/compare.html",
     "destination": "skills/shy-cameo/references/body-reference/compare.html"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/01.jpg",
+    "destination": "assets/showcase/virtual-athena-opera/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/02.jpg",
+    "destination": "assets/showcase/virtual-athena-opera/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/03.jpg",
+    "destination": "assets/showcase/virtual-athena-opera/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/04.jpg",
+    "destination": "assets/showcase/virtual-athena-opera/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/05.jpg",
+    "destination": "assets/showcase/virtual-athena-opera/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-athena-opera/manifest.json",
+    "destination": "assets/showcase/virtual-athena-opera/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/01.jpg",
+    "destination": "assets/showcase/virtual-cappadocia/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/02.jpg",
+    "destination": "assets/showcase/virtual-cappadocia/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/03.jpg",
+    "destination": "assets/showcase/virtual-cappadocia/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/04.jpg",
+    "destination": "assets/showcase/virtual-cappadocia/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/05.jpg",
+    "destination": "assets/showcase/virtual-cappadocia/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cappadocia/manifest.json",
+    "destination": "assets/showcase/virtual-cappadocia/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/01.jpg",
+    "destination": "assets/showcase/virtual-cat-daily/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/02.jpg",
+    "destination": "assets/showcase/virtual-cat-daily/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/03.jpg",
+    "destination": "assets/showcase/virtual-cat-daily/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/04.jpg",
+    "destination": "assets/showcase/virtual-cat-daily/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/05.jpg",
+    "destination": "assets/showcase/virtual-cat-daily/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-cat-daily/manifest.json",
+    "destination": "assets/showcase/virtual-cat-daily/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/01.jpg",
+    "destination": "assets/showcase/virtual-fox-inn/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/02.jpg",
+    "destination": "assets/showcase/virtual-fox-inn/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/03.jpg",
+    "destination": "assets/showcase/virtual-fox-inn/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/04.jpg",
+    "destination": "assets/showcase/virtual-fox-inn/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/05.jpg",
+    "destination": "assets/showcase/virtual-fox-inn/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-fox-inn/manifest.json",
+    "destination": "assets/showcase/virtual-fox-inn/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/01.jpg",
+    "destination": "assets/showcase/virtual-moon-film/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/02.jpg",
+    "destination": "assets/showcase/virtual-moon-film/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/03.jpg",
+    "destination": "assets/showcase/virtual-moon-film/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/04.jpg",
+    "destination": "assets/showcase/virtual-moon-film/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/05.jpg",
+    "destination": "assets/showcase/virtual-moon-film/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-moon-film/manifest.json",
+    "destination": "assets/showcase/virtual-moon-film/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/01.jpg",
+    "destination": "assets/showcase/virtual-mulan/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/02.jpg",
+    "destination": "assets/showcase/virtual-mulan/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/03.jpg",
+    "destination": "assets/showcase/virtual-mulan/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/04.jpg",
+    "destination": "assets/showcase/virtual-mulan/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/05.jpg",
+    "destination": "assets/showcase/virtual-mulan/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-mulan/manifest.json",
+    "destination": "assets/showcase/virtual-mulan/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/01.jpg",
+    "destination": "assets/showcase/virtual-painted-wall/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/02.jpg",
+    "destination": "assets/showcase/virtual-painted-wall/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/03.jpg",
+    "destination": "assets/showcase/virtual-painted-wall/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/04.jpg",
+    "destination": "assets/showcase/virtual-painted-wall/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/05.jpg",
+    "destination": "assets/showcase/virtual-painted-wall/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-painted-wall/manifest.json",
+    "destination": "assets/showcase/virtual-painted-wall/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/01.jpg",
+    "destination": "assets/showcase/virtual-paper-crane/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/02.jpg",
+    "destination": "assets/showcase/virtual-paper-crane/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/03.jpg",
+    "destination": "assets/showcase/virtual-paper-crane/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/04.jpg",
+    "destination": "assets/showcase/virtual-paper-crane/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/05.jpg",
+    "destination": "assets/showcase/virtual-paper-crane/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-paper-crane/manifest.json",
+    "destination": "assets/showcase/virtual-paper-crane/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/01.jpg",
+    "destination": "assets/showcase/virtual-wukong-cave/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/02.jpg",
+    "destination": "assets/showcase/virtual-wukong-cave/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/03.jpg",
+    "destination": "assets/showcase/virtual-wukong-cave/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/04.jpg",
+    "destination": "assets/showcase/virtual-wukong-cave/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/05.jpg",
+    "destination": "assets/showcase/virtual-wukong-cave/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wukong-cave/manifest.json",
+    "destination": "assets/showcase/virtual-wukong-cave/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/01.jpg",
+    "destination": "assets/showcase/virtual-wuxia/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/02.jpg",
+    "destination": "assets/showcase/virtual-wuxia/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/03.jpg",
+    "destination": "assets/showcase/virtual-wuxia/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/04.jpg",
+    "destination": "assets/showcase/virtual-wuxia/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/05.jpg",
+    "destination": "assets/showcase/virtual-wuxia/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-wuxia/manifest.json",
+    "destination": "assets/showcase/virtual-wuxia/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/01.jpg",
+    "destination": "assets/showcase/virtual-yuji-opera/01.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/02.jpg",
+    "destination": "assets/showcase/virtual-yuji-opera/02.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/03.jpg",
+    "destination": "assets/showcase/virtual-yuji-opera/03.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/04.jpg",
+    "destination": "assets/showcase/virtual-yuji-opera/04.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/05.jpg",
+    "destination": "assets/showcase/virtual-yuji-opera/05.jpg"
+  },
+  {
+    "source": "assets/showcase/virtual-yuji-opera/manifest.json",
+    "destination": "assets/showcase/virtual-yuji-opera/manifest.json"
+  },
+  {
+    "source": "release/cases/virtual-athena-opera.md",
+    "destination": "release/cases/virtual-athena-opera.md"
+  },
+  {
+    "source": "release/cases/virtual-cappadocia.md",
+    "destination": "release/cases/virtual-cappadocia.md"
+  },
+  {
+    "source": "release/cases/virtual-cat-daily.md",
+    "destination": "release/cases/virtual-cat-daily.md"
+  },
+  {
+    "source": "release/cases/virtual-fox-inn.md",
+    "destination": "release/cases/virtual-fox-inn.md"
+  },
+  {
+    "source": "release/cases/virtual-moon-film.md",
+    "destination": "release/cases/virtual-moon-film.md"
+  },
+  {
+    "source": "release/cases/virtual-mulan.md",
+    "destination": "release/cases/virtual-mulan.md"
+  },
+  {
+    "source": "release/cases/virtual-painted-wall.md",
+    "destination": "release/cases/virtual-painted-wall.md"
+  },
+  {
+    "source": "release/cases/virtual-paper-crane.md",
+    "destination": "release/cases/virtual-paper-crane.md"
+  },
+  {
+    "source": "release/cases/virtual-wukong-cave.md",
+    "destination": "release/cases/virtual-wukong-cave.md"
+  },
+  {
+    "source": "release/cases/virtual-wuxia.md",
+    "destination": "release/cases/virtual-wuxia.md"
+  },
+  {
+    "source": "release/cases/virtual-yuji-opera.md",
+    "destination": "release/cases/virtual-yuji-opera.md"
+  },
+  {
+    "source": "release/CASES.en.md",
+    "destination": "release/CASES.en.md"
+  },
+  {
+    "source": "release/CAPABILITIES.en.md",
+    "destination": "release/CAPABILITIES.en.md"
+  },
+  {
+    "source": "assets/showcase/repository-preview/preview.jpg",
+    "destination": "assets/showcase/repository-preview/preview.jpg"
+  },
+  {
+    "source": "assets/showcase/repository-preview/manifest.json",
+    "destination": "assets/showcase/repository-preview/manifest.json"
   }
 ]

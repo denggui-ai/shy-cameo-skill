@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-cappadocia",
+  "title": "卡帕多奇亚的夜色",
+  "title_en": "A Night in Cappadocia",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "1e1ddc0afa2abb90062fab0e655a3ea810c92651c8848eef2d2ff8595a123197",
+      "source_sha256": "420f8aff1b209b0cf0dbee8723d9b7f6ab2b56673cf777f7387dfd20a7180586",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "ac8353a53aa43f0e10a73a89ffb98c38af467d8eb2097de1b5ced588f4e01c33",
+      "source_sha256": "bea8c5e9d161222d0e6db15e942a7bb55eadd016f3ef377ced4ceaeba785cf90",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "9e31f0aa2d1cb44175b1708fd6f05c39b52ddb331be6cbdb9204270b254c5b83",
+      "source_sha256": "931685869dbf88af1beaee1bc917400412f8b5e04f086c0c89802a6626200c42",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "c39bdac9b283db790199871d9b4adfa02e56556d645c4d39314ae15e5e516e53",
+      "source_sha256": "cee04ee873976116d87258687c8b42f563f4fe91f9a3359cc5829673a45a758a",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "cb0b4c90694f70dcaab9cef34422c7d599ff9edf181fe8d578d2d09ca7d7a37b",
+      "source_sha256": "3607631b23ae0e5d08c12e17659497c08b3ceb2448b40d5a9d617584b041836f",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "user_basically_accepted",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "All five received an overall positive verdict. Shot 2 is seated rather than the planned standing pose. These are not records of a real trip or exact camera-location reconstructions.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

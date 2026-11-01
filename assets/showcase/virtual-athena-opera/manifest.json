@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-athena-opera",
+  "title": "雅典娜的戏曲扮相",
+  "title_en": "Athena Reimagined in Chinese Opera",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "d1bd2b8da8a54f0011d5e07244f9d298768a49c41b17d0cdd9893eebfd1bcb28",
+      "source_sha256": "6f0f651f3ea96680a021cd4fd3cee25f2e68e5b0db098bcf11704a6e868660fb",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "1df850ee73ee506e473ecdaa99a276ce52a1a0b2fc49c4238beb62a4c1680183",
+      "source_sha256": "705f4008b03bccdf86aeb35a2e7475adf355ca36798be13ef684ac21a01ae66f",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "304ac6e8ac1758420a360bf6f8e970ffa5bb2ed793adc2108c13d4fa087532eb",
+      "source_sha256": "5f8522c4afa8ae1eb1228742cccc96445ebcc3a083f9333a17450acdd918608c",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "a6f03fa4cac3725f189d42d3aa6d114da861ac9d6a1ba9a0e53fe0234260859c",
+      "source_sha256": "3ceff1277b1526856adfc4f98b93454dc7406ceba6a2a7eac708da3d7f690ce1",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "fff365a96b79051f32ba599cda6e8688d524b30c0f4ff1d6a64214f9a92060eb",
+      "source_sha256": "6a7191699bdc022230a5f93e81c9b94f3b6de3f76c4a7a44e35bab50baba3917",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "revised_user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Uses the accepted five-shot selection with the revised olive-branch interaction. This is a creative cross-cultural interpretation, not a standard opera production.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

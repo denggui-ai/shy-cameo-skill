@@ -1,16 +1,35 @@
 # shy-cameo · 入画
 
-**Step into a classic story with your own photo.**
+**Turn your photo into a story you want to experience.**
 
-Use this Codex skill to turn one clear front-facing photo into **five 3:4 AI story portraits**. You are the lead; your fictional companion is a little shy and appears through back views, hands and shadows. Review the storyboard before deciding to generate.
+A **Codex skill for AI story portraits**: start with one clear front-facing photo, plan a story, then generate five 3:4 portraits. Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. You are the lead; fictional companions appear through back views, hands and shadows.
 
-[Get started](#get-started-in-three-steps) · [More examples](release/CASES.md) · [Installation guide](release/INSTALL.md) · [简体中文](README.md)
+[Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [简体中文](README.md)
 
-> Public test release **[v1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)** · Source and a Codex plugin package are available. These are actual generated examples; results will vary.
+> Public test release **[v1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)** · Preview the storyboard first. Continue with another series, or revise one shot while keeping the previous version.
 
-## AI virtual-model examples
+## Pick a story and see the results
 
-Real-person showcase assets have been removed from this historical version. [Browse the current AI virtual-model gallery](https://github.com/denggui-ai/shy-cameo-skill/blob/main/release/CASES.md).
+These accepted examples feature an **AI-generated virtual adult**, not a real model. Click a cover for all five shots. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
+
+<p>
+<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="150" alt="An Evening at the Fox Inn" title="An Evening at the Fox Inn"></a>
+<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="150" alt="Into Water Curtain Cave with Sun Wukong" title="Into Water Curtain Cave with Sun Wukong"></a>
+<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="150" alt="Yuji: Backstage to the Stage" title="Yuji: Backstage to the Stage"></a>
+<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="150" alt="Mulan: Armor and Homecoming" title="Mulan: Armor and Homecoming"></a>
+</p>
+
+<p>
+<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="150" alt="A Wuxia Encounter on the Cliff Path" title="A Wuxia Encounter on the Cliff Path"></a>
+<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="150" alt="An Animated Adventure with Zhiyuan" title="An Animated Adventure with Zhiyuan"></a>
+<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="150" alt="A Night in Cappadocia" title="A Night in Cappadocia"></a>
+<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="150" alt="A Quiet Evening with a Cat" title="A Quiet Evening with a Cat"></a>
+</p>
+
+[Fox Inn](release/cases/virtual-fox-inn.md) · [Water Curtain Cave](release/cases/virtual-wukong-cave.md) · [Yuji](release/cases/virtual-yuji-opera.md) · [Mulan](release/cases/virtual-mulan.md)<br>
+[Wuxia](release/cases/virtual-wuxia.md) · [Animated adventure](release/cases/virtual-paper-crane.md) · [Night travel](release/cases/virtual-cappadocia.md) · [Life with a cat](release/cases/virtual-cat-daily.md)
+
+**[Explore 11 virtual-model sets and 55 images →](release/CASES.en.md)** Also includes Athena in opera styling, The Painted Wall and A Trip to the Moon.
 
 ## Get started in three steps
 
@@ -27,7 +46,7 @@ Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
 
-**Start a new conversation after installation.** See the [installation guide](release/INSTALL.md) for plugin ZIP installation, upgrades and removal. Codex has historical validation on macOS; Claude Code remains experimental. See the [validation scope](release/VALIDATION.md) for tested environments and gaps. These detailed guides are in Chinese.
+**Start a new conversation after installation.** The current release passed direct skill installation, plugin ZIP installation and fresh-process discovery in isolated directories on macOS / Codex CLI 0.161.0. A first-use storyboard request also passed. Detailed [installation](release/INSTALL.md) and [validation](release/VALIDATION.md) guides are in Chinese; this does not cover a new physical machine, desktop clicks or upgrades.
 
 ### 2. Preview a storyboard
 
@@ -38,7 +57,7 @@ Use $shy-cameo to spend a day on set with Sun Wukong.
 Show me a five-shot storyboard first. Do not generate images.
 ```
 
-You will get a plan covering each shot's scene, outfit and action. Change the theme, clothes or story before shooting. **This step makes no image-generation calls and uses no image-generation quota.**
+Review the scene, outfit and action for each shot. Change the theme, clothes or story before shooting. **This step makes no image-generation calls and uses no image-generation quota.**
 
 ### 3. Confirm and generate
 
@@ -48,19 +67,19 @@ Upload a clear front-facing photo of yourself or a consenting adult. Once you ap
 Generate this set. Do not retry failed calls.
 ```
 
-A five-image set uses five generation calls; failures may still use quota. Check the face, hands and body in each image. Results depend on the image model.
+A set uses at most five generation calls; failures may still use quota. Check the face, hands and body in each image. Ask to revise one shot or continue with another series. Previous versions are kept; a local revision can still change other details.
 
-## Try another story
+## Five categories, thirteen directions
 
-| What you want | What to ask for |
-|---|---|
-| Spend time with a character | “Find Sun Wukong at Flower-Fruit Mountain” / “Spend a day on set with Sun Wukong” |
-| Enter a film | “Step into the 1902 silent film A Trip to the Moon” |
-| Travel on your own | “Make a portrait set of a walk through Paris” |
-| Try a costume (experimental) | “Wear a Chinese opera huadan costume for a backstage set” |
-| Everyday life with a pet (experimental) | “Spend a quiet afternoon with my cat” |
+| What you want | Example request | See the result |
+|---|---|---|
+| Character companionship | “Spend a day with a fox innkeeper” | [Fox Inn](release/cases/virtual-fox-inn.md), [Sun Wukong](release/cases/virtual-wukong-cave.md) |
+| Costume portraits | “Try a Yuji opera look or Mulan-inspired armor” | [Yuji](release/cases/virtual-yuji-opera.md), [Mulan](release/cases/virtual-mulan.md) |
+| Enter a story | “Step into The Painted Wall or a wuxia film” | [Painted Wall](release/cases/virtual-painted-wall.md), [Wuxia](release/cases/virtual-wuxia.md) |
+| Travel on your own | “Plan a night in Cappadocia” | [Night travel](release/cases/virtual-cappadocia.md) |
+| Everyday life with a pet | “Spend a quiet evening with my cat” | [Life with a cat](release/cases/virtual-cat-daily.md) |
 
-You can also continue with another set, try visual styles or create an original character. Validation varies by mode; see the [capability list](release/CAPABILITIES.md) (Chinese). Its “stable” label means an author-approved complete example exists, not that results are guaranteed.
+Try photographic, fully animated or photographic-subject/animated-world styles. Adjust clothes, lighting, camera framing and actions. See [capabilities and evidence](release/CAPABILITIES.en.md) for the thirteen directions and remaining experimental scope.
 
 ## Before you use it
 

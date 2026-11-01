@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-wukong-cave",
+  "title": "跟孙悟空走进水帘洞",
+  "title_en": "Into Water Curtain Cave with Sun Wukong",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "47a516178e5f131788666631d7863a9598e891e165695bc8940663cdb09cbfda",
+      "source_sha256": "92d396aace262e218506f968261d5f4accfb37baa405832bdade87dc57308348",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "7373e6e09b6997df47677cc2d5d59303fff5685d46e4e70fd7bf7fe5b003ecec",
+      "source_sha256": "32a4608cc932f4328ef16fd92f284fec2eea4196a5ce5ec21419e42b06e91c45",
+      "width": 512,
+      "height": 683,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "df84978ad09214c4c6604432a6c63916f158c9ece3232f2c3ff41c4b540b648e",
+      "source_sha256": "a05a96cdda087ecf946b918efe2f80f83c9fa82ce7f005a80fe7dedb1db59426",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "16972580888c58b2348eb41656ec61f7e1d65fe1a174241450bed8178df063e9",
+      "source_sha256": "45b0e003870f66848aa74e89acd5ca6de12a251d15e31d6736722b425cb0af9d",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "f35cff204dd974d69deaee60805f9b7c68819d184f6aed363e0f2a2520a6cb4a",
+      "source_sha256": "d782d0574bb437339cde19c3475578ecfc448f441eabf73388185fdaa7ba6ed2",
+      "width": 560,
+      "height": 747,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "revised_user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "Uses the revised second shot and the accepted versions of the other four. This example does not establish reliable recognition of every character.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}

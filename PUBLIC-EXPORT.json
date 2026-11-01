@@ -44,8 +44,8 @@
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 4327,
-      "sha256": "0bf0ad7c8abaa0e96a7ca9aaf37545c55f92a5d9edecc827fe5e6c0121221d4e"
+      "bytes": 7097,
+      "sha256": "9d33017bd37ffbab080a082873578dd43b7ea602176bdf03aeaeffa8230042ed"
     },
     {
       "source": "SECURITY.md",
@@ -62,8 +62,8 @@
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 16365,
-      "sha256": "5d0df42bd0cc5683c4d2f1c25526e5a8a0687c7f1ba6105660774840856aeeb2"
+      "bytes": 17660,
+      "sha256": "3628231c76d1cbe347ea0bcf32be0de81004d8ef4c9ee5e2bdaf16630178651d"
     },
     {
       "source": "release/icon.svg",
@@ -80,8 +80,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 22437,
-      "sha256": "31e74ab61fb72d2fc5663bd6076c7bb91530b3b92e75854c1ba2d37bd8d49435"
+      "bytes": 32894,
+      "sha256": "79c922b34ea19e43ae4a0a523e0289446efe2855291b6d5c42b54f6e6a10597f"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -111,7 +111,7 @@
       "source": "skills/shy-cameo/SKILL.md",
       "path": "skills/shy-cameo/SKILL.md",
       "bytes": 14362,
-      "sha256": "e99b57c268a5e16b2828c9e589a5eed6ae1014ec216fc7587ac7541d4a13843c"
+      "sha256": "711338467c9f6b0830d6f25f970035d2244aec79f90ea23049c0199fcfe58fd0"
     },
     {
       "source": "skills/shy-cameo/agents/openai.yaml",
@@ -512,20 +512,20 @@
     {
       "source": "release/INSTALL.md",
       "path": "release/INSTALL.md",
-      "bytes": 9463,
-      "sha256": "d1b74b11cd729392aa66195584f60cb63ff5c43a10dd4b111325d089ea2bfc67"
+      "bytes": 10739,
+      "sha256": "b744c2fc8738cd8e282b882a5352f99504b30e0200fcd02f1c93dd0b778021bb"
     },
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 5126,
-      "sha256": "be7e8da7c5f3f02420cb9ade3f0a66c98eb164b5355975d235c5c2fd39ea0698"
+      "bytes": 7832,
+      "sha256": "92a34179a080c05055d051236b3b51fa32985567be245b2bd57489f5d85aa258"
     },
     {
       "source": "release/VALIDATION.md",
       "path": "release/VALIDATION.md",
-      "bytes": 10939,
-      "sha256": "12656604eca050ee226b7979d72693925ce1c9816b7d2486d99ed1ac82fa6d32"
+      "bytes": 12837,
+      "sha256": "3a32fd3e509e470aa765f5f25bba15b3462814f323032327d97870ea7514c964"
     },
     {
       "source": "release/DEVELOPMENT.md",
@@ -584,8 +584,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 7139,
-      "sha256": "dc7d1f00f6ac914b1f26699853fc6ce34b6215f419dbbf8f5067134a68563c5d"
+      "bytes": 7292,
+      "sha256": "faff34c1bc1497e21c1020628ddf138dc38f862364bd6ecf2a7f8f8ce82dbd1b"
     },
     {
       "source": "release/PARIS-LOCATION-REVIEW.md",
@@ -597,7 +597,7 @@
       "source": "skills/shy-cameo/references/routing-and-journey.md",
       "path": "skills/shy-cameo/references/routing-and-journey.md",
       "bytes": 12414,
-      "sha256": "cd6950b6e92f1be22624f75f79e00a6f4d2c9b60b9055823093757cb278ef6b0"
+      "sha256": "7113ac4481967eb86ddb800ff36e8a5a09ddc810d80d1e3c6bead7434b2cbb74"
     },
     {
       "source": "tests/test_route_repair.py",
@@ -638,8 +638,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 264,
-      "sha256": "d5e09a953761bad0e674bb3dbcf6af36ceba3bb97bab57fddfb9bd6349ed5aba"
+      "bytes": 2213,
+      "sha256": "0561e8b1105889f86aab99ede225a45003f804ca312c416754e1fda077a52c2a"
     },
     {
       "source": "release/style-keywords.json",
@@ -862,6 +862,492 @@
       "path": "skills/shy-cameo/references/body-reference/compare.html",
       "bytes": 2085,
       "sha256": "5d74b6b2f366b2c68ece6e001e24780b1490e0a446ae7eb68d93a3921a4e9a0e"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/01.jpg",
+      "path": "assets/showcase/virtual-athena-opera/01.jpg",
+      "bytes": 71185,
+      "sha256": "d1bd2b8da8a54f0011d5e07244f9d298768a49c41b17d0cdd9893eebfd1bcb28"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/02.jpg",
+      "path": "assets/showcase/virtual-athena-opera/02.jpg",
+      "bytes": 70850,
+      "sha256": "1df850ee73ee506e473ecdaa99a276ce52a1a0b2fc49c4238beb62a4c1680183"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/03.jpg",
+      "path": "assets/showcase/virtual-athena-opera/03.jpg",
+      "bytes": 71532,
+      "sha256": "304ac6e8ac1758420a360bf6f8e970ffa5bb2ed793adc2108c13d4fa087532eb"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/04.jpg",
+      "path": "assets/showcase/virtual-athena-opera/04.jpg",
+      "bytes": 71729,
+      "sha256": "a6f03fa4cac3725f189d42d3aa6d114da861ac9d6a1ba9a0e53fe0234260859c"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/05.jpg",
+      "path": "assets/showcase/virtual-athena-opera/05.jpg",
+      "bytes": 70450,
+      "sha256": "fff365a96b79051f32ba599cda6e8688d524b30c0f4ff1d6a64214f9a92060eb"
+    },
+    {
+      "source": "assets/showcase/virtual-athena-opera/manifest.json",
+      "path": "assets/showcase/virtual-athena-opera/manifest.json",
+      "bytes": 2640,
+      "sha256": "4f7932439d357bfc8787b90959f2f5fa28ad0d88751f62f3e7c26cc3912536cd"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/01.jpg",
+      "path": "assets/showcase/virtual-cappadocia/01.jpg",
+      "bytes": 70112,
+      "sha256": "1e1ddc0afa2abb90062fab0e655a3ea810c92651c8848eef2d2ff8595a123197"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/02.jpg",
+      "path": "assets/showcase/virtual-cappadocia/02.jpg",
+      "bytes": 70134,
+      "sha256": "ac8353a53aa43f0e10a73a89ffb98c38af467d8eb2097de1b5ced588f4e01c33"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/03.jpg",
+      "path": "assets/showcase/virtual-cappadocia/03.jpg",
+      "bytes": 67959,
+      "sha256": "9e31f0aa2d1cb44175b1708fd6f05c39b52ddb331be6cbdb9204270b254c5b83"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/04.jpg",
+      "path": "assets/showcase/virtual-cappadocia/04.jpg",
+      "bytes": 71976,
+      "sha256": "c39bdac9b283db790199871d9b4adfa02e56556d645c4d39314ae15e5e516e53"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/05.jpg",
+      "path": "assets/showcase/virtual-cappadocia/05.jpg",
+      "bytes": 65430,
+      "sha256": "cb0b4c90694f70dcaab9cef34422c7d599ff9edf181fe8d578d2d09ca7d7a37b"
+    },
+    {
+      "source": "assets/showcase/virtual-cappadocia/manifest.json",
+      "path": "assets/showcase/virtual-cappadocia/manifest.json",
+      "bytes": 2636,
+      "sha256": "530dcfec8da95b8598d34500136c73c9ca1c33025247d580f26aaf0146941ae0"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/01.jpg",
+      "path": "assets/showcase/virtual-cat-daily/01.jpg",
+      "bytes": 64810,
+      "sha256": "76c89cb5093ddb4f413f27270351e3995929f7a5ae5818e55f6b433a235925fa"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/02.jpg",
+      "path": "assets/showcase/virtual-cat-daily/02.jpg",
+      "bytes": 70163,
+      "sha256": "92dd6ebcda867bed5e17062df2919f1074ccfd14ee22520526fe5f5d793d73db"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/03.jpg",
+      "path": "assets/showcase/virtual-cat-daily/03.jpg",
+      "bytes": 63563,
+      "sha256": "6e7adbd64b5aecf4a7d54e564dbc07e70983be165ebc14b1c4a2bd0ca1ac6757"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/04.jpg",
+      "path": "assets/showcase/virtual-cat-daily/04.jpg",
+      "bytes": 69758,
+      "sha256": "94c84193987b776c70ec6e70137d581ec3af77fff21e3406869442a3f40ecfd9"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/05.jpg",
+      "path": "assets/showcase/virtual-cat-daily/05.jpg",
+      "bytes": 64295,
+      "sha256": "bf0df6a0808f3629aed2c49a2266c36a7aac511bc400f19281cdc6501f1a3919"
+    },
+    {
+      "source": "assets/showcase/virtual-cat-daily/manifest.json",
+      "path": "assets/showcase/virtual-cat-daily/manifest.json",
+      "bytes": 2670,
+      "sha256": "43b3dc7040839ab4ff4bd0f7d18c637b20a697354424e6afff6e8349ae590b9b"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/01.jpg",
+      "path": "assets/showcase/virtual-fox-inn/01.jpg",
+      "bytes": 71139,
+      "sha256": "4ec24fed78f7ebfeee1fd9afe0ed031cd83e06c1e64e84d3b8f277d72406084c"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/02.jpg",
+      "path": "assets/showcase/virtual-fox-inn/02.jpg",
+      "bytes": 71607,
+      "sha256": "7ca80028e76b39a421071e4e01557cd1509f7b8b3a57e5065e5f9a4536daf3de"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/03.jpg",
+      "path": "assets/showcase/virtual-fox-inn/03.jpg",
+      "bytes": 70554,
+      "sha256": "caccefb6b793b4888f6041e4ac95b5d4137ae322bf8300421a243265681c9401"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/04.jpg",
+      "path": "assets/showcase/virtual-fox-inn/04.jpg",
+      "bytes": 69743,
+      "sha256": "198a6809c467cd6802f32ce0e0089a44011e791804f0c138f83777ede9215960"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/05.jpg",
+      "path": "assets/showcase/virtual-fox-inn/05.jpg",
+      "bytes": 71981,
+      "sha256": "77c81820b4d6008cbfbd20659b562125aa6ee7069660281116656365d227a376"
+    },
+    {
+      "source": "assets/showcase/virtual-fox-inn/manifest.json",
+      "path": "assets/showcase/virtual-fox-inn/manifest.json",
+      "bytes": 2590,
+      "sha256": "861d80f69ccc9bea70ba4c9c297739010692b10a21c5c19da343dd9809841739"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/01.jpg",
+      "path": "assets/showcase/virtual-moon-film/01.jpg",
+      "bytes": 71293,
+      "sha256": "8a3932a9c8f510d9b7c16c2a6d7255decf822419a73254a4b99049fb61599f84"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/02.jpg",
+      "path": "assets/showcase/virtual-moon-film/02.jpg",
+      "bytes": 70664,
+      "sha256": "c048547bc96643a872f72bc95adb17a0c9b92af290ed9276710d38fec9e12731"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/03.jpg",
+      "path": "assets/showcase/virtual-moon-film/03.jpg",
+      "bytes": 71258,
+      "sha256": "65720dc77c15a2bf1a4a4f75204f4d81cd060da433257f8796e894d807a7aec6"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/04.jpg",
+      "path": "assets/showcase/virtual-moon-film/04.jpg",
+      "bytes": 70449,
+      "sha256": "264a4c5556d2177d751f2820fc9f500836476ec809e0b27e8f5b9d4fa7414d16"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/05.jpg",
+      "path": "assets/showcase/virtual-moon-film/05.jpg",
+      "bytes": 70746,
+      "sha256": "d44d890ea4f2631a4db2e239af31bb56301d3d660c92c1dc8240995fcf8b67ca"
+    },
+    {
+      "source": "assets/showcase/virtual-moon-film/manifest.json",
+      "path": "assets/showcase/virtual-moon-film/manifest.json",
+      "bytes": 2655,
+      "sha256": "af8e836d7fa279d106cec55fddd832b38c8ed2dbdcbfbc47e2363517efc7c115"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/01.jpg",
+      "path": "assets/showcase/virtual-mulan/01.jpg",
+      "bytes": 68647,
+      "sha256": "78490896bff44895bf61bbf2d6e7ef6f4ce8136065cd5dcec4088571df00a940"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/02.jpg",
+      "path": "assets/showcase/virtual-mulan/02.jpg",
+      "bytes": 71584,
+      "sha256": "7ee42352e003faf6a8ae6efb167f8f38eb682aa6cde4eb48dcb3259352f8711f"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/03.jpg",
+      "path": "assets/showcase/virtual-mulan/03.jpg",
+      "bytes": 71097,
+      "sha256": "b57313f843909d99a81deb66e749e6f1d9f7d42db78e91686816e0815270f63a"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/04.jpg",
+      "path": "assets/showcase/virtual-mulan/04.jpg",
+      "bytes": 69229,
+      "sha256": "ee94768a4617b0ac1b4fe112a73babb0045dfefca28ce95188a55834be5defc2"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/05.jpg",
+      "path": "assets/showcase/virtual-mulan/05.jpg",
+      "bytes": 71942,
+      "sha256": "d0cade481b94554f215ec99e53017d43c5db05787655599932de968f848998cf"
+    },
+    {
+      "source": "assets/showcase/virtual-mulan/manifest.json",
+      "path": "assets/showcase/virtual-mulan/manifest.json",
+      "bytes": 2618,
+      "sha256": "3338d7cc2e5a2ca1838b67c2b46620638f531078762d1bc3331aa647ff0baa45"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/01.jpg",
+      "path": "assets/showcase/virtual-painted-wall/01.jpg",
+      "bytes": 70352,
+      "sha256": "4ea76721c15d8e389468309139a7c0bc002ca016a45494fae41f824cf1b6bbe2"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/02.jpg",
+      "path": "assets/showcase/virtual-painted-wall/02.jpg",
+      "bytes": 70818,
+      "sha256": "373e6e811faacf0438df55eb9ec4ad1f3c0a9d4ae5b610cc087718ddd1a75304"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/03.jpg",
+      "path": "assets/showcase/virtual-painted-wall/03.jpg",
+      "bytes": 68126,
+      "sha256": "9c954945d96642c8df9549f2962beb22b7abfd87d1ff291f313cb367934d88aa"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/04.jpg",
+      "path": "assets/showcase/virtual-painted-wall/04.jpg",
+      "bytes": 68382,
+      "sha256": "a13961da1fc69133ea831ce0f5f219a257c73d258a7e7e029519cec0d3a0ad23"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/05.jpg",
+      "path": "assets/showcase/virtual-painted-wall/05.jpg",
+      "bytes": 70182,
+      "sha256": "9ba48bb6f1548330f0c61aae75da6de03ae56e9ca700260e3393552108c04b81"
+    },
+    {
+      "source": "assets/showcase/virtual-painted-wall/manifest.json",
+      "path": "assets/showcase/virtual-painted-wall/manifest.json",
+      "bytes": 2601,
+      "sha256": "5ccd944a7b4ce6db95474e259e37ade9c4961571528f99ef835070d1156531d7"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/01.jpg",
+      "path": "assets/showcase/virtual-paper-crane/01.jpg",
+      "bytes": 71084,
+      "sha256": "8bb3f16ac94c92b5e634b8f7bc2d961e33aea0b1a83d6abd61133c64b5cec949"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/02.jpg",
+      "path": "assets/showcase/virtual-paper-crane/02.jpg",
+      "bytes": 71712,
+      "sha256": "4b47d725438548b8a97ba8e56c0db10f70b774447ed02957d0bdaf868893acbf"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/03.jpg",
+      "path": "assets/showcase/virtual-paper-crane/03.jpg",
+      "bytes": 70227,
+      "sha256": "0334803c2240bc91690091e4fc8a28b470bafea1c14fe0d96380ae5df2917c3f"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/04.jpg",
+      "path": "assets/showcase/virtual-paper-crane/04.jpg",
+      "bytes": 69995,
+      "sha256": "06fff8edcf975c041199685657a185f869e841b2f39ff4ee59f9185a81f215f3"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/05.jpg",
+      "path": "assets/showcase/virtual-paper-crane/05.jpg",
+      "bytes": 70504,
+      "sha256": "02439b675a5e80cb3b471d949f54e3eeed356508e38e5e6018b9ed6786a83151"
+    },
+    {
+      "source": "assets/showcase/virtual-paper-crane/manifest.json",
+      "path": "assets/showcase/virtual-paper-crane/manifest.json",
+      "bytes": 2611,
+      "sha256": "2258c2b6a2d76e79c2ce387cc1b4cf6fa3e172ea7b56a2b8347ce8ab6f133845"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/01.jpg",
+      "path": "assets/showcase/virtual-wukong-cave/01.jpg",
+      "bytes": 71264,
+      "sha256": "47a516178e5f131788666631d7863a9598e891e165695bc8940663cdb09cbfda"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/02.jpg",
+      "path": "assets/showcase/virtual-wukong-cave/02.jpg",
+      "bytes": 71700,
+      "sha256": "7373e6e09b6997df47677cc2d5d59303fff5685d46e4e70fd7bf7fe5b003ecec"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/03.jpg",
+      "path": "assets/showcase/virtual-wukong-cave/03.jpg",
+      "bytes": 70166,
+      "sha256": "df84978ad09214c4c6604432a6c63916f158c9ece3232f2c3ff41c4b540b648e"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/04.jpg",
+      "path": "assets/showcase/virtual-wukong-cave/04.jpg",
+      "bytes": 69551,
+      "sha256": "16972580888c58b2348eb41656ec61f7e1d65fe1a174241450bed8178df063e9"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/05.jpg",
+      "path": "assets/showcase/virtual-wukong-cave/05.jpg",
+      "bytes": 71746,
+      "sha256": "f35cff204dd974d69deaee60805f9b7c68819d184f6aed363e0f2a2520a6cb4a"
+    },
+    {
+      "source": "assets/showcase/virtual-wukong-cave/manifest.json",
+      "path": "assets/showcase/virtual-wukong-cave/manifest.json",
+      "bytes": 2630,
+      "sha256": "239b3f8d04e92d82d89ab24aac2b4d47e8db00b73d8ea3be3a2f0f190e8bb977"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/01.jpg",
+      "path": "assets/showcase/virtual-wuxia/01.jpg",
+      "bytes": 71919,
+      "sha256": "767c74d0bc1eebe8814ab28fe19c844ecffde809f59ae825d16e26bef1dd2503"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/02.jpg",
+      "path": "assets/showcase/virtual-wuxia/02.jpg",
+      "bytes": 69789,
+      "sha256": "03b8301f924d49abc15f1b0e4e37086e91b0e9da22c4c3612fb3a9d356c98a44"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/03.jpg",
+      "path": "assets/showcase/virtual-wuxia/03.jpg",
+      "bytes": 71846,
+      "sha256": "926426c0d0f0287220044679bf3747d5906e53e3e316d30775263e42e9960b60"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/04.jpg",
+      "path": "assets/showcase/virtual-wuxia/04.jpg",
+      "bytes": 69242,
+      "sha256": "1de1d2aceb620c3117528dc9a1f3e9163c000550c341974aff5a3f5c54bb08e2"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/05.jpg",
+      "path": "assets/showcase/virtual-wuxia/05.jpg",
+      "bytes": 68175,
+      "sha256": "c0f00d7b33a3a9a5d92d2e16f33bc32dcfe508163556c36975c6cdd2703d07b9"
+    },
+    {
+      "source": "assets/showcase/virtual-wuxia/manifest.json",
+      "path": "assets/showcase/virtual-wuxia/manifest.json",
+      "bytes": 2628,
+      "sha256": "d58b7f90333c3b5a3407546392300b3f0d26df9c8dfd09ee0aebc173e967f24c"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/01.jpg",
+      "path": "assets/showcase/virtual-yuji-opera/01.jpg",
+      "bytes": 69968,
+      "sha256": "bb89bd13b203a00795d533fe991f4ebec54fce7c13fade3eacc71077bb4c990a"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/02.jpg",
+      "path": "assets/showcase/virtual-yuji-opera/02.jpg",
+      "bytes": 71701,
+      "sha256": "4460fa5e301763f9e74a6d66c13bd1740fbcb19939f2b5b2c76a4cb301afc9d8"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/03.jpg",
+      "path": "assets/showcase/virtual-yuji-opera/03.jpg",
+      "bytes": 71902,
+      "sha256": "adc2c8ba4d96e8a3c2e13a035e66ba1abede42d57a6adc60bf21c2a98f45f194"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/04.jpg",
+      "path": "assets/showcase/virtual-yuji-opera/04.jpg",
+      "bytes": 69738,
+      "sha256": "28f4dbfcf696babbbd7778d963d6dcd609df60a827010fa03f37157115b057a3"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/05.jpg",
+      "path": "assets/showcase/virtual-yuji-opera/05.jpg",
+      "bytes": 69859,
+      "sha256": "8b27feb5d443ff3fcb62205e88849e41f946cd0fe7c4f6f841a5bab33328bbf5"
+    },
+    {
+      "source": "assets/showcase/virtual-yuji-opera/manifest.json",
+      "path": "assets/showcase/virtual-yuji-opera/manifest.json",
+      "bytes": 2649,
+      "sha256": "f66fe72cdd50db0d94ebdf0a767e701e62e2a8b850b8f9a985482cba791312b1"
+    },
+    {
+      "source": "release/cases/virtual-athena-opera.md",
+      "path": "release/cases/virtual-athena-opera.md",
+      "bytes": 2873,
+      "sha256": "1b101bf07ac8d0127623a4c6466d11edc89129c2e8b1316fcf67650ede35335c"
+    },
+    {
+      "source": "release/cases/virtual-cappadocia.md",
+      "path": "release/cases/virtual-cappadocia.md",
+      "bytes": 2806,
+      "sha256": "62998aa127a71324bb0942fab0129bf9a2ff6b875aad80e20fb30181f4d7a8a6"
+    },
+    {
+      "source": "release/cases/virtual-cat-daily.md",
+      "path": "release/cases/virtual-cat-daily.md",
+      "bytes": 2826,
+      "sha256": "47bde8f2b8f371f7560c17e1dd9703f2cf810b9a8658ac02fd16b371f7aa3aca"
+    },
+    {
+      "source": "release/cases/virtual-fox-inn.md",
+      "path": "release/cases/virtual-fox-inn.md",
+      "bytes": 2766,
+      "sha256": "6d0d633fe91f93330b6b81b276d675a7873a5f60a24a65bb0642d3e4af8feacc"
+    },
+    {
+      "source": "release/cases/virtual-moon-film.md",
+      "path": "release/cases/virtual-moon-film.md",
+      "bytes": 2915,
+      "sha256": "0988e2dfc3532c846f37ed54c81103cf8c34188e02ad81b35b1588c2a63cf32c"
+    },
+    {
+      "source": "release/cases/virtual-mulan.md",
+      "path": "release/cases/virtual-mulan.md",
+      "bytes": 2757,
+      "sha256": "597fc09b501a5cf3b85e9ede3d0d2b3bdda4ff9e6fef136b5820e0eef6c29abf"
+    },
+    {
+      "source": "release/cases/virtual-painted-wall.md",
+      "path": "release/cases/virtual-painted-wall.md",
+      "bytes": 2764,
+      "sha256": "7a9006ccaf48674b3d796da5d351206326b43cf007729cc207e50ad0eaf75129"
+    },
+    {
+      "source": "release/cases/virtual-paper-crane.md",
+      "path": "release/cases/virtual-paper-crane.md",
+      "bytes": 2792,
+      "sha256": "6c2b5a8eeeeb5551722cd3b4fdd1a7ff5b0cc16e2227df4f8f71787c11742257"
+    },
+    {
+      "source": "release/cases/virtual-wukong-cave.md",
+      "path": "release/cases/virtual-wukong-cave.md",
+      "bytes": 2824,
+      "sha256": "e8417ff112709e9078ce1c79eb1a81cfe64177eee1054895bd5a8499c1a70d59"
+    },
+    {
+      "source": "release/cases/virtual-wuxia.md",
+      "path": "release/cases/virtual-wuxia.md",
+      "bytes": 2741,
+      "sha256": "e249f3a197bfb9abadb79069edb35dc098bf2e1b5c6979f2e249734a9e33977a"
+    },
+    {
+      "source": "release/cases/virtual-yuji-opera.md",
+      "path": "release/cases/virtual-yuji-opera.md",
+      "bytes": 2791,
+      "sha256": "5c06235e8f741e2903509a1bc8fe24a6d6bce3161e16b84f06572eb4f7aabb4b"
+    },
+    {
+      "source": "release/CASES.en.md",
+      "path": "release/CASES.en.md",
+      "bytes": 2479,
+      "sha256": "2ea5ce758a09dd5f4d750923d1d1c042b817f51b8e15794f9e6a05b490e8ec9d"
+    },
+    {
+      "source": "release/CAPABILITIES.en.md",
+      "path": "release/CAPABILITIES.en.md",
+      "bytes": 5745,
+      "sha256": "d471a45600795ff20ce3a2905e93c71cfad2fb33b0b8eef79b6b40b414fa5b62"
+    },
+    {
+      "source": "assets/showcase/repository-preview/preview.jpg",
+      "path": "assets/showcase/repository-preview/preview.jpg",
+      "bytes": 102067,
+      "sha256": "4b40f1edcc5a1c05bb2ceabdb60014bf81fd17a7576e0ef7a00f8841488a68cc"
+    },
+    {
+      "source": "assets/showcase/repository-preview/manifest.json",
+      "path": "assets/showcase/repository-preview/manifest.json",
+      "bytes": 1438,
+      "sha256": "7f046da67e19347933eed5e15c857e41b46f071e367db1a0377cce0eac058d92"
     }
   ]
 }

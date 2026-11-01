@@ -1,0 +1,63 @@
+{
+  "set_id": "virtual-painted-wall",
+  "title": "走进《画壁》",
+  "title_en": "Step into The Painted Wall",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_depicted": false,
+  "images": [
+    {
+      "file": "01.jpg",
+      "sha256": "4ea76721c15d8e389468309139a7c0bc002ca016a45494fae41f824cf1b6bbe2",
+      "source_sha256": "2bb482360a2b002dee2f9984372b0e59b8e20c821398f0634fcfe4bc77eefd6e",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "373e6e811faacf0438df55eb9ec4ad1f3c0a9d4ae5b610cc087718ddd1a75304",
+      "source_sha256": "a12f1a052cfdcb733f1b4fe51a1b5839aeb0677cb2c61a76ee51fb98afdcef36",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "9c954945d96642c8df9549f2962beb22b7abfd87d1ff291f313cb367934d88aa",
+      "source_sha256": "d696b797c21727b004def394a845748c2e4c53c74d31f0bf62081daaaebf07f5",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "a13961da1fc69133ea831ce0f5f219a257c73d258a7e7e029519cec0d3a0ad23",
+      "source_sha256": "cad4a192ac7cab413034c501d999057844a363375382a250361307bae8dacc9e",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "9ba48bb6f1548330f0c61aae75da6de03ae56e9ca700260e3393552108c04b81",
+      "source_sha256": "089140f93d5d5db79acfed3b73b698ff843162dea663a9fc65b899609f1e5a29",
+      "width": 600,
+      "height": 800,
+      "web_derivative": true
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-01",
+  "acceptance_date": "2026-10-29",
+  "acceptance_scope": "user_accepted_for_case",
+  "publication_basis": "Owner explicitly authorized publishing the already-approved AI-model cases. The face-publication flag records the creator’s publication permission for a virtual face, not consent by a real depicted person.",
+  "validation_note": "The accepted set includes a retake of shot 3. The title and story context help identify the source; the images alone may not uniquely identify it.",
+  "production_method": "Development POC; existing compiler-guided/native-image workflow with virtual-subject wording adaptation. Not a claim of a fully automated real-person CLI run.",
+  "derivatives": "Resized JPEG web copies of existing approved outputs; originals unchanged. No new image generation."
+}
