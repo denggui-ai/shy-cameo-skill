@@ -956,5 +956,13 @@
   {
     "source": "assets/showcase/repository-preview/manifest.json",
     "destination": "assets/showcase/repository-preview/manifest.json"
+  },
+  {
+    "source": "release/VERIFICATION-MATRIX.md",
+    "destination": "release/VERIFICATION-MATRIX.md"
+  },
+  {
+    "source": "release/NEXT-TESTS.md",
+    "destination": "release/NEXT-TESTS.md"
   }
 ]

@@ -92,6 +92,6 @@ Try photographic, fully animated or photographic-subject/animated-world styles. 
 
 For questions or suggestions, open an [issue](https://github.com/denggui-ai/shy-cameo-skill/issues) with your environment and steps to reproduce. **Do not post private photos or personal information.** For copyright, likeness, security or privacy concerns, follow [SECURITY.md](SECURITY.md).
 
-[Validation scope](release/VALIDATION.md) · [Development](release/DEVELOPMENT.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
+[Verification matrix (中文)](release/VERIFICATION-MATRIX.md) · [Test plan (中文)](release/NEXT-TESTS.md) · [Validation scope](release/VALIDATION.md) · [Development](release/DEVELOPMENT.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
 
 The [MIT license](LICENSE) covers the software, not other uses of anyone's likeness. Images are AI-generated. This project is not affiliated with any featured work's rights holders or with Cameo. Rights statements are not legal advice. Formerly named classic-coshoot.

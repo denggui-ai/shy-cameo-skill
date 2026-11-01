@@ -1,15 +1,15 @@
 # Capabilities
 
-[Home](../README.en.md) · [Examples](CASES.en.md) · [简体中文](CAPABILITIES.md)
+[Home](../README.en.md) · [Examples](CASES.en.md) · [Verification matrix (中文)](VERIFICATION-MATRIX.md) · [Test plan (中文)](NEXT-TESTS.md) · [简体中文](CAPABILITIES.md)
 
 Tell Codex who you want to meet, where you want to go, what you want to wear or what story you want to experience. There are **five categories and thirteen directions**.
 
 | Category | Direction | Example / evidence |
 |---|---|---|
-| Character companionship | A day on set | Existing accepted real-person sets; the current release also passed a first-use storyboard request |
+| Character companionship | A day on set | Earlier real-person sets were accepted; the third virtual-model set awaits user review. Current-release text-only storyboard preparation passed |
 | Character companionship | Everyday life together | [Fox Inn](cases/virtual-fox-inn.md): virtual adult in an illustrated world; real-person sets also exist |
 | Character companionship | Enter their world | [Sun Wukong](cases/virtual-wukong-cave.md): accepted virtual and earlier real-person sets |
-| Character companionship | A character as your travel guide | Experimental; no newly accepted set in this publication |
+| Character companionship | A character as your travel guide | Experimental; five virtual-model images were generated but require revision, with specific user feedback still pending |
 | Costume portraits | Chinese opera | [Yuji](cases/virtual-yuji-opera.md): accepted virtual-model example; real-person workflow remains experimental |
 | Costume portraits | Cross-cultural opera styling | [Athena](cases/virtual-athena-opera.md): accepted virtual-model example; real-person workflow remains experimental |
 | Costume portraits | Character-inspired clothing | [Mulan](cases/virtual-mulan.md): accepted virtual-model example; real-person workflow remains experimental |

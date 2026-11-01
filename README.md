@@ -91,6 +91,6 @@
 
 使用问题或建议请到 [Issues](https://github.com/denggui-ai/shy-cameo-skill/issues)，附上使用环境和复现步骤，**不要公开上传私人照片或个人信息**。版权、肖像权、安全与隐私问题请按 [SECURITY.md](SECURITY.md) 联系。
 
-[验证范围](release/VALIDATION.md) · [开发与复现](release/DEVELOPMENT.md) · [变更记录](CHANGELOG.md) · [贡献说明](CONTRIBUTING.md)
+[逐项验证记录](release/VERIFICATION-MATRIX.md) · [补测计划与张数](release/NEXT-TESTS.md) · [历史验证范围](release/VALIDATION.md) · [开发与复现](release/DEVELOPMENT.md) · [变更记录](CHANGELOG.md) · [贡献说明](CONTRIBUTING.md)
 
 [MIT 许可](LICENSE) 适用于软件，不包含肖像的其他使用授权。成片由 AI 生成，本项目与作品权利方及 Cameo 无关联。权利说明不是法律意见。本项目原名 classic-coshoot。

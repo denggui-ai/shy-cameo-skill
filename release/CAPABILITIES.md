@@ -1,6 +1,6 @@
 # 入画能力清单
 
-[首页](../README.md) · [案例集](CASES.md) · [English](CAPABILITIES.en.md)
+[首页](../README.md) · [案例集](CASES.md) · [逐项验证](VERIFICATION-MATRIX.md) · [补测计划](NEXT-TESTS.md) · [English](CAPABILITIES.en.md)
 
 ## 5 类能力，13 种玩法
 
@@ -11,10 +11,10 @@
 <!-- capability-table:start -->
 | 类别 | 玩法 | 可查看的案例 | 验证范围 |
 |---|---|---|---|
-| 和角色同框 | 在剧组待一天 | 首次分镜示例见[首页](../README.md#三步开始) | 已有真人整套案例；本次仅补首次分镜试用 |
+| 和角色同框 | 在剧组待一天 | 首次分镜示例见[首页](../README.md#三步开始) | 历史真人整套案例保留；AI 第三版五张待验收，首次文字分镜已通过 |
 | 和角色同框 | 一起过日子 | [狐狸客栈](cases/virtual-fox-inn.md) | 已有真人整套案例；此页示例为 AI 模特混合画风 |
 | 和角色同框 | 进他的世界 | [孙悟空与水帘洞](cases/virtual-wukong-cave.md) | 真人与 AI 模特均有整套案例 |
-| 和角色同框 | 让角色带你旅行 | “让孙悟空当导游，带我游西安” | 试验；本次未新增已认可展示套图 |
+| 和角色同框 | 让角色带你旅行 | “让孙悟空当导游，带我游西安” | 试验；AI 五张已试作但需修订，具体修改点待补 |
 | 扮成一个人 | 中国戏曲扮相 | [虞姬](cases/virtual-yuji-opera.md) | AI 模特案例获认可；真人仍属试验 |
 | 扮成一个人 | 外国角色的戏曲扮相 | [雅典娜](cases/virtual-athena-opera.md) | AI 模特案例获认可；真人仍属试验 |
 | 扮成一个人 | 换上角色的衣服 | [木兰](cases/virtual-mulan.md) | AI 模特案例获认可；真人仍属试验 |

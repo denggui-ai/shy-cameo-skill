@@ -38,14 +38,14 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 21316,
-      "sha256": "cf22a11c3eb587eb70d520c1231adfa13b71c146f679b7d9b11a02cb8a3546ae"
+      "bytes": 22149,
+      "sha256": "70ed7f315fb1073b00c0076d8b5b86c675d1d896411c7094a1d5a1a4485e376c"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 7097,
-      "sha256": "9d33017bd37ffbab080a082873578dd43b7ea602176bdf03aeaeffa8230042ed"
+      "bytes": 7209,
+      "sha256": "d7ceeb2d1822b40da9697dc60634a43f798d64a879c2fda517cf218b5e4e2790"
     },
     {
       "source": "SECURITY.md",
@@ -80,8 +80,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 32894,
-      "sha256": "79c922b34ea19e43ae4a0a523e0289446efe2855291b6d5c42b54f6e6a10597f"
+      "bytes": 33094,
+      "sha256": "cb91face8661ac48e74684ab16d5c33a2ba57a0d7b58cee9f2b45f895cdfc8df"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -512,20 +512,20 @@
     {
       "source": "release/INSTALL.md",
       "path": "release/INSTALL.md",
-      "bytes": 10739,
-      "sha256": "b744c2fc8738cd8e282b882a5352f99504b30e0200fcd02f1c93dd0b778021bb"
+      "bytes": 11001,
+      "sha256": "ba86a7ef6aab16bb3f0f28f0bd3ad2ff12bc529e102a1947a25b2c1b1f6a3836"
     },
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 7832,
-      "sha256": "92a34179a080c05055d051236b3b51fa32985567be245b2bd57489f5d85aa258"
+      "bytes": 7945,
+      "sha256": "f4b9548eea86b150f341dc5a2b192aacc64f725636d7dd75005a0bad4a287071"
     },
     {
       "source": "release/VALIDATION.md",
       "path": "release/VALIDATION.md",
-      "bytes": 12837,
-      "sha256": "3a32fd3e509e470aa765f5f25bba15b3462814f323032327d97870ea7514c964"
+      "bytes": 13480,
+      "sha256": "44ba36d759df2df60ead68fb4bb7126782412bc97a4f2a0d5cd4a74633b3a0f5"
     },
     {
       "source": "release/DEVELOPMENT.md",
@@ -584,8 +584,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 7292,
-      "sha256": "faff34c1bc1497e21c1020628ddf138dc38f862364bd6ecf2a7f8f8ce82dbd1b"
+      "bytes": 7418,
+      "sha256": "70835bb51c463e552f2d9abf93a19b54c936395d3e21bdc194f4e38ef753b1e2"
     },
     {
       "source": "release/PARIS-LOCATION-REVIEW.md",
@@ -1334,8 +1334,8 @@
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 5745,
-      "sha256": "d471a45600795ff20ce3a2905e93c71cfad2fb33b0b8eef79b6b40b414fa5b62"
+      "bytes": 5950,
+      "sha256": "5c9b93a465846238dc0c3e2ea119fcd1cec6ed6c131c7c968aeb1e3d7bc7ca17"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1348,6 +1348,18 @@
       "path": "assets/showcase/repository-preview/manifest.json",
       "bytes": 1438,
       "sha256": "7f046da67e19347933eed5e15c857e41b46f071e367db1a0377cce0eac058d92"
+    },
+    {
+      "source": "release/VERIFICATION-MATRIX.md",
+      "path": "release/VERIFICATION-MATRIX.md",
+      "bytes": 11026,
+      "sha256": "4bff7d8a1df3b202a813adc9024133dc65d273fc60e2a1398d519a53256ac007"
+    },
+    {
+      "source": "release/NEXT-TESTS.md",
+      "path": "release/NEXT-TESTS.md",
+      "bytes": 7187,
+      "sha256": "773acfa9c13649ce0fbaca342be2c7b2270cfb5287f935d4bd8f0e6555488a14"
     }
   ]
 }
