@@ -1,5 +1,21 @@
 # 安装、升级与卸载
 
+## 1.0.2-rc.2 本地更新包
+
+本版新增 `compile-edit` 指定底图的局部编辑编译，沿用现有交付、验收和选版。已有一次AI模特袖口改色实测获接受，旧版保留；调用审计仍为 `unverified`。原隔离CLI模型首用缺认证、工作区复制的绝对路径问题继续保留。本次只更新本地安装和发布包，未上传新的GitHub版本。
+
+1. 使用随附的 `shy-cameo-1.0.2-rc.2.zip` 与 `.sha256`；`shy-cameo-source-1.0.2-rc.2.zip` 是开发源码，不能作为插件直接安装。
+2. 运行 `shasum -a 256 -c shy-cameo-1.0.2-rc.2.zip.sha256`，应显示 OK，再解包到新目录。
+3. 已有 `shy-cameo-local` 安装时，保留旧ZIP、旧marketplace源目录和独立私人工作区。将marketplace下的 `plugins/shy-cameo/` 换成新版解包目录，再执行 `codex plugin add shy-cameo@shy-cameo-local --json`。
+4. 核对返回版本为 `1.0.2-rc.2`，新开对话加载新版。在返回的 `installedPath` 下运行 `python3 -B skills/shy-cameo/scripts/cli.py compile-edit --help`，应显示 `--scene`、`--image`、`--instruction`、`--workspace`；该命令不生图。
+5. 需要回退时恢复保留的旧marketplace源目录，再使用相同 `plugin add` 命令安装旧版；这是回退操作说明，本次未演练回退，不声称已验证。
+
+首次安装所需marketplace配置、隐私和完整离线说明见随附 [USER-GUIDE.html](USER-GUIDE.html)。不要删除照片、授权、账本或成片来升级插件。
+
+## 上一公开版1.0.2-rc.1的安装说明与历史证据
+
+以下版本链接与验证结论保留原版本含义，不代表1.0.2-rc.2已远端发布或所有安装路径已复测。
+
 > 公开测试版 **[1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)**，仓库为 `denggui-ai/shy-cameo-skill`，技能名仍为 `shy-cameo`。当前版本的直接安装、插件 ZIP 安装及新进程发现已在本机隔离环境验证；首次分镜试用通过。新物理机器、桌面点击及本版本升级回退尚未复验。
 
 源码仓库提供首页、英文说明和 `release/VALIDATION.md`；插件包内可查看随包的 `USER-GUIDE.html`。

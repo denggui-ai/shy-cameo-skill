@@ -70,7 +70,7 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
         raise ValueError("required release files missing")
     plugin = json.loads(dict((str(p), raw) for p, raw in prepared)[".codex-plugin/plugin.json"])
     if (plugin.get("name") != "shy-cameo"
-            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1"}):
+            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.2-rc.2"}):
         raise ValueError("unsupported candidate version")
     if not isinstance(plugin.get("description"), str) or not 1 <= len(plugin["description"]) <= 4000:
         raise ValueError("plugin description missing or invalid")
@@ -106,7 +106,7 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
         dest.write_bytes(raw)
         rows.append({"path": str(relative), "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()})
     provenance = {"version": plugin["version"], "status": "candidate", "files": rows,
-                  "limitations": (["candidate artifact; packaging does not establish installation or publication status", "scoped visual and text evaluation only; identity, body proportions, material precision and prop physical plausibility remain limited", "native image pre-submit hard blocking is not provided; other hosts unverified"] if plugin["version"] == "1.0.2-rc.1" else ["native image pre-submit hard blocking is not provided; zero-submit live-tool testing deferred", "verified visual evidence: historical Jigong five-shot sample only; animation examples compile offline but have no generated-image acceptance; other hosts and subjects unverified"] if plugin["version"] in {"1.0.0", "1.0.1"} else ["native-image authorization-boundary acceptance pending", "other hosts and platforms unverified", "experimental; not stable v1.0"])}
+                  "limitations": (["local compile-edit package update; installation and remote publication are recorded separately", "one synthetic cuff-color edit accepted and selected; automatic call audit remains unverified; no pixel-exact preservation claim", "isolated CLI model first-use lacks authentication; copied-workspace absolute-path issue remains unresolved", "native image pre-submit hard blocking is not provided; other hosts and platforms unverified"] if plugin["version"] == "1.0.2-rc.2" else ["candidate artifact; packaging does not establish installation or publication status", "scoped visual and text evaluation only; identity, body proportions, material precision and prop physical plausibility remain limited", "native image pre-submit hard blocking is not provided; other hosts unverified"] if plugin["version"] == "1.0.2-rc.1" else ["native image pre-submit hard blocking is not provided; zero-submit live-tool testing deferred", "verified visual evidence: historical Jigong five-shot sample only; animation examples compile offline but have no generated-image acceptance; other hosts and subjects unverified"] if plugin["version"] in {"1.0.0", "1.0.1"} else ["native-image authorization-boundary acceptance pending", "other hosts and platforms unverified", "experimental; not stable v1.0"])}
     (stage / "PROVENANCE.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     archive = output / f"shy-cameo-{plugin['version']}.zip"
     with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as bundle:

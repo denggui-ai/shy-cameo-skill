@@ -51,7 +51,7 @@ CLI project-status --workspace WS --project project.json
 
 ## 重拍与选版
 
-原版从各套账本自动关联，不重复登记。重拍沿用单张compile/native/deliver流程，但必须在compile产生请求后、调用原生生图前，将run_id与实际scene_card持久化到对应set的shots.candidates；然后才调用并交付。这样中断后仍能找到该次尝试。登记候选时保留当前选版；下面包含selected_run_id的示例仅用于用户之后明确选用新版：
+原版从各套账本自动关联，不重复登记。重拍用单张compile，局部修改用compile-edit指定底图；两者沿用native/deliver流程。必须在编译产生请求后、调用原生生图前，将run_id与实际scene_card持久化到对应set的shots.candidates；然后才调用并交付。这样中断后仍能找到该次尝试。登记候选时保留当前选版；下面包含selected_run_id的示例仅用于用户之后明确选用新版：
 
 ```json
 "shots": [{

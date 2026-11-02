@@ -2054,6 +2054,20 @@
       ],
       "evidence": "evidence/release-prep-20261101/public-pytest.log",
       "scope": "导出、摘要与独立构建的确定性回归；非模型评测、隐式触发或视觉验证"
+    },
+    {
+      "id": 257,
+      "name": "local-edit-compile-zero-generation",
+      "host": "codex",
+      "prompt": "用现有已认可底图编译一次明确局部修改，保存为新的候选请求；只做零生图验证，不调用图像工具，不替换当前选版。核对缺图、未登记同意、图像字节变化和未确认分镜时的行为。",
+      "expected_output": "通过compile-edit直接引用指定底图，完整保留修改说明；不追加身份照、首图或整张重拍分镜。写现有request与reference-hashes，生成前可登记为候选，原选版保留、未生成不算complete；素材同意、姓名扫描和摘要检查照常阻断。",
+      "status": "passed_deterministic",
+      "verification_method": "8 focused new pytest cases, 7 existing zero-provider regressions, and actual CLI compilation of an accepted existing synthetic image; no model/image invocation",
+      "test_files": [
+        "tests/test_cli_edits.py"
+      ],
+      "evidence": "evidence/local-edit-compiler-20261102/REPORT.md",
+      "scope": "Development-source compiler, input checks and pre-generation candidate association only; no generation quality, implicit trigger or fixed-package release claim"
     }
   ]
 }

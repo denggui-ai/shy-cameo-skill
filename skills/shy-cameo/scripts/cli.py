@@ -448,6 +448,20 @@ def cmd_compile(a):
                  "referenced_image_paths": request["referenced_image_paths"]})
 
 
+@serialized
+def cmd_compile_edit(a):
+    ws = Path(a.workspace).resolve()
+    image = Path(a.image).resolve()
+    if not image.is_file():
+        raise CardError("missing_edit_image", f"找不到局部编辑底图：{a.image}")
+    consent_path = ws / "consent.json"
+    label.check_photo_consent(load_json(consent_path) if consent_path.is_file() else {}, [image])
+    request = compiler.compile_edit_request(load_json(a.scene), image, a.instruction, names.load_names())
+    path = compiler.write_request(request, ws / "outputs" / request["run_id"])
+    return emit({"status": "compiled", "request_path": str(path), "run_id": request["run_id"],
+                 "referenced_image_paths": request["referenced_image_paths"]})
+
+
 def _unlinked_root(ws: Path, *parts: str) -> Optional[Path]:
     """ws/<parts> resolved, or None when any component below the workspace is a symlink."""
     path = ws
@@ -743,6 +757,13 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--workspace", required=True)
     s.add_argument("--max-refs", type=int, default=compiler.MAX_REFS)
     s.set_defaults(func=cmd_compile)
+
+    s = sub.add_parser("compile-edit", help="从指定底图编译局部编辑请求；只写请求，不提交生图")
+    s.add_argument("--scene", required=True)
+    s.add_argument("--image", required=True, help="已获准使用的局部编辑底图")
+    s.add_argument("--instruction", required=True, help="本次明确修改及保留项")
+    s.add_argument("--workspace", required=True)
+    s.set_defaults(func=cmd_compile_edit)
 
     s = sub.add_parser("compile-sheet")
     s.add_argument("--character", required=True)

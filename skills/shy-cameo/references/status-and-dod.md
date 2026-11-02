@@ -26,9 +26,9 @@ project-status从现有套图账本与选用版sidecar推导状态，不在proje
 只有 `verdict: accepted` 的图才是最终交付；临时定妆表和未自检的出图都只是候选。
 `verdict` 由 `CLI record-verdict` 按用户自检的回答写入 sidecar（本人感、角色、异常三项必填，本次目标 --goal 可选），模型不得自行改写；用户没答到的项要问，不替用户填“没问题”。
 
-## Definition of Done（单张重拍）
-适用于一套 5 张之外、对其中某一张重新授权 1 次的重拍；整套的完成标准见下方“套图（v4）”，两者都以 `verdict: accepted` 为准。
-- 输入：`user_confirmed` 分镜卡；`gold` 或 `temp_confirmed` 角色卡；至少 1 张用户照片；授权确认三项。
+## Definition of Done（单张重拍或局部编辑）
+适用于一套 5 张之外、对其中某一张重新授权 1 次的重拍或局部编辑；整套的完成标准见下方“套图（v4）”，两者都以 `verdict: accepted` 为准。`compile-edit` 仅写请求及参考摘要，不表示已提交、已交付或效果通过。
+- 输入：`user_confirmed` 分镜卡及授权确认三项；普通重拍需`gold`或`temp_confirmed`角色卡及至少1张用户照片，局部编辑需已登记同意的指定底图和明确修改说明。
 - 产物：`WS/outputs/<run_id>/request.json`、原图副本 `image.*`、`sidecar.json`；可选 `image-badge.png`。
 - QA：photo-check、frame-check、verify 都已运行；用户完成三项自检。
 - 不得声称：没有用户自检就说“完成”；`audit: unverified` 时说“已核验”；把静态检查或 pytest 通过说成真实出图验证。

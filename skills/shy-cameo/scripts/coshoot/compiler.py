@@ -628,6 +628,30 @@ def compile_sheet_request(card: dict, variant_id: str, kind: str,
     return request
 
 
+def compile_edit_request(scene: dict, image: Path, instruction: str,
+                         names: Sequence[NameEntry], run_id: Optional[str] = None) -> dict:
+    """Use one explicit edit base without importing the storyboard's retake directions."""
+    require_valid(scene, "scene")
+    if scene["status"] != "user_confirmed":
+        raise CardError("scene_not_confirmed", "局部编辑关联的分镜卡尚未经用户确认")
+    if not instruction.strip():
+        raise CardError("empty_edit_instruction", "请说明本次要修改的内容")
+    prompt = ("附图 1 是本次局部编辑的底图，请在这张图上完成以下修改：\n"
+              + instruction
+              + "\n除本次明确修改项及其必要影响外，保留底图的人物身份、其他衣装、"
+                "动作、物件、构图、光线和画幅。陪同角色继续不露脸；不添加叠加文案或水印。")
+    _check_names([prompt], names)
+    refs = [str(Path(image).resolve())]
+    request = {
+        "schema_version": "1", "run_id": run_id or new_run_id(),
+        "prompt": prompt, "referenced_image_paths": refs,
+        "card_ref": {"scene_id": f"{scene['ip']}/{scene['id']}", "revision": current_revision(scene)},
+        "max_refs": 1, "sha256": _body_sha256(prompt, refs),
+    }
+    require_valid(request, "request")
+    return request
+
+
 def write_request(request: dict, run_dir: Path) -> Path:
     run_dir = Path(run_dir).resolve()
     run_dir.mkdir(parents=True, exist_ok=True)

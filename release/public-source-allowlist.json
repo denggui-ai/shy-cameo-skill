@@ -964,5 +964,9 @@
   {
     "source": "release/NEXT-TESTS.md",
     "destination": "release/NEXT-TESTS.md"
+  },
+  {
+    "source": "tests/test_cli_edits.py",
+    "destination": "tests/test_cli_edits.py"
   }
 ]

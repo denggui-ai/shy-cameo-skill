@@ -1,5 +1,7 @@
 # shy-cameo · 入画
 
+> This source package is the **1.0.2-rc.2 local update** with the tested `compile-edit` command. Install its companion plugin ZIP using the [installation guide](release/INSTALL.md). GitHub links to v1.0.2-rc.1 below refer to the previous public release; this update has not been published remotely.
+
 **Turn your photo into a story you want to experience.**
 
 A **Codex skill for AI story portraits**: start with one clear front-facing photo, plan a story, then generate five 3:4 portraits. Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. You are the lead; fictional companions appear through back views, hands and shadows.
