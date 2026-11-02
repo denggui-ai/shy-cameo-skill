@@ -1,6 +1,6 @@
 # shy-cameo · 入画
 
-> This source package is the **1.0.2-rc.2 local update** with the tested `compile-edit` command. Install its companion plugin ZIP using the [installation guide](release/INSTALL.md). GitHub links to v1.0.2-rc.1 below refer to the previous public release; this update has not been published remotely.
+> **[v1.0.2-rc.2 public test release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** adds `compile-edit`. Call auditing remains `unverified`; isolated CLI model first-use authentication and copied-workspace absolute paths remain known limitations. Release assets and the tag preserve the verified packaging snapshot; its “local / not yet published” wording describes the packaging stage.
 
 **Turn your photo into a story you want to experience.**
 
@@ -8,7 +8,7 @@ A **Codex skill for AI story portraits**: start with one clear front-facing phot
 
 [Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [简体中文](README.md)
 
-> Public test release **[v1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)** · Preview the storyboard first. Continue with another series, or revise one shot while keeping the previous version.
+> Public test release **[v1.0.2-rc.2](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** · Preview the storyboard first. Continue with another series, or revise one shot while keeping the previous version.
 
 ## Pick a story and see the results
 
@@ -43,12 +43,12 @@ Open a Codex conversation and send:
 
 ```text
 Use skill-installer to install skills/shy-cameo from
-https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.2-rc.1.
+https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.2-rc.2.
 Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
 
-**Start a new conversation after installation.** The current release passed direct skill installation, plugin ZIP installation and fresh-process discovery in isolated directories on macOS / Codex CLI 0.161.0. A first-use storyboard request also passed. Detailed [installation](release/INSTALL.md) and [validation](release/VALIDATION.md) guides are in Chinese; this does not cover a new physical machine, desktop clicks or upgrades.
+**Start a new conversation after installation.** The local plugin was updated to 1.0.2-rc.2; installed files match the package, and fresh-process discovery and the compile-edit entry point passed. This update did not repeat model first-use or image generation. See the Chinese [installation guide](release/INSTALL.md) and [verification matrix](release/VERIFICATION-MATRIX.md) for version-specific evidence.
 
 ### 2. Preview a storyboard
 

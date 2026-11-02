@@ -1,6 +1,6 @@
 # 入画 · shy-cameo
 
-> 此源码包为 **1.0.2-rc.2 本地更新版**，新增已实测的 `compile-edit`。安装本版请使用随附的插件 ZIP，见[安装指南](release/INSTALL.md)。下文 GitHub 的 v1.0.2-rc.1 是上一公开版；本次未发布新的远端版本。
+> **[v1.0.2-rc.2 公开测试版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** 已加入 `compile-edit`。调用审计仍为 `unverified`；原隔离CLI模型首用缺认证、工作区复制的绝对路径问题保留。附件与标签保留已校验的封包快照；其中“本地更新／未上传”是打包时状态，发布状态以本页面和Release为准。
 
 **用你的照片，走进想经历的故事。**
 
@@ -8,7 +8,7 @@
 
 [开始使用](#三步开始) · [完整案例集](release/CASES.md) · [5 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [English](README.en.md)
 
-> 公开测试版 **[v1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)** · 先看分镜，再决定开拍；拍完可以继续下一套，也可以只改某一张并保留旧版。
+> 公开测试版 **[v1.0.2-rc.2](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** · 先看分镜，再决定开拍；拍完可以继续下一套，也可以只改某一张并保留旧版。
 
 ## 选一个故事，看看效果
 
@@ -43,11 +43,11 @@
 
 ```text
 请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.0.2-rc.1。
+安装 skills/shy-cameo 目录，版本固定为 v1.0.2-rc.2。
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
-安装完成后**新开对话**。当前发布版已在 macOS / Codex CLI 0.161.0 的隔离环境通过直接安装、插件 ZIP 安装、新进程发现及一次首次分镜试用。插件安装步骤见[安装指南](release/INSTALL.md)，具体范围见[验证记录](release/VALIDATION.md)。
+安装完成后**新开对话**。本机已更新1.0.2-rc.2插件，安装文件与包一致，新进程发现及编译入口检查通过；本次未重复模型首用或生图。插件安装步骤见[安装指南](release/INSTALL.md)，分版本证据见[验证矩阵](release/VERIFICATION-MATRIX.md)。
 
 ### 2. 先试一套分镜
 

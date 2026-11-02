@@ -38,14 +38,14 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 22998,
-      "sha256": "a0f0b62c47cf8044a13babc0402e3310eb7c74a5ff866aa20c5ae97b6a06e565"
+      "bytes": 23119,
+      "sha256": "e8c08fb9c93f36288f512d60ca7b7dc6fbfa2c2ef4a30db393cd8a8f7589e3c1"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 7468,
-      "sha256": "4f9283f47a99c01d0a295eb5844f8d6d7ebdd3c3962e38451fca05cda272fdc6"
+      "bytes": 7617,
+      "sha256": "168a753a45c9a1474b37125651b313c54a1edded59d1414dc91e4ea8cef530af"
     },
     {
       "source": "SECURITY.md",
@@ -512,14 +512,14 @@
     {
       "source": "release/INSTALL.md",
       "path": "release/INSTALL.md",
-      "bytes": 12694,
-      "sha256": "898d205fc3c1ec96e0316c186b8fffab8e0565eb523c866b6e0a09db76de9c1c"
+      "bytes": 12847,
+      "sha256": "7af2a3958dda35d1364ac1d0c7fa1a8038f25db37a4c096f51f9c4bba9e5ea5a"
     },
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 8245,
-      "sha256": "0780cd0c2bc595298aff0baca71c164016760038db9ca027a2733a86d8d28dba"
+      "bytes": 8340,
+      "sha256": "78de22b396fe18099e4eb8fd9b918806c0aa63f84279d53d06e8f35dd5ac44d5"
     },
     {
       "source": "release/VALIDATION.md",
@@ -1352,8 +1352,8 @@
     {
       "source": "release/VERIFICATION-MATRIX.md",
       "path": "release/VERIFICATION-MATRIX.md",
-      "bytes": 13048,
-      "sha256": "fa7594eee918b27a8f8353324f090cd9470b63a07a6c8cf16e5e179c9e81e604"
+      "bytes": 13300,
+      "sha256": "2bd6820791be93c85da1194cb3e11c26ebc8aff01f4193938f4b2c681671c0bd"
     },
     {
       "source": "release/NEXT-TESTS.md",
