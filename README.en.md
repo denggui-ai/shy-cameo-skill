@@ -2,38 +2,57 @@
 
 **Turn your photo into a story you want to experience.**
 
-A **Codex skill for AI story portraits**: start with one clear front-facing photo, plan a story, then generate five 3:4 portraits. Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. You are the lead; fictional companions appear through back views, hands and shadows.
+A **Codex skill for AI story portraits**: turn one clear front-facing photo into **a set of five 3:4 portraits**. Preview the storyboard, then decide whether to generate it.
+
+Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. You are the lead; fictional companions appear through back views, hands and shadows.
 
 [Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [Limitations](#before-you-use-it) · [简体中文](README.md)
 
-> Preview the storyboard first, then decide whether to shoot. [Release notes and verification limits](release/RELEASE-NOTES.md).
+> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.0.3-rc.1, a prerelease](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1); review each generated image.
 
 ## Pick a story and see the results
 
-These accepted examples feature an **AI-generated virtual adult**, not a real model. Click a cover for all five shots. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
+**11 stories, 55 images.** Each cover opens a complete five-shot set, a starter prompt and production notes.
+
+All examples below feature an **AI-generated virtual adult** and were accepted for the gallery. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
 
 <p>
-<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="150" alt="An Evening at the Fox Inn" title="An Evening at the Fox Inn"></a>
-<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="150" alt="Into Water Curtain Cave with Sun Wukong" title="Into Water Curtain Cave with Sun Wukong"></a>
-<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="150" alt="Yuji: Backstage to the Stage" title="Yuji: Backstage to the Stage"></a>
-<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="150" alt="Mulan: Armor and Homecoming" title="Mulan: Armor and Homecoming"></a>
+<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="160" alt="A Quiet Evening with a Cat" title="A Quiet Evening with a Cat"></a>
+<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="160" alt="Yuji: Backstage to the Stage" title="Yuji: Backstage to the Stage"></a>
+<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="160" alt="Into Water Curtain Cave with Sun Wukong" title="Into Water Curtain Cave with Sun Wukong"></a>
+<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="160" alt="An Evening at the Fox Inn" title="An Evening at the Fox Inn"></a>
 </p>
+
+[Life with a cat](release/cases/virtual-cat-daily.md) · [Yuji](release/cases/virtual-yuji-opera.md) · [Sun Wukong](release/cases/virtual-wukong-cave.md) · [Fox Inn](release/cases/virtual-fox-inn.md)
 
 <p>
-<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="150" alt="A Wuxia Encounter on the Cliff Path" title="A Wuxia Encounter on the Cliff Path"></a>
-<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="150" alt="An Animated Adventure with Zhiyuan" title="An Animated Adventure with Zhiyuan"></a>
-<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="150" alt="A Night in Cappadocia" title="A Night in Cappadocia"></a>
-<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="150" alt="A Quiet Evening with a Cat" title="A Quiet Evening with a Cat"></a>
+<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="160" alt="An Animated Adventure with Zhiyuan" title="An Animated Adventure with Zhiyuan"></a>
+<a href="release/cases/virtual-athena-opera.md"><img src="assets/showcase/virtual-athena-opera/01.jpg" width="160" alt="Athena in Opera Styling" title="Athena in Opera Styling"></a>
+<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="160" alt="Mulan: Armor and Homecoming" title="Mulan: Armor and Homecoming"></a>
+<a href="release/cases/virtual-painted-wall.md"><img src="assets/showcase/virtual-painted-wall/01.jpg" width="160" alt="Entering The Painted Wall" title="Entering The Painted Wall"></a>
 </p>
 
-[Fox Inn](release/cases/virtual-fox-inn.md) · [Water Curtain Cave](release/cases/virtual-wukong-cave.md) · [Yuji](release/cases/virtual-yuji-opera.md) · [Mulan](release/cases/virtual-mulan.md)<br>
-[Wuxia](release/cases/virtual-wuxia.md) · [Animated adventure](release/cases/virtual-paper-crane.md) · [Night travel](release/cases/virtual-cappadocia.md) · [Life with a cat](release/cases/virtual-cat-daily.md)
+[Zhiyuan's animated adventure](release/cases/virtual-paper-crane.md) · [Athena](release/cases/virtual-athena-opera.md) · [Mulan](release/cases/virtual-mulan.md) · [The Painted Wall](release/cases/virtual-painted-wall.md)
 
-**[Explore 11 virtual-model sets and 55 images →](release/CASES.en.md)** Also includes Athena in opera styling, The Painted Wall and A Trip to the Moon.
+<p>
+<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="160" alt="A Wuxia Encounter on the Cliff Path" title="A Wuxia Encounter on the Cliff Path"></a>
+<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="160" alt="A Night in Cappadocia" title="A Night in Cappadocia"></a>
+<a href="release/cases/virtual-moon-film.md"><img src="assets/showcase/virtual-moon-film/01.jpg" width="160" alt="A Trip to the Moon: On a Silent Film Set" title="A Trip to the Moon: On a Silent Film Set"></a>
+</p>
+
+[Wuxia](release/cases/virtual-wuxia.md) · [A Night in Cappadocia](release/cases/virtual-cappadocia.md) · [A Trip to the Moon](release/cases/virtual-moon-film.md)
+
+**[Browse the complete gallery and all 55 images →](release/CASES.en.md)**
 
 ## Get started in three steps
 
-You need **Codex and Python 3.9+**. Optional face detection requires `opencv-python-headless>=4.9,<5`. OpenCV 5 is unsupported; without a compatible detector, use the documented manual checks. Generating pictures also requires a Codex session with built-in image generation, a signed-in account and available quota. Installation does not generate images.
+| What to prepare | Requirements |
+|---|---|
+| Environment | Codex; scripts run on macOS / Linux with Python 3.9+ |
+| Storyboard preview | You can start without a photo; this step makes no image-generation calls |
+| Image generation | A Codex session with built-in image generation, a signed-in account and available quota; a clear front-facing photo of yourself or a consenting adult |
+
+Installation evidence comes from macOS / Codex CLI 0.161.0; it does not cover Windows or other clients. See [installation](release/INSTALL.md) for optional face detection, the body-reference gallery and other hosts. **Installation does not generate images.**
 
 ### 1. Install a fixed version
 
@@ -46,7 +65,7 @@ Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
 
-**Start a new conversation after installation.** Use skill-installer as the default route. [Installation](release/INSTALL.md) covers checks, upgrades and the advanced plugin ZIP option; [release notes](release/RELEASE-NOTES.md) record version-specific verification limits.
+**Start a new conversation after installation, then continue to step 2.** If the skill or plugin is already installed, follow the [installation guide](release/INSTALL.md) to check it and keep only one installation active. The guide also covers verification, upgrades, rollback and the plugin ZIP option.
 
 ### 2. Preview a storyboard
 
@@ -67,7 +86,9 @@ Upload a clear front-facing photo of yourself or a consenting adult. Once you ap
 Generate this set. Do not retry failed calls.
 ```
 
-A set uses at most five generation calls; failures may still use quota. Check the face, hands and body in each image. Ask to revise one shot or continue with another series. Previous versions are kept; a local revision can still change other details.
+A set uses at most five generation calls; failures may still use quota. If the first shot fails, the set stops. Later failed shots are not automatically retried. Timeouts and unknown results must be checked before deciding whether to continue. Review the face, hands and body in each image.
+
+Ask to revise one shot or continue with another series. Previous versions are kept. Revisions use new generation calls, and a local revision can still change other details. See the [release notes](release/RELEASE-NOTES.md) for verified scope and remaining limitations.
 
 ## Five categories, thirteen directions
 

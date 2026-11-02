@@ -2,38 +2,57 @@
 
 **用你的照片，走进想经历的故事。**
 
-入画是一个 **Codex AI 故事写真技能（skill）**：从一张清楚的正脸照开始，策划并生成一套五张 3:4 竖图。和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
+入画是一个 **Codex AI 故事写真技能（skill）**：用一张清楚的正脸照，策划并生成**一套五张 3:4 竖图**。先看分镜，满意后再开拍。
+
+和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
 
 [开始使用](#三步开始) · [完整案例集](release/CASES.md) · [5 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [使用限制](#使用前了解这些) · [English](README.en.md)
 
-> 先看分镜，再决定开拍；拍完可以继续下一套，也可以只改某一张并保留旧版。[版本与验证边界](release/RELEASE-NOTES.md)。
+> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.0.3-rc.1 预发布版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1)，成片需要逐张检查。
 
 ## 选一个故事，看看效果
 
-以下为已获认可的 **AI 虚拟成年模特**案例，点击封面看完整五张。画面展示可达到的效果，不保证每次一致；AI 模特案例也不等于真人锁脸或精确身材控制验证。
+**11 套故事，55 张成片。** 每套选一张封面，点击即可查看完整五张、开场请求与制作说明。
+
+以下均为已获认可的 **AI 虚拟成年模特**案例。它们展示可能的效果，不保证每次一致，也不等于真人锁脸或精确身材控制验证。
 
 <p>
-<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="150" alt="狐狸客栈的傍晚" title="狐狸客栈的傍晚"></a>
-<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="150" alt="跟孙悟空走进水帘洞" title="跟孙悟空走进水帘洞"></a>
-<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="150" alt="虞姬：从后台到舞台" title="虞姬：从后台到舞台"></a>
-<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="150" alt="木兰：披甲与归来" title="木兰：披甲与归来"></a>
+<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="160" alt="和猫的安静夜晚" title="和猫的安静夜晚"></a>
+<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="160" alt="虞姬：从后台到舞台" title="虞姬：从后台到舞台"></a>
+<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="160" alt="跟孙悟空走进水帘洞" title="跟孙悟空走进水帘洞"></a>
+<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="160" alt="狐狸客栈的傍晚" title="狐狸客栈的傍晚"></a>
 </p>
+
+[和猫的安静夜晚](release/cases/virtual-cat-daily.md) · [虞姬](release/cases/virtual-yuji-opera.md) · [孙悟空与水帘洞](release/cases/virtual-wukong-cave.md) · [狐狸客栈](release/cases/virtual-fox-inn.md)
 
 <p>
-<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="150" alt="栈道上的武侠交锋" title="栈道上的武侠交锋"></a>
-<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="150" alt="纸鸢的动画冒险" title="纸鸢的动画冒险"></a>
-<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="150" alt="卡帕多奇亚的夜色" title="卡帕多奇亚的夜色"></a>
-<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="150" alt="和猫的安静夜晚" title="和猫的安静夜晚"></a>
+<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="160" alt="纸鸢的动画冒险" title="纸鸢的动画冒险"></a>
+<a href="release/cases/virtual-athena-opera.md"><img src="assets/showcase/virtual-athena-opera/01.jpg" width="160" alt="雅典娜的戏曲扮相" title="雅典娜的戏曲扮相"></a>
+<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="160" alt="木兰：披甲与归来" title="木兰：披甲与归来"></a>
+<a href="release/cases/virtual-painted-wall.md"><img src="assets/showcase/virtual-painted-wall/01.jpg" width="160" alt="走进《画壁》" title="走进《画壁》"></a>
 </p>
 
-[狐狸客栈](release/cases/virtual-fox-inn.md) · [水帘洞](release/cases/virtual-wukong-cave.md) · [虞姬](release/cases/virtual-yuji-opera.md) · [木兰](release/cases/virtual-mulan.md)<br>
-[武侠交锋](release/cases/virtual-wuxia.md) · [动画冒险](release/cases/virtual-paper-crane.md) · [夜景旅行](release/cases/virtual-cappadocia.md) · [和猫过日常](release/cases/virtual-cat-daily.md)
+[纸鸢的动画冒险](release/cases/virtual-paper-crane.md) · [雅典娜](release/cases/virtual-athena-opera.md) · [木兰](release/cases/virtual-mulan.md) · [画壁](release/cases/virtual-painted-wall.md)
 
-**[查看 11 套 AI 模特案例、55 张成片 →](release/CASES.md)** 另有雅典娜戏曲扮相、《画壁》和《月球旅行记》。
+<p>
+<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="160" alt="栈道上的武侠交锋" title="栈道上的武侠交锋"></a>
+<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="160" alt="卡帕多奇亚的夜色" title="卡帕多奇亚的夜色"></a>
+<a href="release/cases/virtual-moon-film.md"><img src="assets/showcase/virtual-moon-film/01.jpg" width="160" alt="月球旅行记：进入默片片场" title="月球旅行记：进入默片片场"></a>
+</p>
+
+[武侠交锋](release/cases/virtual-wuxia.md) · [卡帕多奇亚的夜色](release/cases/virtual-cappadocia.md) · [月球旅行记](release/cases/virtual-moon-film.md)
+
+**[浏览完整案例集与 55 张成片 →](release/CASES.md)**
 
 ## 三步开始
 
-需要 **Codex + Python 3.9+**。可选的人脸检测使用 `opencv-python-headless>=4.9,<5`；OpenCV 5 不在支持范围，未安装兼容版本时转为人工检查。真正开拍还需要当前 Codex 会话支持内置生图、已登录账号和可用额度。安装本身不生成图片。
+| 先准备什么 | 要求 |
+|---|---|
+| 使用环境 | Codex；脚本运行于 macOS / Linux，需要 Python 3.9+ |
+| 先看分镜 | 可以先不上传照片；这一步不调用生图 |
+| 确认开拍 | 当前 Codex 会话支持内置生图，账号已登录且有可用额度；准备本人或已获同意的成年人的清楚正脸照 |
+
+安装验证来自 macOS / Codex CLI 0.161.0；Windows 与其他客户端未由此验证。可选人脸检测、身形图库和其他宿主说明见[安装指南](release/INSTALL.md)。**安装本身不生成图片。**
 
 ### 1. 安装固定版本
 
@@ -45,7 +64,7 @@
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
-安装完成后**新开对话**。默认使用 skill-installer；校验、升级及插件 ZIP 进阶安装见[安装指南](release/INSTALL.md)，版本状态与已验证范围见[发布说明](release/RELEASE-NOTES.md)。
+安装完成后**新开对话，再进行第 2 步**。已有同名技能或插件时，先按[安装指南](release/INSTALL.md)核对，只保留一种生效的安装方式；校验、升级、回退与插件 ZIP 安装也在该指南中。
 
 ### 2. 先试一套分镜
 
@@ -66,7 +85,9 @@
 按这套拍，失败不重试。
 ```
 
-一套最多五次生图调用，失败也可能消耗额度。逐张检查人脸、手和身形。想调整时可以说“只改第 3 张的动作”，或继续拍下一个系列；旧版保留。局部修改仍可能影响其他细节。
+一套最多五次生图调用，失败也可能消耗额度。首张失败会停止本套，后续单张失败不自动重试；超时或结果不明时先核对，再决定是否继续。拍完逐张检查人脸、手和身形。
+
+想调整时可以说“只改第 3 张的动作”，也可以继续拍下一个系列；旧版保留。修订会产生新的生图调用，局部修改仍可能影响其他细节。已验证范围与剩余限制见[发布说明](release/RELEASE-NOTES.md)。
 
 ## 5 类玩法，13 种方向
 

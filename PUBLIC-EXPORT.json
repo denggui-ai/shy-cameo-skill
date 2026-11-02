@@ -44,8 +44,8 @@
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 7110,
-      "sha256": "75a921a2876a61dec6d53661b70fdfe4029a7440efec2b7b5b9d4da868571a31"
+      "bytes": 8529,
+      "sha256": "a36b79864f85be05e3ad5db03de8bd3a454d675d2194446a56db657a8883094d"
     },
     {
       "source": "SECURITY.md",
@@ -482,8 +482,8 @@
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 7737,
-      "sha256": "01109d3189ca9e7af300a436543cc884890a0c001989c9015dcd68aebd9f0d54"
+      "bytes": 9326,
+      "sha256": "ed037c4ab664795a219f8eec691c5996aea8b30d7599b5e057a973a64d429cb4"
     },
     {
       "source": "release/dev/VALIDATION.md",
