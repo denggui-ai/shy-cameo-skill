@@ -76,7 +76,7 @@ def test_release_rejects_incomplete_plugin_manifest(tmp_path):
     assert not (tmp_path / "out").exists()
 
 
-@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1"])
+@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.3-dev.20261102.1", "1.0.3-rc.1"])
 def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
     src = source_tree(tmp_path)
     manifest = src / "release/plugin.json"
@@ -89,6 +89,13 @@ def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
     with zipfile.ZipFile(data["archive"]) as archive:
         provenance = json.loads(archive.read("shy-cameo/PROVENANCE.json"))
         assert provenance["version"] == plugin["version"]
+        if version == "1.0.3-dev.20261102.1":
+            assert provenance["status"] == "candidate"
+            assert any("awaits owner execution" in item for item in provenance["limitations"])
+        if version == "1.0.3-rc.1":
+            assert provenance["status"] == "candidate"
+            assert any("M01 3/3 loaded, M02 0/3 loaded" in item for item in provenance["limitations"])
+            assert not any("awaits owner execution" in item for item in provenance["limitations"])
         if version in {"1.0.0", "1.0.1"}:
             assert not any("not stable" in item for item in provenance["limitations"])
             assert any("hard blocking" in item for item in provenance["limitations"])
@@ -155,24 +162,11 @@ def test_actual_release_cli_starts_without_source_checkout(tmp_path, artifact):
         result = subprocess.run(cmd, capture_output=True, text=True, cwd=tmp_path)
         assert result.returncode == 0, result.stdout + result.stderr
         archive = Path(json.loads(result.stdout)["archive"])
+        assert archive.stat().st_size < 5_000_000
         unpacked = tmp_path / "unpacked"
         with zipfile.ZipFile(archive) as bundle:
             bundle.extractall(unpacked)
         skill = unpacked / "shy-cameo/skills/shy-cameo"
-        reference = skill / "references/body-reference"
-        accepted = []
-        for name in ("manifest.json", "expansion-manifest.json"):
-            manifest = json.loads((reference / name).read_text())
-            assert manifest["status"] == "user_accepted"
-            for item in manifest["items"]:
-                path = reference / item["path"]
-                if item.get("visual_review") == "passed" and item.get("user_verdict") == "accepted":
-                    assert hashlib.sha256(path.read_bytes()).hexdigest() == item["sha256"]
-                    accepted.append(item["id"])
-                else:
-                    assert not path.exists(), item["id"]
-        assert len(accepted) == 30
-        assert (reference / "images/approved-model-front.png").is_file()
     else:
         cmd = [sys.executable, "-B", str(ROOT / "scripts/export_public_source.py"),
                "--source", str(ROOT), "--output", str(out),
@@ -180,6 +174,14 @@ def test_actual_release_cli_starts_without_source_checkout(tmp_path, artifact):
         result = subprocess.run(cmd, capture_output=True, text=True, cwd=tmp_path)
         assert result.returncode == 0, result.stdout + result.stderr
         skill = out / "skills/shy-cameo"
+
+    reference = skill / "references/body-reference"
+    assert not (reference / "images").exists()
+    assert not (reference / "compare.html").exists()
+    assert sum(p.stat().st_size for p in skill.rglob("*") if p.is_file()) < 5_000_000
+    for name in ("manifest.json", "expansion-manifest.json"):
+        manifest = json.loads((reference / name).read_text())
+        assert manifest["status"] == "user_accepted" and manifest["items"]
 
     env = os.environ.copy()
     env.pop("PYTHONPATH", None)
@@ -190,5 +192,18 @@ def test_actual_release_cli_starts_without_source_checkout(tmp_path, artifact):
         assert result.returncode == 0, result.stdout + result.stderr
         if args == ["validate-library"]:
             assert json.loads(result.stdout) == {"ok": True, "errors": []}
-    for name in ("face-likeness.md", "recommendations.md"):
+    for name in ("generation.md", "opening-and-topics.md"):
         assert (skill / "references" / name).is_file()
+    # A draft can still be checked with no gallery, photos, login, or project state.
+    draft = json.loads((ROOT / "tests/fixtures/animation/set-original-fox-inn.json").read_text())
+    draft["status"] = "unverified"
+    for shot in draft["shots"]:
+        shot["status"] = "unverified"
+    card = tmp_path / "draft.json"
+    card.write_text(json.dumps(draft))
+    result = subprocess.run([sys.executable, "-B", str(skill / "scripts/cli.py"),
+                             "check-pose-variety", "--set-card", str(card)],
+                            capture_output=True, text=True, cwd=tmp_path, env={"PATH": ""})
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert json.loads(result.stdout)["advisory_only"] is True
+    assert not (tmp_path / "outputs").exists()

@@ -3,6 +3,8 @@ import json
 import os
 import subprocess
 import sys
+
+import pytest
 from pathlib import Path
 
 CLI = Path(__file__).resolve().parents[1] / "skills" / "shy-cameo" / "scripts" / "cli.py"
@@ -111,7 +113,7 @@ def test_full_exec_flow_with_fake_codex(tmp_path, png_factory):
     assert code == 2 and again["status"] == "blocked_quota"
     # S1 (2026-10-11): `codex exec --json` stdout carries no image event, so it cannot verify.
     code, stdout_audit = cli("verify", "--request", request, "--log", request.parent / "exec.jsonl")
-    assert stdout_audit["status"] == "unverified", stdout_audit
+    assert stdout_audit["status"] == "unverifiable", stdout_audit
     # The session rollout does: verify without --log finds it by request path.
     code, audit = cli("verify", "--request", request, "--codex-home", tmp_path / "codex-home")
     assert audit["status"] == "pass", audit
@@ -265,11 +267,18 @@ def _delivered_with_audit(tmp_path, png_factory, status, reason):
     return request.parent, audit_path
 
 
-def test_declared_unverified_audit_can_still_be_accepted(tmp_path, png_factory):
-    run_dir, _ = _delivered_with_audit(tmp_path, png_factory, "unverified", "日志中未找到生图调用")
+@pytest.mark.parametrize("status", ["unverifiable", "unverified"])
+def test_declared_unverified_audit_can_still_be_accepted(tmp_path, png_factory, status):
+    reason = "无法审计：日志中未找到生图调用"
+    run_dir, audit_path = _delivered_with_audit(tmp_path, png_factory, status, reason)
+    delivered = json.loads((run_dir / 'sidecar.json').read_text())
+    assert delivered['verdict'] == 'pending' and delivered['audit']['reason'] == reason
+    original_audit = audit_path.read_bytes()
     code, rec = cli("record-verdict", "--run-dir", run_dir, "--likeness", "yes", "--character", "yes",
                     "--no-face-mix", "yes")
     assert code == 0 and rec["verdict"] == "accepted"
+    accepted = json.loads((run_dir / 'sidecar.json').read_text())
+    assert accepted['audit'] == delivered['audit'] and audit_path.read_bytes() == original_audit
 
 
 def test_goal_answer_is_recorded_and_no_rejects(tmp_path, png_factory):
@@ -488,7 +497,7 @@ def test_consent_preserves_private_original_after_source_deleted(tmp_path, png_f
     code, out = consent(ws, source)
     assert code == 0, out
     record = out['photos'][0]
-    archive = Path(record['archived_path'])
+    archive = ws / record['archived_path']
     assert archive.parent == ws / 'input' / 'originals'
     assert record['dimensions'] == [600, 700]
     assert record['byte_size'] == len(raw)
@@ -517,7 +526,7 @@ def test_consent_archive_conflict_does_not_overwrite_or_reconfirm(tmp_path, png_
     ws = tmp_path / 'ws'
     code, out = consent(ws, source)
     assert code == 0
-    archive = Path(out['photos'][0]['archived_path'])
+    archive = ws / out['photos'][0]['archived_path']
     archive.write_bytes(b'corrupted')
     before = (ws / 'consent.json').read_bytes()
     code, out = consent(ws, source)
@@ -537,4 +546,4 @@ def test_consent_backfills_legacy_record_without_duplicate(tmp_path, png_factory
     f.write_text(json.dumps(old))
     code, out = consent(ws, source)
     assert code == 0 and len(out['photos']) == 1
-    assert Path(out['photos'][0]['archived_path']).read_bytes() == source.read_bytes()
+    assert (ws / out['photos'][0]['archived_path']).read_bytes() == source.read_bytes()

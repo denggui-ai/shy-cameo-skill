@@ -24,44 +24,24 @@
     "destination": "skills/shy-cameo/library/policy/xiyou.json"
   },
   {
-    "source": "skills/shy-cameo/references/backend-codex-native.md",
-    "destination": "skills/shy-cameo/references/backend-codex-native.md"
+    "source": "skills/shy-cameo/references/generation.md",
+    "destination": "skills/shy-cameo/references/generation.md"
   },
   {
-    "source": "skills/shy-cameo/references/character-card.md",
-    "destination": "skills/shy-cameo/references/character-card.md"
+    "source": "skills/shy-cameo/references/storyboarding.md",
+    "destination": "skills/shy-cameo/references/storyboarding.md"
   },
   {
-    "source": "skills/shy-cameo/references/dialogue.md",
-    "destination": "skills/shy-cameo/references/dialogue.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/face-likeness.md",
-    "destination": "skills/shy-cameo/references/face-likeness.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/recommendations.md",
-    "destination": "skills/shy-cameo/references/recommendations.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/photo-guide/README.md",
-    "destination": "skills/shy-cameo/references/photo-guide/README.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/poc-baseline.md",
-    "destination": "skills/shy-cameo/references/poc-baseline.md"
+    "source": "skills/shy-cameo/references/opening-and-topics.md",
+    "destination": "skills/shy-cameo/references/opening-and-topics.md"
   },
   {
     "source": "skills/shy-cameo/references/rights-cplus.md",
     "destination": "skills/shy-cameo/references/rights-cplus.md"
   },
   {
-    "source": "skills/shy-cameo/references/scene-card.md",
-    "destination": "skills/shy-cameo/references/scene-card.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/status-and-dod.md",
-    "destination": "skills/shy-cameo/references/status-and-dod.md"
+    "source": "skills/shy-cameo/references/delivery-and-revision.md",
+    "destination": "skills/shy-cameo/references/delivery-and-revision.md"
   },
   {
     "source": "skills/shy-cameo/schema/character-card.schema.json",
@@ -188,20 +168,8 @@
     "destination": "LICENSE"
   },
   {
-    "source": "skills/shy-cameo/references/support-status.md",
-    "destination": "skills/shy-cameo/references/support-status.md"
-  },
-  {
     "source": "release/INSTALL.md",
     "destination": "INSTALL.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/animation-themes.md",
-    "destination": "skills/shy-cameo/references/animation-themes.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/routing-and-journey.md",
-    "destination": "skills/shy-cameo/references/routing-and-journey.md"
   },
   {
     "source": "skills/shy-cameo/schema/project.schema.json",
@@ -212,20 +180,12 @@
     "destination": "skills/shy-cameo/scripts/coshoot/projects.py"
   },
   {
-    "source": "skills/shy-cameo/references/series-projects.md",
-    "destination": "skills/shy-cameo/references/series-projects.md"
+    "source": "skills/shy-cameo/references/series-and-projects.md",
+    "destination": "skills/shy-cameo/references/series-and-projects.md"
   },
   {
-    "source": "skills/shy-cameo/references/series-creation.md",
-    "destination": "skills/shy-cameo/references/series-creation.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/prop-direction.md",
-    "destination": "skills/shy-cameo/references/prop-direction.md"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/README.md",
-    "destination": "skills/shy-cameo/references/body-reference/README.md"
+    "source": "skills/shy-cameo/references/body-reference.md",
+    "destination": "skills/shy-cameo/references/body-reference.md"
   },
   {
     "source": "skills/shy-cameo/references/body-reference/manifest.json",
@@ -234,133 +194,5 @@
   {
     "source": "skills/shy-cameo/references/body-reference/expansion-manifest.json",
     "destination": "skills/shy-cameo/references/body-reference/expansion-manifest.json"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/approved-model-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/approved-model-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B01-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B01-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B01-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B01-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B01-back.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B01-back.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B02-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B02-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B02-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B02-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B02-back.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B02-back.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B03-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B03-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B03-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B03-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B03-back.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B03-back.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B04-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B04-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B04-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B04-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B04-back.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B04-back.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B05-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B05-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B05-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B05-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/B05-back.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/B05-back.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D01.svg",
-    "destination": "skills/shy-cameo/references/body-reference/images/D01.svg"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D02.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/D02.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D03.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/D03.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D04.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/D04.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D05.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/D05.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/D06.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/D06.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/M01.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/M01.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/M02.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/M02.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/M03.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/M03.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T01-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T01-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T01-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T01-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T02-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T02-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T02-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T02-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T03-front.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T03-front.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/images/T03-side.png",
-    "destination": "skills/shy-cameo/references/body-reference/images/T03-side.png"
-  },
-  {
-    "source": "skills/shy-cameo/references/body-reference/compare.html",
-    "destination": "skills/shy-cameo/references/body-reference/compare.html"
   }
 ]

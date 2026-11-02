@@ -1,0 +1,73 @@
+name: 问题反馈 / Bug report
+description: 报告安装、流程或 CLI 问题，请先去除私人信息。
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "请使用文字和合成示例复现。安全或隐私问题请按仓库 SECURITY.md 联系，不要在公开 Issue 上传原始数据。"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私检查
+      options:
+        - label: 我已去除私人照片、成片、consent 文件、完整会话日志、账号信息、token、API key 和个人目录信息。
+          required: true
+  - type: input
+    id: skill_version
+    attributes:
+      label: 入画版本
+      description: 安装的标签、插件版本或开发提交。
+      placeholder: v1.0.2-rc.2
+    validations:
+      required: true
+  - type: input
+    id: codex_version
+    attributes:
+      label: Codex 版本
+      description: 桌面端版本或 codex --version 的结果；其他宿主请一并填写。
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 操作系统与架构
+      placeholder: macOS / arm64
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: 安装方式
+      options:
+        - skill-installer
+        - 插件 ZIP / marketplace
+        - 本地开发副本
+        - 其他（请在复现步骤说明）
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最小复现步骤
+      description: 写出操作顺序和脱敏输入；不需要补拍或重复付费调用来证明问题。
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期结果与实际结果
+    validations:
+      required: true
+  - type: input
+    id: cli_status
+    attributes:
+      label: CLI 返回的 status
+      description: 原样填写 status 和退出码；未运行 CLI 或未返回 status 时请明确填写。
+      placeholder: "例如 blocked_consent，退出码 2；或未运行 CLI"
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: 脱敏错误摘要（可选）
+      description: 仅贴相关错误片段，不上传完整工作区或日志。

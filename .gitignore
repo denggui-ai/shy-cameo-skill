@@ -18,6 +18,12 @@ build/
 !evidence/p2-l3/sheets/*.png
 !skills/shy-cameo/references/photo-guide/*.png
 pytest-tmp/
+# Frozen P1 keeps readable evidence; local CLI caches and workspace links stay local.
+evidence/p1-behavior-baseline/**/nested-home/
+evidence/p1-behavior-baseline/**/config/
+evidence/p1-behavior-baseline/**/.tool-home/
+evidence/p1-behavior-baseline/**/.agents/
+evidence/p1-behavior-baseline/**/.tmp/
 # Example sets likely contain the Owner face; keep local-only (Owner 2026-10-22)
 assets/*
 # Public showcases contain AI virtual models only; keep real-person examples local.

@@ -4,8 +4,38 @@ from pathlib import Path
 import pytest
 
 from test_cli import FIX, cli, consent, temp_wukong
-from test_sets import vary_poses
+from test_sets import make_card, vary_poses
 from coshoot import sets
+
+
+def test_check_pose_variety_accepts_draft_without_login_or_side_effects(tmp_path):
+    draft = make_card(status="unverified")
+    draft["status"] = "unverified"
+    for shot in draft["shots"]:
+        shot["framing"] = "close_up"
+    path = tmp_path / "draft.json"
+    path.write_text(json.dumps(draft), encoding="utf-8")
+    before = path.read_bytes()
+    code, out = cli("check-pose-variety", "--set-card", path, env={"PATH": ""})
+    assert code == 0 and out["status"] == "pose_variety_checked"
+    assert out["advisory_only"] is True
+    assert any("景别" in warning for warning in out["warnings"])
+    assert path.read_bytes() == before
+    assert list(tmp_path.iterdir()) == [path]
+
+
+@pytest.mark.parametrize("malformed,status", [("count", "invalid_set"), ("scene", "invalid_scene")])
+def test_check_pose_variety_reports_malformed_drafts(tmp_path, malformed, status):
+    draft = make_card()
+    if malformed == "count":
+        draft["shots"].pop()
+    else:
+        del draft["shots"][0]["framing"]
+    path = tmp_path / "draft.json"
+    path.write_text(json.dumps(draft), encoding="utf-8")
+    code, out = cli("check-pose-variety", "--set-card", path)
+    assert code == 2 and out["status"] == status
+    assert list(tmp_path.iterdir()) == [path]
 
 
 def set_workspace(tmp_path, png_factory):
@@ -39,7 +69,7 @@ def test_compile_shot_and_record_native_path(tmp_path, png_factory):
                        "--status", "generated", "--image", gen)
     assert code == 0 and ledger["chain_image"].endswith("outputs/sets/hgs1/chain.png")
     code, out = cli("compile-shot", "--index", "2", *base)
-    assert code == 0 and out["referenced_image_paths"][-1] == ledger["chain_image"]
+    assert code == 0 and out["referenced_image_paths"][-1] == str(ws / ledger["chain_image"])
     req = json.loads(Path(out["request_path"]).read_text(encoding="utf-8"))
     assert req["set"] == {"set_id": "hgs1", "index": 2, "role": "wide"}
 
@@ -622,10 +652,10 @@ def test_mood_ref_path_rules(tmp_path, png_factory):
     code, out = cli("compile-shot", "--index", "1", *base)
     assert code == 2 and out["status"] == "mood_ref_bad_location", out
     data = json.loads(set_card.read_text(encoding="utf-8"))
-    data["mood_ref"] = "input/mood.png"
+    data["mood_ref"] = "../mood.png"
     set_card.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     code, out = cli("compile-shot", "--index", "1", *base)
-    assert code == 2 and out["status"] == "mood_ref_not_absolute", out
+    assert code == 2 and out["status"] == "mood_ref_bad_location", out
     data["mood_ref"] = str(ws / "input" / "gone.png")
     set_card.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     code, out = cli("compile-shot", "--index", "1", *base)
@@ -699,10 +729,10 @@ def test_pet_needs_consent_and_path_rules(tmp_path, png_factory):
     code, out = cli("compile-shot", "--index", "1", *base)
     assert code == 2 and out["status"] == "pet_ref_bad_location", out
     data = json.loads(set_card.read_text(encoding="utf-8"))
-    data["pet"]["ref"] = "input/cat.png"
+    data["pet"]["ref"] = "../cat.png"
     set_card.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     code, out = cli("compile-shot", "--index", "1", *base)
-    assert code == 2 and out["status"] == "pet_ref_not_absolute", out
+    assert code == 2 and out["status"] == "pet_ref_bad_location", out
     data["pet"]["ref"] = str(ws / "input" / "gone.png")
     set_card.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     code, out = cli("compile-shot", "--index", "1", *base)

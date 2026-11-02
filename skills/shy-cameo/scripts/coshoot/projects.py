@@ -10,7 +10,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from . import compiler, sets
+from . import compiler, sets, migrate
 from .cards import CardError, load_json, require_valid
 from .library import sha256_file
 
@@ -19,10 +19,7 @@ STATES = {'pending', 'claimed', 'generated', 'failed', 'rejected', 'cancelled'}
 
 
 def local_path(ws: Path, value: str) -> Path:
-    path = (ws / value).resolve()
-    if not path.is_relative_to(ws):
-        raise CardError('project_reference_outside_workspace', '项目引用必须位于当前私有工作区内')
-    return path
+    return migrate.local_path(ws, value)
 
 
 def read(ws: Path, value: str, kind=None):
@@ -81,7 +78,7 @@ def _ledger(ws, card):
         if local_path(ws, base).exists():
             raise CardError('project_ledger_missing', '套图目录已存在但账本缺失，不能假定未提交')
         return sets.load_ledger(ws, card)  # constructs pending items in memory only
-    ledger = read(ws, str(path))
+    ledger = sets.load_ledger(ws, card)
     items = ledger.get('items') if isinstance(ledger, dict) else None
     if ledger.get('set_id') != card['set_id'] or not isinstance(items, list) or len(items) != 5:
         raise CardError('ledger_mismatch', '套图账本不匹配')
@@ -264,5 +261,5 @@ def mark_continue(ws: Path, set_id: str, project='project.json') -> dict:
     if set_id not in continued:
         continued.append(set_id)
     require_valid(doc, 'project')
-    local_path(ws, project).write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding='utf-8')
+    migrate.write_workspace_document(local_path(ws, project), doc, 'project', ws)
     return doc

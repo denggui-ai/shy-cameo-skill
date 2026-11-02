@@ -1,109 +1,60 @@
 # 安装、升级与卸载
 
-## 1.0.2-rc.2 公开测试版
+推荐使用 **Codex 自带的 skill-installer**，固定标签 `v1.0.3-rc.1`，目录 `skills/shy-cameo`。版本状态与验证边界以 [对应 Release 说明](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1) 为准；请在该标签发布后安装，发布准备不会自动更新旧安装。
 
-本版新增 `compile-edit` 指定底图的局部编辑编译，沿用现有交付、验收和选版。已有一次AI模特袖口改色实测获接受，旧版保留；调用审计仍为 `unverified`。原隔离CLI模型首用缺认证、工作区复制的绝对路径问题继续保留。新版已发布到 [GitHub Release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)，下载已校验的插件ZIP与校验文件。附件保留封包时的说明快照，实际发布状态以Release和本节为准。
+## 安装前
 
-1. 使用随附的 `shy-cameo-1.0.2-rc.2.zip` 与 `.sha256`；`shy-cameo-source-1.0.2-rc.2.zip` 是开发源码，不能作为插件直接安装。
-2. 运行 `shasum -a 256 -c shy-cameo-1.0.2-rc.2.zip.sha256`，应显示 OK，再解包到新目录。
-3. 已有 `shy-cameo-local` 安装时，保留旧ZIP、旧marketplace源目录和独立私人工作区。将marketplace下的 `plugins/shy-cameo/` 换成新版解包目录，再执行 `codex plugin add shy-cameo@shy-cameo-local --json`。
-4. 核对返回版本为 `1.0.2-rc.2`，新开对话加载新版。在返回的 `installedPath` 下运行 `python3 -B skills/shy-cameo/scripts/cli.py compile-edit --help`，应显示 `--scene`、`--image`、`--instruction`、`--workspace`；该命令不生图。
-5. 需要回退时恢复保留的旧marketplace源目录，再使用相同 `plugin add` 命令安装旧版；这是回退操作说明，本次未演练回退，不声称已验证。
+- 运行脚本需要 Python 3.9+，运行环境为 macOS/Linux；当前安装证据来自 macOS arm64 / Codex CLI 0.161.0。Windows 与其他客户端不在本次验证范围。
+- 可选组件 OpenCV 使用 `opencv-python-headless>=4.9,<5`；未安装时相关检查转为人工确认，不自动安装依赖。
+- 1.0.3-rc.1 默认只带文字与索引，插件安装包小于 5 MB；身形图片与比较页是可选附件，不下载也可正常使用。
+- 只选择一种入画安装方式，避免独立技能与插件重复发现。已有同名安装时记录位置和版本，将旧版本备份到技能扫描目录之外。
+- 安装不生成图片。开拍另需当前会话支持内置生图、账号登录与额度；照片、同意、账本和成片放在独立私人工作区。
 
-首次安装所需marketplace配置、隐私和完整离线说明见随附 [USER-GUIDE.html](USER-GUIDE.html)。不要删除照片、授权、账本或成片来升级插件。
+## 推荐安装：skill-installer
 
-## 上一公开版1.0.2-rc.1的安装说明与历史证据
-
-以下版本链接与验证结论保留原版本含义，不代表1.0.2-rc.2的所有安装路径已复测。
-
-> 公开测试版 **[1.0.2-rc.1](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1)**，仓库为 `denggui-ai/shy-cameo-skill`，技能名仍为 `shy-cameo`。当前版本的直接安装、插件 ZIP 安装及新进程发现已在本机隔离环境验证；首次分镜试用通过。新物理机器、桌面点击及本版本升级回退尚未复验。
-
-源码仓库提供首页、英文说明和 `release/VALIDATION.md`；插件包内可查看随包的 `USER-GUIDE.html`。
-
-## 当前发布版实测（2026-11-01）
-
-在 macOS arm64 / Codex CLI 0.161.0 的临时项目和隔离插件配置中，从公开 GitHub 下载当前固定标签与实际 Release ZIP：
-
-- 系统 skill-installer 直接安装：86 项技能文件与发布提交逐字节一致；新进程发现启用技能，CLI 与规则库检查通过。
-- 插件 ZIP：公开 SHA-256 校验通过，安装返回 `1.0.2-rc.1`；92 项安装文件与下载包一致，新进程发现启用插件技能，CLI 与规则库检查通过。
-- 直接安装后的一次新模型会话：显式请求“和孙悟空在剧组待一天，先看五张分镜，不要生图”，得到五张分镜及结构有效的任务卡；保持待确认状态，缺照片列为待办。图像工具关闭，实际生图调用为 0。
-
-日常安装与配置未改动。此次只验证安装和首次文字准备，没有重跑完整回归，也未验证插件路径的模型首用、隐式触发、桌面点击、新物理机器、升级回退或新的生图效果。安装首用补验当时未更换发布文件；其后 2026-11-02 隐私清理更新了标签提交 ID 和源码 ZIP，插件 ZIP 原字节保留。main 在线说明较固定包内指南更新；版本与摘要见[逐项验证记录](VERIFICATION-MATRIX.md#版本与证据对应)。本次文档整理没有再次重发安装包。
-
-## 选择安装方式
-
-| 方式 | 适合谁 | 安装后的名称 |
-|---|---|---|
-| A：直接安装 skill（推荐） | 想在 Codex 中快速开始 | `shy-cameo`，显式调用 `$shy-cameo` |
-| B：本地插件安装 | 需要通过 CLI 管理插件生命周期 | 插件 `shy-cameo@shy-cameo-local`；发现接口名称 `shy-cameo:shy-cameo` |
-
-选择一种即可。不要同时装两份；切换方式前先确认旧安装的位置并卸载，避免同名技能重复发现。两条路径使用同一版本技能，安装本身不生成图片。
-
-## 安装前检查
-
-- **Codex 已验证**（macOS arm64 / Codex CLI 0.161.0）；**Claude Code 实验性**（见下节）。Windows、桌面界面点击和其他客户端未验证；进程锁依赖 macOS/Linux。
-- 运行脚本需要 Python 3.9+ 标准库。OpenCV 4.x 和 Pillow 为可选组件，不自动安装。
-- 包内含可选的合成身形沟通示例，解包约 54 MiB；保留下载包、解包与安装缓存时建议至少预留 200 MiB。安装耗时取决于下载及宿主，不含后续生图。
-- 真正生图另需当前宿主会话支持内置图像生成、登录账号与可用额度；安装成功不代表会话具备生图能力。
-- 照片、同意记录、账本和成片放在仓库外私人工作区。升级或卸载技能不等于删除这些数据。
-
-## 在 Claude Code 里安装（实验性）
-
-1. 把 `skills/shy-cameo` 复制到 `~/.claude/skills/shy-cameo`（或项目内 `.claude/skills/shy-cameo`）。
-2. 重启 Claude Code。
-3. 跑自检（不生图）：`python3 ~/.claude/skills/shy-cameo/scripts/cli.py preflight --workspace <空目录>`。
-4. Claude Code 里实际生图仍经 Codex CLI（见 `SKILL.md`），所以要先装好并登录 Codex。
-
-2026-10-26 在干净临时项目里验证过：复制后 preflight 通过，Claude Code 能列出 `shy-cameo`；没有真实生图，仍标“实验性”。
-
-## A：直接安装 skill（推荐）
-
-从 [https://github.com/denggui-ai/shy-cameo-skill](https://github.com/denggui-ai/shy-cameo-skill) 安装，固定使用版本标签 `v1.0.2-rc.1` 和目录 `skills/shy-cameo`。
-
-在 Codex 新建对话，发送：
+在 Codex 新建对话，复制发送：
 
 ```text
-请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill 安装 skills/shy-cameo 目录，版本固定为 v1.0.2-rc.1。只安装，不生图。已有同名安装时先核对位置与版本。
+请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
+安装 skills/shy-cameo 目录，版本固定为 v1.0.3-rc.1。
+只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
-安装器写入当前用户的 Codex 技能目录。已有同名目录时先核对位置与版本，不直接覆盖；安装结果应给出实际路径。
+安装器写入 `$CODEX_HOME/skills/shy-cameo`，未设置时默认为 `~/.codex/skills/shy-cameo`；实际位置以安装结果为准。已有同名目录时安装器会停止，不要盲目覆盖。安装下载需要联网，不要求把凭据放进项目。
 
-### 确认安装成功
-
-1. 安装后新开对话，检查技能列表或宿主发现接口中有启用的 `shy-cameo`，路径指向本次安装。
-2. 将安装结果中的路径记为 `<skill-dir>`，在终端把占位符换为实际绝对路径，执行：
+安装完成后新开对话，在技能列表或宿主发现接口核对只有一份启用的 `shy-cameo`，路径指向这次安装。目录存在不等于已被发现。将实际技能路径替换到以下命令做本地检查：
 
 ```bash
 python3 -B "<skill-dir>/scripts/cli.py" --help
 python3 -B "<skill-dir>/scripts/cli.py" validate-library
 ```
 
-预期显示帮助，规则库返回 `{"ok": true, "errors": []}`。不调用图像服务。之后可按源码仓库首页的示例准备分镜。
+预期帮助正常显示，规则库返回 `{"ok": true, "errors": []}`；两个命令不调用生图。随后在新对话试用：
 
-历史验证：2026-10-16 在 macOS / Codex CLI 0.161.0 的隔离目录，使用系统 skill-installer 安装过旧版 v1.0.1，并检查文件、发现接口、CLI 帮助和规则库。当前新仓库的 v1.0.2-rc.1 已补做上述安装、发现与零额度检查；桌面点击及其他系统未验证。
-
-### 升级与卸载
-
-升级前记录实际安装路径并备份旧技能目录，确认私人工作区独立保存。将旧安装移出技能发现目录，再用上面的请求指定目标版本安装；新开会话检查只发现一份技能，并重新运行零额度检查。该直接安装路径的跨版本升级与回退尚未实测，不等同于下面已验证的插件刷新流程。
-
-卸载时只移除安装结果所指的 `shy-cameo` 技能目录；先核实目录内没有私人素材或其他技能，再在文件管理器中操作。新开会话确认不再发现该技能。不要删除整个 Codex 技能目录。该直接安装路径的卸载尚未单独实测。
-
-## B：本地插件安装
-
-在 [v1.0.2-rc.1 Releases](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.1) 下载 `shy-cameo-1.0.2-rc.1.zip` 和 `shy-cameo-1.0.2-rc.1.zip.sha256`。`shy-cameo-source-1.0.2-rc.1.zip` 是开发源码，不是插件包。在下载目录执行：
-
-```bash
-shasum -a 256 -c shy-cameo-1.0.2-rc.1.zip.sha256
+```text
+用 $shy-cameo 和孙悟空在剧组待一天。
+先给我看五张分镜，不要生图。
 ```
 
-预期 `OK`。摘要应来自可信发布记录；同处下载不能单独证明发布者身份。确认插件包的版本与所需版本一致。
+预期先给文字方案，缺照片列为后续事项。这是显式试用，不用它证明自动发现通过。
 
-历史验证：2026-10-16 曾用旧版 v1.0.1 安装包在 macOS arm64 / Codex CLI 0.161.0 的隔离配置验证新装、发现、升级和卸载；当前 v1.0.2-rc.1 已补做新装、发现与零额度检查，升级、卸载与回退未在本轮重测；不代表桌面点击、其他平台、模型自动触发或生图通过。
+### 升级、回退与卸载
 
-### 安装插件
+升级前保留旧技能目录和来源版本，确认私人工作区不在安装目录内。将旧版移出扫描目录，再用 skill-installer 安装指定新标签；新开对话，核对路径并重复上述本地检查。回退时移出新版、恢复备份；仍只保留一份生效。历史验证范围见 Release，不将操作步骤当成已实测。
 
+卸载只移除安装结果所指的 `shy-cameo` 目录，核对其中没有私人素材或其他技能后再操作；新开对话确认不再发现。不要删除整个技能目录，独立照片、账本与成片保留。
 
-先校验 ZIP，解包到自己选择的本地目录，按下面布局放置。`market-root` 是目录示例名，后续命令要换成它的绝对路径。不要将真人照片放入此目录。
+## 进阶安装（可校验）：插件 ZIP 与本地 marketplace
+
+仅在需要插件管理或手动校验 ZIP 时使用。在 [v1.0.3-rc.1 Release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1) 下载 `shy-cameo-1.0.3-rc.1.zip` 和同名 `.sha256`。`shy-cameo-source-*.zip` 以及 GitHub 自动生成的 Source code 是开发源码，不是插件安装包。
+
+在下载目录执行：
+
+```bash
+shasum -a 256 -c shy-cameo-1.0.3-rc.1.zip.sha256
+```
+
+预期 `OK`。摘要从可信发布记录获取；同处下载不能单独证明发布者身份。保留旧包与旧 marketplace 源目录，解包到新目录，按以下结构放置：
 
 ```text
 market-root/
@@ -115,23 +66,21 @@ market-root/
     ...其余包内文件
 ```
 
-新建 `.agents/plugins/marketplace.json`，内容为：
+`.agents/plugins/marketplace.json` 内容：
 
 ```json
 {
   "name": "shy-cameo-local",
-  "plugins": [
-    {
-      "name": "shy-cameo",
-      "source": {"source": "local", "path": "./plugins/shy-cameo"},
-      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
-      "category": "Productivity"
-    }
-  ]
+  "plugins": [{
+    "name": "shy-cameo",
+    "source": {"source": "local", "path": "./plugins/shy-cameo"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity"
+  }]
 }
 ```
 
-`source.path` 相对 `market-root`，不是相对 `.agents/plugins/`。检查当前 CLI 版本后，执行：
+`source.path` 相对 `market-root`。将命令中的路径替换为自己选择的绝对路径：
 
 ```bash
 codex --version
@@ -140,48 +89,38 @@ codex plugin add shy-cameo@shy-cameo-local --json
 codex plugin list --marketplace shy-cameo-local --json
 ```
 
-这会在当前用户的 Codex 配置中登记本地 marketplace 和插件，并复制到插件缓存；不需要管理员权限，也不安装依赖。先检查同名 marketplace/插件；已有安装应备份原目录和包，不盲目覆盖。当前版的新装也在隔离配置目录完成。
+这些命令登记当前用户的 marketplace/插件并复制到缓存，无需管理员权限；已有同名登记先核对，不盲目覆盖。不同 CLI 版本先看 `--help`。返回版本应为 `1.0.3-rc.1`，并给出 `installedPath`，列表显示 `installed: true`、`enabled: true`。
 
-安装结果应返回与所选插件包一致的版本和 `installedPath`，列表应显示 `installed: true`、`enabled: true`。实际安装位置以返回值为准，不猜缓存路径。安装后新开会话，再确认技能发现；列表里有插件还不是技能发现的证据。
+新开对话核对发现的技能来自该缓存；插件列表有记录不代替技能发现。把 `<skill-dir>` 设为返回的 `installedPath/skills/shy-cameo`，做前面的本地检查。离线隐私与使用说明见 [USER-GUIDE.html](USER-GUIDE.html)。
 
-### 确认发现和零额度试用
+升级时保留旧 ZIP、摘要与源目录副本，再把 marketplace 的 `plugins/shy-cameo/` 换成校验过的新目录，重复 `codex plugin add`，核对版本、发现路径和本地检查。回退时恢复旧源目录并安装旧版。升级不迁移独立工作区，也不清空未知结果或旧账本。
 
-当前 v1.0.2-rc.1 隔离测试通过独立新进程的 `skills/list` 确认发现了启用的 `shy-cameo:shy-cameo`，路径指向本次缓存；用户仍需核对自己的安装结果。
-
-普通使用者在新会话的技能列表中检查“入画 shy-cameo”；若当前客户端没有显示技能列表，以宿主自身的发现接口或诊断为准，不把目录存在当作发现成功。本轮未做桌面界面点击验证。
-
-在安装结果 `installedPath` 对应的目录中，执行：
-
-```bash
-python3 -B skills/shy-cameo/scripts/cli.py --help
-python3 -B skills/shy-cameo/scripts/cli.py validate-library
-```
-
-第二条预期 `{"ok": true, "errors": []}`。这两项检查不调用图像服务；不要用生图来测试是否安装成功。
-
-### 升级
-
-保留旧 ZIP、摘要及源目录副本。把 marketplace 指向的 `plugins/shy-cameo/` 更新为校验过的新版本，然后再次执行同一条 `codex plugin add shy-cameo@shy-cameo-local --json`。核对返回版本、`installedPath`，新开会话确认发现来自新版缓存，再做零额度检查。
-
-历史验证用保留的 v1.0.0 原包安装，再升级到 v1.0.1 实际发行包。新进程只发现一份新版插件技能，安装内容与发行包逐文件相等；CLI 与规则库检查通过。本证据不证明任意未来版本的数据迁移。同版本覆盖、Git marketplace 自动升级与回退未实测。
-
-私人照片、授权与账本放在独立工作区，升级不迁移这些数据。旧四张卡/账本仍需原有的五张迁移与重新确认规则。
-
-### 卸载
+卸载：
 
 ```bash
 codex plugin remove shy-cameo@shy-cameo-local --json
 codex plugin list --marketplace shy-cameo-local --json
 ```
 
-应无此插件的 installed 记录；新开会话确认该插件技能不再出现。v1.0.1 历史验证同时确认该插件的缓存目录被删除，合成的独立工作区文件内容保持不变。
+新开对话确认该插件技能不再出现。如 marketplace 仅供入画使用，可另执行 `codex plugin marketplace remove shy-cameo-local --json`。解包源目录、备份及私人工作区不会因此自动清理，是否删除另行决定。
 
-若此 marketplace 只供本插件使用，可另执行：
+## 可选身形图库
+
+**不下载也可正常使用。** 依照本人照片可见部分与文字自述描述身形；需要看图时才按需下载，不把缺图库当错误或开拍前置条件。
+
+在 v1.0.3-rc.1 Release 下载 `shy-cameo-body-reference-20261102.zip` 和 `.sha256`。图库内容版本为 20261102，与本版配套；旧 rc.2 已带图库，无需重复安装。下载后校验，再解压到实际 `<skill-dir>/references/`：
 
 ```bash
-codex plugin marketplace remove shy-cameo-local --json
+shasum -a 256 -c shy-cameo-body-reference-20261102.zip.sha256
+unzip shy-cameo-body-reference-20261102.zip -d "<skill-dir>/references"
 ```
 
-这撤除 marketplace 登记，不代替删除你解包的源目录、照片或生成结果。源目录和独立工作区可继续保留；是否清理由用户单独决定。不要使用全盘清理命令。
+预期出现 `body-reference/compare.html` 和 `body-reference/images/`；两份索引原本已在默认安装中。已有同名图片时先备份并核对版本，不盲目覆盖。插件升级后路径可能改变，按新路径手动放回匹配附件；没有下载器、自动缓存或安装 hooks。解压前后文件摘要可与附件白名单核对，图库只作沟通示例。
 
-依据：[OpenAI 本地插件说明](https://developers.openai.com/plugins/build/plugins#install-a-local-plugin-manually)、[技能发现接口](https://learn.chatgpt.com/docs/app-server#skills)。本机 CLI 的命令与返回值是本轮实测依据；不同版本须先核对 `--help`。
+## 其他宿主
+
+Claude Code 路径保持实验性：将技能目录复制到 `~/.claude/skills/shy-cameo`，重启后做相同本地检查；实际生成经已登录的 Codex CLI 转发。它不属于推荐安装主路径，也不由本轮文档整理新增兼容性保证。
+
+## 遇到问题
+
+通过项目 [Issues](https://github.com/denggui-ai/shy-cameo-skill/issues/new/choose) 反馈，只提供系统、Codex/技能版本、安装方式、CLI 的 `status` 与脱敏复现步骤；不要上传照片、consent、账号信息或完整私人日志。安全或隐私问题按仓库 SECURITY.md 联系。旧版本安装证据归入 CHANGELOG 与开发验证文档，本指南只保留当前操作路径。

@@ -1,0 +1,36 @@
+name: 功能建议 / Feature request
+description: 描述想完成的事情，以及现有流程哪里不方便。
+title: "[Feature] "
+body:
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私检查
+      options:
+        - label: 本建议不包含私人照片、个人信息、账号凭据或完整会话日志。
+          required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 你想完成什么？
+      description: 用一个具体使用场景说明目标。
+    validations:
+      required: true
+  - type: textarea
+    id: difficulty
+    attributes:
+      label: 当前哪里不方便？
+      description: 说明现有步骤或替代办法的不足。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 期望的体验
+      description: 描述你希望怎样使用，无需先设计技术实现。
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: 其他办法或补充（可选）

@@ -38,7 +38,7 @@
       "additionalProperties": false,
       "required": ["status", "reason"],
       "properties": {
-        "status": {"enum": ["pass", "unverified", "tampered"]},
+        "status": {"enum": ["pass", "unverifiable", "unverified", "tampered"]},
         "reason": {"type": "string"},
         "run_id": {"type": "string"},
         "request_sha256": {"type": "string"}

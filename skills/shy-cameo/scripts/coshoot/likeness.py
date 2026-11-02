@@ -1,6 +1,6 @@
 """Optional face-likeness score (OpenCV YuNet + SFace). Advisory only: the user judges likeness.
 
-Models are not bundled; see references/face-likeness.md. Missing OpenCV or models -> "unavailable".
+Models are not bundled; see references/generation.md. Missing OpenCV or models -> "unavailable".
 """
 from __future__ import annotations
 

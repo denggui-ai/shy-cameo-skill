@@ -8,8 +8,8 @@ import re
 import zipfile
 from pathlib import Path, PurePosixPath
 
-# The accepted, explicitly allowlisted reference gallery is about 53 MiB.
-LIMIT_BYTES = 64 * 1024 * 1024
+# Optional body-reference images ship separately; keep the default runtime below 5 MB.
+LIMIT_BYTES = 5_000_000
 EXTRAS = {"release/plugin.json", "release/icon.svg", "release/USER-GUIDE.html", "release/INSTALL.md", "LICENSE"}
 RESERVED = {"CON", "PRN", "AUX", "NUL", *(f"COM{i}" for i in range(1, 10)), *(f"LPT{i}" for i in range(1, 10))}
 FORBIDDEN = {".git", ".env", "__pycache__", ".pytest_cache", ".venv", "node_modules", "tests", "evals", "evidence"}
@@ -70,7 +70,7 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
         raise ValueError("required release files missing")
     plugin = json.loads(dict((str(p), raw) for p, raw in prepared)[".codex-plugin/plugin.json"])
     if (plugin.get("name") != "shy-cameo"
-            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.2-rc.2"}):
+            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.2-rc.2", "1.0.3-dev.20261102.1", "1.0.3-rc.1"}):
         raise ValueError("unsupported candidate version")
     if not isinstance(plugin.get("description"), str) or not 1 <= len(plugin["description"]) <= 4000:
         raise ValueError("plugin description missing or invalid")
@@ -107,6 +107,21 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
         rows.append({"path": str(relative), "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()})
     provenance = {"version": plugin["version"], "status": "candidate", "files": rows,
                   "limitations": (["local compile-edit package update; installation and remote publication are recorded separately", "one synthetic cuff-color edit accepted and selected; automatic call audit remains unverified; no pixel-exact preservation claim", "isolated CLI model first-use lacks authentication; copied-workspace absolute-path issue remains unresolved", "native image pre-submit hard blocking is not provided; other hosts and platforms unverified"] if plugin["version"] == "1.0.2-rc.2" else ["candidate artifact; packaging does not establish installation or publication status", "scoped visual and text evaluation only; identity, body proportions, material precision and prop physical plausibility remain limited", "native image pre-submit hard blocking is not provided; other hosts unverified"] if plugin["version"] == "1.0.2-rc.1" else ["native image pre-submit hard blocking is not provided; zero-submit live-tool testing deferred", "verified visual evidence: historical Jigong five-shot sample only; animation examples compile offline but have no generated-image acceptance; other hosts and subjects unverified"] if plugin["version"] in {"1.0.0", "1.0.1"} else ["native-image authorization-boundary acceptance pending", "other hosts and platforms unverified", "experimental; not stable v1.0"])}
+    if plugin["version"] == "1.0.3-dev.20261102.1":
+        provenance["limitations"] = [
+            "local discovery-test candidate; not installed or published by this build",
+            "automatic discovery M01 x3 and M02 x3 awaits owner execution",
+            "optional body-reference images and comparison page ship separately; text fallback remains available",
+            "no new model or image-provider calls; no new visual-quality or lifecycle verification",
+        ]
+    elif plugin["version"] == "1.0.3-rc.1":
+        provenance["limitations"] = [
+            "release preparation does not establish remote publication or installation status",
+            "the unchanged skill entrypoint passed six pre-release discovery sessions: M01 3/3 loaded, M02 0/3 loaded; other prompts, hosts and devices remain unverified",
+            "optional body-reference images and comparison page ship separately; text fallback remains available",
+            "no new image-provider verification; identity, precise body control and pixel-exact editing remain limited",
+            "native image pre-submit hard blocking is not provided; incomplete call traces remain unverifiable",
+        ]
     (stage / "PROVENANCE.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     archive = output / f"shy-cameo-{plugin['version']}.zip"
     with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED) as bundle:

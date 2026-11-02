@@ -40,6 +40,31 @@ def test_preflight_old_and_logged_out(tmp_path):
     assert {"codex_too_old", "codex_not_logged_in"} <= codes(found)
 
 
+def test_five_unconfirmed_drafts_need_no_generation_login(tmp_path, monkeypatch):
+    """Structural preparation only; this does not claim a fresh model session was run."""
+    from coshoot import backend_exec, compiler, names, sets
+    from coshoot.cards import require_valid
+    from test_sets import make_card
+
+    def forbidden(*args, **kwargs):
+        pytest.fail('draft preparation attempted compilation or image submission')
+    monkeypatch.setattr(backend_exec, 'run_exec', forbidden)
+    monkeypatch.setattr(compiler, 'write_request', forbidden)
+    card = make_card()
+    card['status'] = 'unverified'
+    for shot in card['shots']:
+        shot['status'] = 'unverified'
+        require_valid(shot, 'scene')
+        assert not names.scan(str(shot), names.load_names())
+    sets.require_set_shape(card)
+    assert len(card['shots']) == 5 and not list(tmp_path.iterdir())
+    # Login is a generation preflight concern and supplies an actionable instruction.
+    findings = preflight(tmp_path, run=runner(login_rc=1), which=lambda name: '/fake/codex')
+    login = next(f for f in findings if f.code == 'codex_not_logged_in')
+    assert login.level == 'block' and 'codex login' in login.message
+    assert not list(tmp_path.rglob('request.json')) and not list(tmp_path.rglob('generation-count'))
+
+
 def test_preflight_old_python(tmp_path):
     found = preflight(tmp_path, run=runner(), which=lambda name: "/bin/codex", python_version=(3, 8))
     assert "python_too_old" in codes(found)

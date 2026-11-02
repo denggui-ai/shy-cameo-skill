@@ -8,9 +8,10 @@ from __future__ import annotations
 import argparse
 import fcntl
 import hashlib
-from contextlib import ExitStack
+from contextlib import ExitStack, redirect_stderr
 from functools import wraps
 import json
+import io
 import os
 import shutil
 import sys
@@ -116,7 +117,7 @@ def cmd_consent(a):
         else:
             with os.fdopen(fd, "wb") as stream:
                 stream.write(raw)
-        metadata = {"archived_path": str(archive), "byte_size": len(raw),
+        metadata = {"archived_path": archive.relative_to(root).as_posix(), "byte_size": len(raw),
                     "dimensions": list(size) if size else None}
         if sha not in seen:
             photos.append({"path": str(path), "sha256": sha, **metadata})
@@ -126,8 +127,9 @@ def cmd_consent(a):
                 if record["sha256"] == sha:
                     record.update(metadata)
     consent["photos"] = photos
+    consent = migrate.workspace_document(out.parent, consent, "consent")
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(consent, ensure_ascii=False, indent=2), encoding="utf-8")
+    migrate.write_workspace_document(out, consent, 'consent', out.parent)
     return emit({"status": "consent_recorded", "path": str(out), **consent})
 
 
@@ -150,7 +152,7 @@ def _consented_photos(ws: Path, photo_args) -> list:
     return [Path(p).resolve() for p in photo_args]
 
 
-def _set_context(a, check_shots: bool = True):
+def _set_context(a, check_shots: bool = True, write_paths: bool = True):
     """check_shots=False only for bookkeeping (set-record/set-status): a claim made before a rule
     changed (e.g. side_profile retired) must still be recordable."""
     ws = Path(a.workspace).resolve()
@@ -159,14 +161,27 @@ def _set_context(a, check_shots: bool = True):
         sets.validate_set_card(card)
     else:
         sets.require_set_shape(card)
-    return ws, card, sets.load_ledger(ws, card)
+    ledger = sets.load_ledger(ws, card)
+    if write_paths and Path(a.set_card).resolve().is_relative_to(ws):
+        relocated = migrate.workspace_document(ws, card, 'set')
+        if relocated != card:
+            migrate.write_workspace_document(Path(a.set_card), relocated, 'set', ws)
+            card = relocated
+    return ws, card, ledger
 
 
 def _user_ref(ws: Path, raw: str, what: str, code: str) -> Path:
-    """A set-wide user-supplied image: absolute, consented by bytes, never under sheet roots."""
+    """Resolve stored set references; consent and prohibited locations still apply."""
+    ws = Path(ws).resolve()
     path = Path(raw)
     if not path.is_absolute():
-        raise CardError(f"{code}_not_absolute", f"{what}要写完整路径：{raw}")
+        try:
+            path = migrate.local_path(ws, raw)
+        except CardError:
+            raise CardError(f"{code}_bad_location", f"{what}相对路径必须位于工作区内：{raw}")
+    # Stored set references may still carry a verified old workspace prefix.
+    if not path.is_relative_to(ws) and any(path.is_relative_to(root) for root in migrate.legacy_roots(ws)):
+        path = migrate.local_path(ws, raw)
     if not path.is_file():
         raise CardError(f"missing_{code}", f"找不到{what}：{raw}")
     path = path.resolve()
@@ -261,7 +276,7 @@ def cmd_set_record(a):
 
 
 def cmd_set_status(a):
-    _, _, ledger = _set_context(a, check_shots=False)
+    _, _, ledger = _set_context(a, check_shots=False, write_paths=False)
     return emit(ledger)
 
 
@@ -295,7 +310,7 @@ def _check_cover_likeness(ws: Path, card: dict, ledger: dict, photos: list):
     if ("cover_likeness" in ledger or item["status"] != "generated" or not ledger.get("chain_image")
             or card["shots"][0]["user"].get("presence", "face") != "face"):
         return None
-    ledger["cover_likeness"] = likeness.score(photos, Path(ledger["chain_image"]), ws)
+    ledger["cover_likeness"] = likeness.score(photos, sets.chain_ref(ws, card, ledger), ws)
     return ledger["cover_likeness"]
 
 
@@ -616,7 +631,7 @@ def cmd_verify(a):
         paths = [Path(p) for p in a.log]
     else:
         paths = audit.find_rollouts(_codex_home(a.codex_home), request_path, request_path.stat().st_mtime)
-    result = audit.audit_files(paths, request, request_path, names.load_names(), scope_to_request=not bool(a.log)).to_dict()
+    result = audit.audit_files(paths, request, request_path, names.load_names(), scope_to_request=True).to_dict()
     result.update(run_id=request['run_id'], request_sha256=request['sha256'])
     (request_path.parent / "audit.json").write_text(json.dumps(result, ensure_ascii=False, indent=2),
                                                     encoding="utf-8")
@@ -640,7 +655,7 @@ def cmd_deliver(a):
     consent_path = Path(a.workspace) / "consent.json"
     request = load_json(request_path)
     compiler.check_request_integrity(request)
-    audit_result = load_json(a.audit) if a.audit else {'status': 'unverified', 'reason': '未运行事后审计'}
+    audit_result = load_json(a.audit) if a.audit else {'status': 'unverifiable', 'reason': '无法审计：未运行事后审计'}
     frame_result = load_json(a.frame) if a.frame else None
     if a.audit and (audit_result.get('run_id') != request['run_id'] or audit_result.get('request_sha256') != request['sha256']):
         raise CardError('qa_mismatch', '审计记录不属于本次请求，请重新 verify')
@@ -675,7 +690,7 @@ def cmd_record_verdict(a):
             or sidecar['frame_check'].get('level') == 'block'):
         raise CardError('qa_incomplete', '接受前请完成属于本次请求和图片的 verify、frame-check 与交付')
     if all(checks.values()) and sidecar['audit'].get('status') == 'tampered':
-        # The sidecar and audit.json stay untouched as evidence; unverified is still acceptable.
+        # The sidecar and audit.json stay untouched as evidence; declared unverifiable (including legacy unverified) is still acceptable.
         raise CardError('audit_tampered', '本次调用审计为 tampered（' + str(sidecar['audit'].get('reason', '')) +
                         '），不能记为正式 accepted；问题记录已保留在 sidecar 与 audit.json。可记 rejected，或重新编译后按新请求生成')
     sidecar["self_check"] = {**checks, "at": time.strftime("%Y-%m-%dT%H:%M:%S")}
@@ -684,6 +699,18 @@ def cmd_record_verdict(a):
     path.write_text(json.dumps(sidecar, ensure_ascii=False, indent=2), encoding="utf-8")
     return emit({"status": "verdict_recorded", "verdict": sidecar["verdict"],
                  "self_check": sidecar["self_check"]})
+
+
+def cmd_check_pose_variety(a):
+    card = load_json(a.set_card)
+    require_valid(card, "set")
+    for shot in card["shots"]:
+        require_valid(shot, "scene")
+    warnings = io.StringIO()
+    with redirect_stderr(warnings):
+        sets.check_pose_variety(card["shots"])
+    return emit({"status": "pose_variety_checked", "advisory_only": True,
+                 "warnings": warnings.getvalue().splitlines()})
 
 
 def cmd_validate_library(a):
@@ -738,6 +765,10 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("scan-names")
     s.add_argument("--text", required=True)
     s.set_defaults(func=cmd_scan_names)
+
+    s = sub.add_parser("check-pose-variety", help="检查五张草稿的构图差异，仅给建议，不编译或提交")
+    s.add_argument("--set-card", required=True)
+    s.set_defaults(func=cmd_check_pose_variety)
 
     s = sub.add_parser("consent")
     s.add_argument("--workspace", required=True)

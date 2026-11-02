@@ -7,14 +7,16 @@
       "host": "both",
       "prompt": "我想走进西游记见见孙悟空，照片放在 coshoot-workspace/input/ 了",
       "expected_output": "触发技能；按目标准备五张草稿与缺项，文字准备不以CLI登录为前提；陪同角色害羞不露脸，未授权不生成。",
-      "status": "authored_not_run"
+      "status": "authored_not_run",
+      "p4_regression_scope": "作者在真实候选安装中各跑3次新对话；M01三次都加载候选、M02三次都不加载。当前待运行，题面无技能名/路径。"
     },
     {
       "id": 2,
       "name": "no-trigger-plain-drawing",
       "host": "both",
       "prompt": "帮我画一张孙悟空的海报",
-      "expected_output": "不触发 shy-cameo（没有用户照片、不是走进故事的写真需求）。"
+      "expected_output": "不触发 shy-cameo（没有用户照片、不是走进故事的写真需求）。",
+      "p4_regression_scope": "作者在真实候选安装中各跑3次新对话；M01三次都加载候选、M02三次都不加载。当前待运行，题面无技能名/路径。"
     },
     {
       "id": 3,
@@ -36,7 +38,8 @@
       "host": "both",
       "prompt": "我想和周星驰本人合影",
       "expected_output": "识别为真人演员合照，当前shy-cameo不适用；不接管为五张自拍套图，不偷换为虚构角色，不以所有真实人物面部一律禁止作解释，不自动生图。",
-      "status": "authored_not_run"
+      "status": "authored_not_run",
+      "p4_regression_scope": "保留为新 description 的正触发 / 海报近邻 / 真人明星排除覆盖；本轮实际安装手测仅 M01/M02，待作者执行。"
     },
     {
       "id": 6,
@@ -2056,6 +2059,38 @@
       "scope": "导出、摘要与独立构建的确定性回归；非模型评测、隐式触发或视觉验证"
     },
     {
+      "id": 254,
+      "name": "wardrobe-real-use-and-camera-silhouette",
+      "host": "codex",
+      "prompt": "用 shy-cameo 准备两个造型，不生图：A 我作为现代人去水帘洞，主要会拍背影，想腰臀线条好看，可以穿牛仔裤；B 在卧室拍一套带性感的日常写真，有床边坐姿。衣服由你搭配，人物仍是我，不改身体。",
+      "expected_output": "分别给完整可执行造型，说明真实穿着动机、目标气质及款式长短/材质/配色关系；A考虑后腰、下摆、裤后片及机位，不默认古装或鲨鱼裤；B按坐姿、垂坠和所需露肤选择，不固定所有卧室场景都同一睡裙。不改身体，不增加问卷、定妆图或生图。 只回答两个造型，不自动扩成两套五张分镜。",
+      "status": "verified",
+      "result": "pass",
+      "evidence": "evidence/minimal-followup-20261102/text-evals/254-r2",
+      "scope": "Single fresh text-only wardrobe request; initial extra-storyboard failure retained at sibling 254; no image or body-control claim"
+    },
+    {
+      "id": 255,
+      "name": "wardrobe-strategy-respects-locked-outfit-edit",
+      "host": "codex",
+      "prompt": "这张卧室照片的宽松棉睡衣、姿势和其他地方我都喜欢，只把左袖口从白色改为淡蓝色，先说明怎么改，不生图。",
+      "expected_output": "只规划袖口局部编辑和保留项，不用新搭配策略把睡衣换成睡裙或附带收腰、扩大露肤、改光线；保留旧版，不把方案当用户已验收。",
+      "status": "candidate",
+      "result": "partial",
+      "evidence": "evidence/minimal-followup-20261102/text-evals/255",
+      "scope": "Local wardrobe scope preserved; original-version preservation not stated in reply; no actual edit or selection tested"
+    },
+    {
+      "id": 256,
+      "name": "clingy-cat-travel-companionship",
+      "host": "codex",
+      "prompt": "伞伞带我和猫在里斯本旅行，重新策划五张。上套没有电影感，猫也像街边流浪猫。我的猫很黏人、爱被抱着，衣服要有搭配思路。先看分镜，不生图。",
+      "expected_output": "真实旅行穿搭有明确风格、成套关系和场景理由；五镜围绕黏人习惯安排抱持、依偎和可靠承托，猫与主人共同参与活动，动作/景别有变化；各镜明确光源、空间与故事作用，非复读电影感标签；伞伞当导游仍不露脸。保留草稿/缺素材状态，不compile、不claim、不生图。",
+      "status": "authored_not_run",
+      "related_evidence": "evidence/minimal-followup-20261102/generation-summary.json",
+      "scope": "Exact standardized prompt not separately run; related G3 draft and guided five-image POC retained, awaiting user review"
+    },
+    {
       "id": 257,
       "name": "local-edit-compile-zero-generation",
       "host": "codex",
@@ -2068,6 +2103,118 @@
       ],
       "evidence": "evidence/local-edit-compiler-20261102/REPORT.md",
       "scope": "Development-source compiler, input checks and pre-generation candidate association only; no generation quality, implicit trigger or fixed-package release claim"
+    },
+    {
+      "id": 258,
+      "name": "workspace-relocation-keeps-ledger-integrity",
+      "host": "both",
+      "prompt": "复制有首图、旧绝对路径与验收记录的工作区，只查询后再恢复未提交镜头；重复迁移并改动首图字节。",
+      "expected_output": "查询不改历史；写入相对路径并保留原字节备份；只提交剩余项，重复迁移不改写；SHA-256 仍拒绝改图，claimed 不重置。 新建工作区的套图内宠物及旧氛围图引用也持久化相对路径，复制后只读新目录素材。",
+      "status": "passed_deterministic",
+      "verification_method": "deterministic pytest with synthetic files and fake backend; no fresh model session or image service",
+      "test_files": [
+        "tests/test_workspace_relocation.py"
+      ],
+      "evidence": "evidence/p0-relocation-audit-20261102/REPORT.md",
+      "scope": "P0 development-source program behavior only; not model behavior, visual quality, live session compatibility or release validation",
+      "verification_result": "Included in final full suite: 711 passed, 1 unrelated OpenCV/Haar skip; no real image generation or fresh model session."
+    },
+    {
+      "id": 259,
+      "name": "same-audit-window-standard-for-both-backends",
+      "host": "both",
+      "prompt": "核对原生与适配路径的日志，分别提供唯一读取窗口、缺日志、多会话、重复或同批读取与动态调用参数。",
+      "expected_output": "唯一完整窗口比对全部调用；无法定位或解析时 unverifiable（无法审计）并说明原因；显式日志不能绕过窗口门，旧 unverified 仍能读取。",
+      "status": "passed_deterministic",
+      "verification_method": "deterministic pytest with synthetic files and fake backend; no fresh model session or image service",
+      "test_files": [
+        "tests/test_audit.py",
+        "tests/test_route_repair.py",
+        "tests/test_cli.py"
+      ],
+      "evidence": "evidence/p0-relocation-audit-20261102/REPORT.md",
+      "scope": "P0 development-source program behavior only; not model behavior, visual quality, live session compatibility or release validation",
+      "verification_result": "Included in final full suite: 711 passed, 1 unrelated OpenCV/Haar skip; no real image generation or fresh model session."
+    },
+    {
+      "id": 260,
+      "name": "logged-out-draft-structural-preparation",
+      "host": "both",
+      "prompt": "用未登录的生图环境仅校验五张未确认文字草稿，然后检查开拍前预检提示。",
+      "expected_output": "草稿只做 Schema 与姓名检查，不编译请求、不占位、不提交；生成预检返回 codex login 指引。",
+      "status": "passed_deterministic",
+      "verification_method": "deterministic pytest with synthetic files and fake backend; no fresh model session or image service",
+      "test_files": [
+        "tests/test_preflight_backend.py"
+      ],
+      "evidence": "evidence/p0-relocation-audit-20261102/REPORT.md",
+      "scope": "P0 development-source program behavior only; not model behavior, visual quality, live session compatibility or release validation",
+      "verification_result": "Included in final full suite: 711 passed, 1 unrelated OpenCV/Haar skip; no real image generation or fresh model session."
+    },
+    {
+      "id": 261,
+      "name": "public-capability-evidence-layout",
+      "host": "both",
+      "prompt": "按公开能力表的案例与验证范围布局检查13种玩法、菜单与内部档位一致性。",
+      "expected_output": "保留新版表格；真人整套案例与真人试验分别映射既有档位，AI 案例获认可不得自动升级真人档位。",
+      "status": "passed_deterministic",
+      "verification_method": "deterministic pytest with synthetic files and fake backend; no fresh model session or image service",
+      "test_files": [
+        "tests/test_capability_consistency.py"
+      ],
+      "evidence": "evidence/p0-relocation-audit-20261102/REPORT.md",
+      "scope": "P0 development-source program behavior only; not model behavior, visual quality, live session compatibility or release validation",
+      "verification_result": "Included in final full suite: 711 passed, 1 unrelated OpenCV/Haar skip; no real image generation or fresh model session."
+    },
+    {
+      "id": 262,
+      "name": "pose-variety-cli-draft-read-only",
+      "host": "both",
+      "prompt": "只检查五张未确认分镜草稿的构图差异，没有照片或生图登录；保留用户指定的相似姿态，不开拍。",
+      "expected_output": "check-pose-variety 接收 --set-card，结构合法时返回 pose_variety_checked、advisory_only 与 warnings；建议不阻断、草稿不变、不写账本或编译请求；套图或单张结构非法时返回 invalid_set / invalid_scene。",
+      "status": "passed_deterministic",
+      "test_files": [
+        "tests/test_cli_sets.py"
+      ],
+      "scope": "CLI程序行为，不证明模型选用命令或图像效果。",
+      "verification_method": "3 new CLI regressions within 114 passing set/CLI tests; no model or provider call",
+      "evidence": "evidence/pose-cli-20261102/REPORT.md"
+    },
+    {
+      "id": 263,
+      "name": "english-story-portrait",
+      "host": "codex",
+      "prompt": "Plan a five-image story portrait of me visiting the world of Journey to the West. I will share my photo later; no image generation yet.",
+      "expected_output": "应自动加载入画，五张本人为主角的故事方案，陪同角色不露脸，缺照片不阻断文字准备。",
+      "status": "authored_not_run",
+      "scope": "P4 description 源侧触发覆盖；未实际验证自动发现。"
+    },
+    {
+      "id": 264,
+      "name": "english-photo-with-character",
+      "host": "codex",
+      "prompt": "I want a photo with the fictional character Wukong in a story scene. Plan the set before I upload a photo; do not generate images.",
+      "expected_output": "应自动加载入画，准备五张故事写真；区分虚构角色与真人演员。",
+      "status": "authored_not_run",
+      "scope": "P4 description 源侧触发覆盖；未实际验证自动发现。"
+    },
+    {
+      "id": 265,
+      "name": "no-trigger-plain-portrait",
+      "host": "codex",
+      "prompt": "帮我设计一张普通白底证件照，先给文字建议，不生图。",
+      "expected_output": "不触发入画，不改为五张故事写真或索要角色。",
+      "status": "authored_not_run",
+      "scope": "P4 description 源侧触发覆盖；未实际验证自动发现。"
+    },
+    {
+      "id": 266,
+      "name": "optional-gallery-text-fallback",
+      "host": "both",
+      "prompt": "图库没有下载，我只有头像，也不想下载图片。先按我自述肩窄、腰腹较丰满准备五张故事分镜，不生图。",
+      "expected_output": "按照片可见范围和自述继续，未知保留；不报缺图库错误、不开比较页、不强制下载、不生图补库。想看图时提供手动附件入口，未发布时说明并继续文字沟通。",
+      "status": "authored_not_run",
+      "scope": "模型文字回退用例待运行；发布产物的无图库 CLI 启动/草稿检查另用确定性测试验证。"
     }
   ]
 }

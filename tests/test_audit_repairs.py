@@ -24,7 +24,7 @@ def call(code):
 def test_unknown_expression_never_passes(expression):
     result = audit.audit_lines([call('image_gen({prompt: '+expression+', referenced_image_paths: []})')],
                                {'prompt': 'ok', 'referenced_image_paths': []}, Path('/request.json'), [])
-    assert result.status == 'unverified'
+    assert result.status == 'unverifiable'
 
 
 def test_all_calls_and_reference_paths_are_checked():
@@ -32,9 +32,9 @@ def test_all_calls_and_reference_paths_are_checked():
     good = 'image_gen({prompt: "ok", referenced_image_paths: ["/a"]});'
     bad = 'image_gen({prompt: "ok", referenced_image_paths: ["/b"]})'
     assert audit.audit_lines([call(good+bad)], req, Path('/request.json'), []).status == 'tampered'
-    assert audit.audit_lines([call(good+'image_gen({prompt: other.prompt})')], req, Path('/request.json'), []).status == 'unverified'
+    assert audit.audit_lines([call(good+'image_gen({prompt: other.prompt})')], req, Path('/request.json'), []).status == 'unverifiable'
     nested = 'const t = `${image_gen({prompt: "other", referenced_image_paths: []})}`'
-    assert audit.audit_lines([call(good+nested)], req, Path('/request.json'), []).status == 'unverified'
+    assert audit.audit_lines([call(good+nested)], req, Path('/request.json'), []).status == 'unverifiable'
 
 
 def test_escaped_prompt_decodes_exactly():

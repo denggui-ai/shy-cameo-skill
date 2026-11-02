@@ -3,7 +3,7 @@ import hashlib
 import json
 import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 import pytest
 
@@ -86,6 +86,39 @@ def test_export_blocks_private_assets_before_creating_output(tmp_path, name, tex
     assert result.returncode == 2 and data["status"] == "blocked"
     assert not (tmp_path / "public").exists()
     assert text not in result.stdout
+
+
+def test_public_export_excludes_evidence_and_migration_backups(tmp_path):
+    def private(path):
+        path = PurePosixPath(path.lower())
+        return 'evidence' in path.parts or path.match('*.pre-relative-paths-*.bak')
+
+    # Lock the reviewed manifest as well as the exporter behavior: neither end may leak.
+    actual = json.loads((ROOT / 'release/public-source-allowlist.json').read_text())
+    assert not [(e['source'], e['destination']) for e in actual
+                if any(private(e[k]) for k in ('source', 'destination'))]
+    src, entries = fixture_source(tmp_path)
+    excluded = ['evidence/p0/REPORT.md', 'records/set.json.pre-relative-paths-' + 'a' * 64 + '.bak']
+    marker = 'PRIVATE_P0_EVIDENCE_SENTINEL'
+    for name in excluded:
+        path = src / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(marker)
+    result, data = run_export(tmp_path, src, entries)
+    assert result.returncode == 0, data
+    public = tmp_path / 'public'
+    files = [p for p in public.rglob('*') if p.is_file()]
+    assert not any(private(p.relative_to(public).as_posix()) for p in files)
+    assert all(marker.encode() not in p.read_bytes() for p in files)
+    # Even an accidentally added or renamed allowlist entry must fail before writing.
+    attempts = [{'source': name, 'destination': 'leaked.md'} for name in excluded]
+    attempts += [{'source': 'README.md', 'destination': name} for name in excluded]
+    for index, entry in enumerate(attempts):
+        attempt = tmp_path / f'blocked-{index}'
+        result, data = run_export(attempt, src, entries + [entry])
+        assert result.returncode == 2 and data['status'] == 'blocked', (entry, data)
+        assert not (attempt / 'public').exists()
+        assert marker not in result.stdout
 
 
 def test_export_blocks_symlink_and_preserves_existing_output(tmp_path):

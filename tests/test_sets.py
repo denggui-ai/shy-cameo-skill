@@ -78,7 +78,7 @@ def test_first_shot_success_registers_chain(tmp_path, png_factory):
         sets.record(tmp_path, ledger, 1, "generated")
     assert exc.value.code == "missing_image"
     sets.record(tmp_path, ledger, 1, "generated", str(img))
-    chain = Path(ledger["chain_image"])
+    chain = tmp_path / ledger["chain_image"]
     assert chain == (tmp_path / "outputs" / "sets" / "hgs1" / "chain.png").resolve()
     assert chain.read_bytes() == img.read_bytes()
     sets.require_claimable(ledger, 2)

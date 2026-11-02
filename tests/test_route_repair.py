@@ -78,7 +78,7 @@ def test_automatic_audit_scopes_by_read_events_not_prompt_matching(tmp_path):
     assert audit.audit_files([log],req,a,[],scope_to_request=True).status=='pass'
     # No read anchors: uncertainty, not an accusation against a legitimate second shot.
     log.write_text('\n'.join([lines[1],lines[3]]))
-    assert audit.audit_files([log],req,a,[],scope_to_request=True).status=='unverified'
+    assert audit.audit_files([log],req,a,[],scope_to_request=True).status=='unverifiable'
     # Rogue call inside A's window must not be filtered out.
     log.write_text('\n'.join(lines[:2]+[lines[3]]+lines[2:]))
     assert audit.audit_files([log],req,a,[],scope_to_request=True).status=='tampered'
@@ -137,7 +137,7 @@ def test_fake_read_and_dynamic_calls_do_not_make_false_audit_claims(tmp_path):
     req={'prompt':'A','referenced_image_paths':[]}
     assert audit.audit_files([log],req,a,[],scope_to_request=True).status=='tampered'
     dynamic=call_line('image_gen({prompt: r.prompt, referenced_image_paths: r.referenced_image_paths})')
-    assert audit.audit_lines([dynamic,dynamic],req,a,[]).status=='unverified'
+    assert audit.audit_lines([dynamic,dynamic],req,a,[]).status=='unverifiable'
 
 
 def test_wide_does_not_warn_against_full_body(tmp_path,png_factory):

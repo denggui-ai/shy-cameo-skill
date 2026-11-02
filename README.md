@@ -1,14 +1,12 @@
 # 入画 · shy-cameo
 
-> **[v1.0.2-rc.2 公开测试版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** 已加入 `compile-edit`。调用审计仍为 `unverified`；原隔离CLI模型首用缺认证、工作区复制的绝对路径问题保留。附件与标签保留已校验的封包快照；其中“本地更新／未上传”是打包时状态，发布状态以本页面和Release为准。
-
 **用你的照片，走进想经历的故事。**
 
 入画是一个 **Codex AI 故事写真技能（skill）**：从一张清楚的正脸照开始，策划并生成一套五张 3:4 竖图。和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
 
-[开始使用](#三步开始) · [完整案例集](release/CASES.md) · [5 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [English](README.en.md)
+[开始使用](#三步开始) · [完整案例集](release/CASES.md) · [5 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [使用限制](#使用前了解这些) · [English](README.en.md)
 
-> 公开测试版 **[v1.0.2-rc.2](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** · 先看分镜，再决定开拍；拍完可以继续下一套，也可以只改某一张并保留旧版。
+> 先看分镜，再决定开拍；拍完可以继续下一套，也可以只改某一张并保留旧版。[版本与验证边界](release/RELEASE-NOTES.md)。
 
 ## 选一个故事，看看效果
 
@@ -35,7 +33,7 @@
 
 ## 三步开始
 
-需要 **Codex + Python 3.9+**。真正开拍还需要当前 Codex 会话支持内置生图、已登录账号和可用额度。安装本身不生成图片。
+需要 **Codex + Python 3.9+**。可选的人脸检测使用 `opencv-python-headless>=4.9,<5`；OpenCV 5 不在支持范围，未安装兼容版本时转为人工检查。真正开拍还需要当前 Codex 会话支持内置生图、已登录账号和可用额度。安装本身不生成图片。
 
 ### 1. 安装固定版本
 
@@ -43,11 +41,11 @@
 
 ```text
 请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.0.2-rc.2。
+安装 skills/shy-cameo 目录，版本固定为 v1.0.3-rc.1。
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
-安装完成后**新开对话**。本机已更新1.0.2-rc.2插件，安装文件与包一致，新进程发现及编译入口检查通过；本次未重复模型首用或生图。插件安装步骤见[安装指南](release/INSTALL.md)，分版本证据见[验证矩阵](release/VERIFICATION-MATRIX.md)。
+安装完成后**新开对话**。默认使用 skill-installer；校验、升级及插件 ZIP 进阶安装见[安装指南](release/INSTALL.md)，版本状态与已验证范围见[发布说明](release/RELEASE-NOTES.md)。
 
 ### 2. 先试一套分镜
 
@@ -93,6 +91,6 @@
 
 使用问题或建议请到 [Issues](https://github.com/denggui-ai/shy-cameo-skill/issues)，附上使用环境和复现步骤，**不要公开上传私人照片或个人信息**。版权、肖像权、安全与隐私问题请按 [SECURITY.md](SECURITY.md) 联系。
 
-[逐项验证记录](release/VERIFICATION-MATRIX.md) · [补测计划与张数](release/NEXT-TESTS.md) · [历史验证范围](release/VALIDATION.md) · [开发与复现](release/DEVELOPMENT.md) · [变更记录](CHANGELOG.md) · [贡献说明](CONTRIBUTING.md)
+[开发与验证文档](release/dev/README.md) · [变更记录](CHANGELOG.md) · [贡献说明](CONTRIBUTING.md)
 
 [MIT 许可](LICENSE) 适用于软件，不包含肖像的其他使用授权。成片由 AI 生成，本项目与作品权利方及 Cameo 无关联。权利说明不是法律意见。本项目原名 classic-coshoot。

@@ -1,14 +1,12 @@
 # shy-cameo · 入画
 
-> **[v1.0.2-rc.2 public test release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** adds `compile-edit`. Call auditing remains `unverified`; isolated CLI model first-use authentication and copied-workspace absolute paths remain known limitations. Release assets and the tag preserve the verified packaging snapshot; its “local / not yet published” wording describes the packaging stage.
-
 **Turn your photo into a story you want to experience.**
 
 A **Codex skill for AI story portraits**: start with one clear front-facing photo, plan a story, then generate five 3:4 portraits. Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. You are the lead; fictional companions appear through back views, hands and shadows.
 
-[Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [简体中文](README.md)
+[Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [Limitations](#before-you-use-it) · [简体中文](README.md)
 
-> Public test release **[v1.0.2-rc.2](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.2-rc.2)** · Preview the storyboard first. Continue with another series, or revise one shot while keeping the previous version.
+> Preview the storyboard first, then decide whether to shoot. [Release notes and verification limits](release/RELEASE-NOTES.md).
 
 ## Pick a story and see the results
 
@@ -35,7 +33,7 @@ These accepted examples feature an **AI-generated virtual adult**, not a real mo
 
 ## Get started in three steps
 
-You need **Codex and Python 3.9+**. Generating pictures also requires a Codex session with built-in image generation, a signed-in account and available quota. Installation does not generate images.
+You need **Codex and Python 3.9+**. Optional face detection requires `opencv-python-headless>=4.9,<5`. OpenCV 5 is unsupported; without a compatible detector, use the documented manual checks. Generating pictures also requires a Codex session with built-in image generation, a signed-in account and available quota. Installation does not generate images.
 
 ### 1. Install a fixed version
 
@@ -43,12 +41,12 @@ Open a Codex conversation and send:
 
 ```text
 Use skill-installer to install skills/shy-cameo from
-https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.2-rc.2.
+https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.3-rc.1.
 Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
 
-**Start a new conversation after installation.** The local plugin was updated to 1.0.2-rc.2; installed files match the package, and fresh-process discovery and the compile-edit entry point passed. This update did not repeat model first-use or image generation. See the Chinese [installation guide](release/INSTALL.md) and [verification matrix](release/VERIFICATION-MATRIX.md) for version-specific evidence.
+**Start a new conversation after installation.** Use skill-installer as the default route. [Installation](release/INSTALL.md) covers checks, upgrades and the advanced plugin ZIP option; [release notes](release/RELEASE-NOTES.md) record version-specific verification limits.
 
 ### 2. Preview a storyboard
 
@@ -94,6 +92,6 @@ Try photographic, fully animated or photographic-subject/animated-world styles. 
 
 For questions or suggestions, open an [issue](https://github.com/denggui-ai/shy-cameo-skill/issues) with your environment and steps to reproduce. **Do not post private photos or personal information.** For copyright, likeness, security or privacy concerns, follow [SECURITY.md](SECURITY.md).
 
-[Verification matrix (中文)](release/VERIFICATION-MATRIX.md) · [Test plan (中文)](release/NEXT-TESTS.md) · [Validation scope](release/VALIDATION.md) · [Development](release/DEVELOPMENT.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
+[Development and verification](release/dev/README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
 
 The [MIT license](LICENSE) covers the software, not other uses of anyone's likeness. Images are AI-generated. This project is not affiliated with any featured work's rights holders or with Cameo. Rights statements are not legal advice. Formerly named classic-coshoot.

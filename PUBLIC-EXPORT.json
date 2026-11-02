@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2-rc.2",
+  "version": "1.0.3-rc.1",
   "status": "candidate",
   "git_history_included": false,
   "allowlist_normalized_to_public_paths": true,
@@ -20,14 +20,14 @@
     {
       "source": ".gitignore",
       "path": ".gitignore",
-      "bytes": 677,
-      "sha256": "43608ce6f00b463182ec8359709683c89d9cc15b27e82eca2ccf3ba066489020"
+      "bytes": 976,
+      "sha256": "4c894514ccd0481f9e4818a22b1d209135f3c61d31c7710eb21920b85d7921a7"
     },
     {
       "source": "CONTRIBUTING.md",
       "path": "CONTRIBUTING.md",
-      "bytes": 964,
-      "sha256": "d0a8aa8dcf64e650b0724526984e9c98e1b3310c0d17be450da03bb1107c8f11"
+      "bytes": 1001,
+      "sha256": "e21ab4034f07c94a14985d2f1c587f1f6609b13aecfd63b5ba9e2d60b0f3694b"
     },
     {
       "source": "LICENSE",
@@ -36,16 +36,16 @@
       "sha256": "3e9b760102af4e3bf35e5695a656be013fac0175e959cbc2eb9b01e766c7864b"
     },
     {
-      "source": "CHANGELOG.md",
+      "source": "OPEN-SOURCE-CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 23119,
-      "sha256": "e8c08fb9c93f36288f512d60ca7b7dc6fbfa2c2ef4a30db393cd8a8f7589e3c1"
+      "bytes": 25100,
+      "sha256": "7abcccab836cebd46bdaec8e5b68ad39018fcb2ecf1420da871661204851151f"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 7617,
-      "sha256": "168a753a45c9a1474b37125651b313c54a1edded59d1414dc91e4ea8cef530af"
+      "bytes": 7110,
+      "sha256": "75a921a2876a61dec6d53661b70fdfe4029a7440efec2b7b5b9d4da868571a31"
     },
     {
       "source": "SECURITY.md",
@@ -56,14 +56,14 @@
     {
       "source": "evals/evals.json",
       "path": "evals/evals.json",
-      "bytes": 135053,
-      "sha256": "f7e926d4c169e22e5ad6e77e7fc783345133af0c4cdc02254f62f50384d812e5"
+      "bytes": 145696,
+      "sha256": "49e3f363f1d214002b7fef4bcc3120ad836fe9f59923bf4db8929c98adb66a96"
     },
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 18024,
-      "sha256": "4f2cb298b3477beccd6e439a1519bf8f471c3d0df3ec568046c4eedbb80981d5"
+      "bytes": 17755,
+      "sha256": "847ac1f933023faa2f998dd57caa1af9c4e124412d774fb2b56a8599d3e85585"
     },
     {
       "source": "release/icon.svg",
@@ -74,32 +74,32 @@
     {
       "source": "release/plugin.json",
       "path": "release/plugin.json",
-      "bytes": 1675,
-      "sha256": "8e608c95df31e85ac75ec1187906b53cf6d00fb2cc58cc2b16417d82971abf66"
+      "bytes": 1232,
+      "sha256": "b2ef2fc0386c6ca1c82205c16d5d61f8faa572af967b1778d26ebfe935cfb08d"
     },
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 33189,
-      "sha256": "c59b8b8f8a502a341b498562644c41410242a1fe3258a0b927b838b3d565b806"
+      "bytes": 23466,
+      "sha256": "503a7a2bb85959febe87a1198d27914d2ceb69f09c8b340e5bcf82939e059c57"
     },
     {
       "source": "release/runtime-allowlist.json",
       "path": "release/runtime-allowlist.json",
-      "bytes": 13293,
-      "sha256": "beba3f40bf81aad35289b26dbe946f0aa8c45b10d6209f9ceab10be60e9467c8"
+      "bytes": 6425,
+      "sha256": "e2657441f63da02d8e71a15d16acffbd2b396268f6f36a49e00c590fa5d58cd9"
     },
     {
       "source": "requirements-dev.txt",
       "path": "requirements-dev.txt",
-      "bytes": 52,
-      "sha256": "f7b1626d461bee4d41bd3f16a4314ab5384b965550b3ed798fc0c0dc3f96a2ad"
+      "bytes": 65,
+      "sha256": "ade30308e3493ac4d1fc8940e2f7f126d1c59bfbc19e4dfb03ea8cfc59dd3383"
     },
     {
       "source": "scripts/build_v1_release.py",
       "path": "scripts/build_v1_release.py",
-      "bytes": 8687,
-      "sha256": "0fd5084813b23be48caf9756c47dd236e4911c9188e2641feaae4879033bb615"
+      "bytes": 9920,
+      "sha256": "76f46a50f2f35775f42501b08614838c7680afffb615c222c47c42ad92a3ed85"
     },
     {
       "source": "scripts/export_public_source.py",
@@ -110,8 +110,8 @@
     {
       "source": "skills/shy-cameo/SKILL.md",
       "path": "skills/shy-cameo/SKILL.md",
-      "bytes": 14432,
-      "sha256": "d17e7a8fb1b5854a036078ded5ebd1e37e849495dae869c02e2773c1b426d6af"
+      "bytes": 6692,
+      "sha256": "a4660a42cfbc85091f4ba6a98d13734d7b6d84dadddc3d52366a6384013d915e"
     },
     {
       "source": "skills/shy-cameo/agents/openai.yaml",
@@ -144,70 +144,34 @@
       "sha256": "ed34bde326745f2b8f64abb5b532ae10e849c5b8000d584b89e8e39f76faf411"
     },
     {
-      "source": "skills/shy-cameo/references/backend-codex-native.md",
-      "path": "skills/shy-cameo/references/backend-codex-native.md",
-      "bytes": 7360,
-      "sha256": "6f6e224e5e9ea131341990ceacd9ca14cc7b0c50f351742b4501e5af94f48d5e"
+      "source": "skills/shy-cameo/references/generation.md",
+      "path": "skills/shy-cameo/references/generation.md",
+      "bytes": 19837,
+      "sha256": "0005585e2e88f4217a3a1b6dc6b224c2ff10ab7c8c2f6f9b7916f44c0d56c061"
     },
     {
-      "source": "skills/shy-cameo/references/character-card.md",
-      "path": "skills/shy-cameo/references/character-card.md",
-      "bytes": 4457,
-      "sha256": "4f0196b670d7aa92e64f2a875b7d600bfa5d79ad02ae969452c67898dacc927f"
+      "source": "skills/shy-cameo/references/storyboarding.md",
+      "path": "skills/shy-cameo/references/storyboarding.md",
+      "bytes": 46736,
+      "sha256": "1198adf02c09f1f28f4ab0aad61afa4711e858032d71aafca1811535100fa4e8"
     },
     {
-      "source": "skills/shy-cameo/references/dialogue.md",
-      "path": "skills/shy-cameo/references/dialogue.md",
-      "bytes": 15000,
-      "sha256": "0311eed7dc025d9a38c1650a6ddbcd08693b1d71e58efc0d119d561a29084c85"
-    },
-    {
-      "source": "skills/shy-cameo/references/face-likeness.md",
-      "path": "skills/shy-cameo/references/face-likeness.md",
-      "bytes": 1915,
-      "sha256": "3123025b109b318697ef3f621d37f3dc442fbf70a7db3320150f8c2b63fb59eb"
-    },
-    {
-      "source": "skills/shy-cameo/references/recommendations.md",
-      "path": "skills/shy-cameo/references/recommendations.md",
-      "bytes": 8818,
-      "sha256": "08c6f80bc21cbc94381f67ce1cb5fa77edce19d5a4d60a49fb069eb89743435c"
-    },
-    {
-      "source": "skills/shy-cameo/references/photo-guide/README.md",
-      "path": "skills/shy-cameo/references/photo-guide/README.md",
-      "bytes": 2431,
-      "sha256": "30267b457d87fe7803643ab7e0902794c42313a768a753f500a9375f28d55ec0"
-    },
-    {
-      "source": "skills/shy-cameo/references/poc-baseline.md",
-      "path": "skills/shy-cameo/references/poc-baseline.md",
-      "bytes": 591,
-      "sha256": "1b61e8c27d46912a1a6d92a52f7d1fcce8fef1dd1fc7807d92c91ece75bdb0be"
+      "source": "skills/shy-cameo/references/opening-and-topics.md",
+      "path": "skills/shy-cameo/references/opening-and-topics.md",
+      "bytes": 21249,
+      "sha256": "05d4a4c27dd77b216cfe51930e1a067f7199bc02da638ba073eeef896a04dfb0"
     },
     {
       "source": "skills/shy-cameo/references/rights-cplus.md",
       "path": "skills/shy-cameo/references/rights-cplus.md",
-      "bytes": 2977,
-      "sha256": "ae8ba0d3e0362c1dea067f6eb003bd8d7d3d91bc2e28d34c1a56631b7d004956"
+      "bytes": 3012,
+      "sha256": "963f431cbce975c2c3146015346ba8abeef84d1a9e706ebb1df8a6cf54ad0853"
     },
     {
-      "source": "skills/shy-cameo/references/scene-card.md",
-      "path": "skills/shy-cameo/references/scene-card.md",
-      "bytes": 35309,
-      "sha256": "ab7d108a9371b75d6b1d4aeb8d0349bf05e416915018321f35f363613a77f6c5"
-    },
-    {
-      "source": "skills/shy-cameo/references/status-and-dod.md",
-      "path": "skills/shy-cameo/references/status-and-dod.md",
-      "bytes": 10492,
-      "sha256": "61344cb5427c7aafd577a06cc3b6b3bb2b66dce6ed6085b26315180064163e62"
-    },
-    {
-      "source": "skills/shy-cameo/references/support-status.md",
-      "path": "skills/shy-cameo/references/support-status.md",
-      "bytes": 3292,
-      "sha256": "eb62cbb461c8615b9b62501a44fb034d968c9150a36cdf98caeb907cf60868f0"
+      "source": "skills/shy-cameo/references/delivery-and-revision.md",
+      "path": "skills/shy-cameo/references/delivery-and-revision.md",
+      "bytes": 18937,
+      "sha256": "ebb5752714fc0fc0768965a1bc3cb4aaec14e64b200c29a5cd58d1015b722a8a"
     },
     {
       "source": "skills/shy-cameo/schema/character-card.schema.json",
@@ -242,14 +206,14 @@
     {
       "source": "skills/shy-cameo/schema/sidecar.schema.json",
       "path": "skills/shy-cameo/schema/sidecar.schema.json",
-      "bytes": 2045,
-      "sha256": "d8c35c691853a2b625fe7c316a682971395e3812762467cd5e2707c656b7d9d1"
+      "bytes": 2061,
+      "sha256": "6975c9b23fdb83e10bb49942b5f54e2bb2169f77edf5383d799ec3773795645e"
     },
     {
       "source": "skills/shy-cameo/scripts/cli.py",
       "path": "skills/shy-cameo/scripts/cli.py",
-      "bytes": 43282,
-      "sha256": "6e022c07998a3cef8cfc7e8001a602bbe7aad1a15e4dbfac6e821d7488204c11"
+      "bytes": 44776,
+      "sha256": "3a24e5dbf258fbd9e0492dd765e5c7c1a6b8c0d6e86b66c46a8d3101c20c10f7"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/__init__.py",
@@ -260,8 +224,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/audit.py",
       "path": "skills/shy-cameo/scripts/coshoot/audit.py",
-      "bytes": 9488,
-      "sha256": "5ccb7cecd7bbc29ee3465adf5a51f84cb48ac61f9a9fbb87d0b7b802a80dff0c"
+      "bytes": 9767,
+      "sha256": "0bd71c3c8cf2fe99f64ec8c4cbd3dbf98846a54799a5da1f0b1512f876e0fe5e"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/backend_exec.py",
@@ -320,14 +284,14 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/likeness.py",
       "path": "skills/shy-cameo/scripts/coshoot/likeness.py",
-      "bytes": 3769,
-      "sha256": "9a3d74098c24a4279fee7677d272990d3008ff7323a349dcaa3725cc67fbb381"
+      "bytes": 3766,
+      "sha256": "055b4c4df68a2cea4c8265d5c1618f0a29572fc00450d60f6c43f8ae76e1b659"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/migrate.py",
       "path": "skills/shy-cameo/scripts/coshoot/migrate.py",
-      "bytes": 1847,
-      "sha256": "162cf8c2e7494138b813e5a5e760333c3b0d9ac6e69b8e36b5b583f4d743d7e1"
+      "bytes": 9200,
+      "sha256": "3c943e3e09a50c022212d12d003d8bc2d796aa5208508befc4bdba57fc54e080"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/names.py",
@@ -368,8 +332,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/sets.py",
       "path": "skills/shy-cameo/scripts/coshoot/sets.py",
-      "bytes": 22542,
-      "sha256": "6092783fb72caee98434d4dc4327e487fb4115a85404a703ac920853d53b3430"
+      "bytes": 23009,
+      "sha256": "25f2fcb093ee136b05dcc020d52bd06c4ae4f7d73a9cf902a8befe8c30a26648"
     },
     {
       "source": "tests/conftest.py",
@@ -398,14 +362,14 @@
     {
       "source": "tests/test_audit.py",
       "path": "tests/test_audit.py",
-      "bytes": 4399,
-      "sha256": "ca7406a9c26edc799e87d63867cf703ee212c780b5f940ecacec15fa3c8f51e2"
+      "bytes": 6096,
+      "sha256": "e25a2197e7bd526fe46f9e85a013f6f3d6cf7e712ab66294d34c7282680a91fd"
     },
     {
       "source": "tests/test_audit_repairs.py",
       "path": "tests/test_audit_repairs.py",
-      "bytes": 7729,
-      "sha256": "dc1a0a1849ce6cae3d2053cff3b6ebdc1b75aed967718868f1876e9682ea3f8c"
+      "bytes": 7735,
+      "sha256": "89885d42b63865ed0fdfb442059f432afe9deb44b1955d6a255982d54564f3a3"
     },
     {
       "source": "tests/test_cards.py",
@@ -416,14 +380,14 @@
     {
       "source": "tests/test_cli.py",
       "path": "tests/test_cli.py",
-      "bytes": 25580,
-      "sha256": "a0865052b2acd1c8f0b78e6a0cb4146b7db08c695e5ac90f860c0caa10aeea3e"
+      "bytes": 26072,
+      "sha256": "3a453c6131848d5c213cbaa20045fd0aa4cb8f5626a79017252cf7fcb0eb049e"
     },
     {
       "source": "tests/test_cli_sets.py",
       "path": "tests/test_cli_sets.py",
-      "bytes": 44562,
-      "sha256": "e51803978cd4d1ab737127972894904dabd5b547ce50d8a54126d1f282ac20a9"
+      "bytes": 45837,
+      "sha256": "bccf5182f3099b6c921d8022a21c26c1dbc2df0f0268b501d0c080099577ba85"
     },
     {
       "source": "tests/test_gallery.py",
@@ -470,20 +434,20 @@
     {
       "source": "tests/test_preflight_backend.py",
       "path": "tests/test_preflight_backend.py",
-      "bytes": 14637,
-      "sha256": "fee58e36dd52ff0da8e9c6d5abe5466d11e39330addf1215dc09f3d11f9d7a5d"
+      "bytes": 15941,
+      "sha256": "d6ccc724bcfc34f43d33a3ff817486a5d48f0cbfeef516831083a9ed72d9e039"
     },
     {
       "source": "tests/test_public_export.py",
       "path": "tests/test_public_export.py",
-      "bytes": 16199,
-      "sha256": "f95aa8f7a4ff05668aba945b734b766ab2ae3f6edd4ec1c0624cb54ed09f1ca1"
+      "bytes": 18002,
+      "sha256": "5a86a1eeb911b50109f3f090cdafa6aaff61201c3258694bd4d237bea9ce41a5"
     },
     {
       "source": "tests/test_release_bundle.py",
       "path": "tests/test_release_bundle.py",
-      "bytes": 9445,
-      "sha256": "24f2267db5cfe658e56d34aae334e08cc64bf09c4aba1bf5e69bfb642931fcf4"
+      "bytes": 10462,
+      "sha256": "37cf7bb5bc4fd74f992e32c0db83afd11c6575da5fba5bcb6c504061859e13c1"
     },
     {
       "source": "tests/test_rules_migrate.py",
@@ -500,8 +464,8 @@
     {
       "source": "tests/test_sets.py",
       "path": "tests/test_sets.py",
-      "bytes": 26134,
-      "sha256": "c29b97c83410e13e4e6588f441cf2ff3c298d432932cbce959c11f70aeb99eba"
+      "bytes": 26139,
+      "sha256": "e6e3e279bb4b1116c0e2011b56ff1a3685bc7ac2790560f4a05f4fcad3aefd73"
     },
     {
       "source": "tests/test_sheets.py",
@@ -512,32 +476,26 @@
     {
       "source": "release/INSTALL.md",
       "path": "release/INSTALL.md",
-      "bytes": 12847,
-      "sha256": "7af2a3958dda35d1364ac1d0c7fa1a8038f25db37a4c096f51f9c4bba9e5ea5a"
+      "bytes": 7461,
+      "sha256": "606faf4eaf676de01aa539abe12ed06d6504861a0a0de6a4327ccee42752ab99"
     },
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 8340,
-      "sha256": "78de22b396fe18099e4eb8fd9b918806c0aa63f84279d53d06e8f35dd5ac44d5"
+      "bytes": 7737,
+      "sha256": "01109d3189ca9e7af300a436543cc884890a0c001989c9015dcd68aebd9f0d54"
     },
     {
-      "source": "release/VALIDATION.md",
-      "path": "release/VALIDATION.md",
-      "bytes": 13480,
-      "sha256": "44ba36d759df2df60ead68fb4bb7126782412bc97a4f2a0d5cd4a74633b3a0f5"
+      "source": "release/dev/VALIDATION.md",
+      "path": "release/dev/VALIDATION.md",
+      "bytes": 14347,
+      "sha256": "3537adb9f53f9fc7ecffc71bc6ac4e4887c0213c8e6d2f6748695a4c43d7680b"
     },
     {
-      "source": "release/DEVELOPMENT.md",
-      "path": "release/DEVELOPMENT.md",
-      "bytes": 21314,
-      "sha256": "6dfd329b0f1624fa1aae4a60bd8a5c8eb38eaa01c667947520694e79c33c94e1"
-    },
-    {
-      "source": "skills/shy-cameo/references/animation-themes.md",
-      "path": "skills/shy-cameo/references/animation-themes.md",
-      "bytes": 2599,
-      "sha256": "1f328f7acd7b94b25acf7772a8ee94736c30a0fb028c209e28759b1828169769"
+      "source": "release/dev/DEVELOPMENT.md",
+      "path": "release/dev/DEVELOPMENT.md",
+      "bytes": 46450,
+      "sha256": "8c6d4b8fc3adcf172d9af498f1accc7a4985f2913cfd08446631a57dbb741cce"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -584,26 +542,20 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 7418,
-      "sha256": "70835bb51c463e552f2d9abf93a19b54c936395d3e21bdc194f4e38ef753b1e2"
+      "bytes": 7502,
+      "sha256": "57e4ab8187cc6454bc859e849415d04a1610734a623c3f0a485816681cb9ffc9"
     },
     {
-      "source": "release/PARIS-LOCATION-REVIEW.md",
-      "path": "release/PARIS-LOCATION-REVIEW.md",
-      "bytes": 3529,
-      "sha256": "6c070313edaaf865be3160b24a080ef1a1d47f23a638a553262bb032836308cc"
-    },
-    {
-      "source": "skills/shy-cameo/references/routing-and-journey.md",
-      "path": "skills/shy-cameo/references/routing-and-journey.md",
-      "bytes": 12414,
-      "sha256": "7113ac4481967eb86ddb800ff36e8a5a09ddc810d80d1e3c6bead7434b2cbb74"
+      "source": "release/dev/PARIS-LOCATION-REVIEW.md",
+      "path": "release/dev/PARIS-LOCATION-REVIEW.md",
+      "bytes": 3532,
+      "sha256": "86671ddc2a1690fb33e6a76ee70879a48562ade95e5cc94867beae28681e61b1"
     },
     {
       "source": "tests/test_route_repair.py",
       "path": "tests/test_route_repair.py",
-      "bytes": 8989,
-      "sha256": "f28642d679dc435a8a032c248ded378fc7a9aed786e0193d371f341d7d92812d"
+      "bytes": 8993,
+      "sha256": "079e397296176d979f186f825dec29fa1046c9ede85dbffdcd04057c94cd8743"
     },
     {
       "source": "skills/shy-cameo/schema/project.schema.json",
@@ -614,20 +566,14 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/projects.py",
       "path": "skills/shy-cameo/scripts/coshoot/projects.py",
-      "bytes": 15371,
-      "sha256": "d6dc997ba5ee2e32c460ff06a5da2c30f61ec7b6527217fda5d4ffb0f5c4269b"
+      "bytes": 15205,
+      "sha256": "6d13e82955a0f69caa39c4fb1b11b2400a50b2e83e8fb89b1001b90c0de282d0"
     },
     {
-      "source": "skills/shy-cameo/references/series-projects.md",
-      "path": "skills/shy-cameo/references/series-projects.md",
-      "bytes": 8138,
-      "sha256": "1c2b3757327d10591a044bf4883b9511f8402c281fbba2aa59f2b9ea76f681b7"
-    },
-    {
-      "source": "skills/shy-cameo/references/series-creation.md",
-      "path": "skills/shy-cameo/references/series-creation.md",
-      "bytes": 18619,
-      "sha256": "856fa6f512856ed57f542216d1bd203d46348cdb7c5ae28faf063b112378ce23"
+      "source": "skills/shy-cameo/references/series-and-projects.md",
+      "path": "skills/shy-cameo/references/series-and-projects.md",
+      "bytes": 24624,
+      "sha256": "53117f07765aa39063bd0a3aae0d76e858ae5be9a8966f1274deac2d9ae3176e"
     },
     {
       "source": "tests/test_projects.py",
@@ -648,16 +594,10 @@
       "sha256": "b8aa125467e56e6f69dbd850cb0b782a90073cc2f67b481c3835d6748c5f0c4e"
     },
     {
-      "source": "skills/shy-cameo/references/prop-direction.md",
-      "path": "skills/shy-cameo/references/prop-direction.md",
-      "bytes": 4161,
-      "sha256": "b963fa10395a569e970cc66df3d93a0780c40f9b573aa87aa2a42bbe6e61c72c"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/README.md",
-      "path": "skills/shy-cameo/references/body-reference/README.md",
-      "bytes": 9067,
-      "sha256": "d195e8656380395f83efefa54e6875578dff50c73bc504c8085ecdd0b3831bfe"
+      "source": "skills/shy-cameo/references/body-reference.md",
+      "path": "skills/shy-cameo/references/body-reference.md",
+      "bytes": 8073,
+      "sha256": "22bbe63d98ea577cb1afd23ba32ed614f47b8e083a75f14ba75a9f37753d3c66"
     },
     {
       "source": "skills/shy-cameo/references/body-reference/manifest.json",
@@ -670,198 +610,6 @@
       "path": "skills/shy-cameo/references/body-reference/expansion-manifest.json",
       "bytes": 10595,
       "sha256": "ece5e762608280340a650a3d0280d4e6dc27441dd6ecda72603717853dc88f02"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/approved-model-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/approved-model-front.png",
-      "bytes": 2495156,
-      "sha256": "d475458af7850c157844136efa0d4b929c6d9c08230d65096e5041f500ebc428"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B01-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B01-front.png",
-      "bytes": 1855530,
-      "sha256": "de95e6d515f105a76acedbdca28c21cae78d25c94e5ee4c7cf82fa56ed8e97c2"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B01-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B01-side.png",
-      "bytes": 1713181,
-      "sha256": "1e8cd0ae28d3e70f7f4701ce4db900e5db442b645b2b56c16825462d4cb76148"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B01-back.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B01-back.png",
-      "bytes": 1855838,
-      "sha256": "4fd3680e19dc338e70d66b29cd942e2d3b4d70e2c6b21fdafa81b1e1c0e6cb19"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B02-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B02-front.png",
-      "bytes": 1868517,
-      "sha256": "ffd082f486bbf7ebb1a55d9ac626e3cded036e6b07151c29c3a402e48d40c296"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B02-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B02-side.png",
-      "bytes": 1742137,
-      "sha256": "5e70fba2bddd430daa87898b43350a2db1ab8c48d27d9cb07d4127e37f8e7944"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B02-back.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B02-back.png",
-      "bytes": 1836729,
-      "sha256": "026467b3b81f445afbff16e0e6c56ed88d184f9a9ecfe0b6782cc199a7c22d58"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B03-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B03-front.png",
-      "bytes": 1873585,
-      "sha256": "557c6a586d3d0057d8081852aaef416ec72f6c1146eafc3980368a8287c86024"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B03-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B03-side.png",
-      "bytes": 1727530,
-      "sha256": "4669b4361c64f1b5e5195bdb1df86947f30000289672e68ae68fac8e435d9bda"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B03-back.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B03-back.png",
-      "bytes": 1787561,
-      "sha256": "59d6842423ac91a23ebead6972096a7a9a7f52642d955947cb37a41239f18a5b"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B04-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B04-front.png",
-      "bytes": 1808184,
-      "sha256": "6a2f8093dfb8330c5d43a7921d0962a92061f4baa8bc5a49cb97572d4823174f"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B04-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B04-side.png",
-      "bytes": 1722724,
-      "sha256": "084e0580c36f4762426a5b28977b49785140c8e3725a296db38163e2babbcfee"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B04-back.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B04-back.png",
-      "bytes": 1833719,
-      "sha256": "85ebbb02984ad56a01576bed489195d88c6aae70ac217b32da4f87f953c1fb3d"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B05-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B05-front.png",
-      "bytes": 1868364,
-      "sha256": "f796f166e78ff6a6e8bc2fc4f3191277f8badf20b40c05a9af1ad968456f5087"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B05-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B05-side.png",
-      "bytes": 1729472,
-      "sha256": "859629bed6e8b6aa17c16d13a38c9c48079af04dc5089ffdf4d042e0fde481a8"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/B05-back.png",
-      "path": "skills/shy-cameo/references/body-reference/images/B05-back.png",
-      "bytes": 1853503,
-      "sha256": "1d30583cd53375877db472ee08dae7cff0751ac0cc0bff477c3d508aa381fa3b"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D01.svg",
-      "path": "skills/shy-cameo/references/body-reference/images/D01.svg",
-      "bytes": 3726,
-      "sha256": "5aa975db4dbc4ee0cc97669ef9139db86a1891c025d72bc26e5cd1806b39c52e"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D02.png",
-      "path": "skills/shy-cameo/references/body-reference/images/D02.png",
-      "bytes": 1592500,
-      "sha256": "ed3b42f51efe9935a72db834684ceb85e3752cf1c6708e9ca42fb2e62d956121"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D03.png",
-      "path": "skills/shy-cameo/references/body-reference/images/D03.png",
-      "bytes": 1583228,
-      "sha256": "8546b510deb3ff07cbd9441d855318452addb9ffe85a7d386c0477e0791275bc"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D04.png",
-      "path": "skills/shy-cameo/references/body-reference/images/D04.png",
-      "bytes": 1600290,
-      "sha256": "d406b911e0b9d60288e660c4fa05b7067e615f75c34030ba4f90e1fbc1d417a3"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D05.png",
-      "path": "skills/shy-cameo/references/body-reference/images/D05.png",
-      "bytes": 1727739,
-      "sha256": "5025105f278a3fad13cc5afa41ac9af9f343d0500842ab4f092e9e0fa5c21dd2"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/D06.png",
-      "path": "skills/shy-cameo/references/body-reference/images/D06.png",
-      "bytes": 1637335,
-      "sha256": "cc940d8dcb7c6e6cdae21c89f585f4b729edc1e9ad3f2eaaed117f786db31411"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/M01.png",
-      "path": "skills/shy-cameo/references/body-reference/images/M01.png",
-      "bytes": 1783601,
-      "sha256": "f1c2e8c29dd0304ee7dece6e3857ed8dc37b47ce88a1c7b84c1cd6690955c7f6"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/M02.png",
-      "path": "skills/shy-cameo/references/body-reference/images/M02.png",
-      "bytes": 1826016,
-      "sha256": "9ff2765055cf2d126a87379ec691bcbfcfdb21c6b46d7bdfd9d3ac5a2e5259f1"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/M03.png",
-      "path": "skills/shy-cameo/references/body-reference/images/M03.png",
-      "bytes": 1796595,
-      "sha256": "7760ee26abb32139d0d473c3949d538be9708ac86b0ab475a3aa1e75db4b9b01"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T01-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T01-front.png",
-      "bytes": 2094431,
-      "sha256": "43c39dd8e861d113650746f6f87cda310d84f8088f5a4014a2b3f74fd6f5d92f"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T01-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T01-side.png",
-      "bytes": 1924920,
-      "sha256": "27ed24e8b2d4ad7fc70ac020e021aa91f317c533978774de78593434d8bfc365"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T02-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T02-front.png",
-      "bytes": 2173608,
-      "sha256": "2dc43324f8a020a9581db92b583bfac1f2aeb99f8e22e7bda96f039cbfe40547"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T02-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T02-side.png",
-      "bytes": 1978461,
-      "sha256": "821008965041c01dfed0d7aa8cdbf821cf6fe688b45f764e43e6b43ad1dce615"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T03-front.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T03-front.png",
-      "bytes": 2128549,
-      "sha256": "75697efa450243c89a296fc4cf8b87f0590037bd75e5a18f413695a4aba86c8f"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/images/T03-side.png",
-      "path": "skills/shy-cameo/references/body-reference/images/T03-side.png",
-      "bytes": 1928887,
-      "sha256": "40b0e6b8aef1324f151f158772c677b6d3928071bc5ecbe077b3138306f0aa01"
-    },
-    {
-      "source": "skills/shy-cameo/references/body-reference/compare.html",
-      "path": "skills/shy-cameo/references/body-reference/compare.html",
-      "bytes": 2085,
-      "sha256": "5d74b6b2f366b2c68ece6e001e24780b1490e0a446ae7eb68d93a3921a4e9a0e"
     },
     {
       "source": "assets/showcase/virtual-athena-opera/01.jpg",
@@ -1334,8 +1082,8 @@
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 5950,
-      "sha256": "5c9b93a465846238dc0c3e2ea119fcd1cec6ed6c131c7c968aeb1e3d7bc7ca17"
+      "bytes": 6030,
+      "sha256": "32ba0710af88828d34c431912157256cb3cc52e27773aff02f4cf996c207c614"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1350,22 +1098,70 @@
       "sha256": "7f046da67e19347933eed5e15c857e41b46f071e367db1a0377cce0eac058d92"
     },
     {
-      "source": "release/VERIFICATION-MATRIX.md",
-      "path": "release/VERIFICATION-MATRIX.md",
-      "bytes": 13300,
-      "sha256": "2bd6820791be93c85da1194cb3e11c26ebc8aff01f4193938f4b2c681671c0bd"
+      "source": "release/dev/VERIFICATION-MATRIX.md",
+      "path": "release/dev/VERIFICATION-MATRIX.md",
+      "bytes": 13345,
+      "sha256": "35b53f01e2a759c560157ab6d1c2777725ec0e1377781a25526d5df1745bd805"
     },
     {
-      "source": "release/NEXT-TESTS.md",
-      "path": "release/NEXT-TESTS.md",
-      "bytes": 9300,
-      "sha256": "b56cb95a61a714ca7a86c7cb5a2b409d9af5d8e31dae1079a21991e77ddefec4"
+      "source": "release/dev/NEXT-TESTS.md",
+      "path": "release/dev/NEXT-TESTS.md",
+      "bytes": 9303,
+      "sha256": "82a172162eba44d29cfb62415b01147395f8a52ab268a29efe867e450254c3ad"
     },
     {
       "source": "tests/test_cli_edits.py",
       "path": "tests/test_cli_edits.py",
       "bytes": 4732,
       "sha256": "c78cfc6519fbf5e6f0702d4913539d5ed46c16e0455edbe0fa5d55333324f099"
+    },
+    {
+      "source": "release/dev/README.md",
+      "path": "release/dev/README.md",
+      "bytes": 1630,
+      "sha256": "c2a464b89f368a821644f238c15e1865c2cf0f1fec947cdaede710ce5b60b21b"
+    },
+    {
+      "source": "release/dev/AUTO-DISCOVERY.md",
+      "path": "release/dev/AUTO-DISCOVERY.md",
+      "bytes": 3659,
+      "sha256": "240629e0a9ccfecdd28fc9ca0ad1fed13c0d7b74ae7532a2dda2deb37bf772e4"
+    },
+    {
+      "source": "release/RELEASE-NOTES.md",
+      "path": "release/RELEASE-NOTES.md",
+      "bytes": 3430,
+      "sha256": "9e3c50cb4cfd478983422537e8e6265d1fae3f16152aac8a45c764420a8616d9"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 2290,
+      "sha256": "2bff46c9838e56d0e4fe6b9e8c76ae95a46a9eac805982db76dd7d73bfef8b41"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "bytes": 1042,
+      "sha256": "c9b12b3380df21d11a5d864f7e739dfd686f8a57e37bf1e06c4326857af4a588"
+    },
+    {
+      "source": "scripts/build_body_reference_bundle.py",
+      "path": "scripts/build_body_reference_bundle.py",
+      "bytes": 3099,
+      "sha256": "3a407d892d1d7196f99f71d7219c18aaf8818f1dc23e93fd131a56fb471c4fb7"
+    },
+    {
+      "source": "release/body-reference-allowlist.json",
+      "path": "release/body-reference-allowlist.json",
+      "bytes": 5148,
+      "sha256": "db629fa25c61a7804949aa03597488bc3c8a42fe5e743f9d069299ef80dcc2c3"
+    },
+    {
+      "source": "tests/test_body_reference_bundle.py",
+      "path": "tests/test_body_reference_bundle.py",
+      "bytes": 2162,
+      "sha256": "805152c6fb164e08e401a7f166665a7803f5684b5a378ce35a388a914a1a19b0"
     }
   ]
 }

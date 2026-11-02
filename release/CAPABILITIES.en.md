@@ -1,15 +1,15 @@
 # Capabilities
 
-[Home](../README.en.md) · [Examples](CASES.en.md) · [Verification matrix (中文)](VERIFICATION-MATRIX.md) · [Test plan (中文)](NEXT-TESTS.md) · [简体中文](CAPABILITIES.md)
+[Home](../README.en.md) · [Examples](CASES.en.md) · [Verification matrix (中文)](dev/VERIFICATION-MATRIX.md) · [Test plan (中文)](dev/NEXT-TESTS.md) · [简体中文](CAPABILITIES.md)
 
 Tell Codex who you want to meet, where you want to go, what you want to wear or what story you want to experience. There are **five categories and thirteen directions**.
 
 | Category | Direction | Example / evidence |
 |---|---|---|
-| Character companionship | A day on set | Earlier real-person sets were accepted; the third virtual-model set awaits user review. Current-release text-only storyboard preparation passed |
+| Character companionship | A day on set | Earlier real-person sets were accepted; the third virtual-model set was accepted on 2026-11-02. Scoped text-only storyboard preparation passed |
 | Character companionship | Everyday life together | [Fox Inn](cases/virtual-fox-inn.md): virtual adult in an illustrated world; real-person sets also exist |
 | Character companionship | Enter their world | [Sun Wukong](cases/virtual-wukong-cave.md): accepted virtual and earlier real-person sets |
-| Character companionship | A character as your travel guide | Experimental; five virtual-model images were generated but require revision, with specific user feedback still pending |
+| Character companionship | A character as your travel guide | Experimental; the earlier virtual-model set was not accepted; the five-image remake addressing cinematic quality, an affectionate cat and styling was accepted, limited to that combination |
 | Costume portraits | Chinese opera | [Yuji](cases/virtual-yuji-opera.md): accepted virtual-model example; real-person workflow remains experimental |
 | Costume portraits | Cross-cultural opera styling | [Athena](cases/virtual-athena-opera.md): accepted virtual-model example; real-person workflow remains experimental |
 | Costume portraits | Character-inspired clothing | [Mulan](cases/virtual-mulan.md): accepted virtual-model example; real-person workflow remains experimental |
@@ -45,4 +45,4 @@ At most five generation calls are submitted for a set. Submitted failures may us
 
 The skill does not handle minor subjects, composites with real celebrities, multiple real people in one frame, landscape output, automatic beauty/slimming edits, on-image text, automatic posting, or a full asset-management center. Reference atmosphere images are interpreted in words; precise light/color transfer is not established.
 
-Current release installation and discovery passed for both direct-skill and plugin-ZIP paths on macOS / Codex CLI 0.161.0 in isolated configurations. One explicit first-use storyboard request passed with image generation disabled. Desktop clicks, implicit invocation, a new physical machine, current-version upgrade/rollback, and a new image-generation run were not tested in this documentation update. Claude Code remains experimental. See [validation details](VALIDATION.md) and [installation](INSTALL.md) in Chinese.
+Current release installation and discovery passed for both direct-skill and plugin-ZIP paths on macOS / Codex CLI 0.161.0 in isolated configurations. One explicit first-use storyboard request passed with image generation disabled. Desktop clicks, implicit invocation, a new physical machine, current-version upgrade/rollback, and a new image-generation run were not tested in this documentation update. Claude Code remains experimental. See [validation details](dev/VALIDATION.md) and [installation](INSTALL.md) in Chinese.

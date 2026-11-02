@@ -16,6 +16,7 @@ from typing import Optional
 from .cards import CardError, require_valid
 from .compiler import check_cover_level, check_retired_presence, check_user_presence
 from .library import sha256_file
+from .migrate import ledger_paths, write_workspace_document
 
 ROLES = ("cover", "wide", "interaction", "shy", "ending")
 SET_SIZE = len(ROLES)
@@ -173,7 +174,7 @@ def check_episode_match(shots: list, characters: dict) -> None:
     for c in {(c["character_id"], c["variant_id"]) for s in shots for c in s.get("characters") or []}:
         card = characters.get(c[0]) or {}
         variant = next((v for v in card.get("variants", []) if v.get("variant_id") == c[1]), {})
-        keys = [re.split(r"[（(]", e, 1)[0].strip() for e in variant.get("episodes", [])]
+        keys = [re.split(r"[（(]", e, maxsplit=1)[0].strip() for e in variant.get("episodes", [])]
         if keys and not any(k and k in context for k in keys):
             print(f"{c[0]} 这身造型（{c[1]}）对应的情节是「{'」「'.join(keys)}」，本套 film_context 没写到其中任何一段，"
                   "造型和情节对不上；改造型或改情节；仅建议，不阻断", file=sys.stderr)
@@ -275,6 +276,9 @@ def load_ledger(ws: Path, card: dict) -> dict:
         ledger = json.loads(path.read_text(encoding="utf-8"))
         if ledger.get("set_id") != card["set_id"] or len(ledger.get("items") or []) != SET_SIZE:
             raise CardError("ledger_mismatch", "套图账本里的编号或张数与套图卡不一致，请重新开始这套照片")
+        ledger = ledger_paths(ws, ledger)
+        if ledger.get('chain_image'):
+            chain_ref(ws, card, ledger)
         return ledger
     traces = submission_traces(ws, card["set_id"])
     if traces:
@@ -307,8 +311,9 @@ def save_ledger(ws: Path, card: dict, ledger: dict) -> Path:
     if ledger.get("set_id") != card["set_id"]:
         raise CardError("ledger_mismatch", "套图账本里的编号与套图卡不一致，请重新开始这套照片")
     path = set_dir(ws, card["set_id"]) / LEDGER_NAME
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(ledger, ensure_ascii=False, indent=2), encoding="utf-8")
+    if ledger.get('chain_image'):
+        chain_ref(ws, card, ledger)
+    write_workspace_document(path, ledger, 'ledger', ws)
     return path
 
 
@@ -316,10 +321,11 @@ def chain_ref(ws: Path, card: dict, ledger: dict) -> Path:
     """Return the registered chain image only if path and bytes still match the registration."""
     err = CardError("chain_tampered", "套图第 1 张的登记记录被改动或文件不一致，请重新开始这套照片")
     expected = (set_dir(ws, card["set_id"]) / CHAIN_NAME).resolve()
-    recorded = ledger.get("chain_image")
+    recorded = ledger_paths(ws, ledger).get("chain_image")
     if not recorded or not ledger.get("chain_sha256"):
         raise err
-    if Path(recorded).resolve() != expected or not expected.is_file():
+    if (not expected.is_relative_to(Path(ws).resolve())
+            or (Path(ws) / recorded).resolve() != expected or not expected.is_file()):
         raise err
     if sha256_file(expected) != ledger["chain_sha256"]:
         raise err
@@ -361,6 +367,8 @@ def claim(ledger: dict, index: int, run_id: str) -> None:
 
 def _register_chain(ws: Path, set_id: str, image: Path) -> Path:
     dest = set_dir(ws, set_id) / CHAIN_NAME
+    if not dest.resolve().is_relative_to(Path(ws).resolve()):
+        raise CardError('chain_tampered', '首图存放位置指向工作区外，已停止复制')
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(image, dest)  # byte copy keeps the C2PA manifest
     if sha256_file(dest) != sha256_file(image):
@@ -381,7 +389,7 @@ def record(ws: Path, ledger: dict, index: int, status: str, image: Optional[str]
         if not Path(image).is_file():
             raise CardError("missing_image", f"找不到第 1 张成片：{image}")
         chain = _register_chain(ws, ledger["set_id"], Path(image))
-        ledger["chain_image"] = str(chain)
+        ledger["chain_image"] = chain.relative_to(Path(ws).resolve()).as_posix()
         ledger["chain_sha256"] = sha256_file(chain)
     it["status"] = status
     if index == 1 and status != "generated":
