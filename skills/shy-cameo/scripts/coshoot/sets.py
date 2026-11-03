@@ -3,6 +3,7 @@
 A set card holds five complete scene cards (cover, wide, interaction, shy, ending). The ledger
 lives in WS/outputs/sets/<set_id>/set.json; image 1 is copied byte-exact to chain.png and
 becomes the consistency reference for the later images.
+Optional story_order changes presentation only; execution and ledger indices stay fixed.
 """
 from __future__ import annotations
 
@@ -14,7 +15,7 @@ from pathlib import Path
 from typing import Optional
 
 from .cards import CardError, require_valid
-from .compiler import check_cover_level, check_retired_presence, check_user_presence
+from .compiler import check_cover_level, check_performance, check_retired_presence, check_user_presence
 from .library import sha256_file
 from .migrate import ledger_paths, write_workspace_document
 
@@ -147,6 +148,11 @@ def check_face_shot_guards(shots: list) -> None:
                       "仅建议，不阻断", file=sys.stderr)
     for n, s in faces:
         action = s["user"]["action"]
+        if s["play_mode"] == "my_stage":
+            if _plain_hit(BIG_LAUGH, action) or _plain_hit(HOLDING, action):
+                print(f"第 {n} 张是舞台表演：保留已选表情与演奏动作，逐张检查本人五官、手指和乐器接触；"
+                      "不自动改成闭嘴浅笑或更换轻便道具；仅建议，不阻断", file=sys.stderr)
+            continue
         if _plain_hit(BIG_LAUGH, action):
             print(f"第 {n} 张露脸写了大笑/露齿，笑容最容易让脸不像本人；改闭嘴浅笑、惊喜、专注等，大笑放背影或远景；"
                   "仅建议，不阻断", file=sys.stderr)
@@ -159,7 +165,8 @@ def check_face_shot_guards(shots: list) -> None:
     changed_look = any(s.get("play_mode") == "opera_costume" or s["user"].get("hairstyle") or s["user"].get("makeup")
                        or _plain_hit(HEADWEAR, f'{s["user"].get("outfit", "")}，{s["user"].get("costume", "")}')
                        for _, s in faces)
-    if len(faces) >= 2 and len(gazing) == len(faces) and not changed_look:
+    if (len(faces) >= 2 and len(gazing) == len(faces) and not changed_look
+            and not all(s["play_mode"] == "my_stage" for _, s in faces)):
         print(f"第 {'、'.join(map(str, gazing))} 张露脸都看镜头，并排容易像同一个模子；第 2 张改成在做事："
               "脸朝镜头，手里的轻东西举在胸前，眼睛看着它、不低头，表情专注不笑；仅建议，不阻断", file=sys.stderr)
     for n, s in enumerate(shots, 1):
@@ -191,6 +198,11 @@ def require_set_shape(card: dict) -> None:
     require_valid(card, "set")
 
 
+def story_index(card: dict, index: int) -> int:
+    """Map an execution index to its position in the validated card's story."""
+    return card.get("story_order", list(range(1, SET_SIZE + 1))).index(index) + 1
+
+
 def validate_set_card(card: dict) -> None:
     require_set_shape(card)
     if card["status"] != "user_confirmed":
@@ -201,6 +213,7 @@ def validate_set_card(card: dict) -> None:
         require_valid(shot, "scene")
         check_cover_level(shot)
         check_user_presence(shot)
+        check_performance(shot)
         if shot["status"] != "user_confirmed":
             raise CardError("scene_not_confirmed", f"第 {n} 张分镜尚未经用户确认")
         for key in ("ip", "play_mode", "style", "aspect"):
@@ -225,11 +238,17 @@ def check_pose_variety(shots: list) -> None:
               "可考虑其他视线；仅建议，不阻断", file=sys.stderr)
     # Back or hands-only shots hide the face by design; they are not drift risks.
     shown = [(n, s["user"]["action"]) for n, s in enumerate(shots, 1) if s["user"].get("presence", "face") == "face"]
-    turns = [n for n, action in shown if head_turn_pose(action)]
+    stage_motion = [n for n, action in shown if shots[n - 1]["play_mode"] == "my_stage"
+                    and (head_turn_pose(action) or head_tilt_pose(action))]
+    if stage_motion:
+        print(f"第 {'、'.join(map(str, stage_motion))} 张采用舞台转头或仰俯动作：保留已确认瞬间，检查本人感与头颈连接；"
+              "动作不因角度本身判失败，效果未验证；仅建议，不阻断", file=sys.stderr)
+    restrained = [(n, action) for n, action in shown if shots[n - 1]["play_mode"] != "my_stage"]
+    turns = [n for n, action in restrained if head_turn_pose(action)]
     if len(turns) > MAX_HEAD_TURN:
         print(f"第 {'、'.join(map(str, turns))} 张主角露脸时侧脸、回头或歪头；这类姿势最容易不像本人，"
               "建议改成脸朝镜头、眼睛看镜头或身前手里的道具，或改背影/只拍手；仅建议，不阻断", file=sys.stderr)
-    tilts = [n for n, action in shown if head_tilt_pose(action)]
+    tilts = [n for n, action in restrained if head_tilt_pose(action)]
     if len(tilts) > MAX_HEAD_TILT:
         print(f"第 {'、'.join(map(str, tilts))} 张主角露脸时低头或仰头，超过 {MAX_HEAD_TILT} 张；"
               "只留最有戏的一张，其余改脸朝镜头或改背影/只拍手；仅建议，不阻断", file=sys.stderr)
@@ -242,12 +261,14 @@ def check_pose_variety(shots: list) -> None:
     elif faces[0] != 1:
         print("第 1 张（封面）不露脸；封面宜用清楚正脸，后几张以它为一致性参照；仅建议，不阻断", file=sys.stderr)
     # Full-body and wide face shots scored lowest likeness in the 2026-10-22 stress run.
-    wide = [n for n in faces if shots[n - 1]["framing"] in ("full_body", "wide")]
+    wide = [n for n in faces if shots[n - 1]["framing"] in ("full_body", "wide")
+            and shots[n - 1]["play_mode"] != "my_stage"]
     if wide:
         print(f"第 {'、'.join(map(str, wide))} 张露脸却用全身或远景，这类景别最不像本人；建议改到膝/到腰，或改背影；仅建议，不阻断",
               file=sys.stderr)
     # D34: the cover face is the likeness anchor; waist-up covers drifted, close-ups held (2026-10-25 A/B).
-    if faces and faces[0] == 1 and shots[0]["framing"] != "close_up":
+    if (faces and faces[0] == 1 and shots[0]["framing"] != "close_up"
+            and shots[0]["play_mode"] != "my_stage"):
         print("第 1 张（封面）露脸但不是近景（close_up）；封面脸小最容易不像本人，也会带偏后几张；"
               "建议封面用胸口以上的近景，角色仍放身后深处；仅建议，不阻断", file=sys.stderr)
     # D26: a set of paws alone reads as a generic hand; one mid-ground body shot carries the identity.

@@ -38,14 +38,20 @@
     {
       "source": "OPEN-SOURCE-CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 25100,
-      "sha256": "7abcccab836cebd46bdaec8e5b68ad39018fcb2ecf1420da871661204851151f"
+      "bytes": 26834,
+      "sha256": "dcf894437fd5cecc0b06b8f4935ca805e3cbed1fb22b7729d685139522108b12"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 8529,
-      "sha256": "a36b79864f85be05e3ad5db03de8bd3a454d675d2194446a56db657a8883094d"
+      "bytes": 11109,
+      "sha256": "ba7ebc495d00d03280e69a0ad528141a0519da6433754ad6ab65ec97932067d7"
+    },
+    {
+      "source": "README.zh-CN.md",
+      "path": "README.zh-CN.md",
+      "bytes": 10099,
+      "sha256": "4c2272c5a36e92b7d4002637c6fa56796bf0d32e875c6eb210ad4044a3a2cefc"
     },
     {
       "source": "SECURITY.md",
@@ -56,14 +62,14 @@
     {
       "source": "evals/evals.json",
       "path": "evals/evals.json",
-      "bytes": 145696,
-      "sha256": "49e3f363f1d214002b7fef4bcc3120ad836fe9f59923bf4db8929c98adb66a96"
+      "bytes": 167194,
+      "sha256": "7e3f7a0d0ff21d897c09b549c5784a9529a3ec3dc14780664ed733b605a7ab5b"
     },
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 17755,
-      "sha256": "847ac1f933023faa2f998dd57caa1af9c4e124412d774fb2b56a8599d3e85585"
+      "bytes": 19119,
+      "sha256": "55351ea2969f7ae29d984f1ecb1ad3e31c7636f72a40d795c6e1e17b3cb672be"
     },
     {
       "source": "release/icon.svg",
@@ -80,14 +86,14 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 23466,
-      "sha256": "503a7a2bb85959febe87a1198d27914d2ceb69f09c8b340e5bcf82939e059c57"
+      "bytes": 26327,
+      "sha256": "32d62f4c791a4446cc3c8ff99a47d2ef746ea9da6f65c85eff409ccf47483dd7"
     },
     {
       "source": "release/runtime-allowlist.json",
       "path": "release/runtime-allowlist.json",
-      "bytes": 6425,
-      "sha256": "e2657441f63da02d8e71a15d16acffbd2b396268f6f36a49e00c590fa5d58cd9"
+      "bytes": 6572,
+      "sha256": "c7d0da9543f31437888b5b896f46bad2da3055754987a7afa65b4556c12eefb5"
     },
     {
       "source": "requirements-dev.txt",
@@ -104,14 +110,14 @@
     {
       "source": "scripts/export_public_source.py",
       "path": "scripts/export_public_source.py",
-      "bytes": 13333,
-      "sha256": "6681521295a4fde2dfa0174d775694c395db11ebb0259109d6544e6c6b323b3e"
+      "bytes": 13411,
+      "sha256": "9106817593208b3c91b9fbf781fb706033dd2c22a277cd9027fccc49581d3c9b"
     },
     {
       "source": "skills/shy-cameo/SKILL.md",
       "path": "skills/shy-cameo/SKILL.md",
-      "bytes": 6692,
-      "sha256": "a4660a42cfbc85091f4ba6a98d13734d7b6d84dadddc3d52366a6384013d915e"
+      "bytes": 7763,
+      "sha256": "6ec34486d42971978d3cf43cad4955666bf2edc92225e8799d9c24ef1c127105"
     },
     {
       "source": "skills/shy-cameo/agents/openai.yaml",
@@ -146,20 +152,26 @@
     {
       "source": "skills/shy-cameo/references/generation.md",
       "path": "skills/shy-cameo/references/generation.md",
-      "bytes": 19837,
-      "sha256": "0005585e2e88f4217a3a1b6dc6b224c2ff10ab7c8c2f6f9b7916f44c0d56c061"
+      "bytes": 20431,
+      "sha256": "ea25e1c46c9627dc1e0f44c9d56ab631c7aab5b2f8949e39adac99ab0546bc04"
     },
     {
       "source": "skills/shy-cameo/references/storyboarding.md",
       "path": "skills/shy-cameo/references/storyboarding.md",
-      "bytes": 46736,
-      "sha256": "1198adf02c09f1f28f4ab0aad61afa4711e858032d71aafca1811535100fa4e8"
+      "bytes": 48819,
+      "sha256": "2cfb7ff7886726e290fc3da05c3f815993ce1c1c14ec1b134c28c314b418c6c1"
+    },
+    {
+      "source": "skills/shy-cameo/references/stage-and-concerts.md",
+      "path": "skills/shy-cameo/references/stage-and-concerts.md",
+      "bytes": 18899,
+      "sha256": "b4c936a56d23d7c2b1f7de6a09e0d999500bb4834541780790988d822ab7d24d"
     },
     {
       "source": "skills/shy-cameo/references/opening-and-topics.md",
       "path": "skills/shy-cameo/references/opening-and-topics.md",
-      "bytes": 21249,
-      "sha256": "05d4a4c27dd77b216cfe51930e1a067f7199bc02da638ba073eeef896a04dfb0"
+      "bytes": 23867,
+      "sha256": "8f66422ba37784209388f6a4a1fbb4c90d724a604a6c9746827d6f4ce1f4014e"
     },
     {
       "source": "skills/shy-cameo/references/rights-cplus.md",
@@ -170,8 +182,8 @@
     {
       "source": "skills/shy-cameo/references/delivery-and-revision.md",
       "path": "skills/shy-cameo/references/delivery-and-revision.md",
-      "bytes": 18937,
-      "sha256": "ebb5752714fc0fc0768965a1bc3cb4aaec14e64b200c29a5cd58d1015b722a8a"
+      "bytes": 19612,
+      "sha256": "b72c963a8abb433f80915a67616e0b965a2f0d777c11a0ec0843fb2f988ce207"
     },
     {
       "source": "skills/shy-cameo/schema/character-card.schema.json",
@@ -188,14 +200,14 @@
     {
       "source": "skills/shy-cameo/schema/scene-card.schema.json",
       "path": "skills/shy-cameo/schema/scene-card.schema.json",
-      "bytes": 6099,
-      "sha256": "39bb78e087683fed449f67792c6a05acc17692dbde7a7ebfdd717dfea4f47186"
+      "bytes": 6453,
+      "sha256": "48ca0af6acfb7864c967d673e78b8839282b83ede3e92766cdf61c42ab9a7ea2"
     },
     {
       "source": "skills/shy-cameo/schema/set-card.schema.json",
       "path": "skills/shy-cameo/schema/set-card.schema.json",
-      "bytes": 922,
-      "sha256": "2417071c033296c95e6a6de9d311f9d263556a3ca6c702e3356bd99738ec84d2"
+      "bytes": 1086,
+      "sha256": "1899ac3c5cbc2463b7010a56eecc3d5ada1554e7d512da28acd2e92c56dd8bfc"
     },
     {
       "source": "skills/shy-cameo/schema/sheet-request.schema.json",
@@ -212,8 +224,8 @@
     {
       "source": "skills/shy-cameo/scripts/cli.py",
       "path": "skills/shy-cameo/scripts/cli.py",
-      "bytes": 44776,
-      "sha256": "3a24e5dbf258fbd9e0492dd765e5c7c1a6b8c0d6e86b66c46a8d3101c20c10f7"
+      "bytes": 45522,
+      "sha256": "b2e36c3050f66c413b641f5c1fc9f3cefa5c77fd2b8643c7716d0ae14dc3c0b3"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/__init__.py",
@@ -242,8 +254,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/compiler.py",
       "path": "skills/shy-cameo/scripts/coshoot/compiler.py",
-      "bytes": 44106,
-      "sha256": "d64289ac9bef0c62e1b535ee96936f706eca1397b9b8c2f78ca55a023151ace4"
+      "bytes": 48885,
+      "sha256": "df176c1cf944ad978348b408c48aafa1818d350e6db73e54a2a1b923c0a2fa32"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/detect.py",
@@ -266,8 +278,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/gallery.py",
       "path": "skills/shy-cameo/scripts/coshoot/gallery.py",
-      "bytes": 5787,
-      "sha256": "385e290b2593b111a5874b75d1cc74a080f13eca57eb50a3d1bad58c22b1b91e"
+      "bytes": 6078,
+      "sha256": "564700b20038ff59615bedf239d46043dd83950e7e614569ed74acc393dba45a"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/label.py",
@@ -332,8 +344,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/sets.py",
       "path": "skills/shy-cameo/scripts/coshoot/sets.py",
-      "bytes": 23009,
-      "sha256": "25f2fcb093ee136b05dcc020d52bd06c4ae4f7d73a9cf902a8befe8c30a26648"
+      "bytes": 24498,
+      "sha256": "96ed8714827d012e06df79c6dcecdf98de8094a4daad7b164dd6d55b8d0f296f"
     },
     {
       "source": "tests/conftest.py",
@@ -392,8 +404,8 @@
     {
       "source": "tests/test_gallery.py",
       "path": "tests/test_gallery.py",
-      "bytes": 6600,
-      "sha256": "d5e13034d1b5651e5d0f9554e04dbccbf03bc8c0537e085395c02669268b0e4a"
+      "bytes": 9346,
+      "sha256": "33adbde3abfcbdbb6a68538dd1548abdef8148344aff43201f4f49e4a0bee3a6"
     },
     {
       "source": "tests/test_cli_sheets.py",
@@ -406,6 +418,12 @@
       "path": "tests/test_compiler.py",
       "bytes": 48808,
       "sha256": "ee82a465f431c6f11f496ae90c968d829e7abdd62907db5af30f3eb54f040c7e"
+    },
+    {
+      "source": "tests/test_stage_concerts.py",
+      "path": "tests/test_stage_concerts.py",
+      "bytes": 18255,
+      "sha256": "bfa72e48f65795e69bebdda7dd460149aede998c07694a450aff042e3cb5ef56"
     },
     {
       "source": "tests/test_label.py",
@@ -440,8 +458,8 @@
     {
       "source": "tests/test_public_export.py",
       "path": "tests/test_public_export.py",
-      "bytes": 18002,
-      "sha256": "5a86a1eeb911b50109f3f090cdafa6aaff61201c3258694bd4d237bea9ce41a5"
+      "bytes": 19604,
+      "sha256": "843862fa6a64d234376d72fa44a8a321a205d9ac8ecb38181edc07f9cba1d9bd"
     },
     {
       "source": "tests/test_release_bundle.py",
@@ -482,20 +500,20 @@
     {
       "source": "README.en.md",
       "path": "README.en.md",
-      "bytes": 9326,
-      "sha256": "ed037c4ab664795a219f8eec691c5996aea8b30d7599b5e057a973a64d429cb4"
+      "bytes": 146,
+      "sha256": "2038ff7faf7810d88831de2b1a00800bdc87cf8fc8711abc88e97fce743991cf"
     },
     {
       "source": "release/dev/VALIDATION.md",
       "path": "release/dev/VALIDATION.md",
-      "bytes": 14347,
-      "sha256": "3537adb9f53f9fc7ecffc71bc6ac4e4887c0213c8e6d2f6748695a4c43d7680b"
+      "bytes": 15619,
+      "sha256": "8b144799d1bc3fef5a7179692a203cef08844570f1165162213c6d03640ee37b"
     },
     {
       "source": "release/dev/DEVELOPMENT.md",
       "path": "release/dev/DEVELOPMENT.md",
-      "bytes": 46450,
-      "sha256": "8c6d4b8fc3adcf172d9af498f1accc7a4985f2913cfd08446631a57dbb741cce"
+      "bytes": 70502,
+      "sha256": "9d4bb03846055fa4ad8ced775348191f26140f90504b35f54621cc02b4889d1f"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -542,8 +560,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 7502,
-      "sha256": "57e4ab8187cc6454bc859e849415d04a1610734a623c3f0a485816681cb9ffc9"
+      "bytes": 10418,
+      "sha256": "72458983616538be16c1a6a2039b95c2901168441659c0c526ced07a2a6f3b30"
     },
     {
       "source": "release/dev/PARIS-LOCATION-REVIEW.md",
@@ -566,14 +584,14 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/projects.py",
       "path": "skills/shy-cameo/scripts/coshoot/projects.py",
-      "bytes": 15205,
-      "sha256": "6d13e82955a0f69caa39c4fb1b11b2400a50b2e83e8fb89b1001b90c0de282d0"
+      "bytes": 15322,
+      "sha256": "52149999ba6072a45d321a0dc939bf1912082a7d8eef382e66ef52142ed963bb"
     },
     {
       "source": "skills/shy-cameo/references/series-and-projects.md",
       "path": "skills/shy-cameo/references/series-and-projects.md",
-      "bytes": 24624,
-      "sha256": "53117f07765aa39063bd0a3aae0d76e858ae5be9a8966f1274deac2d9ae3176e"
+      "bytes": 24808,
+      "sha256": "b20dfb4fa42c7af47410743c545377c4f94fb3b390d79402971faf38a50caf94"
     },
     {
       "source": "tests/test_projects.py",
@@ -584,8 +602,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 2213,
-      "sha256": "0561e8b1105889f86aab99ede225a45003f804ca312c416754e1fda077a52c2a"
+      "bytes": 2874,
+      "sha256": "37486e03907cba3bc24f18a86738437633a229e8183f3b48477d26cffd0172e6"
     },
     {
       "source": "release/style-keywords.json",
@@ -1076,14 +1094,14 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 2479,
-      "sha256": "2ea5ce758a09dd5f4d750923d1d1c042b817f51b8e15794f9e6a05b490e8ec9d"
+      "bytes": 3226,
+      "sha256": "6357222c52dc0516ce448d0e0a3767cc584a4bb5833a3d0f13dda0994586ca51"
     },
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 6030,
-      "sha256": "32ba0710af88828d34c431912157256cb3cc52e27773aff02f4cf996c207c614"
+      "bytes": 9166,
+      "sha256": "5516393a66330472e006afd61f333f2337cfeac3dfa7b0636d0e97255ec52856"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1100,14 +1118,14 @@
     {
       "source": "release/dev/VERIFICATION-MATRIX.md",
       "path": "release/dev/VERIFICATION-MATRIX.md",
-      "bytes": 13345,
-      "sha256": "35b53f01e2a759c560157ab6d1c2777725ec0e1377781a25526d5df1745bd805"
+      "bytes": 15763,
+      "sha256": "a06d4f32ca8728954c2e7f94b1afcf2455305ef28c27a40ebf81dbd67b9dc12f"
     },
     {
       "source": "release/dev/NEXT-TESTS.md",
       "path": "release/dev/NEXT-TESTS.md",
-      "bytes": 9303,
-      "sha256": "82a172162eba44d29cfb62415b01147395f8a52ab268a29efe867e450254c3ad"
+      "bytes": 10294,
+      "sha256": "70df61a00383ff91c55c52bbb1d628a416fbb922fd6f6e4a2ded5f4e129e1a2f"
     },
     {
       "source": "tests/test_cli_edits.py",
@@ -1118,8 +1136,8 @@
     {
       "source": "release/dev/README.md",
       "path": "release/dev/README.md",
-      "bytes": 1630,
-      "sha256": "c2a464b89f368a821644f238c15e1865c2cf0f1fec947cdaede710ce5b60b21b"
+      "bytes": 1739,
+      "sha256": "142df78e7279b3713e8118525bb0393976325f0eb29fc4938960d8ad7959dcb6"
     },
     {
       "source": "release/dev/AUTO-DISCOVERY.md",
@@ -1130,8 +1148,8 @@
     {
       "source": "release/RELEASE-NOTES.md",
       "path": "release/RELEASE-NOTES.md",
-      "bytes": 3430,
-      "sha256": "9e3c50cb4cfd478983422537e8e6265d1fae3f16152aac8a45c764420a8616d9"
+      "bytes": 3859,
+      "sha256": "0c2bf5461fd35a34156cc1aba11055ce3beef9075142a5f7576610b605122ae1"
     },
     {
       "source": ".github/ISSUE_TEMPLATE/bug_report.yml",
@@ -1162,6 +1180,114 @@
       "path": "tests/test_body_reference_bundle.py",
       "bytes": 2162,
       "sha256": "805152c6fb164e08e401a7f166665a7803f5684b5a378ce35a388a914a1a19b0"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/01.png",
+      "path": "assets/showcase/virtual-gnr-tokyo/01.png",
+      "bytes": 2199660,
+      "sha256": "200f3e4520b46c02270cae10a82385cf9c3a1e24b9bd717e95115003451a2996"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/02.png",
+      "path": "assets/showcase/virtual-gnr-tokyo/02.png",
+      "bytes": 2349352,
+      "sha256": "eff3bb5902e1f7f7dd88238e9e2f1bb5a037465e06b1fc432290ecaa632ffd4c"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/03.png",
+      "path": "assets/showcase/virtual-gnr-tokyo/03.png",
+      "bytes": 1809945,
+      "sha256": "89e5e24cfe3de80adce65970ba3cd0cbdca12e9cde3103e580160e65839f47b2"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/04.png",
+      "path": "assets/showcase/virtual-gnr-tokyo/04.png",
+      "bytes": 2183365,
+      "sha256": "76018060d2f320a1fa515d772185353837f3521a7fbc9b5e648dd5016e5c1072"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/05.png",
+      "path": "assets/showcase/virtual-gnr-tokyo/05.png",
+      "bytes": 2136173,
+      "sha256": "fd89b0ddd16df2bed5081c17e8d17d370f94e42907f2c7b630547f826efee7b8"
+    },
+    {
+      "source": "assets/showcase/virtual-gnr-tokyo/manifest.json",
+      "path": "assets/showcase/virtual-gnr-tokyo/manifest.json",
+      "bytes": 3076,
+      "sha256": "3e61121940c540292267646297ccae673e48237f8fe45a313dd5a61377c08947"
+    },
+    {
+      "source": "release/cases/virtual-gnr-tokyo.md",
+      "path": "release/cases/virtual-gnr-tokyo.md",
+      "bytes": 3983,
+      "sha256": "966ebf2c2bfa6e8b6469972b7d1f5fcba6f87c55e7f7eb220a8aa96ea2b1fe69"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/01.png",
+      "path": "assets/showcase/virtual-my-stage-guitar/01.png",
+      "bytes": 2127667,
+      "sha256": "442ee7c301840295968c7077757a6a7ddcd6316efde6c2430c37edd62ebb7edf"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/02.png",
+      "path": "assets/showcase/virtual-my-stage-guitar/02.png",
+      "bytes": 2010331,
+      "sha256": "54ff9eb10487530da80b6bc0cdbd369f6f258a24f875eaab3f5ee929f6a11e19"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/03.png",
+      "path": "assets/showcase/virtual-my-stage-guitar/03.png",
+      "bytes": 2222154,
+      "sha256": "90395db28695a799e9686d729466e98c3d3434f1c8a2d77f8ec2d3bce332fce9"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/04.png",
+      "path": "assets/showcase/virtual-my-stage-guitar/04.png",
+      "bytes": 2234417,
+      "sha256": "27ab604800ad8c34397ae5c323a390a2e304457079dd45c0bdcd7363341a6e53"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/05.png",
+      "path": "assets/showcase/virtual-my-stage-guitar/05.png",
+      "bytes": 1801172,
+      "sha256": "86a57f8c7bcd909a240ea09f1f50d35565b7079132177a6090676635f23afc92"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-guitar/manifest.json",
+      "path": "assets/showcase/virtual-my-stage-guitar/manifest.json",
+      "bytes": 2828,
+      "sha256": "78d9bf8cf7d5b3a0e19b32aafffe6e8fd4d87c8a101dd8aa522d28342d142849"
+    },
+    {
+      "source": "release/cases/virtual-my-stage-guitar.md",
+      "path": "release/cases/virtual-my-stage-guitar.md",
+      "bytes": 6655,
+      "sha256": "1f2a1bd6fc10a1e6f723b9ec5f44a71a5d26a1ac67fea0b13b8e3f4c3d1d91ef"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-band/01-bass-duet.png",
+      "path": "assets/showcase/virtual-my-stage-band/01-bass-duet.png",
+      "bytes": 2317089,
+      "sha256": "20d53f09c64c7a6bcaf218963fe66e75770d906f291977f03d8163654fee1cea"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-band/02-drummer-cue.png",
+      "path": "assets/showcase/virtual-my-stage-band/02-drummer-cue.png",
+      "bytes": 2139801,
+      "sha256": "1453e71d1f3f603802c352ce802e1a95782aa5b8051343832d2af2d1fb8b877f"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-band/03-band-salute-r1.png",
+      "path": "assets/showcase/virtual-my-stage-band/03-band-salute-r1.png",
+      "bytes": 2006337,
+      "sha256": "5417aeedee53cf533b9a8d16b3c6a893927aa67f8fb9a9a5e6420966a3a326a0"
+    },
+    {
+      "source": "assets/showcase/virtual-my-stage-band/manifest.json",
+      "path": "assets/showcase/virtual-my-stage-band/manifest.json",
+      "bytes": 2650,
+      "sha256": "832d698dfc47207ccee15603847c0903678da8fcf41de06e42452e4b838d2686"
     }
   ]
 }

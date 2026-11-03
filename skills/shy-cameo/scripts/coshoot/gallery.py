@@ -28,6 +28,9 @@ FAILED = {'failed', 'rejected', 'cancelled', 'unknown'}
 
 
 def _state(shot: dict) -> str:
+    # A selected, matched delivery can be a replacement; keep the original rejection in the ledger.
+    if shot.get('delivered'):
+        return '你已接受' if shot.get('verdict') == 'accepted' else '已生成'
     generation = shot.get('generation')
     if generation == 'pending':
         return '未拍'
@@ -80,11 +83,11 @@ def _set(ws: Path, series_title: str, report: dict, issues: list) -> str:
         if report.get('issues'):
             out.append('<p class="note">' + '<br>'.join(escape(str(i)) for i in report['issues']) + '</p>')
         out.append('<div class="grid">')
-        for shot in shots:
+        for shot in sorted(shots, key=lambda s: s.get('story_index', s['index'])):
             versions = shot.get('versions', [])
             selected = shot.get('selected_run_id') if len(versions) > 1 else None
             body = ''.join(_version(ws, v, selected, issues) for v in versions)
-            out.append(f'<div class="cell"><p class="state">第 {shot.get("index")} 张 · {_state(shot)}</p>'
+            out.append(f'<div class="cell"><p class="state">第 {shot.get("story_index", shot["index"])} 张 · {_state(shot)}</p>'
                        f'<div class="versions">{body}</div></div><!-- /cell -->')
         out.append('</div>')
     if set_id and (ws / 'captions' / f'{set_id}.md').is_file():

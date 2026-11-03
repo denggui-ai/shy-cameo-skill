@@ -1,10 +1,10 @@
 # Case gallery
 
-[Home](../README.en.md) · [Capabilities](CAPABILITIES.en.md) · [简体中文](CASES.md)
+[Home](../README.md) · [Capabilities](CAPABILITIES.en.md) · [简体中文](CASES.md)
 
-**11 accepted AI virtual-model sets · 55 images.** Each title opens a complete five-shot set with a request you can copy and notes on the selected version. All were generated previously; no new generation was used to build this gallery.
+**13 five-shot virtual-model stories + 3 selected interaction images · 68 images.** Each title opens a complete five-shot set with a request you can copy and notes on the selected version. Selected outputs are preserved; arranging this gallery adds no generation calls.
 
-The virtual adult and virtual pet examples are development POCs, with wording adapted for virtual subjects. They do not establish reliable real-person face/body preservation or a fully automated CLI workflow. The current public gallery features only AI virtual models.
+The virtual adult and virtual pet examples are development POCs, with wording adapted for virtual subjects. They do not establish reliable real-person face/body preservation or a fully automated CLI workflow. Every case has a virtual adult protagonist. The Tokyo case also depicts an AI-imagined distant performance by a real band; no artist photograph was supplied.
 
 | Story | Direction | Visual style |
 |---|---|---|
@@ -19,5 +19,7 @@ The virtual adult and virtual pet examples are development POCs, with wording ad
 | [An Animated Adventure with Zhiyuan](cases/virtual-paper-crane.md) | Enter a story · an original character adventure | Animated subject and world |
 | [A Night in Cappadocia](cases/virtual-cappadocia.md) | Travel on your own | Travel portraits with a single nearby light |
 | [A Quiet Evening with a Cat](cases/virtual-cat-daily.md) | Everyday life with a pet | Photographic virtual adult and virtual cat |
+| [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental development feature | Photographic audience story and distant stage |
+| [My Stage: Five Moments with an Electric Guitar](cases/virtual-my-stage-guitar.md) | My stage · experimental development feature | Photographic rock concert |
 
-Moon and travel sets received an overall positive verdict. The cat set retains the accepted scale compromise and book-detail issue. Individual pages identify revisions and limits; unaccepted candidates and later unapproved edits are excluded.
+Moon and travel sets received an overall positive verdict. The cat set retains the accepted scale compromise and book-detail issue. The Tokyo set received overall positive feedback, with framing limitations retained and no formal per-image CLI verdicts inferred. The My Stage set was explicitly accepted as a whole and approved for showcase use. Three selected band-interaction images, including revision 1 of the final salute, supplement the original five without counting as another set. Individual pages explain scope.

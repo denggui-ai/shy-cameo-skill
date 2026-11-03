@@ -152,6 +152,7 @@ def _set_status(ws, entry, owners):
         if selected and chosen is None:
             result['issues'].append(f'第{index}张选用版本未关联：{selected}')
         result['shots'].append({'index': index, 'generation': item['status'], 'versions': versions,
+                                **({'story_index': sets.story_index(card, index)} if 'story_order' in card else {}),
                                 'selected_run_id': selected, 'delivered': bool(chosen and chosen['delivered']),
                                 'verdict': chosen['verdict'] if chosen else 'pending'})
     counts = Counter(s['generation'] for s in result['shots'])

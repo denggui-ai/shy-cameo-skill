@@ -6,6 +6,8 @@
   "required": ["schema_version", "set_id", "status", "shots"],
   "properties": {
     "schema_version": {"const": "1"},
+    "story_order": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true,
+                    "items": {"type": "integer", "enum": [1, 2, 3, 4, 5]}},
     "same_setting_confirmed": {"type": "boolean"},
     "mood_ref": {"type": "string", "minLength": 1},
     "pet": {"type": "object", "additionalProperties": false, "required": ["ref", "kind"],

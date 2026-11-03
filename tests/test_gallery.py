@@ -115,6 +115,60 @@ def test_gallery_does_not_touch_records(project, png_factory):
     assert before == after
 
 
+def test_story_order_changes_gallery_only_and_keeps_candidate_associations(project, png_factory):
+    ws, doc, cards = project
+    card = cards['studio']
+    card['story_order'] = [2, 1, 3, 4, 5]
+    titles = ['终于看见TA', '入场期待', '身在现场', '全场高潮', '散场余韵']
+    for scene, title in zip(card['shots'], titles):
+        scene['title'] = title
+    save(ws / 'cards/studio.json', card)
+    for index in range(1, 6):
+        record(ws, card, index, png_factory)
+    new = record(ws, card, 2, png_factory, retake=True)
+    doc['series'][0]['sets'][0]['shots'] = [
+        {'index': 2, 'selected_run_id': new,
+         'candidates': [{'run_id': new, 'scene_card': f'cards/{new}.json'}]}]
+    save(ws / 'project.json', doc)
+    before = {p: p.read_bytes() for p in ws.rglob('*') if p.is_file()}
+    report = projects.status(ws)['series'][0]['sets'][0]
+    assert [shot['index'] for shot in report['shots']] == [1, 2, 3, 4, 5]
+    assert [shot['story_index'] for shot in report['shots']] == [2, 1, 3, 4, 5]
+    assert report['shots'][1]['selected_run_id'] == new
+    gallery.build(ws)
+    got = cells((ws / 'gallery.html').read_text())[:5]
+    for ordinal, execution in enumerate(card['story_order'], 1):
+        assert f'第 {ordinal} 张' in got[ordinal - 1]
+        assert titles[execution - 1] in got[ordinal - 1]
+    assert got[0].count('<img ') == 2 and '选用' in got[0]
+    after = {p: p.read_bytes() for p in ws.rglob('*') if p.is_file() and p.name != 'gallery.html'}
+    assert before == after
+
+
+def test_selected_climax_replacement_does_not_erase_rejection_or_imply_acceptance(project, png_factory):
+    ws, doc, cards = project
+    card = cards['studio']
+    for index in range(1, 6):
+        record(ws, card, index, png_factory, outcome='rejected' if index == 4 else 'generated')
+    ledger_path = ws / 'outputs/sets/studio/set.json'
+    original = ledger_path.read_bytes()
+    new = record(ws, card, 4, png_factory, retake=True)
+    entry = doc['series'][0]['sets'][0]
+    entry['shots'] = [{'index': 4, 'candidates': [{'run_id': new, 'scene_card': f'cards/{new}.json'}]}]
+    save(ws / 'project.json', doc)
+    assert not projects.status(ws)['series'][0]['sets'][0]['shots'][3]['delivered']
+    entry['shots'][0]['selected_run_id'] = new
+    save(ws / 'project.json', doc)
+    report = projects.status(ws)['series'][0]['sets'][0]
+    assert report['shots'][3]['generation'] == 'rejected'
+    assert report['shots'][3]['delivered'] and report['shots'][3]['verdict'] == 'pending'
+    assert not report['complete']
+    gallery.build(ws)
+    got = cells((ws / 'gallery.html').read_text())[:5]
+    assert '已生成' in got[3] and '你已接受' not in got[3]
+    assert ledger_path.read_bytes() == original
+
+
 def test_cli_gallery(project):
     ws, _, _ = project
     proc = subprocess.run([sys.executable, '-B', str(CLI), 'gallery', '--workspace', str(ws)],

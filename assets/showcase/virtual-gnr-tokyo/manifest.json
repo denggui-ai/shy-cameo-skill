@@ -1,0 +1,65 @@
+{
+  "set_id": "virtual-gnr-tokyo",
+  "title": "东京1992：我的观演故事",
+  "title_en": "Tokyo 1992: My Night in the Audience",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_identity_photo_used": false,
+  "named_public_performers": "AI-imagined distant Guns N’ Roses stage performance; no artist photo supplied",
+  "images": [
+    {
+      "file": "01.png",
+      "sha256": "200f3e4520b46c02270cae10a82385cf9c3a1e24b9bd717e95115003451a2996",
+      "source_sha256": "200f3e4520b46c02270cae10a82385cf9c3a1e24b9bd717e95115003451a2996",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "02.png",
+      "sha256": "eff3bb5902e1f7f7dd88238e9e2f1bb5a037465e06b1fc432290ecaa632ffd4c",
+      "source_sha256": "eff3bb5902e1f7f7dd88238e9e2f1bb5a037465e06b1fc432290ecaa632ffd4c",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "03.png",
+      "sha256": "89e5e24cfe3de80adce65970ba3cd0cbdca12e9cde3103e580160e65839f47b2",
+      "source_sha256": "89e5e24cfe3de80adce65970ba3cd0cbdca12e9cde3103e580160e65839f47b2",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "04.png",
+      "sha256": "76018060d2f320a1fa515d772185353837f3521a7fbc9b5e648dd5016e5c1072",
+      "source_sha256": "76018060d2f320a1fa515d772185353837f3521a7fbc9b5e648dd5016e5c1072",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "05.png",
+      "sha256": "fd89b0ddd16df2bed5081c17e8d17d370f94e42907f2c7b630547f826efee7b8",
+      "source_sha256": "fd89b0ddd16df2bed5081c17e8d17d370f94e42907f2c7b630547f826efee7b8",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-03",
+  "acceptance_date": "2026-11-03",
+  "acceptance_scope": "overall_positive_feedback_and_authorized_local_gallery_inclusion",
+  "user_feedback": "这套我觉得还不错",
+  "publication_basis": "Owner requested completion of the GitHub-facing case gallery and capability documentation after positive feedback on this five-image set. Gates describe editorial inclusion of the virtual protagonist, not a formal CLI per-image verdict or consent from depicted public performers. Remote publication remains manual.",
+  "validation_note": "Five returned images; overall positive feedback. Entry and departure share similar frontal framing. Historical details, fine instrument anatomy, performer recognition and real-person likeness are not certified. Ticket/programme continuity guidance was added after this set and was not tested by it.",
+  "production_method": "Development POC using existing pure compiler and native image generation; virtual-subject wording adapted. Not a formal human-consent CLI end-to-end run.",
+  "derivatives": "Byte-identical PNG copies; originals and existing AI provenance retained."
+}

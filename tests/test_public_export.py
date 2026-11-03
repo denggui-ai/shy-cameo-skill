@@ -306,6 +306,41 @@ def test_showcase_image_with_passed_gates_exports(tmp_path):
     assert json.loads((public / "PUBLIC-EXPORT.json").read_text())["images_included"] is True
 
 
+@pytest.mark.parametrize("size,approved,expected", [
+    (2 * 1024 * 1024 + 1, True, 0),
+    (5 * 1024 * 1024, True, 0),
+    (5 * 1024 * 1024 + 1, True, 2),
+    (2 * 1024 * 1024 + 1, False, 2),
+])
+def test_showcase_original_png_size_and_approval_boundaries(tmp_path, size, approved, expected):
+    src, entries = fixture_source(tmp_path)
+    _, rel = showcase_set(src, entries)
+    raw = b"\x89PNG" + b"x" * (size - 4)
+    (src / rel / "01.png").write_bytes(raw)
+    manifest_path = src / rel / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    manifest["images"][0]["sha256"] = hashlib.sha256(raw).hexdigest()
+    manifest["gates"]["owner_consent_public_face"] = approved
+    manifest_path.write_text(json.dumps(manifest))
+    entries.append({"source": rel + "manifest.json", "destination": rel + "manifest.json"})
+    result, out = run_export(tmp_path, src, entries)
+    assert result.returncode == expected, out
+    if expected == 0:
+        assert (Path(out["source_directory"]) / rel / "01.png").read_bytes() == raw
+    else:
+        assert not (tmp_path / "public").exists()
+        assert out["error"] == "source file too large" if approved else out["error"].startswith(
+            "showcase image without passed gates")
+
+
+def test_non_image_source_retains_two_mib_limit(tmp_path):
+    src, entries = fixture_source(tmp_path)
+    (src / "README.md").write_bytes(b"x" * (2 * 1024 * 1024 + 1))
+    result, out = run_export(tmp_path, src, entries)
+    assert result.returncode == 2 and out["error"] == "source file too large"
+    assert not (tmp_path / "public").exists()
+
+
 def test_showcase_image_renamed_to_text_still_gets_full_scan(tmp_path):
     import hashlib
     src, entries = fixture_source(tmp_path)

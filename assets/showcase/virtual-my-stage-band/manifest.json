@@ -1,0 +1,55 @@
+{
+  "set_id": "virtual-my-stage-band",
+  "parent_set_id": "virtual-my-stage-guitar",
+  "kind": "three_image_supplement",
+  "title": "我的舞台：队友互动补充",
+  "title_en": "My Stage: Band Interaction Supplement",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_identity_photo_used": false,
+  "images": [
+    {
+      "file": "01-bass-duet.png",
+      "sha256": "20d53f09c64c7a6bcaf218963fe66e75770d906f291977f03d8163654fee1cea",
+      "source_sha256": "20d53f09c64c7a6bcaf218963fe66e75770d906f291977f03d8163654fee1cea",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "02-drummer-cue.png",
+      "sha256": "1453e71d1f3f603802c352ce802e1a95782aa5b8051343832d2af2d1fb8b877f",
+      "source_sha256": "1453e71d1f3f603802c352ce802e1a95782aa5b8051343832d2af2d1fb8b877f",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "03-band-salute-r1.png",
+      "sha256": "5417aeedee53cf533b9a8d16b3c6a893927aa67f8fb9a9a5e6420966a3a326a0",
+      "source_sha256": "5417aeedee53cf533b9a8d16b3c6a893927aa67f8fb9a9a5e6420966a3a326a0",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-03",
+  "acceptance_scope": "first_two_retained_and_third_revision_selected; three-image supplement only",
+  "user_feedback": [
+    "前两张可以保留，第三张把鼓组位置和贝斯琴颈的问题修好，重新生成一张。",
+    "同意 请继续推进"
+  ],
+  "publication_basis": "Owner approved the first two for retention, then accepted the displayed third-shot revision and requested continuation of the existing local showcase work. Gates record scoped editorial inclusion of virtual subjects, not formal per-image human-consent CLI verdicts. Remote publication remains manual.",
+  "generation_calls": 4,
+  "requested_revision_calls": 1,
+  "automatic_retries": 0,
+  "validation_note": "Selected duet, drummer response and revised group salute. Original salute had drum-position and bass-neck issues; the selected revision addresses these visible issues. Fine instrument details, hidden drummer support and stable real-person likeness remain unverified. Not a new complete five-shot set.",
+  "production_method": "Native virtual-subject POC with current pure compiler; third-shot revision uses compile_edit_request with the old third image only.",
+  "derivatives": "Byte-identical PNG copies retaining original AI provenance."
+}

@@ -153,7 +153,8 @@ def export(source: Path, output: Path, allowlist: Path) -> dict:
             raise ValueError("symbolic link not permitted")
         if not file.is_file() or source not in file.resolve().parents:
             raise ValueError("source file missing or outside source")
-        file_limit = (5 if reference_image else 2) * 1024 * 1024
+        # Preserve approved original PNGs; image hashes and gates still apply below.
+        file_limit = (5 if is_image else 2) * 1024 * 1024
         if file.stat().st_size > file_limit:
             raise ValueError("source file too large")
         raw = file.read_bytes()

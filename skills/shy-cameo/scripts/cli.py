@@ -264,6 +264,7 @@ def cmd_compile_shot(a):
     request, path = _compile_shot(ws, card, ledger, a.index, photos, characters)
     return emit({"status": "compiled", "request_path": str(path), "run_id": request["run_id"],
                  "set_id": card["set_id"], "index": a.index, "role": sets.ROLES[a.index - 1],
+                 **({"story_index": sets.story_index(card, a.index)} if "story_order" in card else {}),
                  "referenced_image_paths": request["referenced_image_paths"]})
 
 
@@ -276,8 +277,8 @@ def cmd_set_record(a):
 
 
 def cmd_set_status(a):
-    _, _, ledger = _set_context(a, check_shots=False, write_paths=False)
-    return emit(ledger)
+    _, card, ledger = _set_context(a, check_shots=False, write_paths=False)
+    return emit({**ledger, **({"story_order": card["story_order"]} if "story_order" in card else {})})
 
 
 def cmd_project_status(a):
@@ -316,6 +317,9 @@ def _check_cover_likeness(ws: Path, card: dict, ledger: dict, photos: list):
 
 def _likeness_paused(card: dict, quota_used: int, results: list) -> int:
     # Shots 2..5 stay pending: the user compares image 1 first, then --resume or retake the set.
+    if "story_order" in card:
+        for entry in results:
+            entry["story_index"] = sets.story_index(card, entry["index"])
     return emit({"status": "set_paused_likeness", "set_id": card["set_id"], "quota_used": quota_used,
                  "results": results,
                  "message": "首图机器比脸分偏低，已停在第 1 张：先给用户比脸；用户说像再用 --resume 拍后 4 张，"
@@ -361,6 +365,8 @@ def cmd_generate_set(a):
     def progress(entry):
         # One line per shot so a host running this in the background can report progress.
         print(json.dumps({"event": "shot_done", "set_id": card["set_id"], "index": entry["index"],
+                          **({"story_index": sets.story_index(card, entry["index"])}
+                             if "story_order" in card else {}),
                           "status": entry.get("status"), "done": len(results), "of": len(todo)},
                          ensure_ascii=False), file=sys.stderr, flush=True)
 
@@ -369,7 +375,8 @@ def cmd_generate_set(a):
             results.append({"index": index, "status": "cancelled"})
             progress(results[-1])
             continue
-        entry = {"index": index}
+        entry = {"index": index,
+                 **({"story_index": sets.story_index(card, index)} if "story_order" in card else {})}
         try:
             _consented_photos(ws, a.photo)
             if [library.sha256_file(p) for p in photos] != photo_hashes:
@@ -419,6 +426,9 @@ def cmd_generate_set(a):
         if paused or likeness_low:
             results.extend({"index": i, "status": "pending"} for i in todo if i > index)
             break
+    if "story_order" in card:
+        for entry in results:
+            entry["story_index"] = sets.story_index(card, entry["index"])
     if paused:
         return emit({"status": "set_paused_unknown", "set_id": card["set_id"],
                      "quota_used": submitted_count, "results": results}, EXIT_BLOCKED)
@@ -706,6 +716,7 @@ def cmd_check_pose_variety(a):
     require_valid(card, "set")
     for shot in card["shots"]:
         require_valid(shot, "scene")
+        compiler.check_performance(shot)
     warnings = io.StringIO()
     with redirect_stderr(warnings):
         sets.check_pose_variety(card["shots"])

@@ -1,117 +1,131 @@
-# 入画 · shy-cameo
+# shy-cameo · 入画
 
-**用你的照片，走进想经历的故事。**
+**English** · [简体中文](README.zh-CN.md)
 
-入画是一个 **Codex AI 故事写真技能（skill）**：用一张清楚的正脸照，策划并生成**一套五张 3:4 竖图**。先看分镜，满意后再开拍。
+**Turn your photo into a story you want to experience.**
 
-和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
+A **Codex skill for AI story portraits**: turn one clear front-facing photo into **a set of five 3:4 portraits**. Preview the storyboard, then decide whether to generate it.
 
-[开始使用](#三步开始) · [完整案例集](release/CASES.md) · [5 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [使用限制](#使用前了解这些) · [English](README.en.md)
+Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. The development version also adds your own concert and a night in the audience. You are the lead; fictional companions appear through back views, hands and shadows.
 
-> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.0.3-rc.1 预发布版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1)，成片需要逐张检查。
+[Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [Limitations](#before-you-use-it)
 
-## 选一个故事，看看效果
+> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.0.3-rc.1, a prerelease](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1); review each generated image.
 
-**11 套故事，55 张成片。** 每套选一张封面，点击即可查看完整五张、开场请求与制作说明。
+## Pick a story and see the results
 
-以下均为已获认可的 **AI 虚拟成年模特**案例。它们展示可能的效果，不保证每次一致，也不等于真人锁脸或精确身材控制验证。
+**13 five-shot stories + 3 band-interaction images, 68 images in all.** Each cover opens a complete five-shot set, a starter prompt and production notes.
 
-<p>
-<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="160" alt="和猫的安静夜晚" title="和猫的安静夜晚"></a>
-<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="160" alt="虞姬：从后台到舞台" title="虞姬：从后台到舞台"></a>
-<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="160" alt="跟孙悟空走进水帘洞" title="跟孙悟空走进水帘洞"></a>
-<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="160" alt="狐狸客栈的傍晚" title="狐狸客栈的傍晚"></a>
-</p>
-
-[和猫的安静夜晚](release/cases/virtual-cat-daily.md) · [虞姬](release/cases/virtual-yuji-opera.md) · [孙悟空与水帘洞](release/cases/virtual-wukong-cave.md) · [狐狸客栈](release/cases/virtual-fox-inn.md)
+All examples below feature an **AI-generated virtual adult protagonist** and received positive owner feedback for gallery inclusion. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
 
 <p>
-<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="160" alt="纸鸢的动画冒险" title="纸鸢的动画冒险"></a>
-<a href="release/cases/virtual-athena-opera.md"><img src="assets/showcase/virtual-athena-opera/01.jpg" width="160" alt="雅典娜的戏曲扮相" title="雅典娜的戏曲扮相"></a>
-<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="160" alt="木兰：披甲与归来" title="木兰：披甲与归来"></a>
-<a href="release/cases/virtual-painted-wall.md"><img src="assets/showcase/virtual-painted-wall/01.jpg" width="160" alt="走进《画壁》" title="走进《画壁》"></a>
+<a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="160" alt="A Quiet Evening with a Cat" title="A Quiet Evening with a Cat"></a>
+<a href="release/cases/virtual-yuji-opera.md"><img src="assets/showcase/virtual-yuji-opera/01.jpg" width="160" alt="Yuji: Backstage to the Stage" title="Yuji: Backstage to the Stage"></a>
+<a href="release/cases/virtual-wukong-cave.md"><img src="assets/showcase/virtual-wukong-cave/01.jpg" width="160" alt="Into Water Curtain Cave with Sun Wukong" title="Into Water Curtain Cave with Sun Wukong"></a>
+<a href="release/cases/virtual-fox-inn.md"><img src="assets/showcase/virtual-fox-inn/01.jpg" width="160" alt="An Evening at the Fox Inn" title="An Evening at the Fox Inn"></a>
 </p>
 
-[纸鸢的动画冒险](release/cases/virtual-paper-crane.md) · [雅典娜](release/cases/virtual-athena-opera.md) · [木兰](release/cases/virtual-mulan.md) · [画壁](release/cases/virtual-painted-wall.md)
+[Life with a cat](release/cases/virtual-cat-daily.md) · [Yuji](release/cases/virtual-yuji-opera.md) · [Sun Wukong](release/cases/virtual-wukong-cave.md) · [Fox Inn](release/cases/virtual-fox-inn.md)
 
 <p>
-<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="160" alt="栈道上的武侠交锋" title="栈道上的武侠交锋"></a>
-<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="160" alt="卡帕多奇亚的夜色" title="卡帕多奇亚的夜色"></a>
-<a href="release/cases/virtual-moon-film.md"><img src="assets/showcase/virtual-moon-film/01.jpg" width="160" alt="月球旅行记：进入默片片场" title="月球旅行记：进入默片片场"></a>
+<a href="release/cases/virtual-paper-crane.md"><img src="assets/showcase/virtual-paper-crane/01.jpg" width="160" alt="An Animated Adventure with Zhiyuan" title="An Animated Adventure with Zhiyuan"></a>
+<a href="release/cases/virtual-athena-opera.md"><img src="assets/showcase/virtual-athena-opera/01.jpg" width="160" alt="Athena in Opera Styling" title="Athena in Opera Styling"></a>
+<a href="release/cases/virtual-mulan.md"><img src="assets/showcase/virtual-mulan/01.jpg" width="160" alt="Mulan: Armor and Homecoming" title="Mulan: Armor and Homecoming"></a>
+<a href="release/cases/virtual-painted-wall.md"><img src="assets/showcase/virtual-painted-wall/01.jpg" width="160" alt="Entering The Painted Wall" title="Entering The Painted Wall"></a>
 </p>
 
-[武侠交锋](release/cases/virtual-wuxia.md) · [卡帕多奇亚的夜色](release/cases/virtual-cappadocia.md) · [月球旅行记](release/cases/virtual-moon-film.md)
+[Zhiyuan's animated adventure](release/cases/virtual-paper-crane.md) · [Athena](release/cases/virtual-athena-opera.md) · [Mulan](release/cases/virtual-mulan.md) · [The Painted Wall](release/cases/virtual-painted-wall.md)
 
-**[浏览完整案例集与 55 张成片 →](release/CASES.md)**
+<p>
+<a href="release/cases/virtual-wuxia.md"><img src="assets/showcase/virtual-wuxia/01.jpg" width="160" alt="A Wuxia Encounter on the Cliff Path" title="A Wuxia Encounter on the Cliff Path"></a>
+<a href="release/cases/virtual-cappadocia.md"><img src="assets/showcase/virtual-cappadocia/01.jpg" width="160" alt="A Night in Cappadocia" title="A Night in Cappadocia"></a>
+<a href="release/cases/virtual-moon-film.md"><img src="assets/showcase/virtual-moon-film/01.jpg" width="160" alt="A Trip to the Moon: On a Silent Film Set" title="A Trip to the Moon: On a Silent Film Set"></a>
+<a href="release/cases/virtual-gnr-tokyo.md"><img src="assets/showcase/virtual-gnr-tokyo/02.png" width="160" alt="Tokyo 1992: My Night in the Audience" title="Tokyo 1992: My Night in the Audience"></a>
+</p>
 
-## 三步开始
+[Wuxia](release/cases/virtual-wuxia.md) · [A Night in Cappadocia](release/cases/virtual-cappadocia.md) · [A Trip to the Moon](release/cases/virtual-moon-film.md) · [Tokyo concert story](release/cases/virtual-gnr-tokyo.md)
 
-| 先准备什么 | 要求 |
+<p>
+<a href="release/cases/virtual-my-stage-guitar.md"><img src="assets/showcase/virtual-my-stage-guitar/04.png" width="160" alt="My Stage: Electric Guitar" title="My Stage: Electric Guitar"></a>
+</p>
+
+[My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md)
+
+**[Browse the complete gallery and all 68 images →](release/CASES.en.md)**
+
+## Get started in three steps
+
+| What to prepare | Requirements |
 |---|---|
-| 使用环境 | Codex；脚本运行于 macOS / Linux，需要 Python 3.9+ |
-| 先看分镜 | 可以先不上传照片；这一步不调用生图 |
-| 确认开拍 | 当前 Codex 会话支持内置生图，账号已登录且有可用额度；准备本人或已获同意的成年人的清楚正脸照 |
+| Environment | Codex; scripts run on macOS / Linux with Python 3.9+ |
+| Storyboard preview | You can start without a photo; this step makes no image-generation calls |
+| Image generation | A Codex session with built-in image generation, a signed-in account and available quota; a clear front-facing photo of yourself or a consenting adult |
 
-安装验证来自 macOS / Codex CLI 0.161.0；Windows 与其他客户端未由此验证。可选人脸检测、身形图库和其他宿主说明见[安装指南](release/INSTALL.md)。**安装本身不生成图片。**
+Installation evidence comes from macOS / Codex CLI 0.161.0; it does not cover Windows or other clients. See [installation](release/INSTALL.md) for optional face detection, the body-reference gallery and other hosts. **Installation does not generate images.**
 
-### 1. 安装固定版本
+### 1. Install a fixed version
 
-在 Codex 新建对话，复制发送：
-
-```text
-请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.0.3-rc.1。
-只安装，不生图。已有同名安装时先核对位置与版本。
-```
-
-安装完成后**新开对话，再进行第 2 步**。已有同名技能或插件时，先按[安装指南](release/INSTALL.md)核对，只保留一种生效的安装方式；校验、升级、回退与插件 ZIP 安装也在该指南中。
-
-### 2. 先试一套分镜
-
-可以先不上传照片，直接发送：
+Open a Codex conversation and send:
 
 ```text
-用 $shy-cameo 和孙悟空在剧组待一天。
-先给我看五张分镜，不要生图。
+Use skill-installer to install skills/shy-cameo from
+https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.3-rc.1.
+Install only; do not generate images. If shy-cameo is already installed,
+check its location and version first.
 ```
 
-你会看到五张照片的场景、衣装和动作方案。可以改主题、换衣服或调整情节。**这一步不调用生图，也不消耗生图额度。**
+**Start a new conversation after installation, then continue to step 2.** If the skill or plugin is already installed, follow the [installation guide](release/INSTALL.md) to check it and keep only one installation active. The guide also covers verification, upgrades, rollback and the plugin ZIP option.
 
-### 3. 确认后再拍
+### 2. Preview a storyboard
 
-上传一张本人或已获同意的成年人的清楚正脸照，确认分镜后发送：
+You can try the plan without uploading a photo yet:
 
 ```text
-按这套拍，失败不重试。
+Use $shy-cameo to spend a day on set with Sun Wukong.
+Show me a five-shot storyboard first. Do not generate images.
 ```
 
-一套最多五次生图调用，失败也可能消耗额度。首张失败会停止本套，后续单张失败不自动重试；超时或结果不明时先核对，再决定是否继续。拍完逐张检查人脸、手和身形。
+Review the scene, outfit and action for each shot. Change the theme, clothes or story before shooting. **This step makes no image-generation calls and uses no image-generation quota.**
 
-想调整时可以说“只改第 3 张的动作”，也可以继续拍下一个系列；旧版保留。修订会产生新的生图调用，局部修改仍可能影响其他细节。已验证范围与剩余限制见[发布说明](release/RELEASE-NOTES.md)。
+### 3. Confirm and generate
 
-## 5 类玩法，13 种方向
+Upload a clear front-facing photo of yourself or a consenting adult. Once you approve the plan, send:
 
-| 想拍什么 | 可以这样说 | 看案例 |
+```text
+Generate this set. Do not retry failed calls.
+```
+
+A set uses at most five generation calls; failures may still use quota. If the first shot fails, the set stops. Later failed shots are not automatically retried. Timeouts and unknown results must be checked before deciding whether to continue. Review the face, hands and body in each image.
+
+Ask to revise one shot or continue with another series. Previous versions are kept. Revisions use new generation calls, and a local revision can still change other details. See the [release notes](release/RELEASE-NOTES.md) for verified scope and remaining limitations.
+
+## Seven categories, fifteen directions
+
+| What you want | Example request | See the result |
 |---|---|---|
-| 和角色同框 | “和狐狸掌柜过一天”／“去花果山找孙悟空” | [狐狸客栈](release/cases/virtual-fox-inn.md)、[水帘洞](release/cases/virtual-wukong-cave.md) |
-| 扮成一个人 | “穿虞姬的戏曲扮相”／“试穿木兰主题盔甲” | [虞姬](release/cases/virtual-yuji-opera.md)、[木兰](release/cases/virtual-mulan.md) |
-| 走进一个故事 | “走进《画壁》”／“拍一部武侠片” | [画壁](release/cases/virtual-painted-wall.md)、[武侠](release/cases/virtual-wuxia.md) |
-| 自己去旅行 | “拍一套卡帕多奇亚夜景旅行写真” | [夜景旅行](release/cases/virtual-cappadocia.md) |
-| 和宠物过日常 | “和我的猫度过一个安静的夜晚” | [猫的陪伴](release/cases/virtual-cat-daily.md) |
+| Character companionship | “Spend a day with a fox innkeeper” | [Fox Inn](release/cases/virtual-fox-inn.md), [Sun Wukong](release/cases/virtual-wukong-cave.md) |
+| Costume portraits | “Try a Yuji opera look or Mulan-inspired armor” | [Yuji](release/cases/virtual-yuji-opera.md), [Mulan](release/cases/virtual-mulan.md) |
+| Enter a story | “Step into The Painted Wall or a wuxia film” | [Painted Wall](release/cases/virtual-painted-wall.md), [Wuxia](release/cases/virtual-wuxia.md) |
+| Travel on your own | “Plan a night in Cappadocia” | [Night travel](release/cases/virtual-cappadocia.md) |
+| Everyday life with a pet | “Spend a quiet evening with my cat” | [Life with a cat](release/cases/virtual-cat-daily.md) |
+| My stage | “Make me a guitarist at a wild rock concert” | [My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) |
+| Attend their concert | “Take me to a Queen or Jay Chou concert” | [Tokyo 1992 audience story](release/cases/virtual-gnr-tokyo.md) |
 
-支持摄影感、全动画和摄影人物＋动画环境，也可调整衣装、光线、机位与动作。可用玩法、已有案例和仍需试验的范围分别列在[能力清单](release/CAPABILITIES.md)。
+The two concert directions are new in the development source and are **not included in v1.0.3-rc.1**. Both are implemented in the development source. The Tokyo audience set received positive feedback, and the complete guitar set was accepted. My Stage can now plan playing together, musical responses and a shared bow with original adult bandmates; three selected interaction images are now shown in the [My Stage supplement](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement), including a requested correction to the final salute. Tickets, programmes and fan items can be planned for the chosen artist and era; that newer guidance has no matching image validation yet. See [concert scope](release/CAPABILITIES.en.md#concert-directions-in-development).
 
-## 使用前了解这些
+Try photographic, fully animated or photographic-subject/animated-world styles. Adjust clothes, lighting, camera framing and actions. See [capabilities and evidence](release/CAPABILITIES.en.md) for all fifteen directions and remaining experimental scope.
 
-- **相似度有局限。** 转头、大动作和全身远景可能让人脸漂移，手也可能画错。
-- **身形按已有依据描述。** 支持身体照片、只有头像时的自述，以及明确的局部调整要求；不强制提供全身三视图。可选图库只是沟通示例，精准身材／胸型控制及换装、侧身、背影的一致性尚未验证。
-- **照片会交给生图服务处理。** 本项目不收集照片，也不是全程离线工具。只上传本人或已获同意的成年人的照片；使用他人照片前，应说明用途并取得对方单独同意。
-- **公开与商用需留意权利。** 你对上传和生成的内容负责；商用取决于生图服务条款及所涉角色的权利，须自行取得相应授权。
+## Before you use it
 
-## 反馈与参与
+- **Likeness has limits.** Head turns, large movements and full-body wide shots can cause face drift. Hands can be drawn incorrectly.
+- **Body guidance follows available evidence.** Use a body photo, a headshot with your description, or explicit local adjustment requests. Three full-body views are not required. The optional gallery is a communication aid; precise body or bust control and consistency across outfits, side views and back views remain unverified.
+- **Photos are sent to the image service.** This project does not collect photos and is not fully offline. Upload only photos of yourself or consenting adults. Explain the intended use and obtain separate consent before using someone else's photo.
+- **Publication and commercial use involve rights.** You are responsible for uploaded and generated content. Commercial use depends on the image service's terms and the rights in the characters involved; obtain the necessary authorization yourself.
 
-使用问题或建议请到 [Issues](https://github.com/denggui-ai/shy-cameo-skill/issues)，附上使用环境和复现步骤，**不要公开上传私人照片或个人信息**。版权、肖像权、安全与隐私问题请按 [SECURITY.md](SECURITY.md) 联系。
+## Feedback and contributions
 
-[开发与验证文档](release/dev/README.md) · [变更记录](CHANGELOG.md) · [贡献说明](CONTRIBUTING.md)
+For questions or suggestions, open an [issue](https://github.com/denggui-ai/shy-cameo-skill/issues) with your environment and steps to reproduce. **Do not post private photos or personal information.** For copyright, likeness, security or privacy concerns, follow [SECURITY.md](SECURITY.md).
 
-[MIT 许可](LICENSE) 适用于软件，不包含肖像的其他使用授权。成片由 AI 生成，本项目与作品权利方及 Cameo 无关联。权利说明不是法律意见。本项目原名 classic-coshoot。
+[Development and verification](release/dev/README.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md)
+
+The [MIT license](LICENSE) covers the software, not other uses of anyone's likeness. Images are AI-generated. This project is not affiliated with any featured work's rights holders or with Cameo. Rights statements are not legal advice. Formerly named classic-coshoot.

@@ -99,7 +99,9 @@
         "archetype",
         "genre_scene",
         "location_checkin",
-        "pet_daily"
+        "pet_daily",
+        "my_stage",
+        "concert_audience"
       ]
     },
     "style": {
@@ -157,6 +159,16 @@
     "pet": {
       "type": "string",
       "minLength": 1
+    },
+    "performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["act", "visible"],
+      "properties": {
+        "act": {"type": "string", "minLength": 1},
+        "visible": {"type": "boolean"},
+        "description": {"type": "string", "minLength": 1}
+      }
     }
   },
   "$defs": {

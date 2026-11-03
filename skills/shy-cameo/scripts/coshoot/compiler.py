@@ -52,15 +52,19 @@ DAILY_FILM_LIGHT_TEXT = ("生活电影布光：只认一个主光源，来自场
                          "傍晚、夜里、拉着窗帘的屋里才整体偏暗，暗部占画面一半以上；中长焦浅景深，主角偏一侧、视线方向留白；"
                          "不用满屏平光把人和背景照得一样亮。")
 SOLO_LIFE_MODES = ("location_checkin", "pet_daily")
+STAGE_MODES = ("my_stage", "concert_audience")
+STAGE_LIGHT_TEXT = ("演出摄影布光：按本镜场馆或舞台的实际光源组织，若有彩色灯束或观众灯海则保留层次；"
+                    "露脸镜头用场内柔和侧前光保持主角肤色，不让纯红蓝光吞掉五官；舞台可以比观众区亮。")
 # 2026-10-28: "light the whole face evenly" gave phone flat light; lessons 34: half the face in shadow drifts the likeness.
 FACE_LIGHT_TEXT = ("脸部光：脸上的光来自画面里那个主光源、方向与它一致，不像闪光灯；它从镜头前方偏一侧约 30–45° 给脸柔和的方向感，脸整体受光、额头鼻梁双颊清楚，"
                    "只在脸颊外侧和下颌线轻微渐暗，脸上不切明暗分界；两眼有眼神光；明暗反差放在背景、发丝和肩部轮廓光上。")
+STAGE_FACE_LIGHT_TEXT = "舞台脸部光随本镜头向和场内光源，保留关键五官的可辨层次，表情与动作不因布光改成正面静态姿势。"
 
 
 def film_light(scene: dict) -> bool:
     # A card that asks for a bright day scene (user or work choice) keeps its own light.
     visual = scene.get("visual") or {}
-    return (visual.get("environment") == "photographic" and scene["play_mode"] not in SOLO_LIFE_MODES
+    return (visual.get("environment") == "photographic" and scene["play_mode"] not in SOLO_LIFE_MODES + STAGE_MODES
             and BRIGHT_DAY not in scene.get("lighting", ""))
 
 
@@ -73,8 +77,9 @@ def checkin_film_light(scene: dict) -> bool:
 def face_light(scene: dict) -> str:
     # Rides only with a film-light sentence; the portrait branch keeps its length budget (D30).
     face = ((scene.get("user") or {}).get("presence", "face")) == "face"
-    lit = film_light(scene) or scene["play_mode"] in SOLO_LIFE_MODES
-    return FACE_LIGHT_TEXT if face and lit and subject_style(scene) == "photographic" else ""
+    lit = film_light(scene) or scene["play_mode"] in SOLO_LIFE_MODES + STAGE_MODES
+    light = STAGE_FACE_LIGHT_TEXT if scene["play_mode"] == "my_stage" else FACE_LIGHT_TEXT
+    return light if face and lit and subject_style(scene) == "photographic" else ""
 
 
 def subject_style(scene: dict) -> str:
@@ -89,6 +94,8 @@ FILM_CONTEXT = {
     "genre_scene": "一部类型电影",
     "opera_costume": "一场传统戏曲演出的后台花絮",
     "pet_daily": "和自家宠物在一起的一件日常小事",
+    "my_stage": "主角作为已选歌手或乐手投入舞台表演的想象故事",
+    "concert_audience": "主角去听喜欢的歌手或乐队演唱会的想象故事",
 }
 
 
@@ -98,8 +105,11 @@ def cinema_text(scene: dict) -> str:
 
 def style_text(scene: dict) -> str:
     light = DAILY_FILM_LIGHT_TEXT if scene["play_mode"] == "pet_daily" else CHECKIN_FILM_LIGHT_TEXT
+    visual = scene.get("visual")
+    photographic = visual["environment"] == "photographic" if visual else scene["style"] == "realistic"
+    stage_light = STAGE_LIGHT_TEXT if scene["play_mode"] in STAGE_MODES and photographic else ""
     return (_base_style_text(scene) + (light if checkin_film_light(scene) else "")
-            + face_light(scene) + cinema_text(scene))
+            + stage_light + face_light(scene) + cinema_text(scene))
 
 
 def _base_style_text(scene: dict) -> str:
@@ -108,8 +118,9 @@ def _base_style_text(scene: dict) -> str:
         subject = VISUAL_TEXT[visual["subject"]]
         environment = VISUAL_TEXT[visual["environment"]]
         cast = VISUAL_TEXT[visual.get("characters", visual["environment"])]
+        supporting = "舞台表演者若入镜" if scene["play_mode"] == "concert_audience" else "陪同角色若在场"
         identity = "主角保留本人真实面貌，不把主角动画化。" if visual["subject"] == "photographic" else "主角按所选动画表现重绘，保留本人可辨认的特征。"
-        return (f"竖幅 {scene['aspect']}；主角采用{subject}；环境采用{environment}；陪同角色若在场，采用{cast}。"
+        return (f"竖幅 {scene['aspect']}；主角采用{subject}；环境采用{environment}；{supporting}，采用{cast}。"
                 f"{identity}人物与环境按此分别呈现，接触位置、透视、光线方向协调；"
                 f"场景语境：{scene.get('film_context') or FILM_CONTEXT.get(scene['play_mode'], '旅行写真')}。"
                 + VISUAL_CRAFT_TEXT + (FILM_LIGHT_TEXT if film_light(scene) else ""))
@@ -183,6 +194,7 @@ CAST_CLOSE_TEXT = ("主角不长出角色五官，不混脸，脸清楚受光（
 SHY_TEXT = "角色害羞，脸不出现在画面里，也不出现正面朝向的无脸人形或脸部黑影。"
 SOLO_TEXT = "画面中只有主角一个可辨认的人物；背景里如有路人，只能是虚构的、看不清脸的远景小人。"
 FACE_TEXT = "主角的脸清楚受光（正脸或四分之三侧脸，五官完整可见），手、道具和饰品不遮挡五官。"
+STAGE_FACE_TEXT = "本张主角露脸，按已确认的表情与头向表演，保持本人脸型与五官结构可辨；不强行转回镜头或收敛表情，乐器与手不要遮住关键五官。"
 # A single frontal photo holds the face only near frontal (2026-10-22 pose study); shots that need a
 # turned head show the user without a face instead of a drifting profile.
 USER_PRESENCE_TEXT = {
@@ -197,6 +209,14 @@ ORIGINAL_TEXT_ADAPTATION = "本玩法以原著描写为造型依据；只有用�
 GENRE_TEXT = "按本套选定的片型、年代与情节组织分镜。"
 CHECKIN_TEXT = "没有任何动漫、电影或电视剧的角色、海报、周边或标志。"
 CLEAN_TEXT = "无叠加文案、品牌、水印或拼贴分格；场内必要的印刷或手写痕迹依本镜。"
+STAGE_COMMON_TEXT = ("观众与工作人员若入镜，只作不露脸的背景群像，不抢主角；演唱会大屏若入镜，只显示抽象灯光与色块，不出现人像和文字。")
+MY_STAGE_TEXT = ("主角是本场演出的表演者，职责按本镜指定身份，保留本人身份，不把主角换成某位明星。"
+                 "按本镜分镜决定队友是否入镜：有互动时，队友是原创成年乐手，可在近旁合奏、回应或谢幕，主角仍是视觉中心；"
+                 "队友以背影或侧后方入镜，五官不可见，不画正面无脸人形。明确独奏或本镜未安排队友时，不额外添加，也不从首图带入。"
+                 "各人的手臂、乐器与支撑分别连贯，不混接或共用同一只手。"
+                 "动作、表情和强度按本镜方案呈现；强烈表情不改变本人脸型与骨相。有乐器时，演奏须有真实接触与支撑，不改成静止持琴摆拍。")
+CONCERT_TEXT = ("主角是来听演出的观众，不上台表演；演出者若入镜，只在远处舞台表演，用服饰、乐器和动作辨识，面部细节不可辨。"
+                "台上与台下有明确空间距离，不安排演出者与主角近距离合影或接触，不画正面无脸人形。")
 CHAIN_TEXT = ("附图 {n} 是这套照片的第 1 张成片：{keep}、场景的美术风格与色调必须与附图 {n} 一致"
               "（本条另有说明的除外）；主角的脸以附图 1 为准，不借附图 {n} 的构图。")
 USER_PHOTO_TEXT = ("是同一位真实成年人（以下称“主角”）的照片：身份参考采用主角的脸、发型，"
@@ -228,6 +248,11 @@ def hard_constraints(play_mode: str, has_cast: bool, scene: Optional[dict] = Non
     """Fixed lines appended to every prompt; cards can neither add to nor remove them."""
     tail = (GENRE_TEXT,) if play_mode == "genre_scene" else (CHECKIN_TEXT,) if play_mode in SOLO_LIFE_MODES and not has_cast else ()
     presence = ((scene or {}).get("user") or {}).get("presence", "face")
+    if play_mode in STAGE_MODES:
+        face_text = STAGE_FACE_TEXT if play_mode == "my_stage" else FACE_TEXT
+        face = face_text if presence == "face" else USER_PRESENCE_TEXT[presence]
+        people = (MY_STAGE_TEXT,) if play_mode == "my_stage" else (CONCERT_TEXT,)
+        return people + (face, STAGE_COMMON_TEXT, CLEAN_TEXT)
     if has_cast:
         adaptation = ORIGINAL_TEXT_ADAPTATION if play_mode == "original_text" else ADAPTATION_TEXT
         close = CAST_CLOSE_TEXT if presence == "face" else CAST_NO_MIX_TEXT + USER_PRESENCE_TEXT[presence] + CAST_HIDDEN_TEXT
@@ -355,8 +380,8 @@ def _character_text(member: dict, card: dict) -> str:
 
 
 def _check_user(mode: str, user: dict) -> None:
-    if (user["mode"] == "in_story" or mode == "opera_costume") and not user.get("role"):
-        raise CardError("missing_role", "入戏或戏曲扮相必须指定剧中身份或行当")
+    if (user["mode"] == "in_story" or mode in ("opera_costume", "my_stage")) and not user.get("role"):
+        raise CardError("missing_role", "入戏、戏曲或我的舞台必须指定本次身份、行当或乐手职责")
     if user["mode"] == "fitting" and not (user.get("costume") or user.get("outfit")):
         raise CardError("missing_costume", "试装需要说明本次衣装")
 
@@ -387,6 +412,21 @@ def check_user_presence(scene: dict) -> None:
         raise CardError("presence_camera_conflict", "主角不露脸的镜头不能用侧前方机位；请去掉 camera_angle=side 或改回露脸")
 
 
+def check_performance(scene: dict) -> None:
+    """Stage performers are an act, not one or two nearby fictional companions."""
+    mode = scene["play_mode"]
+    performance = scene.get("performance")
+    if mode in STAGE_MODES and scene["characters"]:
+        raise CardError("stage_no_companion_cast", "演唱会玩法的舞台表演者写入 performance，不占用陪同角色；当前不组合台下陪同角色")
+    if mode == "concert_audience":
+        if performance is None:
+            raise CardError("concert_needs_performance", "观演分镜需要 performance，写明演出者及本镜是否入镜")
+        if performance["visible"] and not performance.get("description", "").strip():
+            raise CardError("performance_needs_description", "演出者入镜时需说明本镜可见的造型、乐器、站位与动作")
+    elif performance is not None:
+        raise CardError("performance_wrong_mode", "performance 仅用于去听 TA 的演唱会；我的舞台由本人表演")
+
+
 def compile_request(scene: dict, characters: Dict[str, dict], user_photos: Sequence[Path],
                     sheet_resolver: Callable[[dict], Path], names: Sequence[NameEntry],
                     scene_ref: Optional[Path] = None, run_id: Optional[str] = None,
@@ -398,6 +438,7 @@ def compile_request(scene: dict, characters: Dict[str, dict], user_photos: Seque
     require_valid(scene, "scene")
     check_cover_level(scene)
     check_user_presence(scene)
+    check_performance(scene)
     if scene["status"] != "user_confirmed":
         raise CardError("scene_not_confirmed", "分镜卡尚未经用户确认")
     if scene["play_mode"] == "pet_daily":
@@ -437,6 +478,9 @@ def compile_request(scene: dict, characters: Dict[str, dict], user_photos: Seque
                  scene.get("film_context", ""), scene.get("lighting", ""), scene.get("cinematography", ""),
                  scene.get("pet", ""), (pet or {}).get("look", "")]
     narrative += [p["name"] + p["spec"] for p in specs]
+    performance = scene.get("performance")
+    if performance:
+        narrative += [performance["act"], performance.get("description", "")]
     who = "、".join(card["name"] for _, card, _ in cast)
     parts = "、".join(f"{card['name']}的局部（{_visible(member)}，看不到脸）" for member, card, _ in cast)
     lines = [head + (f"画面里有主角，以及{parts}。" if cast else "画面里只有主角一个主要人物。")]
@@ -492,7 +536,15 @@ def compile_request(scene: dict, characters: Dict[str, dict], user_photos: Seque
     lines.append(f"场景：{scene['setting']}。")
     if scene.get("lighting"):
         lines.append(f"光线：{scene['lighting']}。")
-    if mode == "opera_costume":
+    if mode == "my_stage":
+        lines.append(f"主角是本场演出的{user['role']}，按本镜指定的演出阶段与动作表演，保持本人身份。")
+    elif mode == "concert_audience":
+        lines.append(f"演出主题：{performance['act']}；这是 AI 想象的观演场景。主角是台下观众。")
+        if performance["visible"]:
+            lines.append(f"本镜远处舞台表演：{performance['description']}。")
+        else:
+            lines.append("本镜演出者不入镜，不从首图带出演出者；大屏也不显示演出者人像。")
+    elif mode == "opera_costume":
         lines.append(f"主角采用{user['role']}的戏曲扮相" + {"back": "，头面与衣装按本张说明的穿戴阶段呈现。", "hands": "，可见袖口按本张衣装说明呈现。"}.get(
             user.get("presence", "face"), "，五官保持本人可辨。"))
     elif user["mode"] == "fitting":

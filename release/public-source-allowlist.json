@@ -28,6 +28,10 @@
     "destination": "README.md"
   },
   {
+    "source": "README.zh-CN.md",
+    "destination": "README.zh-CN.md"
+  },
+  {
     "source": "SECURITY.md",
     "destination": "SECURITY.md"
   },
@@ -98,6 +102,10 @@
   {
     "source": "skills/shy-cameo/references/storyboarding.md",
     "destination": "skills/shy-cameo/references/storyboarding.md"
+  },
+  {
+    "source": "skills/shy-cameo/references/stage-and-concerts.md",
+    "destination": "skills/shy-cameo/references/stage-and-concerts.md"
   },
   {
     "source": "skills/shy-cameo/references/opening-and-topics.md",
@@ -266,6 +274,10 @@
   {
     "source": "tests/test_compiler.py",
     "destination": "tests/test_compiler.py"
+  },
+  {
+    "source": "tests/test_stage_concerts.py",
+    "destination": "tests/test_stage_concerts.py"
   },
   {
     "source": "tests/test_label.py",
@@ -770,5 +782,77 @@
   {
     "source": "tests/test_body_reference_bundle.py",
     "destination": "tests/test_body_reference_bundle.py"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/01.png",
+    "destination": "assets/showcase/virtual-gnr-tokyo/01.png"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/02.png",
+    "destination": "assets/showcase/virtual-gnr-tokyo/02.png"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/03.png",
+    "destination": "assets/showcase/virtual-gnr-tokyo/03.png"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/04.png",
+    "destination": "assets/showcase/virtual-gnr-tokyo/04.png"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/05.png",
+    "destination": "assets/showcase/virtual-gnr-tokyo/05.png"
+  },
+  {
+    "source": "assets/showcase/virtual-gnr-tokyo/manifest.json",
+    "destination": "assets/showcase/virtual-gnr-tokyo/manifest.json"
+  },
+  {
+    "source": "release/cases/virtual-gnr-tokyo.md",
+    "destination": "release/cases/virtual-gnr-tokyo.md"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/01.png",
+    "destination": "assets/showcase/virtual-my-stage-guitar/01.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/02.png",
+    "destination": "assets/showcase/virtual-my-stage-guitar/02.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/03.png",
+    "destination": "assets/showcase/virtual-my-stage-guitar/03.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/04.png",
+    "destination": "assets/showcase/virtual-my-stage-guitar/04.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/05.png",
+    "destination": "assets/showcase/virtual-my-stage-guitar/05.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-guitar/manifest.json",
+    "destination": "assets/showcase/virtual-my-stage-guitar/manifest.json"
+  },
+  {
+    "source": "release/cases/virtual-my-stage-guitar.md",
+    "destination": "release/cases/virtual-my-stage-guitar.md"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-band/01-bass-duet.png",
+    "destination": "assets/showcase/virtual-my-stage-band/01-bass-duet.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-band/02-drummer-cue.png",
+    "destination": "assets/showcase/virtual-my-stage-band/02-drummer-cue.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-band/03-band-salute-r1.png",
+    "destination": "assets/showcase/virtual-my-stage-band/03-band-salute-r1.png"
+  },
+  {
+    "source": "assets/showcase/virtual-my-stage-band/manifest.json",
+    "destination": "assets/showcase/virtual-my-stage-band/manifest.json"
   }
 ]

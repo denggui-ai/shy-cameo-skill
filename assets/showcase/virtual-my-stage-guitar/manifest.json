@@ -1,0 +1,64 @@
+{
+  "set_id": "virtual-my-stage-guitar",
+  "title": "我的舞台：电吉他手的五个瞬间",
+  "title_en": "My Stage: Five Moments with an Electric Guitar",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_identity_photo_used": false,
+  "images": [
+    {
+      "file": "01.png",
+      "sha256": "442ee7c301840295968c7077757a6a7ddcd6316efde6c2430c37edd62ebb7edf",
+      "source_sha256": "442ee7c301840295968c7077757a6a7ddcd6316efde6c2430c37edd62ebb7edf",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "02.png",
+      "sha256": "54ff9eb10487530da80b6bc0cdbd369f6f258a24f875eaab3f5ee929f6a11e19",
+      "source_sha256": "54ff9eb10487530da80b6bc0cdbd369f6f258a24f875eaab3f5ee929f6a11e19",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "03.png",
+      "sha256": "90395db28695a799e9686d729466e98c3d3434f1c8a2d77f8ec2d3bce332fce9",
+      "source_sha256": "90395db28695a799e9686d729466e98c3d3434f1c8a2d77f8ec2d3bce332fce9",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "04.png",
+      "sha256": "27ab604800ad8c34397ae5c323a390a2e304457079dd45c0bdcd7363341a6e53",
+      "source_sha256": "27ab604800ad8c34397ae5c323a390a2e304457079dd45c0bdcd7363341a6e53",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "05.png",
+      "sha256": "86a57f8c7bcd909a240ea09f1f50d35565b7079132177a6090676635f23afc92",
+      "source_sha256": "86a57f8c7bcd909a240ea09f1f50d35565b7079132177a6090676635f23afc92",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-03",
+  "acceptance_date": "2026-11-03",
+  "acceptance_scope": "whole_set_acceptance_and_showcase_permission",
+  "user_feedback": "整套认可，可以作为展示案例",
+  "publication_basis": "Owner explicitly accepted the whole five-image set and approved showcase inclusion. Gates record editorial acceptance of the virtual protagonist, not machine likeness checks or formal per-image CLI verdicts. Remote publication remains manual.",
+  "validation_note": "Five calls returned five original images, with no retries. Known framing, motion blur and fine instrument-detail limitations remain documented. The later band-interaction guidance was not tested by this set.",
+  "production_method": "Native imagegen visual POC using existing pure compiler, adapted only for approved original virtual adult provenance; not formal human-consent CLI end-to-end.",
+  "derivatives": "Byte-identical PNG copies; originals and existing AI provenance retained."
+}
