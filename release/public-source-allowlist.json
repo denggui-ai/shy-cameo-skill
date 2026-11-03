@@ -918,5 +918,9 @@
   {
     "source": "release/cases/virtual-last-chord-remake-history.md",
     "destination": "release/cases/virtual-last-chord-remake-history.md"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png"
   }
 ]

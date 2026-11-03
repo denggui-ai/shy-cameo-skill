@@ -14,7 +14,7 @@
 
 ### 2. 与贝斯手同拍 / In time with the bassist
 
-<a href="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png"><img src="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png" width="440" alt="与贝斯手同拍 / In time with the bassist"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png"><img src="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png" width="440" alt="与贝斯手同拍 / In time with the bassist"></a>
 
 ### 3. 回应鼓手的重拍 / Cueing the drummer
 
@@ -38,6 +38,10 @@ The owner reported a three-string bass and requested further refinement and a Gi
 
 Manual inspection of the selected images shows four bass strings, four separate tuning keys and the visible bridge connections. Both bass headstocks are fully in frame. The duet keeps the restored guitar headstock distinct from the bass; the bassist's wristband is on the right wrist in both images. The salute retains the drum kit behind the performers. Shots 1, 3 and 4 are byte-identical to the preceding version.
 
+独立复核发现第2张修订2的琴头只有五组弦钮。随后一次局部编辑完成修订3，目视可数六个弦钮及六个弦柱，贝斯仍可辨认四弦。此前版本见[第2张修订2](../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png)。
+
+An independent review found five guitar tuners in shot 2 revision 2. One local edit produced revision 3, with six visible guitar tuning keys and posts and the four-string bass retained.
+
 ## 检查与限制 / Checks and limits
 
 - 原生PNG、AI来源信息及旧版均保留；文件可解码，展示副本与原始输出字节一致。
@@ -52,7 +56,7 @@ Native PNG bytes and AI provenance are retained. Visible counts and connections 
 
 - [最早四张与未知第五张 / Original four images and unresolved fifth call](virtual-last-chord-original.md)：5次调用返回4张，未知第五张保持原状态。
 - [修订前五张 / Five images before this correction](virtual-last-chord-remake-history.md)：独立重制5次返回5张，保留作者的贝斯弦数纠错与旧图。
-- 当前版本：在上述五张基础上增加3次编辑，选用2张替换展示；仍计5张故事图，历史版本不重复计数。固定v1.1.0-rc.1安装包未重发。
+- 当前版本：在上述五张基础上进行了4次编辑，最终选用两张替换展示；仍计5张故事图，历史版本不重复计数。固定v1.1.0-rc.1安装包未重发。
 
 ## 可以这样开始 / Try this
 

@@ -19,16 +19,16 @@
       "current_showcase": true
     },
     {
-      "file": "02-bass-duet-r2.png",
+      "file": "02-bass-duet-r3.png",
       "story_index": 2,
-      "sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
-      "source_sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
+      "sha256": "d2f472410b4706ad47b1ab5a88794cf17de0ef30a9925c5a4f0c89ebde88db66",
+      "source_sha256": "d2f472410b4706ad47b1ab5a88794cf17de0ef30a9925c5a4f0c89ebde88db66",
       "width": 1086,
       "height": 1448,
       "web_derivative": false,
       "current_showcase": true,
-      "revision": 2,
-      "previous_file": "02-bass-duet.png"
+      "revision": 3,
+      "previous_file": "02-bass-duet-r2.png"
     },
     {
       "file": "03-drummer-cue.png",
@@ -85,6 +85,20 @@
       "current_showcase": false,
       "status": "superseded_bass_count_issue",
       "superseded_by": "05-band-salute-r1.png"
+    },
+    {
+      "file": "02-bass-duet-r2.png",
+      "story_index": 2,
+      "sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
+      "source_sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false,
+      "current_showcase": false,
+      "revision": 2,
+      "previous_file": "02-bass-duet.png",
+      "status": "superseded_five_tuner_headstock",
+      "superseded_by": "02-bass-duet-r3.png"
     }
   ],
   "gates": {
@@ -107,8 +121,8 @@
   ],
   "publication_basis": "Explicit request to improve this case and update GitHub; publication authorization is distinct from the pending image verdicts.",
   "user_verdict": "pending",
-  "generation_tool_calls": 8,
-  "returned_images": 8,
+  "generation_tool_calls": 9,
+  "returned_images": 9,
   "automatic_retries": 0,
   "previous_attempt": {
     "set_id": "virtual-last-chord",
@@ -120,14 +134,15 @@
   },
   "visual_observations": [
     "Selected shots 2 and 5 show four separate bass strings and four tuning keys, with visible bridge and neck continuity.",
-    "The collateral missing guitar headstock from the first shot-2 edit was corrected in the selected second edit; the four-string bass remains distinct from the six-key guitar headstock.",
+    "Shot 2 revision 3 shows six guitar tuning keys and six posts on the pale headstock, separately from the four-string bass.",
     "The bassist wears the black wristband on the right wrist in both selected revised images.",
     "Shots 1, 3 and 4 retain their original bytes. The final-salute drum kit remains behind the performers."
   ],
   "known_limitations": [
     "Small finger positions, nut slots, hidden strap attachments and other occluded details are not fully verified; these images do not prove instrument reliability.",
     "No post-generation per-image user verdicts have been recorded.",
-    "The five original remake request audits were unverifiable; the three edit request audits were also unverifiable because usable session logs were unavailable. Frame and face detectors were unavailable."
+    "The five original remake request audits were unverifiable; the three edit request audits were also unverifiable because usable session logs were unavailable. Frame and face detectors were unavailable.",
+    "The final headstock edit was checked visually. Its call was not independently audited."
   ],
   "production_method": "Five-image remake from development-source compilation, followed by three native edit calls using unchanged source compile_edit_request. The two edit bases were the earlier virtual showcase images. Original native PNG bytes retained. Not a formal real-person CLI end-to-end run.",
   "derivatives": "Byte-identical PNG copies retaining original AI provenance.",
@@ -145,13 +160,13 @@
   },
   "current_images": [
     "01-opening.png",
-    "02-bass-duet-r2.png",
+    "02-bass-duet-r3.png",
     "03-drummer-cue.png",
     "04-solo-peak.png",
     "05-band-salute-r1.png"
   ],
   "current_gallery_count": 5,
-  "history_images_in_manifest": 2,
+  "history_images_in_manifest": 3,
   "generation_stages": [
     {
       "stage": "five_image_remake",
@@ -165,6 +180,12 @@
       "selected_images": 2,
       "visual_refinement_calls": 1,
       "description": "Shot 2 edit 1 restored a four-string bass but removed the main guitar headstock. A separate edit restored that headstock. Shot 5 received one bass edit. All three returned; no failed or unknown request was resubmitted."
+    },
+    {
+      "stage": "guitar_headstock_local_edit",
+      "calls": 1,
+      "returned_images": 1,
+      "selected_images": 1
     }
   ],
   "prior_quality_issues": [
