@@ -1,0 +1,42 @@
+name: Showcase Pages
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'assets/showcase/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: showcase-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage public homepage and covers
+        run: |
+          python3 - <<'PY'
+          import re, shutil
+          from pathlib import Path
+          page = Path('site/index.html')
+          target = Path('_pages')
+          (target / 'site').mkdir(parents=True)
+          shutil.copyfile(page, target / page)
+          (target / 'index.html').write_text('<meta http-equiv="refresh" content="0; url=site/"><a href="site/">入画 · 案例集</a>')
+          for name in set(re.findall(r'src="\.\./(assets/showcase/[^"]+)"', page.read_text())):
+              path = Path(name)
+              assert '..' not in path.parts and path.is_file()
+              (target / path).parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(path, target / path)
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+      - uses: actions/deploy-pages@v4
+        id: deploy

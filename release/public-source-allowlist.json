@@ -922,5 +922,13 @@
   {
     "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png",
     "destination": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png"
+  },
+  {
+    "source": "site/index.html",
+    "destination": "site/index.html"
+  },
+  {
+    "source": ".github/workflows/pages.yml",
+    "destination": ".github/workflows/pages.yml"
   }
 ]

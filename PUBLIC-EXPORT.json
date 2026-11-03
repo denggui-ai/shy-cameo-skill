@@ -44,14 +44,14 @@
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 10503,
-      "sha256": "0e222a993ec529209d4e349cd27cb8d9362111f30404aa836d87306e0e16def3"
+      "bytes": 10618,
+      "sha256": "273a7c99a146761f97d0bdb77e38eeff96d7bfde3303dde34b788ad1fc3ac074"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 9652,
-      "sha256": "b5f01da43da62bbc6fc02854edc34c4d2a038ec41d7c35c36bff8b28b36dd2a8"
+      "bytes": 9765,
+      "sha256": "ad8e4a8408bd0b815ce63c87d762e442bbc33c82c70c5424d78f551389abb16f"
     },
     {
       "source": "SECURITY.md",
@@ -86,8 +86,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 28986,
-      "sha256": "a8d713c55a5c2a9b0b32f29836fc24f95c4311e3de8b62beffb65e8d67a9aa4d"
+      "bytes": 29168,
+      "sha256": "deb3d15a2d0ea09dbb3321813a573d4d7306db9898f914031036bc9af83b36f2"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -1390,6 +1390,18 @@
       "path": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r3.png",
       "bytes": 1997246,
       "sha256": "d2f472410b4706ad47b1ab5a88794cf17de0ef30a9925c5a4f0c89ebde88db66"
+    },
+    {
+      "source": "site/index.html",
+      "path": "site/index.html",
+      "bytes": 8657,
+      "sha256": "9e5d09d38de09064b0f670bc1317eb1041810e9b2231be99dec6ffdf22657774"
+    },
+    {
+      "source": ".github/workflows/pages.yml",
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1384,
+      "sha256": "ea5a6e0b0ccacd393382f97522952917614a0ed582048c8ba8e899d8a8c64882"
     }
   ]
 }

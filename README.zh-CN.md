@@ -1,5 +1,8 @@
 # 入画 · shy-cameo
 
+**[打开案例集首页，看看入画能做什么 →](https://denggui-ai.github.io/shy-cameo-skill/site/)**
+
+
 [English](README.md) · **简体中文**
 
 **用你的照片，走进想经历的故事。**

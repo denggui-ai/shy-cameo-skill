@@ -1,5 +1,8 @@
 # shy-cameo · 入画
 
+**[Explore the showcase and see what the skill can do →](https://denggui-ai.github.io/shy-cameo-skill/site/)**
+
+
 **English** · [简体中文](README.zh-CN.md)
 
 **Turn your photo into a story you want to experience.**
