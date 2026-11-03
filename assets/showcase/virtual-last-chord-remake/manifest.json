@@ -90,11 +90,24 @@
     "The final salute places the drum kit behind the musicians, toward the camera."
   ],
   "known_limitations": [
+    "Owner reports three strings instead of the specified four-string bass. Bass structure is not verified; shots 2 and 5 require review/correction.",
     "Some hands, strap mounts, drum supports and fine technique are occluded or not fully verifiable.",
     "The bassist wristband placement varies between the duet and salute.",
     "Machine likeness was unavailable; all five automatic request audits were unverifiable and frame detectors unavailable.",
     "No post-generation per-image user verdicts have been recorded."
   ],
   "production_method": "Revised development-source pure compiler with virtual-subject provenance wording adaptation and native image generation. Not a formal real-person CLI end-to-end run; the published v1.1.0-rc.1 ZIP is unchanged.",
-  "derivatives": "Byte-identical PNG copies retaining original AI provenance."
+  "derivatives": "Byte-identical PNG copies retaining original AI provenance.",
+  "quality_review_status": "needs_bass_string_count_correction",
+  "owner_issue_feedback": "请注意 你有一个严重的错误 那就是 bass是四根弦 你画的是三根",
+  "bass_review": {
+    "expected_strings": 4,
+    "owner_reported_strings": 3,
+    "shots_to_review": [
+      2,
+      5
+    ],
+    "status": "not_passed",
+    "reason": "String count and tuning/bridge correspondence were omitted from the prior review; rear view, occlusion or crop cannot establish correctness."
+  }
 }

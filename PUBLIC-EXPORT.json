@@ -38,8 +38,8 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 28701,
-      "sha256": "60901271b0c17829bd94aef178bf8157df0d4b1031a18bdf0d0aa731e7a0f48e"
+      "bytes": 29011,
+      "sha256": "525b08097fe87d5e1aaff89314f56a2b7c7de408f0c2d22c7e6238335339cd94"
     },
     {
       "source": "README.md",
@@ -164,8 +164,8 @@
     {
       "source": "skills/shy-cameo/references/stage-and-concerts.md",
       "path": "skills/shy-cameo/references/stage-and-concerts.md",
-      "bytes": 20867,
-      "sha256": "639aebe3660bfd72ca0e911af253293fb8789fb63b220dc5bf980b0be69b48c5"
+      "bytes": 21277,
+      "sha256": "37d3dcaa29a8a3d14ba878f6edb8109d8ca87c70f3e6f80560946d838014d9fe"
     },
     {
       "source": "skills/shy-cameo/references/opening-and-topics.md",
@@ -512,8 +512,8 @@
     {
       "source": "release/dev/DEVELOPMENT.md",
       "path": "release/dev/DEVELOPMENT.md",
-      "bytes": 75778,
-      "sha256": "07ab631a95ce817ff51f96f1227e55cfa289847bbda48eb09c393f2658400657"
+      "bytes": 76284,
+      "sha256": "d340a04764433dd8033b1fa23bd3ea1c8b7fa8248c3e738bf52749a6dd982aaf"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -1292,8 +1292,8 @@
     {
       "source": "release/cases/virtual-last-chord.md",
       "path": "release/cases/virtual-last-chord.md",
-      "bytes": 5699,
-      "sha256": "87a904fc290da29f9fe467c0a11544647b86f1d2b79fcea4581e9c31ef50be0c"
+      "bytes": 6338,
+      "sha256": "7885c8df45197e800d648136344ada2b19c2f56d746286c18cbea287e321df9a"
     },
     {
       "source": "assets/showcase/virtual-last-chord/manifest.json",
@@ -1364,8 +1364,8 @@
     {
       "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
       "path": "assets/showcase/virtual-last-chord-remake/manifest.json",
-      "bytes": 4435,
-      "sha256": "b009b2faa60959c156f39fc00c25186a7c7dbba9db3024fc2a5e6f075ce848c9"
+      "bytes": 5082,
+      "sha256": "790ec06eacba21ff58e2bf6e7c0e71a2225a3b1dc5c3191715639cbdbaef78ac"
     }
   ]
 }

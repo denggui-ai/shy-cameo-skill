@@ -1,5 +1,8 @@
 # 最后一个和弦 · The Last Chord
 
+> **待修正：贝斯弦数。** 作者指出贝斯被画成三弦，未符合本套明确的四弦设定。此前检查漏核了弦数、弦钮与琴桥的对应关系；第2、5张贝斯镜头需重新核对修订，不能当作乐器结构通过的案例。图片暂保留为问题记录。
+> **Correction pending: bass string count.** The owner reports a three-string bass where this set specifies four. The earlier review did not verify strings against tuning machines and bridge connections. Shots 2 and 5 require review/correction and must not be treated as verified instrument structure; these images remain as the issue record.
+
 [全部案例 / All cases](../CASES.md) · [English index](../CASES.en.md) · [开始使用 / Get started](../../README.md)
 
 **五张重制 · AI 生成 · 原创虚拟成年人物。** 开场、贝斯合奏、鼓手回应、独奏高潮与共同谢幕。黑色夹克、银灰上衣、黑色白护板电吉他与红色舞台光串起同一场演出。
