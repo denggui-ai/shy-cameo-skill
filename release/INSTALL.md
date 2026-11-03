@@ -1,12 +1,12 @@
 # 安装、升级与卸载
 
-推荐使用 **Codex 自带的 skill-installer**，固定标签 `v1.0.3-rc.1`，目录 `skills/shy-cameo`。版本状态与验证边界以 [对应 Release 说明](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1) 为准；请在该标签发布后安装，发布准备不会自动更新旧安装。
+推荐使用 **Codex 自带的 skill-installer**，固定标签 `v1.1.0-rc.1`，目录 `skills/shy-cameo`。版本状态与验证边界以 [对应 Release 说明](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1) 为准；升级不会自动更换已有安装，请先备份旧版并核对来源。
 
 ## 安装前
 
-- 运行脚本需要 Python 3.9+，运行环境为 macOS/Linux；当前安装证据来自 macOS arm64 / Codex CLI 0.161.0。Windows 与其他客户端不在本次验证范围。
+- 运行脚本需要 Python 3.9+，运行环境为 macOS/Linux；历史安装证据来自 macOS arm64 / Codex CLI 0.161.0。本版检查范围见 Release；Windows、新物理机器和桌面点击不在本次验证范围。
 - 可选组件 OpenCV 使用 `opencv-python-headless>=4.9,<5`；未安装时相关检查转为人工确认，不自动安装依赖。
-- 1.0.3-rc.1 默认只带文字与索引，插件安装包小于 5 MB；身形图片与比较页是可选附件，不下载也可正常使用。
+- 1.1.0-rc.1 默认只带文字与索引，插件安装包小于 5 MB；身形图片与比较页是可选附件，不下载也可正常使用。
 - 只选择一种入画安装方式，避免独立技能与插件重复发现。已有同名安装时记录位置和版本，将旧版本备份到技能扫描目录之外。
 - 安装不生成图片。开拍另需当前会话支持内置生图、账号登录与额度；照片、同意、账本和成片放在独立私人工作区。
 
@@ -16,7 +16,7 @@
 
 ```text
 请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.0.3-rc.1。
+安装 skills/shy-cameo 目录，版本固定为 v1.1.0-rc.1。
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
@@ -46,12 +46,12 @@ python3 -B "<skill-dir>/scripts/cli.py" validate-library
 
 ## 进阶安装（可校验）：插件 ZIP 与本地 marketplace
 
-仅在需要插件管理或手动校验 ZIP 时使用。在 [v1.0.3-rc.1 Release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1) 下载 `shy-cameo-1.0.3-rc.1.zip` 和同名 `.sha256`。`shy-cameo-source-*.zip` 以及 GitHub 自动生成的 Source code 是开发源码，不是插件安装包。
+仅在需要插件管理或手动校验 ZIP 时使用。在 [v1.1.0-rc.1 Release](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1) 下载 `shy-cameo-1.1.0-rc.1.zip` 和同名 `.sha256`。`shy-cameo-source-*.zip` 以及 GitHub 自动生成的 Source code 是开发源码，不是插件安装包。
 
 在下载目录执行：
 
 ```bash
-shasum -a 256 -c shy-cameo-1.0.3-rc.1.zip.sha256
+shasum -a 256 -c shy-cameo-1.1.0-rc.1.zip.sha256
 ```
 
 预期 `OK`。摘要从可信发布记录获取；同处下载不能单独证明发布者身份。保留旧包与旧 marketplace 源目录，解包到新目录，按以下结构放置：
@@ -89,7 +89,7 @@ codex plugin add shy-cameo@shy-cameo-local --json
 codex plugin list --marketplace shy-cameo-local --json
 ```
 
-这些命令登记当前用户的 marketplace/插件并复制到缓存，无需管理员权限；已有同名登记先核对，不盲目覆盖。不同 CLI 版本先看 `--help`。返回版本应为 `1.0.3-rc.1`，并给出 `installedPath`，列表显示 `installed: true`、`enabled: true`。
+这些命令登记当前用户的 marketplace/插件并复制到缓存，无需管理员权限；已有同名登记先核对，不盲目覆盖。不同 CLI 版本先看 `--help`。返回版本应为 `1.1.0-rc.1`，并给出 `installedPath`，列表显示 `installed: true`、`enabled: true`。
 
 新开对话核对发现的技能来自该缓存；插件列表有记录不代替技能发现。把 `<skill-dir>` 设为返回的 `installedPath/skills/shy-cameo`，做前面的本地检查。离线隐私与使用说明见 [USER-GUIDE.html](USER-GUIDE.html)。
 
@@ -108,7 +108,7 @@ codex plugin list --marketplace shy-cameo-local --json
 
 **不下载也可正常使用。** 依照本人照片可见部分与文字自述描述身形；需要看图时才按需下载，不把缺图库当错误或开拍前置条件。
 
-在 v1.0.3-rc.1 Release 下载 `shy-cameo-body-reference-20261102.zip` 和 `.sha256`。图库内容版本为 20261102，与本版配套；旧 rc.2 已带图库，无需重复安装。下载后校验，再解压到实际 `<skill-dir>/references/`：
+在 v1.1.0-rc.1 Release 下载 `shy-cameo-body-reference-20261102.zip` 和 `.sha256`。图库内容版本仍为 20261102，与本版兼容，文件与上一版完全一致；旧 rc.2 已带图库，无需重复安装。下载后校验，再解压到实际 `<skill-dir>/references/`：
 
 ```bash
 shasum -a 256 -c shy-cameo-body-reference-20261102.zip.sha256

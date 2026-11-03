@@ -6,11 +6,11 @@
 
 入画是一个 **Codex AI 故事写真技能（skill）**：用一张清楚的正脸照，策划并生成**一套五张 3:4 竖图**。先看分镜，满意后再开拍。
 
-和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。开发版也新增了自己开演唱会、去听 TA 演唱会两个方向。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
+和喜欢的角色同框、换上戏服、走进电影、独自旅行，或记录与宠物相处的日常。本版也包含自己开演唱会、与乐队互动，以及去听 TA 演唱会。你是主角；陪同角色有点害羞，用背影、手和影子入镜。
 
 [开始使用](#三步开始) · [完整案例集](release/CASES.md) · [7 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [使用限制](#使用前了解这些)
 
-> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.0.3-rc.1 预发布版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1)，成片需要逐张检查。
+> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.1.0-rc.1 预发布版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1)，成片需要逐张检查。
 
 ## 选一个故事，看看效果
 
@@ -69,7 +69,7 @@
 
 ```text
 请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.0.3-rc.1。
+安装 skills/shy-cameo 目录，版本固定为 v1.1.0-rc.1。
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
@@ -110,7 +110,7 @@
 | 我的舞台 | “我当吉他手，拍一场疯狂的摇滚现场” | [我的舞台：电吉他手](release/cases/virtual-my-stage-guitar.md) |
 | 去听 TA 的演唱会 | “去听周杰伦／五月天的演唱会” | [东京1992观演故事](release/cases/virtual-gnr-tokyo.md) |
 
-两种演唱会玩法均已在开发源实现，**尚未包含在 v1.0.3-rc.1 发布包中**。东京观演五张已获正向反馈；电吉他手五张已获整套认可。我的舞台可规划与原创成年队友合奏、回应和共同谢幕，[三张互动补充](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement)已获选用，谢幕采用按用户要求修正后的版本。可按艺人和年代规划门票、场刊及应援物，新版物料指导尚未完成对应实拍。具体范围见[演唱会玩法](release/CAPABILITIES.md#演唱会玩法开发中)。
+两种演唱会玩法及乐队互动已纳入 **v1.1.0-rc.1 安装包，仍属试验功能**。东京观演五张已获正向反馈；电吉他手五张已获整套认可。我的舞台可规划与原创成年队友合奏、回应和共同谢幕，[三张互动补充](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement)已获选用，谢幕采用按用户要求修正后的版本。可按艺人和年代规划门票、场刊及应援物，新版物料指导尚未完成对应实拍。具体范围见[演唱会玩法](release/CAPABILITIES.md#演唱会玩法试验)。
 
 支持摄影感、全动画和摄影人物＋动画环境，也可调整衣装、光线、机位与动作。可用玩法、已有案例和仍需试验的范围分别列在[能力清单](release/CAPABILITIES.md)。
 

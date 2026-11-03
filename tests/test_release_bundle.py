@@ -76,7 +76,7 @@ def test_release_rejects_incomplete_plugin_manifest(tmp_path):
     assert not (tmp_path / "out").exists()
 
 
-@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.3-dev.20261102.1", "1.0.3-rc.1"])
+@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.3-dev.20261102.1", "1.0.3-rc.1", "1.1.0-rc.1"])
 def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
     src = source_tree(tmp_path)
     manifest = src / "release/plugin.json"
@@ -96,6 +96,13 @@ def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
             assert provenance["status"] == "candidate"
             assert any("M01 3/3 loaded, M02 0/3 loaded" in item for item in provenance["limitations"])
             assert not any("awaits owner execution" in item for item in provenance["limitations"])
+        if version == "1.1.0-rc.1":
+            assert provenance["status"] == "candidate"
+            assert any("concert and band-interaction features remain experimental" in item
+                       for item in provenance["limitations"])
+            assert any("prior discovery results belong to v1.0.3-rc.1" in item
+                       for item in provenance["limitations"])
+            assert not any("M01 3/3 loaded" in item for item in provenance["limitations"])
         if version in {"1.0.0", "1.0.1"}:
             assert not any("not stable" in item for item in provenance["limitations"])
             assert any("hard blocking" in item for item in provenance["limitations"])
@@ -192,7 +199,7 @@ def test_actual_release_cli_starts_without_source_checkout(tmp_path, artifact):
         assert result.returncode == 0, result.stdout + result.stderr
         if args == ["validate-library"]:
             assert json.loads(result.stdout) == {"ok": True, "errors": []}
-    for name in ("generation.md", "opening-and-topics.md"):
+    for name in ("generation.md", "opening-and-topics.md", "stage-and-concerts.md"):
         assert (skill / "references" / name).is_file()
     # A draft can still be checked with no gallery, photos, login, or project state.
     draft = json.loads((ROOT / "tests/fixtures/animation/set-original-fox-inn.json").read_text())

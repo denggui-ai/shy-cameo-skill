@@ -6,11 +6,11 @@
 
 A **Codex skill for AI story portraits**: turn one clear front-facing photo into **a set of five 3:4 portraits**. Preview the storyboard, then decide whether to generate it.
 
-Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. The development version also adds your own concert and a night in the audience. You are the lead; fictional companions appear through back views, hands and shadows.
+Spend time with a character, try a costume, enter a film, travel, or enjoy everyday life with your pet. This release also includes your own concert, band interactions and a night in the audience. You are the lead; fictional companions appear through back views, hands and shadows.
 
 [Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [Limitations](#before-you-use-it)
 
-> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.0.3-rc.1, a prerelease](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.0.3-rc.1); review each generated image.
+> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.1.0-rc.1, a prerelease](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1); review each generated image.
 
 ## Pick a story and see the results
 
@@ -69,7 +69,7 @@ Open a Codex conversation and send:
 
 ```text
 Use skill-installer to install skills/shy-cameo from
-https://github.com/denggui-ai/shy-cameo-skill at tag v1.0.3-rc.1.
+https://github.com/denggui-ai/shy-cameo-skill at tag v1.1.0-rc.1.
 Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
@@ -111,7 +111,7 @@ Ask to revise one shot or continue with another series. Previous versions are ke
 | My stage | “Make me a guitarist at a wild rock concert” | [My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) |
 | Attend their concert | “Take me to a Queen or Jay Chou concert” | [Tokyo 1992 audience story](release/cases/virtual-gnr-tokyo.md) |
 
-The two concert directions are new in the development source and are **not included in v1.0.3-rc.1**. Both are implemented in the development source. The Tokyo audience set received positive feedback, and the complete guitar set was accepted. My Stage can now plan playing together, musical responses and a shared bow with original adult bandmates; three selected interaction images are now shown in the [My Stage supplement](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement), including a requested correction to the final salute. Tickets, programmes and fan items can be planned for the chosen artist and era; that newer guidance has no matching image validation yet. See [concert scope](release/CAPABILITIES.en.md#concert-directions-in-development).
+The two concert directions and band interactions are **included in v1.1.0-rc.1 as experimental features**. The Tokyo audience set received positive feedback, and the complete guitar set was accepted. My Stage can now plan playing together, musical responses and a shared bow with original adult bandmates; three selected interaction images are now shown in the [My Stage supplement](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement), including a requested correction to the final salute. Tickets, programmes and fan items can be planned for the chosen artist and era; that newer guidance has no matching image validation yet. See [concert scope](release/CAPABILITIES.en.md#concert-directions-experimental).
 
 Try photographic, fully animated or photographic-subject/animated-world styles. Adjust clothes, lighting, camera framing and actions. See [capabilities and evidence](release/CAPABILITIES.en.md) for all fifteen directions and remaining experimental scope.
 

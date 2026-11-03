@@ -19,7 +19,7 @@ The virtual adult and virtual pet examples are development POCs, with wording ad
 | [An Animated Adventure with Zhiyuan](cases/virtual-paper-crane.md) | Enter a story · an original character adventure | Animated subject and world |
 | [A Night in Cappadocia](cases/virtual-cappadocia.md) | Travel on your own | Travel portraits with a single nearby light |
 | [A Quiet Evening with a Cat](cases/virtual-cat-daily.md) | Everyday life with a pet | Photographic virtual adult and virtual cat |
-| [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental development feature | Photographic audience story and distant stage |
-| [My Stage: Five Moments with an Electric Guitar](cases/virtual-my-stage-guitar.md) | My stage · experimental development feature | Photographic rock concert |
+| [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental feature in v1.1.0-rc.1 | Photographic audience story and distant stage |
+| [My Stage: Five Moments with an Electric Guitar](cases/virtual-my-stage-guitar.md) | My stage · experimental feature in v1.1.0-rc.1 | Photographic rock concert |
 
 Moon and travel sets received an overall positive verdict. The cat set retains the accepted scale compromise and book-detail issue. The Tokyo set received overall positive feedback, with framing limitations retained and no formal per-image CLI verdicts inferred. The My Stage set was explicitly accepted as a whole and approved for showcase use. Three selected band-interaction images, including revision 1 of the final salute, supplement the original five without counting as another set. Individual pages explain scope.
