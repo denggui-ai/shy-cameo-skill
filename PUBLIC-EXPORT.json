@@ -44,14 +44,14 @@
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 11853,
-      "sha256": "f2459b464cdba2003cad8ceb05853e35ac313263cf193885ce944d674086e7d2"
+      "bytes": 10503,
+      "sha256": "0e222a993ec529209d4e349cd27cb8d9362111f30404aa836d87306e0e16def3"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 10771,
-      "sha256": "41fe77b8ea958348780dee33d9443a19ffbc84a24788bab8ea08b71a7e15a202"
+      "bytes": 9652,
+      "sha256": "b5f01da43da62bbc6fc02854edc34c4d2a038ec41d7c35c36bff8b28b36dd2a8"
     },
     {
       "source": "SECURITY.md",
@@ -68,8 +68,8 @@
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 20380,
-      "sha256": "3b623920bfc11ba19c6e550b4e91afeacdcef6d80930ab0405e9fe565acf3a4b"
+      "bytes": 20006,
+      "sha256": "434595b7d1e020e5c6e771c0f9874c147c93f6e1f5486dbcc4b6f8b860eb7784"
     },
     {
       "source": "release/icon.svg",
@@ -602,8 +602,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 3417,
-      "sha256": "fd32fd0518bcbf19a66556346d81adfbaaaa9c2e078d40ae552408cc5a5cb88a"
+      "bytes": 2250,
+      "sha256": "c1cf78246a8206c4cf6244922e1a362c15846bbc2782abc649b060a3cecb992f"
     },
     {
       "source": "release/style-keywords.json",
@@ -1094,8 +1094,8 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 3801,
-      "sha256": "1bbb8fbba30dd7cbbffcc3569633518c2b3565ff88d3322e3a3e83648b0ddc71"
+      "bytes": 2502,
+      "sha256": "3113b09f2ce54a732d592fac17858d5f3c35faed024f387f7da1e6f3f89ac1e0"
     },
     {
       "source": "release/CAPABILITIES.en.md",
@@ -1292,8 +1292,8 @@
     {
       "source": "release/cases/virtual-last-chord.md",
       "path": "release/cases/virtual-last-chord.md",
-      "bytes": 6411,
-      "sha256": "a6312c696298ad31d2a61870fb95d45010da82834a1b195648d5948065d020dd"
+      "bytes": 2474,
+      "sha256": "56bd5cbe63abe8d88872c2704ef2fc14caccbbfaea7a637e5eefaf16a5fb69c0"
     },
     {
       "source": "assets/showcase/virtual-last-chord/manifest.json",
@@ -1364,8 +1364,8 @@
     {
       "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
       "path": "assets/showcase/virtual-last-chord-remake/manifest.json",
-      "bytes": 8783,
-      "sha256": "2300cdf673dcad118b3f3af856bb7418126791811a195d1b5235844551a81e50"
+      "bytes": 8571,
+      "sha256": "4a64f81afde025c03e4a402353dd7eac10fc7aa61d08aa58056bcbdeb4a0a35c"
     },
     {
       "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png",
