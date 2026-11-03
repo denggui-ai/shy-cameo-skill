@@ -69,3 +69,5 @@ Known limitations remain: the subject is larger than planned in shot 2; shots 1 
 The original five images show individual performance; band interactions are documented in the separate three-image supplement on this page. Both retain the original PNG bytes and AI provenance, with no extra generation or re-encoding for this gallery update.
 
 [图片摘要 / Image manifest](../../assets/showcase/virtual-my-stage-guitar/manifest.json) · [能力与限制 / Capabilities](../CAPABILITIES.en.md)
+
+另见新版制作的[《最后一个和弦》四张选集 / The Last Chord, a separate four-image selection](virtual-last-chord.md)。这组保留已观察问题与未返回的谢幕记录，不替换本页原五张或三张互动补充。

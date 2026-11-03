@@ -1,0 +1,77 @@
+{
+  "set_id": "virtual-last-chord",
+  "kind": "four_image_selection",
+  "title": "最后一个和弦：四张摇滚现场",
+  "title_en": "The Last Chord: A Four-Image Rock Selection",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_identity_photo_used": false,
+  "images": [
+    {
+      "file": "01-opening.png",
+      "story_index": 1,
+      "sha256": "46be4215a016be31481cc379c3188d15bb7495037358dec237556533d232f770",
+      "source_sha256": "46be4215a016be31481cc379c3188d15bb7495037358dec237556533d232f770",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "02-bass-duet.png",
+      "story_index": 2,
+      "sha256": "30698fabd4a5c9a5bc4026417c6bcd9973950c61411b15e45fd0c40886f2b725",
+      "source_sha256": "30698fabd4a5c9a5bc4026417c6bcd9973950c61411b15e45fd0c40886f2b725",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "03-drummer-cue.png",
+      "story_index": 3,
+      "sha256": "5efc79aee854315e6b0b685598356fd3c11a66faa7a34f056623c03f22bf45e2",
+      "source_sha256": "5efc79aee854315e6b0b685598356fd3c11a66faa7a34f056623c03f22bf45e2",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "04-solo-peak.png",
+      "story_index": 4,
+      "sha256": "b0e2b820f2be0ba0c70d82210dcecf0cb54b3b48e0913792b22f38ff39df6bee",
+      "source_sha256": "b0e2b820f2be0ba0c70d82210dcecf0cb54b3b48e0913792b22f38ff39df6bee",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-03",
+  "acceptance_scope": "positive_editorial_feedback_for_the_four_returned_images; known visual limitations retained; not a complete five-shot set",
+  "user_feedback": [
+    "我觉得这个效果不错的 可以考虑作为正式案例"
+  ],
+  "publication_basis": "After discussion of GitHub inclusion and disclosure of the visual issues and missing fifth result, the owner gave positive feedback and favored an official case. Gates record editorial inclusion of an original virtual subject, not machine likeness, error-free anatomy, formal per-image CLI verdicts or complete-set acceptance.",
+  "generation_tool_calls": 5,
+  "returned_images": 4,
+  "automatic_retries": 0,
+  "missing_story_shot": {
+    "index": 5,
+    "title": "共同谢幕",
+    "result": "unknown_after_connection_error",
+    "ledger_state": "claimed",
+    "counted_in_gallery": false
+  },
+  "known_limitations": [
+    "Shots 1 and 4 use mirrored handedness relative to the written plan, with inconsistent handedness across the selection.",
+    "Shot 3 has visibly inconsistent fretboard, string and bridge geometry.",
+    "The fifth call returned a connection error without an image; its result is unresolved.",
+    "No machine likeness result; automatic request audit could not uniquely locate the complete read window."
+  ],
+  "production_method": "Installed v1.1.0-rc.1 pure compiler with virtual-subject provenance wording adaptation and native image generation; not formal real-person CLI end-to-end.",
+  "derivatives": "Byte-identical PNG copies retaining original AI provenance."
+}

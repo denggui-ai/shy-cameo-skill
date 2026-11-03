@@ -36,22 +36,22 @@
       "sha256": "3e9b760102af4e3bf35e5695a656be013fac0175e959cbc2eb9b01e766c7864b"
     },
     {
-      "source": "OPEN-SOURCE-CHANGELOG.md",
+      "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 27013,
-      "sha256": "69fcfde2f33bacc2c58ff13b19b88f6d7fcf1f1c2bf5554bc6233cef2141d459"
+      "bytes": 27751,
+      "sha256": "3b491d906a52e76afe3a0462624eb07f3c124464ba7a01133708eb3e2940e9ef"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 11076,
-      "sha256": "c9c9892c87fad4c77d4b4c0e58aa5892e608d99f43e6224062ad5cbee309f0c8"
+      "bytes": 11630,
+      "sha256": "9305930c23c97093a8b696eafcc7f91104665753079cff5deedc574d65204dcd"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 10102,
-      "sha256": "2d039af39d2192690c5638ea0c253c5e0a4c82e86f34ab2aa9178b525651f2e9"
+      "bytes": 10586,
+      "sha256": "c3e3d3b9916e424959d4a3608edf4f13db1e06eb411972b2381b53547c095d3b"
     },
     {
       "source": "SECURITY.md",
@@ -68,8 +68,8 @@
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 19881,
-      "sha256": "31f719fb72434469f53efbb22fe4520d0627472072dceebff98e65daff8297a4"
+      "bytes": 20179,
+      "sha256": "4d388b9d2dfa1f0d4ad4637d484100b637d9f175138258cc85e901646cc37ec1"
     },
     {
       "source": "release/icon.svg",
@@ -86,8 +86,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 26327,
-      "sha256": "32d62f4c791a4446cc3c8ff99a47d2ef746ea9da6f65c85eff409ccf47483dd7"
+      "bytes": 27195,
+      "sha256": "159169e89852faf692adbd422664c864906f18b4f61fd6823f0ddb1efc6b423a"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -506,14 +506,14 @@
     {
       "source": "release/dev/VALIDATION.md",
       "path": "release/dev/VALIDATION.md",
-      "bytes": 15657,
-      "sha256": "55bd0f1e6fbf18c30efa9d80828a5b11a27e3907199890cad8ea9f8f890be540"
+      "bytes": 16194,
+      "sha256": "31c74640f6f11fa0fd395e839770d94838bbcf36e9bf874a7586ac018dcddc46"
     },
     {
       "source": "release/dev/DEVELOPMENT.md",
       "path": "release/dev/DEVELOPMENT.md",
-      "bytes": 72693,
-      "sha256": "9da7c7927ce80868ec0616a3473a6fa31a04f093ce88554005117dd9b5c12e76"
+      "bytes": 73689,
+      "sha256": "ccf1015dc3266558450507910ce2f851479ee7d6a627c0564a3f8b50f4448c74"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -560,8 +560,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 10485,
-      "sha256": "d9fd9c902f297bab7c056f12c604ef373c49fa092bb40aed185d8585180bfd3c"
+      "bytes": 10901,
+      "sha256": "4b18975edf7343d161ab33a1111273bf41a0e67a89cf6859582df39ab82008fd"
     },
     {
       "source": "release/dev/PARIS-LOCATION-REVIEW.md",
@@ -602,8 +602,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 2874,
-      "sha256": "37486e03907cba3bc24f18a86738437633a229e8183f3b48477d26cffd0172e6"
+      "bytes": 3282,
+      "sha256": "9493bb3396b91ad994c6a9407167f8105f96e9dde2cb0377f2178d1e04723915"
     },
     {
       "source": "release/style-keywords.json",
@@ -1094,14 +1094,14 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 3232,
-      "sha256": "31945e16bf14d78f89e323b16456ded5cc03a590a9d98ed47c8b70e7075f14a4"
+      "bytes": 3661,
+      "sha256": "0c6c1940da2b7c413453614b66d6c95213367baa33a3f92edbb695c9206053ec"
     },
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 9288,
-      "sha256": "88a22aac901c88747e2e3e7d4482fd06657154c79bc7a391fac79e51059f35ac"
+      "bytes": 9862,
+      "sha256": "3b839fa5ba708c341ea1e905b499383ead726b408cf4553df7f19bee0e57324d"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1118,14 +1118,14 @@
     {
       "source": "release/dev/VERIFICATION-MATRIX.md",
       "path": "release/dev/VERIFICATION-MATRIX.md",
-      "bytes": 15913,
-      "sha256": "77a0a3b09217b32f224f24f8779844eaeca9818dcd2afe9dc68172c79cd6956f"
+      "bytes": 16380,
+      "sha256": "40d39424ead847e405e263296e00981b60d0843b6c7cc5530bbb91550183415c"
     },
     {
       "source": "release/dev/NEXT-TESTS.md",
       "path": "release/dev/NEXT-TESTS.md",
-      "bytes": 10353,
-      "sha256": "428c7973bc0b9702b0b1845b8f63f346410bc015ec042e10407c15b54ed0cad3"
+      "bytes": 10728,
+      "sha256": "6e9379159bfa2de53262f2497612704e99ba107602b455aed3f6e65b37b8d4f6"
     },
     {
       "source": "tests/test_cli_edits.py",
@@ -1262,8 +1262,8 @@
     {
       "source": "release/cases/virtual-my-stage-guitar.md",
       "path": "release/cases/virtual-my-stage-guitar.md",
-      "bytes": 6655,
-      "sha256": "1f2a1bd6fc10a1e6f723b9ec5f44a71a5d26a1ac67fea0b13b8e3f4c3d1d91ef"
+      "bytes": 6897,
+      "sha256": "d6d124ef7f6dd0c3921e75b951fb7efab8ceba1dd517f3901fd9c29c8f473b32"
     },
     {
       "source": "assets/showcase/virtual-my-stage-band/01-bass-duet.png",
@@ -1288,6 +1288,42 @@
       "path": "assets/showcase/virtual-my-stage-band/manifest.json",
       "bytes": 2650,
       "sha256": "832d698dfc47207ccee15603847c0903678da8fcf41de06e42452e4b838d2686"
+    },
+    {
+      "source": "release/cases/virtual-last-chord.md",
+      "path": "release/cases/virtual-last-chord.md",
+      "bytes": 5466,
+      "sha256": "256fb2c94801cfcf20b403e4295588eb133f7be762d35ad0d05d5409f1c7d744"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord/manifest.json",
+      "path": "assets/showcase/virtual-last-chord/manifest.json",
+      "bytes": 3315,
+      "sha256": "584b4fba56b815889ea0c51494704532c85abaf8b639181ef68b2e9685208d63"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord/01-opening.png",
+      "path": "assets/showcase/virtual-last-chord/01-opening.png",
+      "bytes": 2249095,
+      "sha256": "46be4215a016be31481cc379c3188d15bb7495037358dec237556533d232f770"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord/02-bass-duet.png",
+      "path": "assets/showcase/virtual-last-chord/02-bass-duet.png",
+      "bytes": 2092063,
+      "sha256": "30698fabd4a5c9a5bc4026417c6bcd9973950c61411b15e45fd0c40886f2b725"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord/03-drummer-cue.png",
+      "path": "assets/showcase/virtual-last-chord/03-drummer-cue.png",
+      "bytes": 2289425,
+      "sha256": "5efc79aee854315e6b0b685598356fd3c11a66faa7a34f056623c03f22bf45e2"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord/04-solo-peak.png",
+      "path": "assets/showcase/virtual-last-chord/04-solo-peak.png",
+      "bytes": 2395883,
+      "sha256": "b0e2b820f2be0ba0c70d82210dcecf0cb54b3b48e0913792b22f38ff39df6bee"
     }
   ]
 }

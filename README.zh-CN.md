@@ -14,7 +14,7 @@
 
 ## 选一个故事，看看效果
 
-**13 套五张故事＋3 张互动补充，共68张。** 每套选一张封面，点击即可查看完整五张、开场请求与制作说明。
+**13 套五张故事＋3 张互动补充＋1 组四张摇滚选集，共72张。** 点击封面查看成片、开场请求与制作说明；四张选集单独标明范围。
 
 以下均以 **AI 虚拟成年模特**为主角，按作者实际正向反馈收录展示。它们展示可能的效果，不保证每次一致，也不等于真人锁脸或精确身材控制验证。
 
@@ -47,11 +47,12 @@
 
 <p>
 <a href="release/cases/virtual-my-stage-guitar.md"><img src="assets/showcase/virtual-my-stage-guitar/04.png" width="160" alt="我的舞台：电吉他手" title="我的舞台：电吉他手"></a>
+<a href="release/cases/virtual-last-chord.md"><img src="assets/showcase/virtual-last-chord/04-solo-peak.png" width="160" alt="最后一个和弦：四张选集" title="最后一个和弦：四张选集"></a>
 </p>
 
-[我的舞台：电吉他手](release/cases/virtual-my-stage-guitar.md)
+[我的舞台：电吉他手](release/cases/virtual-my-stage-guitar.md) · [最后一个和弦：四张选集](release/cases/virtual-last-chord.md)
 
-**[浏览完整案例集与 68 张成片 →](release/CASES.md)**
+**[浏览完整案例集与 72 张成片 →](release/CASES.md)**
 
 ## 三步开始
 
@@ -110,7 +111,7 @@
 | 我的舞台 | “我当吉他手，拍一场疯狂的摇滚现场” | [我的舞台：电吉他手](release/cases/virtual-my-stage-guitar.md) |
 | 去听 TA 的演唱会 | “去听周杰伦／五月天的演唱会” | [东京1992观演故事](release/cases/virtual-gnr-tokyo.md) |
 
-两种演唱会玩法及乐队互动已纳入 **v1.1.0-rc.1 安装包，仍属试验功能**。东京观演五张已获正向反馈；电吉他手五张已获整套认可。我的舞台可规划与原创成年队友合奏、回应和共同谢幕，[三张互动补充](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement)已获选用，谢幕采用按用户要求修正后的版本。可按艺人和年代规划门票、场刊及应援物，新版物料指导尚未完成对应实拍。具体范围见[演唱会玩法](release/CAPABILITIES.md#演唱会玩法试验)。
+两种演唱会玩法及乐队互动已纳入 **v1.1.0-rc.1 安装包，仍属试验功能**。东京观演五张已获正向反馈；电吉他手五张已获整套认可。我的舞台可规划与原创成年队友合奏、回应和共同谢幕，[三张互动补充](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement)已获选用，谢幕采用按用户要求修正后的版本。另有获作者正向反馈的[《最后一个和弦》四张选集](release/cases/virtual-last-chord.md)，案例页保留乐器问题与第五张结果待核的说明。可按艺人和年代规划门票、场刊及应援物，新版物料指导尚未完成对应实拍。具体范围见[演唱会玩法](release/CAPABILITIES.md#演唱会玩法试验)。
 
 支持摄影感、全动画和摄影人物＋动画环境，也可调整衣装、光线、机位与动作。可用玩法、已有案例和仍需试验的范围分别列在[能力清单](release/CAPABILITIES.md)。
 
