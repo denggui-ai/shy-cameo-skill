@@ -1,15 +1,12 @@
 # 最后一个和弦 · The Last Chord
 
-> **待修正：贝斯弦数。** 作者指出贝斯被画成三弦，未符合本套明确的四弦设定。此前检查漏核了弦数、弦钮与琴桥的对应关系；第2、5张贝斯镜头需重新核对修订，不能当作乐器结构通过的案例。图片暂保留为问题记录。
-> **Correction pending: bass string count.** The owner reports a three-string bass where this set specifies four. The earlier review did not verify strings against tuning machines and bridge connections. Shots 2 and 5 require review/correction and must not be treated as verified instrument structure; these images remain as the issue record.
-
 [全部案例 / All cases](../CASES.md) · [English index](../CASES.en.md) · [开始使用 / Get started](../../README.md)
 
-**五张重制 · AI 生成 · 原创虚拟成年人物。** 开场、贝斯合奏、鼓手回应、独奏高潮与共同谢幕。黑色夹克、银灰上衣、黑色白护板电吉他与红色舞台光串起同一场演出。
+**五张故事图 · 乐器修订版 · AI生成 · 原创虚拟成年人物。** 开场、贝斯合奏、鼓手回应、独奏高潮与共同谢幕。第2、5张已针对贝斯弦数修订，其余三张保留原图。
 
-**Five-shot remake · AI-generated · Original virtual adult subject.** An opening downbeat, a duet with the bassist, a cue to the drummer, a solo peak and a shared final salute. A black jacket, silver-grey top and black guitar with a white pickguard connect the performance.
+**Five-image story · Instrument revision · AI-generated fictional adults.** The bass duet and final salute have been revised; the other three images retain their original bytes.
 
-## 五张重制图 / The five new images
+## 当前五张 / Current five images
 
 ### 1. 第一记重拍 / The opening downbeat
 
@@ -17,7 +14,7 @@
 
 ### 2. 与贝斯手同拍 / In time with the bassist
 
-<a href="../../assets/showcase/virtual-last-chord-remake/02-bass-duet.png"><img src="../../assets/showcase/virtual-last-chord-remake/02-bass-duet.png" width="440" alt="与贝斯手同拍 / In time with the bassist"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png"><img src="../../assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png" width="440" alt="与贝斯手同拍 / In time with the bassist"></a>
 
 ### 3. 回应鼓手的重拍 / Cueing the drummer
 
@@ -29,26 +26,33 @@
 
 ### 5. 一起谢幕 / The final salute
 
-<a href="../../assets/showcase/virtual-last-chord-remake/05-band-salute.png"><img src="../../assets/showcase/virtual-last-chord-remake/05-band-salute.png" width="440" alt="一起谢幕 / The final salute"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png"><img src="../../assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png" width="440" alt="一起谢幕 / The final salute"></a>
 
-## 重制范围 / What changed
+## 这次修正了什么 / What changed
 
-作者指出旧案例错误较多，要求重新生成后更新GitHub，并明确选择完整五张含谢幕。本轮另开新套，5次调用返回5张，0自动重试；旧四张和旧第五张结果待核的记录保留在[历史问题版本](virtual-last-chord-original.md)，不计入当前图库。
+作者指出上一版贝斯只有三弦，要求继续完善图片并更新GitHub。本轮针对第2、5张共进行了3次编辑，选用2张：第2张先修好四弦贝斯，但出现主角吉他琴头丢失的附带问题，再用独立请求修回琴头；第5张完成一次贝斯修订。三次均返回图片，未重交失败或结果未知的请求。
 
-The owner identified errors in the earlier case and requested a full five-shot remake followed by a GitHub update. This new run returned five images from five calls, with no automatic retries. The [earlier four images and unresolved fifth call](virtual-last-chord-original.md) remain in the historical record and are excluded from the current gallery count.
+目视检查中，两张新图可数出贝斯的四根弦、四个独立弦钮及对应琴桥结构；琴头完整入镜，琴颈与琴体连续。第2张恢复了主角吉他的完整琴头，两把琴按前后遮挡分开。贝斯手护腕统一在右腕，谢幕鼓组仍在乐手身后。第1、3、4张未改字节。
 
-先修正了分镜里正面机位与琴颈方向相冲突的描述，并补充按人物自身左右写持琴习惯、琴颈至琴桥结构连续和首图纠正优先级。新图目视可见的持琴方向一致，旧版第③张的琴弦折向与指板错接没有再出现；谢幕的鼓组位于人物身后。
+The owner reported a three-string bass and requested further refinement and a GitHub update. Three edit calls produced two selected replacements: the first duet edit corrected the bass but accidentally removed the main guitar headstock, which a separate edit restored; the salute received one bass edit. All three calls returned images. No failed or unresolved request was resubmitted.
 
-The storyboard first corrected a conflict between the frontal camera and the guitar-neck direction. Revised guidance describes anatomical handedness, neck-to-bridge continuity and explicit corrections when using a first-shot reference. Visible handedness is consistent in the remake, the old shot 3 string/fretboard error is not visible, and the drum kit stays behind the musicians in the final salute.
+Manual inspection of the selected images shows four bass strings, four separate tuning keys and the visible bridge connections. Both bass headstocks are fully in frame. The duet keeps the restored guitar headstock distinct from the bass; the bassist's wristband is on the right wrist in both images. The salute retains the drum kit behind the performers. Shots 1, 3 and 4 are byte-identical to the preceding version.
 
 ## 检查与限制 / Checks and limits
 
-- 五张原字节PNG与AI来源标识保留，文件完整性检查通过。部分拨弦手、肩带挂点、鼓凳与踏板被遮挡，细指法没有完整核验；贝斯手护腕位置在合奏与谢幕之间仍有细节漂移。
-- 按作者明确的重拍与公开更新要求展示；尚未取得本轮新图的逐张用户验收，不将旧版认可移给新版，也不据此宣布乐器或真人身份稳定通过。
-- 使用已修订的开发源码编译器与内置生图，沿用原创虚拟人物参考，并用本轮首图保持衣装和影调；旧问题图未作参考。虚拟素材来源措辞单独记录，不作为正式真人CLI全流程验证。
-- 机器比脸不可用，自动构图检测不可用；五次调用审计均无法唯一定位完整请求窗口，记录为unverifiable。固定v1.1.0-rc.1安装包未因这次源码与案例更新而重发。
+- 原生PNG、AI来源信息及旧版均保留；文件可解码，展示副本与原始输出字节一致。
+- 目视结论限可见的弦数与连接，细指法、细小弦槽和遮挡挂点未完整核验；这组图不证明乐器细节或真人身份可以稳定复现。
+- 本次沿用已有虚拟人物成图作为编辑底图，使用开发源的`compile_edit_request`和内置生图；不作为正式真人CLI端到端验证。
+- 三次编辑的自动调用审计均为`unverifiable`，原因是未找到可用会话日志；人脸与构图检测器不可用。原五张重制的审计边界另保留在历史页。文件完整性不替代调用审计或用户验收。
+- 按作者明确的完善与公开更新要求展示，新修订的逐张用户验收仍待记录；没有移用旧版认可。
 
-Original PNG bytes and AI provenance are preserved, and file-integrity checks passed. Some hands, strap mounts and drum supports remain occluded, fine technique is not fully verified, and the bassist's wristband placement varies. The owner authorized regeneration and public updating; post-generation per-image acceptance is still pending. This run used revised development-source guidance with an original virtual-subject reference and its own first image for continuity. It does not establish real-person identity reliability or a formal real-person CLI workflow. Machine likeness and framing detectors were unavailable; all five automatic request audits were unverifiable. The fixed v1.1.0-rc.1 installer has not been republished.
+Native PNG bytes and AI provenance are retained. Visible counts and connections were inspected, while fine technique, tiny nut slots and hidden attachments remain unverified. The three edit audits are unverifiable because usable session logs were unavailable; face and framing detectors were unavailable. Public updating was explicitly authorized, but formal per-image user acceptance remains pending. This is a virtual-subject development case, not proof of real-person identity or reliable instrument anatomy.
+
+## 版本记录 / Version history
+
+- [最早四张与未知第五张 / Original four images and unresolved fifth call](virtual-last-chord-original.md)：5次调用返回4张，未知第五张保持原状态。
+- [修订前五张 / Five images before this correction](virtual-last-chord-remake-history.md)：独立重制5次返回5张，保留作者的贝斯弦数纠错与旧图。
+- 当前版本：在上述五张基础上增加3次编辑，选用2张替换展示；仍计5张故事图，历史版本不重复计数。固定v1.1.0-rc.1安装包未重发。
 
 ## 可以这样开始 / Try this
 
@@ -63,4 +67,4 @@ including interactions with a bassist and drummer. Show the storyboard first;
 do not generate images yet.
 ```
 
-[图片摘要 / Image manifest](../../assets/showcase/virtual-last-chord-remake/manifest.json) · [旧问题版本 / Historical version](virtual-last-chord-original.md) · [能力与限制 / Capabilities](../CAPABILITIES.en.md)
+[图片摘要与选版 / Image manifest and selection](../../assets/showcase/virtual-last-chord-remake/manifest.json) · [能力与限制 / Capabilities](../CAPABILITIES.en.md)

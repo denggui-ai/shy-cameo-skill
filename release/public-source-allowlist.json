@@ -906,5 +906,17 @@
   {
     "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
     "destination": "assets/showcase/virtual-last-chord-remake/manifest.json"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png"
+  },
+  {
+    "source": "release/cases/virtual-last-chord-remake-history.md",
+    "destination": "release/cases/virtual-last-chord-remake-history.md"
   }
 ]

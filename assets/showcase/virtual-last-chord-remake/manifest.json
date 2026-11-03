@@ -1,8 +1,8 @@
 {
   "set_id": "virtual-last-chord-remake",
-  "kind": "five_image_remake",
-  "title": "最后一个和弦：五张重制",
-  "title_en": "The Last Chord: Five-Shot Remake",
+  "kind": "five_image_story_with_revision_history",
+  "title": "最后一个和弦：乐器修订版",
+  "title_en": "The Last Chord: Instrument Revision",
   "subject_type": "original_virtual_adult",
   "ai_generated": true,
   "real_person_identity_photo_used": false,
@@ -15,16 +15,20 @@
       "source_sha256": "e1025cd07cf1516a34969d50347274e677217fcb4c58dc37f1601d91263344f0",
       "width": 1086,
       "height": 1448,
-      "web_derivative": false
+      "web_derivative": false,
+      "current_showcase": true
     },
     {
-      "file": "02-bass-duet.png",
+      "file": "02-bass-duet-r2.png",
       "story_index": 2,
-      "sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
-      "source_sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
+      "sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
+      "source_sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7",
       "width": 1086,
       "height": 1448,
-      "web_derivative": false
+      "web_derivative": false,
+      "current_showcase": true,
+      "revision": 2,
+      "previous_file": "02-bass-duet.png"
     },
     {
       "file": "03-drummer-cue.png",
@@ -33,7 +37,8 @@
       "source_sha256": "71c3b0b1079641cada690d85b0775f37d95406a38b6b7965d572f5a0c74fecd3",
       "width": 1086,
       "height": 1448,
-      "web_derivative": false
+      "web_derivative": false,
+      "current_showcase": true
     },
     {
       "file": "04-solo-peak.png",
@@ -42,7 +47,32 @@
       "source_sha256": "b70a02363e04967355c897faae828e3ccf9c4fdf06ce23f8b7150ac4b0b32ebe",
       "width": 1086,
       "height": 1448,
-      "web_derivative": false
+      "web_derivative": false,
+      "current_showcase": true
+    },
+    {
+      "file": "05-band-salute-r1.png",
+      "story_index": 5,
+      "sha256": "c9e2eb44328f2a0052f1ea7ac704e2766fc1f8d1bf660d2372d6605b1958e238",
+      "source_sha256": "c9e2eb44328f2a0052f1ea7ac704e2766fc1f8d1bf660d2372d6605b1958e238",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false,
+      "current_showcase": true,
+      "revision": 1,
+      "previous_file": "05-band-salute.png"
+    },
+    {
+      "file": "02-bass-duet.png",
+      "story_index": 2,
+      "sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
+      "source_sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false,
+      "current_showcase": false,
+      "status": "superseded_bass_count_issue",
+      "superseded_by": "02-bass-duet-r2.png"
     },
     {
       "file": "05-band-salute.png",
@@ -51,7 +81,10 @@
       "source_sha256": "f372a692de8b4e633b5a6a1d8592e410caf360a085a703d0c4471dfe6634ca8b",
       "width": 1086,
       "height": 1448,
-      "web_derivative": false
+      "web_derivative": false,
+      "current_showcase": false,
+      "status": "superseded_bass_count_issue",
+      "superseded_by": "05-band-salute-r1.png"
     }
   ],
   "gates": {
@@ -61,7 +94,7 @@
   },
   "approved_by": "owner",
   "approved_on": "2026-11-03",
-  "acceptance_scope": "Owner authorized regenerating all five images and updating the public GitHub case. Per-image user verdicts for the new outputs remain pending.",
+  "acceptance_scope": "Owner explicitly requested continued image refinement and a GitHub update. Two revised images selected for authorized publication; formal per-image user acceptance remains pending.",
   "gate_basis": {
     "likeness_ok": "Original virtual subject retained by visual comparison; this is not a machine or real-person likeness verdict.",
     "boundary_ok": "Main virtual adult subject, original adult bandmates with faces outside frame or turned away; no private identity input.",
@@ -69,12 +102,13 @@
   },
   "user_feedback": [
     "请注意 最后一个和弦的这个案例图片 有很多错误的地方 需要重新生成后 更新到github上去",
-    "重拍完整五张（推荐，包含谢幕）"
+    "重拍完整五张（推荐，包含谢幕）",
+    "请继续完善这个案例图片 并更新到github上去，然后 对这个开发进行收尾"
   ],
-  "publication_basis": "Explicit owner authorization for a new five-image remake and public replacement; publication consent does not imply post-generation acceptance, error-free structure or formal CLI verdicts.",
+  "publication_basis": "Explicit request to improve this case and update GitHub; publication authorization is distinct from the pending image verdicts.",
   "user_verdict": "pending",
-  "generation_tool_calls": 5,
-  "returned_images": 5,
+  "generation_tool_calls": 8,
+  "returned_images": 8,
   "automatic_retries": 0,
   "previous_attempt": {
     "set_id": "virtual-last-chord",
@@ -85,29 +119,68 @@
     "history_preserved": true
   },
   "visual_observations": [
-    "Visible playing handedness is consistent across the frontal and rear views.",
-    "The previous bent string path and inconsistent fretboard-to-bridge connection are not visible in the remake.",
-    "The final salute places the drum kit behind the musicians, toward the camera."
+    "Selected shots 2 and 5 show four separate bass strings and four tuning keys, with visible bridge and neck continuity.",
+    "The collateral missing guitar headstock from the first shot-2 edit was corrected in the selected second edit; the four-string bass remains distinct from the six-key guitar headstock.",
+    "The bassist wears the black wristband on the right wrist in both selected revised images.",
+    "Shots 1, 3 and 4 retain their original bytes. The final-salute drum kit remains behind the performers."
   ],
   "known_limitations": [
-    "Owner reports three strings instead of the specified four-string bass. Bass structure is not verified; shots 2 and 5 require review/correction.",
-    "Some hands, strap mounts, drum supports and fine technique are occluded or not fully verifiable.",
-    "The bassist wristband placement varies between the duet and salute.",
-    "Machine likeness was unavailable; all five automatic request audits were unverifiable and frame detectors unavailable.",
-    "No post-generation per-image user verdicts have been recorded."
+    "Small finger positions, nut slots, hidden strap attachments and other occluded details are not fully verified; these images do not prove instrument reliability.",
+    "No post-generation per-image user verdicts have been recorded.",
+    "The five original remake request audits were unverifiable; the three edit request audits were also unverifiable because usable session logs were unavailable. Frame and face detectors were unavailable."
   ],
-  "production_method": "Revised development-source pure compiler with virtual-subject provenance wording adaptation and native image generation. Not a formal real-person CLI end-to-end run; the published v1.1.0-rc.1 ZIP is unchanged.",
+  "production_method": "Five-image remake from development-source compilation, followed by three native edit calls using unchanged source compile_edit_request. The two edit bases were the earlier virtual showcase images. Original native PNG bytes retained. Not a formal real-person CLI end-to-end run.",
   "derivatives": "Byte-identical PNG copies retaining original AI provenance.",
-  "quality_review_status": "needs_bass_string_count_correction",
+  "quality_review_status": "targeted_corrections_observed_user_acceptance_pending",
   "owner_issue_feedback": "请注意 你有一个严重的错误 那就是 bass是四根弦 你画的是三根",
   "bass_review": {
     "expected_strings": 4,
-    "owner_reported_strings": 3,
-    "shots_to_review": [
+    "shots_reviewed": [
       2,
       5
     ],
-    "status": "not_passed",
-    "reason": "String count and tuning/bridge correspondence were omitted from the prior review; rear view, occlusion or crop cannot establish correctness."
-  }
+    "status": "visible_count_and_connections_observed",
+    "basis": "Manual inspection of native output images; four strings, four separate keys and bridge paths visible. Fine or occluded components are not fully verified.",
+    "user_acceptance": "pending"
+  },
+  "current_images": [
+    "01-opening.png",
+    "02-bass-duet-r2.png",
+    "03-drummer-cue.png",
+    "04-solo-peak.png",
+    "05-band-salute-r1.png"
+  ],
+  "current_gallery_count": 5,
+  "history_images_in_manifest": 2,
+  "generation_stages": [
+    {
+      "stage": "five_image_remake",
+      "calls": 5,
+      "returned_images": 5
+    },
+    {
+      "stage": "targeted_bass_and_collateral_guitar_edits",
+      "calls": 3,
+      "returned_images": 3,
+      "selected_images": 2,
+      "visual_refinement_calls": 1,
+      "description": "Shot 2 edit 1 restored a four-string bass but removed the main guitar headstock. A separate edit restored that headstock. Shot 5 received one bass edit. All three returned; no failed or unknown request was resubmitted."
+    }
+  ],
+  "prior_quality_issues": [
+    {
+      "feedback": "请注意 你有一个严重的错误 那就是 bass是四根弦 你画的是三根",
+      "bass_review": {
+        "expected_strings": 4,
+        "owner_reported_strings": 3,
+        "shots_to_review": [
+          2,
+          5
+        ],
+        "status": "not_passed",
+        "reason": "String count and tuning/bridge correspondence were omitted from the prior review; rear view, occlusion or crop cannot establish correctness."
+      },
+      "followup": "Two selected edited images replace the affected display slots. Original problem images remain in this manifest and the linked history page."
+    }
+  ]
 }

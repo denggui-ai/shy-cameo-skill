@@ -38,20 +38,20 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 29011,
-      "sha256": "525b08097fe87d5e1aaff89314f56a2b7c7de408f0c2d22c7e6238335339cd94"
+      "bytes": 29711,
+      "sha256": "d944c01baa93232ea1b4ebe49abed167fddac4688c05c5adc4f4a14d6e578bfa"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 11727,
-      "sha256": "e44206bfc1598c2597225b80087e9cd3b6825b6f15b2c5a08bf8ce27e3f46195"
+      "bytes": 11853,
+      "sha256": "f2459b464cdba2003cad8ceb05853e35ac313263cf193885ce944d674086e7d2"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 10691,
-      "sha256": "2cbe22a9a0ebbaf21a880573b1a140cd657be06287b8c7a398c3c353ae3aedb8"
+      "bytes": 10771,
+      "sha256": "41fe77b8ea958348780dee33d9443a19ffbc84a24788bab8ea08b71a7e15a202"
     },
     {
       "source": "SECURITY.md",
@@ -68,8 +68,8 @@
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 20291,
-      "sha256": "0a0b21a66f6410549de913ad70fdfdffd2c7e73c8c08c0a07155ea9af19314fb"
+      "bytes": 20380,
+      "sha256": "3b623920bfc11ba19c6e550b4e91afeacdcef6d80930ab0405e9fe565acf3a4b"
     },
     {
       "source": "release/icon.svg",
@@ -86,8 +86,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 28320,
-      "sha256": "3cf33be79da1e93ad291880e082dd5bc706971c51a47728a7283f1b5c64807fb"
+      "bytes": 28815,
+      "sha256": "be60ddcd9a573399b0c4c27370c85669de2e1fdb8313e4ebc08bcdc56895776c"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -506,14 +506,14 @@
     {
       "source": "release/dev/VALIDATION.md",
       "path": "release/dev/VALIDATION.md",
-      "bytes": 16185,
-      "sha256": "470db95152fbd517cc91bb2faf130b76d9b6f5207278773e4660f03b26b44279"
+      "bytes": 16389,
+      "sha256": "91b936e7ddb73c9fb76aaf1be47536406eceeeeeafede87c970c098b02a5cc2f"
     },
     {
       "source": "release/dev/DEVELOPMENT.md",
       "path": "release/dev/DEVELOPMENT.md",
-      "bytes": 76284,
-      "sha256": "d340a04764433dd8033b1fa23bd3ea1c8b7fa8248c3e738bf52749a6dd982aaf"
+      "bytes": 77531,
+      "sha256": "c80e69477729d408ac73ddecb3cb0b576eb22392d46a36aff90fb51286adee01"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -560,8 +560,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 11032,
-      "sha256": "b0363467eca7489f07591436d776092b66fefbac4ca93e83e5f5bcd036013050"
+      "bytes": 11205,
+      "sha256": "96a9a899479f1808933b89937c013c30f0a1b053df476a91263e70cff65c6d67"
     },
     {
       "source": "release/dev/PARIS-LOCATION-REVIEW.md",
@@ -602,8 +602,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 3299,
-      "sha256": "fdd523dabae200dd2ef8df14ce2406682352d77bf01da8e9df2c04bf58c9befa"
+      "bytes": 3417,
+      "sha256": "fd32fd0518bcbf19a66556346d81adfbaaaa9c2e078d40ae552408cc5a5cb88a"
     },
     {
       "source": "release/style-keywords.json",
@@ -1094,14 +1094,14 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 3658,
-      "sha256": "95578cbb2cfb724fa698597431cc8571617cebac7ad720b738454b66acea6679"
+      "bytes": 3801,
+      "sha256": "1bbb8fbba30dd7cbbffcc3569633518c2b3565ff88d3322e3a3e83648b0ddc71"
     },
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 10040,
-      "sha256": "4b28436ff4a819be1a6f70d0810fabbfc9cf9256c48c4a3667dacf1fd203eb0f"
+      "bytes": 10166,
+      "sha256": "5680c49c6767c0f3de48256680ab8f528a6a9d37e0b63558e8dc9573b7892eae"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1118,14 +1118,14 @@
     {
       "source": "release/dev/VERIFICATION-MATRIX.md",
       "path": "release/dev/VERIFICATION-MATRIX.md",
-      "bytes": 16599,
-      "sha256": "a88a4ba168d2b574d8f01996f9cdd4b353cf627eb24c7266705371a6968b59dc"
+      "bytes": 16696,
+      "sha256": "184021b373e2f37073360a28c5e4b0bf537b86a33715bc512e5967094e1b6e56"
     },
     {
       "source": "release/dev/NEXT-TESTS.md",
       "path": "release/dev/NEXT-TESTS.md",
-      "bytes": 10843,
-      "sha256": "cc07f3179f8104f9737cd4c7148fcfe231f47badd8a05d4bc735112232ca3e48"
+      "bytes": 11024,
+      "sha256": "703f230de9c9e4adb52036a68bb92a63a270f9253115bdbc292d91a661398859"
     },
     {
       "source": "tests/test_cli_edits.py",
@@ -1292,8 +1292,8 @@
     {
       "source": "release/cases/virtual-last-chord.md",
       "path": "release/cases/virtual-last-chord.md",
-      "bytes": 6338,
-      "sha256": "7885c8df45197e800d648136344ada2b19c2f56d746286c18cbea287e321df9a"
+      "bytes": 5937,
+      "sha256": "225069af686f5b5e770baef5e545bc779dae581779308b258619fa4eef289dc6"
     },
     {
       "source": "assets/showcase/virtual-last-chord/manifest.json",
@@ -1364,8 +1364,26 @@
     {
       "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
       "path": "assets/showcase/virtual-last-chord-remake/manifest.json",
-      "bytes": 5082,
-      "sha256": "790ec06eacba21ff58e2bf6e7c0e71a2225a3b1dc5c3191715639cbdbaef78ac"
+      "bytes": 8099,
+      "sha256": "4b2e888ea95af37b2c0511a494d26624be103cda63790ae88fe1bc535bf39811"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png",
+      "path": "assets/showcase/virtual-last-chord-remake/02-bass-duet-r2.png",
+      "bytes": 2060365,
+      "sha256": "4f12eb67b7f695d2ebc553bf3ad654b9c2ea68faea3fef099c9bd013f932e1b7"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png",
+      "path": "assets/showcase/virtual-last-chord-remake/05-band-salute-r1.png",
+      "bytes": 2007012,
+      "sha256": "c9e2eb44328f2a0052f1ea7ac704e2766fc1f8d1bf660d2372d6605b1958e238"
+    },
+    {
+      "source": "release/cases/virtual-last-chord-remake-history.md",
+      "path": "release/cases/virtual-last-chord-remake-history.md",
+      "bytes": 6730,
+      "sha256": "47bd78a6c18a066f30b596724aef3d904772f2a755d8c064868818ce90dd86dc"
     }
   ]
 }
