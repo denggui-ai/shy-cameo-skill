@@ -13,7 +13,7 @@ Spend time with a character, try a costume, enter a film, travel, or enjoy every
 
 [Get started](#get-started-in-three-steps) · [Case gallery](release/CASES.en.md) · [Capabilities](release/CAPABILITIES.en.md) · [Installation](release/INSTALL.md) · [Limitations](#before-you-use-it)
 
-> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.1.0-rc.1, a prerelease](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1); review each generated image.
+> Five images tell one story. Continue with another set or revise a single shot while keeping previous versions. The current version is [v1.1.0](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0); review each generated image.
 
 ## Pick a story and see the results
 
@@ -72,7 +72,7 @@ Open a Codex conversation and send:
 
 ```text
 Use skill-installer to install skills/shy-cameo from
-https://github.com/denggui-ai/shy-cameo-skill at tag v1.1.0-rc.1.
+https://github.com/denggui-ai/shy-cameo-skill at tag v1.1.0.
 Install only; do not generate images. If shy-cameo is already installed,
 check its location and version first.
 ```
@@ -114,7 +114,7 @@ Ask to revise one shot or continue with another series. Previous versions are ke
 | My stage | “Make me a guitarist at a wild rock concert” | [My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) |
 | Attend their concert | “Take me to a Queen or Jay Chou concert” | [Tokyo 1992 audience story](release/cases/virtual-gnr-tokyo.md) |
 
-The two experimental concert directions are included in **v1.1.0-rc.1**. Explore [performing on stage](release/cases/virtual-last-chord.md) and [attending a concert](release/cases/virtual-gnr-tokyo.md).
+The two experimental concert directions are included in **v1.1.0**. Explore [performing on stage](release/cases/virtual-last-chord.md) and [attending a concert](release/cases/virtual-gnr-tokyo.md).
 
 Try photographic, fully animated or photographic-subject/animated-world styles. Adjust clothes, lighting, camera framing and actions. See [capabilities and evidence](release/CAPABILITIES.en.md) for all fifteen directions and remaining experimental scope.
 

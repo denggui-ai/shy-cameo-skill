@@ -19,5 +19,5 @@ The virtual adult and virtual pet examples are development POCs, with wording ad
 | [An Animated Adventure with Zhiyuan](cases/virtual-paper-crane.md) | Enter a story · an original character adventure | Animated subject and world |
 | [A Night in Cappadocia](cases/virtual-cappadocia.md) | Travel on your own | Travel portraits with a single nearby light |
 | [A Quiet Evening with a Cat](cases/virtual-cat-daily.md) | Everyday life with a pet | Photographic virtual adult and virtual cat |
-| [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental feature in v1.1.0-rc.1 | Photographic audience story and distant stage |
+| [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental feature in v1.1.0 | Photographic audience story and distant stage |
 | [The Last Chord](cases/virtual-last-chord.md) | My stage · band performance | Photographic performance and band interaction |

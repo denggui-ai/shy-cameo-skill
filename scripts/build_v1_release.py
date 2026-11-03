@@ -70,7 +70,7 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
         raise ValueError("required release files missing")
     plugin = json.loads(dict((str(p), raw) for p, raw in prepared)[".codex-plugin/plugin.json"])
     if (plugin.get("name") != "shy-cameo"
-            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.2-rc.2", "1.0.3-dev.20261102.1", "1.0.3-rc.1", "1.1.0-rc.1"}):
+            or plugin.get("version") not in {"1.0.0-rc.1", "1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.2-rc.2", "1.0.3-dev.20261102.1", "1.0.3-rc.1", "1.1.0-rc.1", "1.1.0"}):
         raise ValueError("unsupported candidate version")
     if not isinstance(plugin.get("description"), str) or not 1 <= len(plugin["description"]) <= 4000:
         raise ValueError("plugin description missing or invalid")
@@ -122,7 +122,7 @@ def build(source: Path, output: Path, allowlist: Path) -> dict:
             "no new image-provider verification; identity, precise body control and pixel-exact editing remain limited",
             "native image pre-submit hard blocking is not provided; incomplete call traces remain unverifiable",
         ]
-    elif plugin["version"] == "1.1.0-rc.1":
+    elif plugin["version"] in {"1.1.0-rc.1", "1.1.0"}:
         provenance["limitations"] = [
             "release preparation does not establish remote publication or installation status",
             "concert and band-interaction features remain experimental; accepted virtual-subject examples do not establish stable real-person likeness or precise instrument anatomy",

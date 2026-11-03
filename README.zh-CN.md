@@ -13,7 +13,7 @@
 
 [开始使用](#三步开始) · [完整案例集](release/CASES.md) · [7 类玩法](release/CAPABILITIES.md) · [安装指南](release/INSTALL.md) · [使用限制](#使用前了解这些)
 
-> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.1.0-rc.1 预发布版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0-rc.1)，成片需要逐张检查。
+> 五张连成一个故事；拍完可以继续下一套，也可以只改某一张并保留旧版。当前为 [v1.1.0 正式版](https://github.com/denggui-ai/shy-cameo-skill/releases/tag/v1.1.0)，成片需要逐张检查。
 
 ## 选一个故事，看看效果
 
@@ -72,7 +72,7 @@
 
 ```text
 请使用 skill-installer，从 https://github.com/denggui-ai/shy-cameo-skill
-安装 skills/shy-cameo 目录，版本固定为 v1.1.0-rc.1。
+安装 skills/shy-cameo 目录，版本固定为 v1.1.0。
 只安装，不生图。已有同名安装时先核对位置与版本。
 ```
 
@@ -113,7 +113,7 @@
 | 我的舞台 | “我当吉他手，拍一场疯狂的摇滚现场” | [我的舞台：电吉他手](release/cases/virtual-my-stage-guitar.md) |
 | 去听 TA 的演唱会 | “去听周杰伦／五月天的演唱会” | [东京1992观演故事](release/cases/virtual-gnr-tokyo.md) |
 
-两种演唱会玩法已纳入 **v1.1.0-rc.1**，仍属试验功能。可体验[登台演出](release/cases/virtual-last-chord.md)和[现场观演](release/cases/virtual-gnr-tokyo.md)。
+两种演唱会玩法已纳入 **v1.1.0**，仍属试验功能。可体验[登台演出](release/cases/virtual-last-chord.md)和[现场观演](release/cases/virtual-gnr-tokyo.md)。
 
 支持摄影感、全动画和摄影人物＋动画环境，也可调整衣装、光线、机位与动作。可用玩法、已有案例和仍需试验的范围分别列在[能力清单](release/CAPABILITIES.md)。
 

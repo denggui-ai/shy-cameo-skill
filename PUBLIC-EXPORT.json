@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0-rc.1",
+  "version": "1.1.0",
   "status": "candidate",
   "git_history_included": false,
   "allowlist_normalized_to_public_paths": true,
@@ -38,20 +38,20 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 29711,
-      "sha256": "d944c01baa93232ea1b4ebe49abed167fddac4688c05c5adc4f4a14d6e578bfa"
+      "bytes": 29826,
+      "sha256": "8aee6bb79150b89fd508aefd9a22410d6c6778b2d3d7a40fb3139539afa45de2"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 10618,
-      "sha256": "273a7c99a146761f97d0bdb77e38eeff96d7bfde3303dde34b788ad1fc3ac074"
+      "bytes": 10584,
+      "sha256": "a0041f44650e7764634b6e5c0778484230caf9d057eb2a2e813809c543dd34fb"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 9765,
-      "sha256": "ad8e4a8408bd0b815ce63c87d762e442bbc33c82c70c5424d78f551389abb16f"
+      "bytes": 9742,
+      "sha256": "5ada7f099edafea141bad5e6dca29df69c3bbf077c8b9493a2ac05228919cbc3"
     },
     {
       "source": "SECURITY.md",
@@ -68,8 +68,8 @@
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 20006,
-      "sha256": "434595b7d1e020e5c6e771c0f9874c147c93f6e1f5486dbcc4b6f8b860eb7784"
+      "bytes": 19961,
+      "sha256": "e3ef8ccb31bf682b9dcefc769b8b058bdc0ec15a488f49b99b0c628a3e835258"
     },
     {
       "source": "release/icon.svg",
@@ -80,8 +80,8 @@
     {
       "source": "release/plugin.json",
       "path": "release/plugin.json",
-      "bytes": 1392,
-      "sha256": "1b0f246fd1c685fb113c9e7594b74af9698001f534b49c1ab2e77c9ba9257409"
+      "bytes": 1387,
+      "sha256": "67d0e52ea38eac563ae83c8a924a53e7f19b720ebcf593d5b5ce2b6daa6eb7a2"
     },
     {
       "source": "release/public-source-allowlist.json",
@@ -104,8 +104,8 @@
     {
       "source": "scripts/build_v1_release.py",
       "path": "scripts/build_v1_release.py",
-      "bytes": 10834,
-      "sha256": "66eacb7ff57989cff870bb085a43ea0dd425883a4ea671232d131f60a60a50b4"
+      "bytes": 10854,
+      "sha256": "351bdae532a15e363df170d41932b6f32262d7c952fe49748d1fa183bf6bfcc2"
     },
     {
       "source": "scripts/export_public_source.py",
@@ -464,8 +464,8 @@
     {
       "source": "tests/test_release_bundle.py",
       "path": "tests/test_release_bundle.py",
-      "bytes": 10977,
-      "sha256": "70907e9e9daa956c05875c490ee1fa062f67d1a77cc11a6692b11be25fc735fb"
+      "bytes": 10997,
+      "sha256": "aa8de9a795085d97078d97b781c3c03a59bce7f65d1ab70afef93b251939856c"
     },
     {
       "source": "tests/test_rules_migrate.py",
@@ -494,8 +494,8 @@
     {
       "source": "release/INSTALL.md",
       "path": "release/INSTALL.md",
-      "bytes": 7543,
-      "sha256": "903f66ecce6877cd35a5be00497321126f92caa88fbcd3af09aafa8f47d60507"
+      "bytes": 7493,
+      "sha256": "93b1917e225d44d85a59731d162a0668d66e58af42280e9f0cf63c6e3b8b2366"
     },
     {
       "source": "README.en.md",
@@ -560,8 +560,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 11205,
-      "sha256": "96a9a899479f1808933b89937c013c30f0a1b053df476a91263e70cff65c6d67"
+      "bytes": 11185,
+      "sha256": "2c3b6176c4184057863ffe80a8d2acdd69cf9aafa5aa477da664ab1b76ca662d"
     },
     {
       "source": "release/dev/PARIS-LOCATION-REVIEW.md",
@@ -1094,14 +1094,14 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 2502,
-      "sha256": "3113b09f2ce54a732d592fac17858d5f3c35faed024f387f7da1e6f3f89ac1e0"
+      "bytes": 2497,
+      "sha256": "d24bb4cb56112e5a50405e7b53123b1bd15b7748f4c25dbd652ae3a37f5c4c9b"
     },
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 10166,
-      "sha256": "5680c49c6767c0f3de48256680ab8f528a6a9d37e0b63558e8dc9573b7892eae"
+      "bytes": 10151,
+      "sha256": "a6a448c192a5a3a524c0917f000422efbc61c7091b7da6b9b9256ca1b0306f3a"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1148,8 +1148,8 @@
     {
       "source": "release/RELEASE-NOTES.md",
       "path": "release/RELEASE-NOTES.md",
-      "bytes": 3852,
-      "sha256": "45cf4c8cea5d2e1e56c3e83ac956ca24001d5703c69820bc045e3343db34a202"
+      "bytes": 801,
+      "sha256": "0440ef3787f27fe2ae8ade45a00d69143c2c46c772f2735b8316c21ad47ed6d3"
     },
     {
       "source": ".github/ISSUE_TEMPLATE/bug_report.yml",

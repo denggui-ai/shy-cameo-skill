@@ -76,7 +76,7 @@ def test_release_rejects_incomplete_plugin_manifest(tmp_path):
     assert not (tmp_path / "out").exists()
 
 
-@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.3-dev.20261102.1", "1.0.3-rc.1", "1.1.0-rc.1"])
+@pytest.mark.parametrize("version", ["1.0.0-beta.1", "1.0.0-beta.2", "1.0.0-beta.3", "1.0.0", "1.0.1", "1.0.2-rc.1", "1.0.3-dev.20261102.1", "1.0.3-rc.1", "1.1.0-rc.1", "1.1.0"])
 def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
     src = source_tree(tmp_path)
     manifest = src / "release/plugin.json"
@@ -96,7 +96,7 @@ def test_release_archive_and_provenance_use_manifest_version(tmp_path, version):
             assert provenance["status"] == "candidate"
             assert any("M01 3/3 loaded, M02 0/3 loaded" in item for item in provenance["limitations"])
             assert not any("awaits owner execution" in item for item in provenance["limitations"])
-        if version == "1.1.0-rc.1":
+        if version in {"1.1.0-rc.1", "1.1.0"}:
             assert provenance["status"] == "candidate"
             assert any("concert and band-interaction features remain experimental" in item
                        for item in provenance["limitations"])
