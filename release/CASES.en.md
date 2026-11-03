@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Capabilities](CAPABILITIES.en.md) · [简体中文](CASES.md)
 
-**13 five-shot virtual-model stories + 3 selected interaction images + a four-image rock selection · 72 images.** Each title opens its images, a request you can copy and selection notes. The four-image selection is not another complete set. Selected outputs are preserved; arranging this gallery adds no generation calls.
+**14 five-image virtual-model story galleries + 3 interaction images · 73 images.** Each title opens its images, a starter prompt and review notes. The Last Chord now shows a requested five-shot remake; its old four images are historical and excluded from this count.
 
 The virtual adult and virtual pet examples are development POCs, with wording adapted for virtual subjects. They do not establish reliable real-person face/body preservation or a fully automated CLI workflow. Every case has a virtual adult protagonist. The Tokyo case also depicts an AI-imagined distant performance by a real band; no artist photograph was supplied.
 
@@ -21,6 +21,6 @@ The virtual adult and virtual pet examples are development POCs, with wording ad
 | [A Quiet Evening with a Cat](cases/virtual-cat-daily.md) | Everyday life with a pet | Photographic virtual adult and virtual cat |
 | [Tokyo 1992: My Night in the Audience](cases/virtual-gnr-tokyo.md) | Attend their concert · experimental feature in v1.1.0-rc.1 | Photographic audience story and distant stage |
 | [My Stage: Five Moments with an Electric Guitar](cases/virtual-my-stage-guitar.md) | My stage · experimental feature in v1.1.0-rc.1 | Photographic rock concert |
-| [The Last Chord: Four Rock Moments](cases/virtual-last-chord.md) | My stage · four-image selection | Photographic performance and band interaction |
+| [The Last Chord: Five-Shot Remake](cases/virtual-last-chord.md) | My stage · five-shot remake | Photographic performance and band interaction |
 
-Moon and travel sets received an overall positive verdict. The cat set retains the accepted scale compromise and book-detail issue. The Tokyo set received overall positive feedback, with framing limitations retained and no formal per-image CLI verdicts inferred. The My Stage set was explicitly accepted as a whole and approved for showcase use. Three selected band-interaction images, including revision 1 of the final salute, supplement the original five without counting as another set. Individual pages explain scope. The Last Chord adds four images following positive owner feedback and a request for official-case consideration; instrument geometry and handedness limitations remain documented, and the unresolved fifth call is not counted.
+Moon and travel sets received an overall positive verdict. The cat set retains the accepted scale compromise and book-detail issue. The Tokyo set received overall positive feedback, with framing limitations retained and no formal per-image CLI verdicts inferred. The My Stage set was explicitly accepted as a whole and approved for showcase use. Three selected band-interaction images, including revision 1 of the final salute, supplement the original five without counting as another set. Individual pages explain scope. The owner later identified errors in The Last Chord and requested a full remake and public update. Its five new images came from five calls with no retries; post-generation per-image acceptance remains pending. The old images, feedback and unresolved fifth call remain historical.

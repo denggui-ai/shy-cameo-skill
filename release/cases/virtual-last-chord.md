@@ -2,45 +2,50 @@
 
 [全部案例 / All cases](../CASES.md) · [English index](../CASES.en.md) · [开始使用 / Get started](../../README.md)
 
-**四张摇滚现场选集 · AI 生成 · 原创虚拟成年人物。** 从开场的第一记重拍，到与贝斯手合奏、向鼓手给出信号，再进入个人独奏。黑色夹克、银灰上衣和红色舞台光串起这四个瞬间。
+**五张重制 · AI 生成 · 原创虚拟成年人物。** 开场、贝斯合奏、鼓手回应、独奏高潮与共同谢幕。黑色夹克、银灰上衣、黑色白护板电吉他与红色舞台光串起同一场演出。
 
-**A four-image rock selection · AI-generated · Original virtual adult subject.** An opening downbeat, a duet with the bassist, a cue to the drummer and a solo peak. A black jacket, silver-grey top and red stage lighting connect the four moments.
+**Five-shot remake · AI-generated · Original virtual adult subject.** An opening downbeat, a duet with the bassist, a cue to the drummer, a solo peak and a shared final salute. A black jacket, silver-grey top and black guitar with a white pickguard connect the performance.
 
-## 四张成片 / The four images
+## 五张重制图 / The five new images
 
-### ① 第一记重拍 / The opening downbeat
+### 1. 第一记重拍 / The opening downbeat
 
-<a href="../../assets/showcase/virtual-last-chord/01-opening.png"><img src="../../assets/showcase/virtual-last-chord/01-opening.png" width="440" alt="第一记重拍：黑色夹克的吉他手在红色舞台光中扫弦 / The guitarist strikes the opening chord"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/01-opening.png"><img src="../../assets/showcase/virtual-last-chord-remake/01-opening.png" width="440" alt="第一记重拍 / The opening downbeat"></a>
 
-### ② 与贝斯手合拍 / In time with the bassist
+### 2. 与贝斯手同拍 / In time with the bassist
 
-<a href="../../assets/showcase/virtual-last-chord/02-bass-duet.png"><img src="../../assets/showcase/virtual-last-chord/02-bass-duet.png" width="440" alt="吉他手与贝斯手面向观众合奏，背影与身体动作呼应 / A rear-view duet with the bassist"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/02-bass-duet.png"><img src="../../assets/showcase/virtual-last-chord-remake/02-bass-duet.png" width="440" alt="与贝斯手同拍 / In time with the bassist"></a>
 
-### ③ 把下一拍交给鼓手 / Cueing the drummer
+### 3. 回应鼓手的重拍 / Cueing the drummer
 
-<a href="../../assets/showcase/virtual-last-chord/03-drummer-cue.png"><img src="../../assets/showcase/virtual-last-chord/03-drummer-cue.png" width="440" alt="吉他停奏间隙抬起握拨片的手，鼓手接下军鼓重拍 / A raised pick hand cues the drummer"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/03-drummer-cue.png"><img src="../../assets/showcase/virtual-last-chord-remake/03-drummer-cue.png" width="440" alt="回应鼓手的重拍 / Cueing the drummer"></a>
 
-### ④ 独奏爆发 / The solo peak
+### 4. 独奏的最高点 / The solo peak
 
-<a href="../../assets/showcase/virtual-last-chord/04-solo-peak.png"><img src="../../assets/showcase/virtual-last-chord/04-solo-peak.png" width="440" alt="吉他手弓步独奏，张嘴、汗光与扬发表现演出高潮 / The guitarist leans into the solo"></a>
+<a href="../../assets/showcase/virtual-last-chord-remake/04-solo-peak.png"><img src="../../assets/showcase/virtual-last-chord-remake/04-solo-peak.png" width="440" alt="独奏的最高点 / The solo peak"></a>
 
-## 作者反馈与收录范围 / Owner feedback and selection
+### 5. 一起谢幕 / The final salute
 
-作者在看到四张成片及已指出的问题后反馈：“我觉得这个效果不错的 可以考虑作为正式案例”。本页据此收录四张选集，保留原图与观察记录。作者认可的是这四张作品的整体效果；下面分别说明制作范围与已观察到的限制。
+<a href="../../assets/showcase/virtual-last-chord-remake/05-band-salute.png"><img src="../../assets/showcase/virtual-last-chord-remake/05-band-salute.png" width="440" alt="一起谢幕 / The final salute"></a>
 
-After seeing the four outputs and the disclosed issues, the owner gave positive feedback and favored inclusion as an official case. These four images are therefore selected for the gallery, with their original files and limitations retained. Overall approval does not mean that every detail is correct.
+## 重制范围 / What changed
 
-原计划为五张，本轮5次调用返回4张，0重试。第⑤张共同谢幕遇到连接错误，没有返回可核对的图片，结果保持待核（`claimed`）。本页只计四张，不计为第14套完整五张故事，也不拿此前另一组谢幕补作本次结果。
+作者指出旧案例错误较多，要求重新生成后更新GitHub，并明确选择完整五张含谢幕。本轮另开新套，5次调用返回5张，0自动重试；旧四张和旧第五张结果待核的记录保留在[历史问题版本](virtual-last-chord-original.md)，不计入当前图库。
 
-The plan contained five shots. Five tool calls returned four images, with no retries. The fifth call, a shared final salute, returned a connection error without a verifiable image; its result remains unresolved (`claimed`). This page counts four images, not a fourteenth complete five-shot story. A salute from an earlier series is not substituted for the missing result.
+The owner identified errors in the earlier case and requested a full five-shot remake followed by a GitHub update. This new run returned five images from five calls, with no automatic retries. The [earlier four images and unresolved fifth call](virtual-last-chord-original.md) remain in the historical record and are excluded from the current gallery count.
 
-## 制作与已知限制 / Production and known limitations
+先修正了分镜里正面机位与琴颈方向相冲突的描述，并补充按人物自身左右写持琴习惯、琴颈至琴桥结构连续和首图纠正优先级。新图目视可见的持琴方向一致，旧版第③张的琴弦折向与指板错接没有再出现；谢幕的鼓组位于人物身后。
 
-- 使用本机安装的 **v1.1.0-rc.1** 编译规则与内置生图，沿用已认可的虚拟人物参考；后续图增加本套首图保持衣装与影调。素材来源措辞按虚拟主体适配，没有使用真人身份照片，不作为正式真人 CLI 全流程验证。
-- 第①④张持琴方向与文字中的左右手安排呈镜像，组内持琴方向不完全一致；第③张指板、琴弦和琴桥连接存在明显结构错误。精细指法、遮挡部位及强表情相似度也没有全面验证，这些观察随作品保留。
-- 四张均保留原字节 PNG 与 AI 来源标识，文件完整性检查通过。没有机器比脸结果；自动调用审计无法唯一定位完整记录窗口，不能称为审计通过。
+The storyboard first corrected a conflict between the frontal camera and the guitar-neck direction. Revised guidance describes anatomical handedness, neck-to-bridge continuity and explicit corrections when using a first-shot reference. Visible handedness is consistent in the remake, the old shot 3 string/fretboard error is not visible, and the drum kit stays behind the musicians in the final salute.
 
-The images used the installed **v1.1.0-rc.1** compiler guidance and native generation, with an existing virtual-subject reference and the first output for visual continuity. Virtual-subject wording was adapted; this is not a formal real-person CLI run. Shots 1 and 4 use mirrored handedness relative to the written plan, and handedness varies across the selection. Shot 3 has a visibly inconsistent fretboard, string and bridge connection. Fine technique, hidden details and likeness under strong expressions remain limited. Original PNG bytes and AI provenance are retained, and file-integrity checks passed. Machine likeness was unavailable; automatic request auditing could not uniquely locate a complete record window.
+## 检查与限制 / Checks and limits
+
+- 五张原字节PNG与AI来源标识保留，文件完整性检查通过。部分拨弦手、肩带挂点、鼓凳与踏板被遮挡，细指法没有完整核验；贝斯手护腕位置在合奏与谢幕之间仍有细节漂移。
+- 按作者明确的重拍与公开更新要求展示；尚未取得本轮新图的逐张用户验收，不将旧版认可移给新版，也不据此宣布乐器或真人身份稳定通过。
+- 使用已修订的开发源码编译器与内置生图，沿用原创虚拟人物参考，并用本轮首图保持衣装和影调；旧问题图未作参考。虚拟素材来源措辞单独记录，不作为正式真人CLI全流程验证。
+- 机器比脸不可用，自动构图检测不可用；五次调用审计均无法唯一定位完整请求窗口，记录为unverifiable。固定v1.1.0-rc.1安装包未因这次源码与案例更新而重发。
+
+Original PNG bytes and AI provenance are preserved, and file-integrity checks passed. Some hands, strap mounts and drum supports remain occluded, fine technique is not fully verified, and the bassist's wristband placement varies. The owner authorized regeneration and public updating; post-generation per-image acceptance is still pending. This run used revised development-source guidance with an original virtual-subject reference and its own first image for continuity. It does not establish real-person identity reliability or a formal real-person CLI workflow. Machine likeness and framing detectors were unavailable; all five automatic request audits were unverifiable. The fixed v1.1.0-rc.1 installer has not been republished.
 
 ## 可以这样开始 / Try this
 
@@ -55,4 +60,4 @@ including interactions with a bassist and drummer. Show the storyboard first;
 do not generate images yet.
 ```
 
-[图片摘要 / Image manifest](../../assets/showcase/virtual-last-chord/manifest.json) · [此前的完整五张与三张互动补充 / Earlier complete set and band supplement](virtual-my-stage-guitar.md) · [能力与限制 / Capabilities](../CAPABILITIES.en.md)
+[图片摘要 / Image manifest](../../assets/showcase/virtual-last-chord-remake/manifest.json) · [旧问题版本 / Historical version](virtual-last-chord-original.md) · [能力与限制 / Capabilities](../CAPABILITIES.en.md)

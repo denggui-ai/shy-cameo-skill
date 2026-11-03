@@ -38,20 +38,20 @@
     {
       "source": "CHANGELOG.md",
       "path": "CHANGELOG.md",
-      "bytes": 27751,
-      "sha256": "3b491d906a52e76afe3a0462624eb07f3c124464ba7a01133708eb3e2940e9ef"
+      "bytes": 28701,
+      "sha256": "60901271b0c17829bd94aef178bf8157df0d4b1031a18bdf0d0aa731e7a0f48e"
     },
     {
       "source": "README.md",
       "path": "README.md",
-      "bytes": 11630,
-      "sha256": "9305930c23c97093a8b696eafcc7f91104665753079cff5deedc574d65204dcd"
+      "bytes": 11727,
+      "sha256": "e44206bfc1598c2597225b80087e9cd3b6825b6f15b2c5a08bf8ce27e3f46195"
     },
     {
       "source": "README.zh-CN.md",
       "path": "README.zh-CN.md",
-      "bytes": 10586,
-      "sha256": "c3e3d3b9916e424959d4a3608edf4f13db1e06eb411972b2381b53547c095d3b"
+      "bytes": 10691,
+      "sha256": "2cbe22a9a0ebbaf21a880573b1a140cd657be06287b8c7a398c3c353ae3aedb8"
     },
     {
       "source": "SECURITY.md",
@@ -62,14 +62,14 @@
     {
       "source": "evals/evals.json",
       "path": "evals/evals.json",
-      "bytes": 167194,
-      "sha256": "7e3f7a0d0ff21d897c09b549c5784a9529a3ec3dc14780664ed733b605a7ab5b"
+      "bytes": 169481,
+      "sha256": "eca9012905e19e93bd4c87f02af1f6a1f4604fc58a50f1de111a7110c1fb70d1"
     },
     {
       "source": "release/USER-GUIDE.html",
       "path": "release/USER-GUIDE.html",
-      "bytes": 20179,
-      "sha256": "4d388b9d2dfa1f0d4ad4637d484100b637d9f175138258cc85e901646cc37ec1"
+      "bytes": 20291,
+      "sha256": "0a0b21a66f6410549de913ad70fdfdffd2c7e73c8c08c0a07155ea9af19314fb"
     },
     {
       "source": "release/icon.svg",
@@ -86,8 +86,8 @@
     {
       "source": "release/public-source-allowlist.json",
       "path": "release/public-source-allowlist.json",
-      "bytes": 27195,
-      "sha256": "159169e89852faf692adbd422664c864906f18b4f61fd6823f0ddb1efc6b423a"
+      "bytes": 28320,
+      "sha256": "3cf33be79da1e93ad291880e082dd5bc706971c51a47728a7283f1b5c64807fb"
     },
     {
       "source": "release/runtime-allowlist.json",
@@ -164,8 +164,8 @@
     {
       "source": "skills/shy-cameo/references/stage-and-concerts.md",
       "path": "skills/shy-cameo/references/stage-and-concerts.md",
-      "bytes": 18899,
-      "sha256": "b4c936a56d23d7c2b1f7de6a09e0d999500bb4834541780790988d822ab7d24d"
+      "bytes": 20867,
+      "sha256": "639aebe3660bfd72ca0e911af253293fb8789fb63b220dc5bf980b0be69b48c5"
     },
     {
       "source": "skills/shy-cameo/references/opening-and-topics.md",
@@ -254,8 +254,8 @@
     {
       "source": "skills/shy-cameo/scripts/coshoot/compiler.py",
       "path": "skills/shy-cameo/scripts/coshoot/compiler.py",
-      "bytes": 48885,
-      "sha256": "df176c1cf944ad978348b408c48aafa1818d350e6db73e54a2a1b923c0a2fa32"
+      "bytes": 49754,
+      "sha256": "d38295432879c069ef22bf2aed6488aa3fffdf871c0f73553cac5da95e56d1ca"
     },
     {
       "source": "skills/shy-cameo/scripts/coshoot/detect.py",
@@ -422,8 +422,8 @@
     {
       "source": "tests/test_stage_concerts.py",
       "path": "tests/test_stage_concerts.py",
-      "bytes": 18255,
-      "sha256": "bfa72e48f65795e69bebdda7dd460149aede998c07694a450aff042e3cb5ef56"
+      "bytes": 20458,
+      "sha256": "af3afb7569824182cb94c0d452c5c921ac63c1d4ee6f8b7bbb03e2d4ea239f3a"
     },
     {
       "source": "tests/test_label.py",
@@ -506,14 +506,14 @@
     {
       "source": "release/dev/VALIDATION.md",
       "path": "release/dev/VALIDATION.md",
-      "bytes": 16194,
-      "sha256": "31c74640f6f11fa0fd395e839770d94838bbcf36e9bf874a7586ac018dcddc46"
+      "bytes": 16185,
+      "sha256": "470db95152fbd517cc91bb2faf130b76d9b6f5207278773e4660f03b26b44279"
     },
     {
       "source": "release/dev/DEVELOPMENT.md",
       "path": "release/dev/DEVELOPMENT.md",
-      "bytes": 73689,
-      "sha256": "ccf1015dc3266558450507910ce2f851479ee7d6a627c0564a3f8b50f4448c74"
+      "bytes": 75778,
+      "sha256": "07ab631a95ce817ff51f96f1227e55cfa289847bbda48eb09c393f2658400657"
     },
     {
       "source": "tests/test_animation_compiler.py",
@@ -560,8 +560,8 @@
     {
       "source": "release/CAPABILITIES.md",
       "path": "release/CAPABILITIES.md",
-      "bytes": 10901,
-      "sha256": "4b18975edf7343d161ab33a1111273bf41a0e67a89cf6859582df39ab82008fd"
+      "bytes": 11032,
+      "sha256": "b0363467eca7489f07591436d776092b66fefbac4ca93e83e5f5bcd036013050"
     },
     {
       "source": "release/dev/PARIS-LOCATION-REVIEW.md",
@@ -602,8 +602,8 @@
     {
       "source": "release/CASES.md",
       "path": "release/CASES.md",
-      "bytes": 3282,
-      "sha256": "9493bb3396b91ad994c6a9407167f8105f96e9dde2cb0377f2178d1e04723915"
+      "bytes": 3299,
+      "sha256": "fdd523dabae200dd2ef8df14ce2406682352d77bf01da8e9df2c04bf58c9befa"
     },
     {
       "source": "release/style-keywords.json",
@@ -1094,14 +1094,14 @@
     {
       "source": "release/CASES.en.md",
       "path": "release/CASES.en.md",
-      "bytes": 3661,
-      "sha256": "0c6c1940da2b7c413453614b66d6c95213367baa33a3f92edbb695c9206053ec"
+      "bytes": 3658,
+      "sha256": "95578cbb2cfb724fa698597431cc8571617cebac7ad720b738454b66acea6679"
     },
     {
       "source": "release/CAPABILITIES.en.md",
       "path": "release/CAPABILITIES.en.md",
-      "bytes": 9862,
-      "sha256": "3b839fa5ba708c341ea1e905b499383ead726b408cf4553df7f19bee0e57324d"
+      "bytes": 10040,
+      "sha256": "4b28436ff4a819be1a6f70d0810fabbfc9cf9256c48c4a3667dacf1fd203eb0f"
     },
     {
       "source": "assets/showcase/repository-preview/preview.jpg",
@@ -1118,14 +1118,14 @@
     {
       "source": "release/dev/VERIFICATION-MATRIX.md",
       "path": "release/dev/VERIFICATION-MATRIX.md",
-      "bytes": 16380,
-      "sha256": "40d39424ead847e405e263296e00981b60d0843b6c7cc5530bbb91550183415c"
+      "bytes": 16599,
+      "sha256": "a88a4ba168d2b574d8f01996f9cdd4b353cf627eb24c7266705371a6968b59dc"
     },
     {
       "source": "release/dev/NEXT-TESTS.md",
       "path": "release/dev/NEXT-TESTS.md",
-      "bytes": 10728,
-      "sha256": "6e9379159bfa2de53262f2497612704e99ba107602b455aed3f6e65b37b8d4f6"
+      "bytes": 10843,
+      "sha256": "cc07f3179f8104f9737cd4c7148fcfe231f47badd8a05d4bc735112232ca3e48"
     },
     {
       "source": "tests/test_cli_edits.py",
@@ -1292,14 +1292,14 @@
     {
       "source": "release/cases/virtual-last-chord.md",
       "path": "release/cases/virtual-last-chord.md",
-      "bytes": 5466,
-      "sha256": "256fb2c94801cfcf20b403e4295588eb133f7be762d35ad0d05d5409f1c7d744"
+      "bytes": 5699,
+      "sha256": "87a904fc290da29f9fe467c0a11544647b86f1d2b79fcea4581e9c31ef50be0c"
     },
     {
       "source": "assets/showcase/virtual-last-chord/manifest.json",
       "path": "assets/showcase/virtual-last-chord/manifest.json",
-      "bytes": 3315,
-      "sha256": "584b4fba56b815889ea0c51494704532c85abaf8b639181ef68b2e9685208d63"
+      "bytes": 3574,
+      "sha256": "81e2f62d0b11823cfd2e126fa6d093115fc09572556e18c9b22ae925e0004dfc"
     },
     {
       "source": "assets/showcase/virtual-last-chord/01-opening.png",
@@ -1324,6 +1324,48 @@
       "path": "assets/showcase/virtual-last-chord/04-solo-peak.png",
       "bytes": 2395883,
       "sha256": "b0e2b820f2be0ba0c70d82210dcecf0cb54b3b48e0913792b22f38ff39df6bee"
+    },
+    {
+      "source": "release/cases/virtual-last-chord-original.md",
+      "path": "release/cases/virtual-last-chord-original.md",
+      "bytes": 5883,
+      "sha256": "710348245494f58a386aaff42b4bd73942ed42f64480253ef4cee725398a850b"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/01-opening.png",
+      "path": "assets/showcase/virtual-last-chord-remake/01-opening.png",
+      "bytes": 2359744,
+      "sha256": "e1025cd07cf1516a34969d50347274e677217fcb4c58dc37f1601d91263344f0"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet.png",
+      "path": "assets/showcase/virtual-last-chord-remake/02-bass-duet.png",
+      "bytes": 2118927,
+      "sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/03-drummer-cue.png",
+      "path": "assets/showcase/virtual-last-chord-remake/03-drummer-cue.png",
+      "bytes": 2265754,
+      "sha256": "71c3b0b1079641cada690d85b0775f37d95406a38b6b7965d572f5a0c74fecd3"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/04-solo-peak.png",
+      "path": "assets/showcase/virtual-last-chord-remake/04-solo-peak.png",
+      "bytes": 2481495,
+      "sha256": "b70a02363e04967355c897faae828e3ccf9c4fdf06ce23f8b7150ac4b0b32ebe"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/05-band-salute.png",
+      "path": "assets/showcase/virtual-last-chord-remake/05-band-salute.png",
+      "bytes": 2133265,
+      "sha256": "f372a692de8b4e633b5a6a1d8592e410caf360a085a703d0c4471dfe6634ca8b"
+    },
+    {
+      "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
+      "path": "assets/showcase/virtual-last-chord-remake/manifest.json",
+      "bytes": 4435,
+      "sha256": "b009b2faa60959c156f39fc00c25186a7c7dbba9db3024fc2a5e6f075ce848c9"
     }
   ]
 }

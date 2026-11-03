@@ -7,7 +7,7 @@ import pytest
 
 from coshoot import sets
 from coshoot.cards import CardError, require_valid
-from coshoot.compiler import (CAST_HIDDEN_TEXT, CHECKIN_TEXT, FACE_LIGHT_TEXT, FACE_TEXT, FILM_LIGHT_TEXT, MY_STAGE_TEXT,
+from coshoot.compiler import (CAST_HIDDEN_TEXT, CHECKIN_TEXT, FACE_LIGHT_TEXT, FACE_TEXT, FILM_LIGHT_TEXT, MY_STAGE_CHAIN_TEXT, MY_STAGE_TEXT,
                               SOLO_TEXT, STAGE_FACE_TEXT, STAGE_LIGHT_TEXT, USER_PRESENCE_TEXT)
 from test_cli import FAKE, cli, fake_env
 from test_cli_sets import set_workspace
@@ -121,6 +121,42 @@ def test_explicit_solo_is_preserved_when_chaining_after_a_band_shot():
     assert scene["setting"] in prompt and scene["user"]["action"] in prompt
     assert "明确独奏或本镜未安排队友时，不额外添加，也不从首图带入" in prompt
     assert request["referenced_image_paths"] == ["/in/me.jpg", "/synthetic/band-opening.png"]
+
+
+@pytest.mark.parametrize("presence", ["face", "back", "hands"])
+def test_left_handed_guitar_and_chain_correction_survive_camera_changes(presence):
+    scene = stage_scene("my_stage", presence)
+    scene["user"].update(role="左手型电吉他手", action="本人与正面镜头转为背面机位时一样，右手按弦、左手拨弦；停奏后左手举起拨片示意")
+    scene["props"] = "本人左手型电吉他，黑色琴体由肩带承托；纠正首图的镜像持琴，琴颈与琴桥合理连接"
+    original = copy.deepcopy(scene)
+    request = build(scene=scene, chain_ref=Path("/synthetic/mirrored-opening.png"))
+    prompt = request["prompt"]
+    assert scene["user"]["action"] in prompt and scene["props"] in prompt
+    assert "左手按弦、右手拨弦" not in prompt
+    assert MY_STAGE_CHAIN_TEXT in prompt  # Applies without prop_specs or chain_props.
+    assert request["referenced_image_paths"] == ["/in/me.jpg", "/synthetic/mirrored-opening.png"]
+    assert scene == original
+
+
+def test_stage_chain_guidance_does_not_make_an_absent_instrument_spec_visible():
+    scene = stage_scene("my_stage")
+    scene["user"].update(role="主唱", action="双手空着向观众致意")
+    scene["props"] = "话筒已归位"
+    scene["prop_specs"] = [{"name": "乐器", "spec": "备用红色双颈电吉他"}]
+    request = build(scene=scene, chain_ref=Path("/synthetic/first.png"), chain_props=["乐器"])
+    assert "备用红色双颈电吉他" not in request["prompt"]
+    assert "道具规格：" not in request["prompt"]
+    assert "妆发与服装、乐器" not in request["prompt"]
+    assert scene["user"]["action"] in request["prompt"]
+
+
+@pytest.mark.parametrize("mode,chain", [("my_stage", False), ("concert_audience", False), ("concert_audience", True)])
+def test_stage_chain_guidance_is_scoped_to_chained_performer_shots(mode, chain):
+    prompt = build(scene=stage_scene(mode), chain_ref=Path("/synthetic/first.png") if chain else None)["prompt"]
+    assert MY_STAGE_CHAIN_TEXT not in prompt
+    if mode == "concert_audience":
+        assert MY_STAGE_TEXT not in prompt
+        assert "不安排演出者与主角近距离合影或接触" in prompt
 
 
 def test_stage_role_is_required_even_if_card_uses_traveler():

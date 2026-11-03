@@ -14,9 +14,9 @@ Spend time with a character, try a costume, enter a film, travel, or enjoy every
 
 ## Pick a story and see the results
 
-**13 five-shot stories + 3 band-interaction images + a four-image rock selection, 72 images in all.** Open a cover for the images, a starter prompt and production notes; the four-image selection is labeled.
+**14 five-image story galleries + 3 band-interaction images, 73 images in all.** Open a cover for the images, a starter prompt and production notes.
 
-All examples below feature an **AI-generated virtual adult protagonist** and received positive owner feedback for gallery inclusion. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
+All examples below feature an **AI-generated virtual adult protagonist** and have owner authorization for public display; each case records its actual feedback and review status. They show possible results, not guaranteed consistency or proof of precise real-person identity or body control.
 
 <p>
 <a href="release/cases/virtual-cat-daily.md"><img src="assets/showcase/virtual-cat-daily/01.jpg" width="160" alt="A Quiet Evening with a Cat" title="A Quiet Evening with a Cat"></a>
@@ -47,12 +47,12 @@ All examples below feature an **AI-generated virtual adult protagonist** and rec
 
 <p>
 <a href="release/cases/virtual-my-stage-guitar.md"><img src="assets/showcase/virtual-my-stage-guitar/04.png" width="160" alt="My Stage: Electric Guitar" title="My Stage: Electric Guitar"></a>
-<a href="release/cases/virtual-last-chord.md"><img src="assets/showcase/virtual-last-chord/04-solo-peak.png" width="160" alt="The Last Chord: Four-Image Selection" title="The Last Chord: Four-Image Selection"></a>
+<a href="release/cases/virtual-last-chord.md"><img src="assets/showcase/virtual-last-chord-remake/04-solo-peak.png" width="160" alt="The Last Chord: Five-Shot Remake" title="The Last Chord: Five-Shot Remake"></a>
 </p>
 
-[My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) · [The Last Chord: Four-Image Selection](release/cases/virtual-last-chord.md)
+[My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) · [The Last Chord: Five-Shot Remake](release/cases/virtual-last-chord.md)
 
-**[Browse the complete gallery and all 72 images →](release/CASES.en.md)**
+**[Browse the complete gallery and all 73 images →](release/CASES.en.md)**
 
 ## Get started in three steps
 
@@ -112,7 +112,7 @@ Ask to revise one shot or continue with another series. Previous versions are ke
 | My stage | “Make me a guitarist at a wild rock concert” | [My Stage: Electric Guitar](release/cases/virtual-my-stage-guitar.md) |
 | Attend their concert | “Take me to a Queen or Jay Chou concert” | [Tokyo 1992 audience story](release/cases/virtual-gnr-tokyo.md) |
 
-The two concert directions and band interactions are **included in v1.1.0-rc.1 as experimental features**. The Tokyo audience set received positive feedback, and the complete guitar set was accepted. My Stage can now plan playing together, musical responses and a shared bow with original adult bandmates; three selected interaction images are now shown in the [My Stage supplement](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement), including a requested correction to the final salute. The owner also gave positive feedback for [The Last Chord, a four-image selection](release/cases/virtual-last-chord.md); its known instrument issues and unresolved fifth call are documented on the case page. Tickets, programmes and fan items can be planned for the chosen artist and era; that newer guidance has no matching image validation yet. See [concert scope](release/CAPABILITIES.en.md#concert-directions-experimental).
+The two concert directions and band interactions are **included in v1.1.0-rc.1 as experimental features**. The Tokyo audience set received positive feedback, and the complete guitar set was accepted. My Stage can now plan playing together, musical responses and a shared bow with original adult bandmates; three selected interaction images are now shown in the [My Stage supplement](release/cases/virtual-my-stage-guitar.md#队友互动补充--band-interaction-supplement), including a requested correction to the final salute. [The Last Chord now shows a five-shot remake](release/cases/virtual-last-chord.md), requested after the owner identified errors in the earlier images. The old version and its unresolved fifth call are preserved separately. This remake uses revised development-source instrument guidance; the fixed installer is unchanged. Tickets, programmes and fan items can be planned for the chosen artist and era; that newer guidance has no matching image validation yet. See [concert scope](release/CAPABILITIES.en.md#concert-directions-experimental).
 
 Try photographic, fully animated or photographic-subject/animated-world styles. Adjust clothes, lighting, camera framing and actions. See [capabilities and evidence](release/CAPABILITIES.en.md) for all fifteen directions and remaining experimental scope.
 

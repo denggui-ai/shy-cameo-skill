@@ -1,0 +1,100 @@
+{
+  "set_id": "virtual-last-chord-remake",
+  "kind": "five_image_remake",
+  "title": "最后一个和弦：五张重制",
+  "title_en": "The Last Chord: Five-Shot Remake",
+  "subject_type": "original_virtual_adult",
+  "ai_generated": true,
+  "real_person_identity_photo_used": false,
+  "current_showcase": true,
+  "images": [
+    {
+      "file": "01-opening.png",
+      "story_index": 1,
+      "sha256": "e1025cd07cf1516a34969d50347274e677217fcb4c58dc37f1601d91263344f0",
+      "source_sha256": "e1025cd07cf1516a34969d50347274e677217fcb4c58dc37f1601d91263344f0",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "02-bass-duet.png",
+      "story_index": 2,
+      "sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
+      "source_sha256": "f6300b41b48c7693759cb552f287335f6139b5cdc9df63471b7c02527047eb74",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "03-drummer-cue.png",
+      "story_index": 3,
+      "sha256": "71c3b0b1079641cada690d85b0775f37d95406a38b6b7965d572f5a0c74fecd3",
+      "source_sha256": "71c3b0b1079641cada690d85b0775f37d95406a38b6b7965d572f5a0c74fecd3",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "04-solo-peak.png",
+      "story_index": 4,
+      "sha256": "b70a02363e04967355c897faae828e3ccf9c4fdf06ce23f8b7150ac4b0b32ebe",
+      "source_sha256": "b70a02363e04967355c897faae828e3ccf9c4fdf06ce23f8b7150ac4b0b32ebe",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    },
+    {
+      "file": "05-band-salute.png",
+      "story_index": 5,
+      "sha256": "f372a692de8b4e633b5a6a1d8592e410caf360a085a703d0c4471dfe6634ca8b",
+      "source_sha256": "f372a692de8b4e633b5a6a1d8592e410caf360a085a703d0c4471dfe6634ca8b",
+      "width": 1086,
+      "height": 1448,
+      "web_derivative": false
+    }
+  ],
+  "gates": {
+    "likeness_ok": true,
+    "boundary_ok": true,
+    "owner_consent_public_face": true
+  },
+  "approved_by": "owner",
+  "approved_on": "2026-11-03",
+  "acceptance_scope": "Owner authorized regenerating all five images and updating the public GitHub case. Per-image user verdicts for the new outputs remain pending.",
+  "gate_basis": {
+    "likeness_ok": "Original virtual subject retained by visual comparison; this is not a machine or real-person likeness verdict.",
+    "boundary_ok": "Main virtual adult subject, original adult bandmates with faces outside frame or turned away; no private identity input.",
+    "owner_consent_public_face": "Explicit instruction to regenerate this virtual-subject case and update GitHub."
+  },
+  "user_feedback": [
+    "请注意 最后一个和弦的这个案例图片 有很多错误的地方 需要重新生成后 更新到github上去",
+    "重拍完整五张（推荐，包含谢幕）"
+  ],
+  "publication_basis": "Explicit owner authorization for a new five-image remake and public replacement; publication consent does not imply post-generation acceptance, error-free structure or formal CLI verdicts.",
+  "user_verdict": "pending",
+  "generation_tool_calls": 5,
+  "returned_images": 5,
+  "automatic_retries": 0,
+  "previous_attempt": {
+    "set_id": "virtual-last-chord",
+    "calls": 5,
+    "returned_images": 4,
+    "fifth_state": "claimed",
+    "current_gallery_count": 0,
+    "history_preserved": true
+  },
+  "visual_observations": [
+    "Visible playing handedness is consistent across the frontal and rear views.",
+    "The previous bent string path and inconsistent fretboard-to-bridge connection are not visible in the remake.",
+    "The final salute places the drum kit behind the musicians, toward the camera."
+  ],
+  "known_limitations": [
+    "Some hands, strap mounts, drum supports and fine technique are occluded or not fully verifiable.",
+    "The bassist wristband placement varies between the duet and salute.",
+    "Machine likeness was unavailable; all five automatic request audits were unverifiable and frame detectors unavailable.",
+    "No post-generation per-image user verdicts have been recorded."
+  ],
+  "production_method": "Revised development-source pure compiler with virtual-subject provenance wording adaptation and native image generation. Not a formal real-person CLI end-to-end run; the published v1.1.0-rc.1 ZIP is unchanged.",
+  "derivatives": "Byte-identical PNG copies retaining original AI provenance."
+}

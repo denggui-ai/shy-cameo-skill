@@ -73,5 +73,8 @@
     "No machine likeness result; automatic request audit could not uniquely locate the complete read window."
   ],
   "production_method": "Installed v1.1.0-rc.1 pure compiler with virtual-subject provenance wording adaptation and native image generation; not formal real-person CLI end-to-end.",
-  "derivatives": "Byte-identical PNG copies retaining original AI provenance."
+  "derivatives": "Byte-identical PNG copies retaining original AI provenance.",
+  "current_showcase": false,
+  "superseded_by": "virtual-last-chord-remake",
+  "superseded_reason": "The owner later identified many errors and requested a complete five-image remake. Original files and earlier feedback are retained as historical evidence."
 }

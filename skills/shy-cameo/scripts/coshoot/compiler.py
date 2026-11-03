@@ -214,7 +214,11 @@ MY_STAGE_TEXT = ("主角是本场演出的表演者，职责按本镜指定身�
                  "按本镜分镜决定队友是否入镜：有互动时，队友是原创成年乐手，可在近旁合奏、回应或谢幕，主角仍是视觉中心；"
                  "队友以背影或侧后方入镜，五官不可见，不画正面无脸人形。明确独奏或本镜未安排队友时，不额外添加，也不从首图带入。"
                  "各人的手臂、乐器与支撑分别连贯，不混接或共用同一只手。"
+                 "演奏手分工按本镜说明，左右以各乐手自身为准，不因换机位交换按弦与拨弦职责；停奏手势按本镜安排。"
+                 "本镜出现吉他或贝斯时，琴颈、指板与琴桥连接合理，琴弦沿乐器结构连续延伸至琴桥，不在琴身上无故转折或错接。"
                  "动作、表情和强度按本镜方案呈现；强烈表情不改变本人脸型与骨相。有乐器时，演奏须有真实接触与支撑，不改成静止持琴摆拍。")
+MY_STAGE_CHAIN_TEXT = ("首图仅用于保留本镜需要且正确可见的妆发、衣装、影调与乐器外观；本镜的动作、演奏手分工和明确纠正项优先于首图一致性。"
+                       "不照搬首图已指出的镜像持琴、肢体或乐器连接错误；不从首图添加本镜未安排的乐器。")
 CONCERT_TEXT = ("主角是来听演出的观众，不上台表演；演出者若入镜，只在远处舞台表演，用服饰、乐器和动作辨识，面部细节不可辨。"
                 "台上与台下有明确空间距离，不安排演出者与主角近距离合影或接触，不画正面无脸人形。")
 CHAIN_TEXT = ("附图 {n} 是这套照片的第 1 张成片：{keep}、场景的美术风格与色调必须与附图 {n} 一致"
@@ -592,6 +596,9 @@ def compile_request(scene: dict, characters: Dict[str, dict], user_photos: Seque
     if shown:
         # Keep this shot's explicit spec even when its appearance has a chain reference.
         lines.append("道具规格：" + "；".join(f"{p['name']}——{p['spec']}" for p in shown) + "。")
+    if mode == "my_stage" and chain_ref is not None:
+        # Also applies to prose-only props; do not let this guidance affect prop-name matching.
+        lines.append(MY_STAGE_CHAIN_TEXT)
     lines.append(framing_text(scene))
     if scene.get("camera_angle"):
         lines.append(CAMERA_TEXT[scene["camera_angle"]])

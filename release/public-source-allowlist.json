@@ -878,5 +878,33 @@
   {
     "source": "assets/showcase/virtual-last-chord/04-solo-peak.png",
     "destination": "assets/showcase/virtual-last-chord/04-solo-peak.png"
+  },
+  {
+    "source": "release/cases/virtual-last-chord-original.md",
+    "destination": "release/cases/virtual-last-chord-original.md"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/01-opening.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/01-opening.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/02-bass-duet.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/02-bass-duet.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/03-drummer-cue.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/03-drummer-cue.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/04-solo-peak.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/04-solo-peak.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/05-band-salute.png",
+    "destination": "assets/showcase/virtual-last-chord-remake/05-band-salute.png"
+  },
+  {
+    "source": "assets/showcase/virtual-last-chord-remake/manifest.json",
+    "destination": "assets/showcase/virtual-last-chord-remake/manifest.json"
   }
 ]
